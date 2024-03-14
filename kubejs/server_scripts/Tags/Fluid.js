@@ -1,21 +1,26 @@
 ServerEvents.tags('fluid', e => {
 	// 工业燃油
 	e.add('forge:industrial_fuel',[
-		'kubejs:industrial_fuel_bucket'
+		'kubejs:industrial_fuel'
 	])
 
 	// 煤油
 	e.add('forge:kerosene',[
-		'kubejs:kerosene_bucket'
+		'kubejs:kerosene'
 	])
 
 	// 汽油
 	e.add('forge:gasoline',[
-		'createdieselgenerators:gasoline_bucket'
+		'createdieselgenerators:gasoline'
 	])
 
 	// 柴油
 	e.add('forge:diesel',[
-		'createdieselgenerators:diesel_bucket'
+		'createdieselgenerators:diesel'
+	])
+
+	// 混合汽油
+	e.add('forge:mixed_gasoline',[
+		'kubejs:mixed_gasoline'
 	])
 })

@@ -713,7 +713,7 @@
 				type: "item"
 			}]
 			x: 13.0d
-			y: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["77901ACF5BAB7B18"]
@@ -724,7 +724,7 @@
 				type: "item"
 			}]
 			x: 13.0d
-			y: 3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["77901ACF5BAB7B18"]
@@ -735,7 +735,7 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 3.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["77901ACF5BAB7B18"]
@@ -746,7 +746,70 @@
 				type: "item"
 			}]
 			x: 10.0d
-			y: 2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"4FE4E7B453E29469"
+				"22D49972B51452CE"
+			]
+			id: "4DAA244683C0BEA7"
+			tasks: [{
+				id: "45EB34238CB35217"
+				title: "&6炼油厂"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4DAA244683C0BEA7"]
+			id: "17C1849ED5F25AEA"
+			tasks: [{
+				id: "1BDF2E28F599B80E"
+				item: "kubejs:mixed_gasoline_bucket"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"17C1849ED5F25AEA"
+				"507C8DE4D36C3108"
+			]
+			id: "6148ECBD054BE8F3"
+			tasks: [{
+				id: "43009723D2839650"
+				item: "kubejs:plastic_sheet"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3DAD36FB74FC0B1D"]
+			id: "507C8DE4D36C3108"
+			tasks: [{
+				id: "2185FE9DB6F5E165"
+				item: "thermal:machine_chiller"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["34A1D0679852D9C1"]
+			id: "3DAD36FB74FC0B1D"
+			tasks: [{
+				count: 128L
+				id: "08B046CC63D372B3"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			title: "&6量产玫瑰石英"
+			x: 9.5d
+			y: 6.0d
 		}
 	]
 	title: "No.2-2"

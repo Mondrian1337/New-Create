@@ -650,10 +650,10 @@ ServerEvents.recipes(e => {
 
 	// 抽油机曲柄
 	mechanical_crafting('createdieselgenerators:pumpjack_crank', [
-		' ABA ',
-		'  C  ',
-		' DAD ',
-		' EFE '
+		'ABA',
+		' C ',
+		'DAD',
+		'EFE'
 	], {
 		A: 'create:shaft',
 		B: '#forge:plates/iron',
@@ -682,4 +682,34 @@ ServerEvents.recipes(e => {
 		C: '#forge:plates/andesite_alloy',
 		D: '#forge:gears/invar'
 	}).id('createdieselgenerators:crafting/distillation_controller')
+
+	// 红石通量线圈
+	sequenced_assembly(
+		'thermal:rf_coil',
+		'create_things_and_misc:rose_quartz_sheet',[
+		deploying('create_things_and_misc:rose_quartz_sheet',['minecraft:redstone','minecraft:redstone']),
+		deploying('create_things_and_misc:rose_quartz_sheet',['#forge:wires/gold','#forge:wires/gold']),
+		deploying('create_things_and_misc:rose_quartz_sheet',['#forge:nuggets/gold','#forge:nuggets/gold']),
+		deploying('create_things_and_misc:rose_quartz_sheet',['immersiveengineering:wirecutter','immersiveengineering:wirecutter'])
+	]).loops(1).transitionalItem('create_things_and_misc:rose_quartz_sheet').damageIngredient('immersiveengineering:wirecutter')
+
+	// 玫瑰石英量产产线
+	mixing(
+		Fluid.of('kubejs:rose_quartz_fluid',200),[
+			'4x minecraft:redstone',
+			'4x minecraft:quartz'
+		]).heated()
+
+	filling(
+		'create:polished_rose_quartz',[
+			'minecraft:quartz',
+			Fluid.of('kubejs:rose_quartz_fluid',100)
+		])
+
+	// 机器框架
+	item_application(
+		'thermal:machine_frame',[
+			'create_dd:steel_casing',
+			'thermal:rf_coil'
+		])
 })

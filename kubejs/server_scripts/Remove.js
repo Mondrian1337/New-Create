@@ -108,7 +108,9 @@ ServerEvents.recipes(e => {
 		'thermal:electrum_ingot',
 		'createdieselgenerators:oil_scanner',
 		'createdieselgenerators:pumpjack_crank',
-		'create_dd:industrial_casing'
+		'create_dd:industrial_casing',
+		'thermal:rf_coil',
+		'create_dd:steel_casing'
 	]
 	Remove_Item.forEach(Item => {
 		e.remove({ output: Item })

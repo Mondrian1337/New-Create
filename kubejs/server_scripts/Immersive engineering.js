@@ -33,7 +33,7 @@ ServerEvents.recipes(e => {
 		stonecutting
 	} = e.recipes.minecraft
 
-	//铜锭
+	// 铜锭
 	e.custom({
 		"type": "immersiveengineering:alloy",
 		"input0": {
@@ -69,7 +69,7 @@ ServerEvents.recipes(e => {
 		"time": 150
 	})
 
-	//工程师锤
+	// 工程师锤
 	shaped("immersiveengineering:hammer", [
 		' AB',
 		'ECA',
@@ -92,7 +92,7 @@ ServerEvents.recipes(e => {
 		E: 'kubejs:embalming_fluid_bucket'
 	}).replaceIngredient('kubejs:embalming_fluid_bucket', 'minecraft:bucket')
 
-	//锡锭
+	// 锡锭
 	e.custom({
 		"type": "immersiveengineering:alloy",
 		"input0": {
@@ -110,7 +110,7 @@ ServerEvents.recipes(e => {
 		"time": 300
 	})
 
-	//青铜锭
+	// 青铜锭
 	e.custom({
 		"type": "immersiveengineering:alloy",
 		"input0": {
@@ -140,7 +140,7 @@ ServerEvents.recipes(e => {
 		C: 'immersiveengineering:alloybrick'
 	}).id('immersiveengineering:crafting/blastbrick')
 
-	//焦炉砖
+	// 焦炉砖
 	shaped('3x immersiveengineering:cokebrick', [
 		'ABA',
 		'BCB',
@@ -151,7 +151,7 @@ ServerEvents.recipes(e => {
 		C: "immersiveengineering:alloybrick"
 	}).id('immersiveengineering:crafting/cokebrick')
 
-	//矿渣
+	// 矿渣
 	e.custom({
 		"type": "immersiveengineering:blast_furnace",
 		"input": { "tag": "minecraft:logs" },
@@ -161,7 +161,6 @@ ServerEvents.recipes(e => {
 	})
 
 	// 铁板金属
-
 	compacting('2x immersiveengineering:sheetmetal_iron', [
 		'4x kubejs:cast_iron_sheet'
 	]).id('immersiveengineering:crafting/sheetmetal_iron')
@@ -176,7 +175,7 @@ ServerEvents.recipes(e => {
 		C: 'minecraft:redstone'
 	}).id('immersiveengineering:crafting/conveyor_basic')
 
-	//工业机壳
+	// 工业机壳
 	e.custom({
 		"type": "immersiveengineering:metal_press",
 		"energy": 2400,
@@ -192,7 +191,7 @@ ServerEvents.recipes(e => {
 		}
 	})
 
-	//金属模具:块
+	// 金属模具:块
 	e.custom({
 		"type": "immersiveengineering:blueprint",
 		"category": "molds",
@@ -212,21 +211,37 @@ ServerEvents.recipes(e => {
 		}
 	})
 
-	// test
+	// 混合汽油
 	e.custom({
 		"type": "immersiveengineering:refinery",
 		"energy": 240,
 		"input0": {
-			"amount": 12,
-			"tag": "forge:acetaldehyde"
+			"amount": 20,
+			"tag": "forge:industrial_fuel"
 		},
 		"input1": {
-			"amount": 8,
-			"tag": "forge:creosote"
+			"amount": 20,
+			"tag": "forge:gasoline"
 		},
 		"result": {
-			"amount": 8,
-			"fluid": "immersiveengineering:phenolic_resin"
+			"amount": 40,
+			"fluid": "kubejs:mixed_gasoline"
+		}
+	})
+
+	// 钢机壳
+	e.custom({
+		"type": "immersiveengineering:metal_press",
+		"energy": 2400,
+		"input": {
+			"base_ingredient": {
+				"tag": 'forge:ingots/steel'
+			},
+			"count": 4
+		},
+		"mold": 'kubejs:mold_block',
+		"result": {
+			"item": 'create_dd:steel_casing'
 		}
 	})
 })

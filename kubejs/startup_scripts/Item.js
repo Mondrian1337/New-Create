@@ -84,8 +84,10 @@ StartupEvents.registry('item', e => {
 	Item('plating_zinc_ingot', 64, 'common', false)
 	// 烈焰人的头
 	Item('blaze_head', 64, 'uncommon', false)
-	//冲压磨具-块
+	// 冲压磨具-块
 	Item('mold_block', 1, 'common', false)
+	// 塑料片
+	Item('plastic_sheet',64,'common',false)
 	// 半成品注册
 	let In_Item = (Name) => { e.create(Name, 'create:sequenced_assembly') }
 	In_Item('in_abstruse_mechanism')

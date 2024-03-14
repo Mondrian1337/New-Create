@@ -28,4 +28,6 @@ StartupEvents.registry('fluid', e => {
 	Fluid('industrial_fuel',0xF4A460,0xF4A460,0xF4A460)
 	// 混合汽油
 	Fluid('mixed_gasoline',0xF0E68C,0xF0E68C,0xF0E68C)
+	// 玫瑰石英溶液
+	Fluid('rose_quartz_fluid',0xFF1493,0xFF1493,0xFF1493)
 })
