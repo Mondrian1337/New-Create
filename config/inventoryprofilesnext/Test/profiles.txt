@@ -1,0 +1,16 @@
+
+
+
+
+profile Saved activate HOT1
+	HOT1
+		"kubejs:furnace_core"
+	HEAD
+		"kubejs:radiant_helmet"
+	CHEST
+		"kubejs:radiant_chestplate"
+	LEGS
+		"kubejs:radiant_leggings"
+	FEET
+		"kubejs:radiant_boots"
+

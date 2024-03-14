@@ -1,0 +1,9 @@
+{
+  "configVersion": 2,
+  "windMode": "NONE",
+  "capeStyle": "SMOOTH",
+  "capeMovement": "VANILLA",
+  "gravity": 5,
+  "heightMultiplier": 8,
+  "straveMultiplier": 2
+}

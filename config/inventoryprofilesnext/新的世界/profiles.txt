@@ -1,0 +1,8 @@
+
+
+
+
+profile Saved activate HOT7
+	HOT7
+		"extendedcrafting:advanced_table"
+

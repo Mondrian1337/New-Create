@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "no62"
+	group: "1C480BC57A26FD58"
+	icon: {
+		Count: 1b
+		id: "sgjourney:milky_way_stargate"
+		tag: {
+			BlockEntityTag: {
+				AddToNetwork: 0b
+			}
+		}
+	}
+	id: "1EB80EB6050AF185"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "No.6-2  Star Trip"
+}
