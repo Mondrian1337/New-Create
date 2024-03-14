@@ -19,8 +19,6 @@ ItemEvents.rightClicked(e => {
 		}
 	}
 
-
-
 	if (player.mainHandItem == 'minecraft:air') return;
 	if (player.mainHandItem == 'minecraft:diamond') {
 		server.runCommandSilent('tellraw @a "正在重新加载ing...q(≧▽≦q)"')

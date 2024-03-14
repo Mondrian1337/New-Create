@@ -26,4 +26,6 @@ StartupEvents.registry('fluid', e => {
 	Fluid('kerosene',0xFFD700,0xFFD700,0xFFD700)
 	// 工业燃油
 	Fluid('industrial_fuel',0xF4A460,0xF4A460,0xF4A460)
+	// 混合汽油
+	Fluid('mixed_gasoline',0xF0E68C,0xF0E68C,0xF0E68C)
 })

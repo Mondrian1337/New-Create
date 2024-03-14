@@ -712,8 +712,8 @@
 				item: "createdieselgenerators:gasoline_bucket"
 				type: "item"
 			}]
-			x: 12.0d
-			y: 3.0d
+			x: 13.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["77901ACF5BAB7B18"]
@@ -723,24 +723,8 @@
 				item: "createdieselgenerators:diesel_bucket"
 				type: "item"
 			}]
-			x: 11.0d
+			x: 13.0d
 			y: 3.0d
-		}
-		{
-			dependencies: [
-				"1EB8339555BCDB68"
-				"4FE4E7B453E29469"
-				"2D88E78573250089"
-				"22D49972B51452CE"
-			]
-			id: "6FB72B8D5393EF70"
-			tasks: [{
-				id: "046DAD3FA916E70A"
-				title: "&6炼油厂"
-				type: "checkmark"
-			}]
-			x: 11.5d
-			y: 4.0d
 		}
 		{
 			dependencies: ["77901ACF5BAB7B18"]
@@ -761,8 +745,8 @@
 				item: "kubejs:industrial_fuel_bucket"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 3.0d
+			x: 10.0d
+			y: 2.0d
 		}
 	]
 	title: "No.2-2"

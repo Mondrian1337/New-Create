@@ -211,4 +211,22 @@ ServerEvents.recipes(e => {
 			"item": 'kubejs:mold_block'
 		}
 	})
+
+	// test
+	e.custom({
+		"type": "immersiveengineering:refinery",
+		"energy": 240,
+		"input0": {
+			"amount": 12,
+			"tag": "forge:acetaldehyde"
+		},
+		"input1": {
+			"amount": 8,
+			"tag": "forge:creosote"
+		},
+		"result": {
+			"amount": 8,
+			"fluid": "immersiveengineering:phenolic_resin"
+		}
+	})
 })
