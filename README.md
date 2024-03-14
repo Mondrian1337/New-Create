@@ -1,3 +1,1 @@
-# BYD 测试用的
-
-> test
+# A Minecraft ModPack
