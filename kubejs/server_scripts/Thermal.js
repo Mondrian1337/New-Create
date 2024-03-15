@@ -137,4 +137,18 @@ ServerEvents.recipes(e => {
 	e.recipes.thermal.chiller('2x kubejs:plastic_sheet',[
 		Fluid.of('kubejs:mixed_gasoline',150)
 	]).energy(250)
+
+	// 极速冷冻机
+	shaped('thermal:machine_chiller',[
+		'AFA',
+		'BCB',
+		'DED'
+	],{
+		A: '#forge:plates/industrial_iron',
+		B: '#forge:gears/constantan',
+		C: 'thermal:machine_frame',
+		D: 'kubejs:cast_iron_sheet',
+		E: 'immersiveengineering:circuit_board',
+		F: 'thermal:rf_coil'
+	})
 })

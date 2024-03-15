@@ -118,6 +118,20 @@ ServerEvents.recipes(e => {
 		e.remove({ output: Item })
 	})
 
+
+	// Thermal Mechines
+	let Mechines = [
+		'thermal:machine_brewer','thermal:machine_crystallizer','thermal:machine_crafter',
+		'thermal:machine_bottler','thermal:machine_pyrolyzer','thermal:machine_refinery',
+		'thermal:machine_furnace','thermal:machine_sawmill','thermal:machine_pulverizer',
+		'thermal:machine_chiller','thermal:machine_crucible','thermal:machine_press',
+		'thermal:machine_centrifuge','thermal:machine_insolator','thermal:machine_smelter',
+	]
+	Mechines.forEach(remove=>{
+		e.remove({output:remove})
+	})
+
+	
 	// 删除id
 	let Remove_ID = [
 		'thermal:devices/tree_extractor/tree_extractor_dark_oak',
@@ -129,7 +143,7 @@ ServerEvents.recipes(e => {
 		'immersiveengineering:crafting/raw_hammercrushing_iron',
 		'immersiveengineering:crafting/hammercrushing_iron',
 		'thermal:machine_frame',
-		'immersiveengineering:crafting/fluid_pipe'
+		'immersiveengineering:crafting/fluid_pipe',
 	]
 	Remove_ID.forEach(ID => {
 		e.remove({ id: ID })

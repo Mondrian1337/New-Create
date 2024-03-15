@@ -5,7 +5,8 @@ JEIEvents.addItems(e => {
 		'create:shadow_steel_casing',
 		'create:refined_radiance',
 		'create:refined_radiance_casing',
-		'createdieselgenerators:pumpjack_hole'
+		'createdieselgenerators:pumpjack_hole',
+		'thermal:rf_coil'
 	]
 	Item.forEach(Item => {
 		e.add(Item)
