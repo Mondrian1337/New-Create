@@ -711,8 +711,7 @@ ServerEvents.recipes(e => {
 		])
 
 	// 智能构建
-	sequenced_assembly(
-		[
+	sequenced_assembly([
 			Item.of('create_dd:calculation_mechanism').withChance(0.6),
 			Item.of('create:cogwheel').withChance(0.2),
   			Item.of('ad_astra:steel_ingot').withChance(0.1),
