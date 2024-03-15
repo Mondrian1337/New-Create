@@ -212,7 +212,7 @@ ServerEvents.recipes(e => {
 		C: 'create:andesite_alloy'
 	})
 
-	//轧机
+	// 轧机
 	shaped_table('createaddition:rolling_mill', [
 		'AABAA',
 		'ED DE',
@@ -239,5 +239,20 @@ ServerEvents.recipes(e => {
 		D: 'immersiveengineering:logic_circuit',
 		E: 'kubejs:inductive_mechanism',
 		F: '#forge:wires/iron'
+	})
+
+	// 红石通量单元框架
+	shaped_table('thermal:energy_cell_frame',[
+		'ABABA',
+		'BCDCB',
+		'ADEDA',
+		'BCDCB',
+		'ABABA'
+	],{
+		A: '#forge:plates/lumium',
+		B: '#forge:plates/lead',
+		C: 'immersiveengineering:toolupgrade_revolver_electro',
+		D: 'thermal:rf_coil',
+		E: 'kubejs:calculation_mechanism'
 	})
 })

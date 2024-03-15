@@ -930,6 +930,45 @@
 			x: 10.5d
 			y: 5.0d
 		}
+		{
+			dependencies: ["3F37643F28E61620"]
+			id: "147D028F3CB2DFA9"
+			tasks: [{
+				id: "312084AE2E887490"
+				item: "immersiveengineering:component_electronic_adv"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["147D028F3CB2DFA9"]
+			id: "7A3215A7B7B8BD32"
+			tasks: [{
+				id: "66FAA186A42BC0C4"
+				item: "kubejs:calculation_mechanism"
+				type: "item"
+			}]
+			x: 15.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"7CD39D6F5E032512"
+				"7A3215A7B7B8BD32"
+			]
+			id: "27FF6C846EE2E782"
+			shape: "hexagon"
+			size: 2.5d
+			tasks: [{
+				id: "0A078C72B90F4408"
+				item: "thermal:energy_cell_frame"
+				type: "item"
+			}]
+			title: "&6新纪元！！！"
+			x: 15.785714285714299d
+			y: 6.5764455782312865d
+		}
 	]
 	title: "No.2-2"
 }

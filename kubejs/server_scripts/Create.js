@@ -730,4 +730,14 @@ ServerEvents.recipes(e => {
 		'minecraft:lime_dye',
 		Fluid.water(200)
 	])
+
+	// 计算构建
+	sequenced_assembly('kubejs:calculation_mechanism','#forge:plates/lumium',[
+		deploying('#forge:plates/lumium',['#forge:gears/invar','#forge:gears/invar']),
+		deploying('#forge:plates/lumium',['createaddition:capacitor','createaddition:capacitor']),
+		deploying('#forge:plates/lumium',['#forge:nuggets/lead','#forge:nuggets/lead']),
+		deploying('#forge:plates/lumium',['immersiveengineering:component_electronic_adv','immersiveengineering:component_electronic_adv']),
+		deploying('#forge:plates/lumium',['immersiveengineering:wirecutter','immersiveengineering:wirecutter']),
+		pressing('#forge:plates/lumium','#forge:plates/lumium')
+	]).loops(1).transitionalItem('#forge:plates/lumium').damageIngredient('immersiveengineering:wirecutter')
 })
