@@ -694,21 +694,18 @@ ServerEvents.recipes(e => {
 	]).loops(1).transitionalItem('create_things_and_misc:rose_quartz_sheet').damageIngredient('immersiveengineering:wirecutter')
 
 	// 玫瑰石英量产产线
-	mixing(
-		Fluid.of('kubejs:rose_quartz_fluid',200),[
+	mixing(Fluid.of('kubejs:rose_quartz_fluid',200),[
 			'4x minecraft:redstone',
 			'4x minecraft:quartz'
 		]).heated()
 
-	filling(
-		'create:polished_rose_quartz',[
+	filling('create:polished_rose_quartz',[
 			'minecraft:quartz',
 			Fluid.of('kubejs:rose_quartz_fluid',100)
 		])
 
 	// 机器框架
-	item_application(
-		'thermal:machine_frame',[
+	item_application('thermal:machine_frame',[
 			'create_dd:steel_casing',
 			'thermal:rf_coil'
 		])
