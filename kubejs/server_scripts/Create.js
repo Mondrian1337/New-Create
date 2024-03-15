@@ -712,4 +712,26 @@ ServerEvents.recipes(e => {
 			'create_dd:steel_casing',
 			'thermal:rf_coil'
 		])
+
+	// 智能构建
+	sequenced_assembly(
+		[
+			Item.of('create_dd:calculation_mechanism').withChance(0.6),
+			Item.of('create:cogwheel').withChance(0.2),
+  			Item.of('ad_astra:steel_ingot').withChance(0.1),
+			Item.of('minecraft:oak_button').withChance(0.1)],
+			'#forge:plates/steel',[
+			pressing('#forge:plates/steel','#forge:plates/steel'),
+			deploying('#forge:plates/steel',['immersiveengineering:plate_duroplast','immersiveengineering:plate_duroplast']),
+			deploying('#forge:plates/steel',['create:cogwheel','create:cogwheel']),
+			deploying('#forge:plates/steel',['#forge:nuggets/brass','#forge:nuggets/brass']),
+			pressing('#forge:plates/steel','#forge:plates/steel')
+		]).loops(2).transitionalItem('#forge:plates/steel')
+
+	// 粘液球量产
+	mixing('minecraft:slime_ball',[
+		'create:dough',
+		'minecraft:lime_dye',
+		Fluid.water(200)
+	])
 })

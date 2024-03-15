@@ -244,4 +244,47 @@ ServerEvents.recipes(e => {
 			"item": 'create_dd:steel_casing'
 		}
 	})
+
+	// 真空管
+	e.custom({
+		"type": "immersiveengineering:blueprint",
+		"category": "components",
+		"inputs": [
+			{
+				"tag": "forge:glass"
+			},
+			{
+				"tag": "forge:plates/nickel"
+			},
+			{
+				"tag": "forge:wires/copper"
+			},
+			{
+				"item": 'kubejs:plastic_sheet'
+			}
+		],
+		"result": {
+			"count": 3,
+			"item": "immersiveengineering:electron_tube"
+		}
+	}).id('immersiveengineering:blueprint/electron_tube')
+
+	// 加强电子管
+	shaped('immersiveengineering:toolupgrade_revolver_electro',[
+		'AAA',
+		'DED',
+		'BCB'
+	],{
+		A: 'immersiveengineering:electron_tube',
+		B: '#forge:rods/copper',
+		C: '#forge:wires/copper',
+		D: 'kubejs:carbon_plate',
+		E: 'create_dd:calculation_mechanism'
+	}).id('immersiveengineering:crafting/toolupgrade_revolver_electro')
+
+	// 流体管道
+	compacting('immersiveengineering:fluid_pipe',[
+		'4x kubejs:cast_iron_sheet',
+		'2x minecraft:slime_ball'
+	])
 })

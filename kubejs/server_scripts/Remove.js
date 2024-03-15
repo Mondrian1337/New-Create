@@ -110,7 +110,9 @@ ServerEvents.recipes(e => {
 		'createdieselgenerators:pumpjack_crank',
 		'create_dd:industrial_casing',
 		'thermal:rf_coil',
-		'create_dd:steel_casing'
+		'create_dd:steel_casing',
+		'immersiveengineering:electron_tube',
+		'minecraft:slime_ball'
 	]
 	Remove_Item.forEach(Item => {
 		e.remove({ output: Item })
@@ -126,6 +128,8 @@ ServerEvents.recipes(e => {
 		'immersiveengineering:blastfurnace/steel',
 		'immersiveengineering:crafting/raw_hammercrushing_iron',
 		'immersiveengineering:crafting/hammercrushing_iron',
+		'thermal:machine_frame',
+		'immersiveengineering:crafting/fluid_pipe'
 	]
 	Remove_ID.forEach(ID => {
 		e.remove({ id: ID })
