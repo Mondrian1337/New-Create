@@ -731,7 +731,7 @@ ServerEvents.recipes(e => {
 		Fluid.water(200)
 	])
 
-	// 计算构建
+	// 计算构件
 	sequenced_assembly('kubejs:calculation_mechanism','#forge:plates/lumium',[
 		deploying('#forge:plates/lumium',['#forge:gears/invar','#forge:gears/invar']),
 		deploying('#forge:plates/lumium',['createaddition:capacitor','createaddition:capacitor']),
