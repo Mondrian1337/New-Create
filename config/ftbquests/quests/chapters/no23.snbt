@@ -788,7 +788,7 @@
 			y: 6.0d
 		}
 		{
-			dependencies: ["3DAD36FB74FC0B1D"]
+			dependencies: ["28CAD76D24CF1CAB"]
 			id: "507C8DE4D36C3108"
 			tasks: [{
 				id: "2185FE9DB6F5E165"
@@ -809,7 +809,7 @@
 			}]
 			title: "&6量产玫瑰石英"
 			x: 10.5d
-			y: 5.0d
+			y: 4.0d
 		}
 		{
 			dependencies: ["6148ECBD054BE8F3"]
@@ -918,6 +918,17 @@
 			}]
 			x: 15.0d
 			y: 2.0d
+		}
+		{
+			dependencies: ["3DAD36FB74FC0B1D"]
+			id: "28CAD76D24CF1CAB"
+			tasks: [{
+				id: "6764095333973F4E"
+				item: "thermal:rf_coil"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 5.0d
 		}
 	]
 	title: "No.2-2"
