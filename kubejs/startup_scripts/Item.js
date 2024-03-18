@@ -89,5 +89,7 @@ StartupEvents.registry('item', e => {
 		['in_sealed_mechanism'],
 		['in_sturdy_mechanism']
 	]
-	In_Item.forEach((Name) => { e.create(Name, 'create:sequenced_assembly') })
+	In_Item.forEach(([Name]) => {
+		e.create(Name, 'create:sequenced_assembly')
+	})
 })
