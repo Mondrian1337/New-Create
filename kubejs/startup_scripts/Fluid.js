@@ -1,33 +1,21 @@
 StartupEvents.registry('fluid', e => {
-	let Fluid = (
-		Name,
-		Thin,
-		Thick,
-		Bucket
-	) => {
+	let Fluid = [
+		['andesite_compound_fluid', 0x808080],
+		['embalming_fluid', 0x8B4513],
+		['working_fluid', 0xF5F5F5],
+		['zinc_fluid', 0xB9E9C1],
+		['cast_fluid', 0x3E3E3E],
+		['kerosene', 0xFFD700],
+		['industrial_fuel', 0xF4A460],
+		['mixed_gasoline', 0xF0E68C],
+		['rose_quartz_fluid', 0xFF1493],
+	]
+	Fluid.forEach(([Name, Color]) => {
 		e.create(Name)
-			.thinTexture(Thin)
-			.thickTexture(Thick)
-			.bucketColor(Bucket)
+			.thinTexture(Color)
+			.thickTexture(Color)
+			.bucketColor(Color)
 			.flowingTexture('kubejs:block/flowing')
 			.stillTexture('kubejs:block/still')
-	}
-	// 安山混合液
-	Fluid('andesite_compound_fluid', 0x808080, 0x808080, 0x808080)
-	// 防腐液
-	Fluid('embalming_fluid', 0x8B4513, 0x8B4513, 0x8B4513)
-	// 加工液
-	Fluid('working_fluid', 0xF5F5F5, 0xF5F5F5, 0xF5F5F5)
-	// 锌流体
-	Fluid('zinc_fluid', 0xB9E9C1, 0xB9E9C1, 0xB9E9C1)
-	// 铸铁溶液
-	Fluid('cast_fluid', 0x3E3E3E, 0x3E3E3E, 0x3E3E3E)
-	// 煤油
-	Fluid('kerosene',0xFFD700,0xFFD700,0xFFD700)
-	// 工业燃油
-	Fluid('industrial_fuel',0xF4A460,0xF4A460,0xF4A460)
-	// 混合汽油
-	Fluid('mixed_gasoline',0xF0E68C,0xF0E68C,0xF0E68C)
-	// 玫瑰石英溶液
-	Fluid('rose_quartz_fluid',0xFF1493,0xFF1493,0xFF1493)
+	})
 })

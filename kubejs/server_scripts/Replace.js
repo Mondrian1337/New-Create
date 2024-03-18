@@ -12,5 +12,5 @@ ServerEvents.recipes(e => {
 	// 等离子高炉
 	e.replaceInput('ad_astra:etrionic_blast_furnace', '#forge:plates/iron', 'kubejs:cast_iron_sheet')
 	// 钢锭替换
-	e.replaceOutput({},'immersiveengineering:ingot_steel','ad_astra:steel_ingot')
+	e.replaceOutput({}, 'immersiveengineering:ingot_steel', 'ad_astra:steel_ingot')
 })

@@ -9,6 +9,7 @@ ItemEvents.tooltip(e => {
 		translate('tooltip.kubejs.grass_fiber')
 	])
 
+	// 手枪
 	e.add('immersiveengineering:toolupgrade_revolver_electro',[
 		translate('tooltip.immersiveengineering.toolupgrade_revolver_electro')
 	])
