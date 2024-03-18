@@ -697,50 +697,6 @@
 			x: -1.0d
 			y: -1.0d
 		}
-		{
-			dependencies: ["460E7915B6C733EA"]
-			id: "2A84F3B0CCD76486"
-			tasks: [{
-				id: "29B6AF04A50D8014"
-				item: "create_new_age:redstone_magnet"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["2A84F3B0CCD76486"]
-			id: "6F2027C5AC6F0D8D"
-			tasks: [{
-				id: "21B93AE906544669"
-				item: "create_new_age:layered_magnet"
-				type: "item"
-			}]
-			x: 1.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["6F2027C5AC6F0D8D"]
-			id: "4562A0B0473474C3"
-			tasks: [{
-				id: "6E56EB8AF3AF49FE"
-				item: "create_new_age:fluxuated_magnetite"
-				type: "item"
-			}]
-			x: 2.4434523809523654d
-			y: 5.023809523809533d
-		}
-		{
-			dependencies: ["4562A0B0473474C3"]
-			id: "49F04718732AE81D"
-			tasks: [{
-				id: "738F3517178FE6C5"
-				item: "create_new_age:netherite_magnet"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 6.0d
-		}
 	]
-	title: "No.2-1 "
+	title: "No.2-1  Create"
 }

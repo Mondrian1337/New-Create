@@ -1,4 +1,4 @@
-//高炉多方块合成
+// 高炉多方块合成
 BlockCrafting.addMultiblockStructure(
 	MultiblockStructureBuilder.create('minecraft:blast_furnace')
 		.pattern('aaa', 'bbb', 'bbb')
@@ -13,7 +13,7 @@ BlockCrafting.addMultiblockStructure(
 		.build()
 )
 
-//熔炉核心
+// 熔炉核心
 BlockCrafting.addMultiblockStructure(
 	MultiblockStructureBuilder.create('kubejs:furnace_core')
 		.pattern('aaa', 'aaa', 'aaa')

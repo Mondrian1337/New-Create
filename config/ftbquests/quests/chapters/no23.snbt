@@ -702,7 +702,7 @@
 				type: "item"
 			}]
 			x: 11.5d
-			y: 2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["77901ACF5BAB7B18"]
@@ -712,8 +712,8 @@
 				item: "createdieselgenerators:gasoline_bucket"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 3.0d
+			x: 11.0d
+			y: 3.5d
 		}
 		{
 			dependencies: ["77901ACF5BAB7B18"]
@@ -723,8 +723,8 @@
 				item: "createdieselgenerators:diesel_bucket"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 2.0d
+			x: 12.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["77901ACF5BAB7B18"]
@@ -734,8 +734,8 @@
 				item: "kubejs:kerosene_bucket"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 2.0d
+			x: 10.5d
+			y: 2.5d
 		}
 		{
 			dependencies: ["77901ACF5BAB7B18"]
@@ -745,230 +745,199 @@
 				item: "kubejs:industrial_fuel_bucket"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 3.0d
+			x: 12.0d
+			y: 3.5d
 		}
 		{
 			dependencies: [
 				"4FE4E7B453E29469"
 				"22D49972B51452CE"
 			]
-			id: "4DAA244683C0BEA7"
+			id: "448028825B010947"
 			tasks: [{
-				id: "45EB34238CB35217"
+				id: "581C15894D6E8029"
 				title: "&6炼油厂"
 				type: "checkmark"
 			}]
 			x: 11.5d
-			y: 4.0d
+			y: 4.5d
 		}
 		{
-			dependencies: ["4DAA244683C0BEA7"]
-			id: "17C1849ED5F25AEA"
+			dependencies: ["448028825B010947"]
+			id: "6D487531D83FC806"
 			tasks: [{
-				id: "1BDF2E28F599B80E"
+				id: "35EE64BB3684784C"
 				item: "kubejs:mixed_gasoline_bucket"
 				type: "item"
 			}]
 			x: 11.5d
-			y: 5.0d
+			y: 5.5d
 		}
 		{
-			dependencies: [
-				"17C1849ED5F25AEA"
-				"507C8DE4D36C3108"
-			]
-			id: "6148ECBD054BE8F3"
+			dependencies: ["5A3B8D588B2DFB69"]
+			id: "6A726C92FF74F0C0"
 			tasks: [{
-				id: "43009723D2839650"
+				id: "32A4CCE0F8AED48A"
 				item: "kubejs:plastic_sheet"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 6.0d
+			x: 12.5d
+			y: 5.5d
 		}
 		{
-			dependencies: ["28CAD76D24CF1CAB"]
-			id: "507C8DE4D36C3108"
+			dependencies: ["6A726C92FF74F0C0"]
+			id: "575494C93DAD95D5"
 			tasks: [{
-				id: "2185FE9DB6F5E165"
-				item: "thermal:machine_chiller"
-				type: "item"
-			}]
-			x: 10.5d
-			y: 6.0d
-		}
-		{
-			dependencies: ["34A1D0679852D9C1"]
-			id: "3DAD36FB74FC0B1D"
-			tasks: [{
-				count: 128L
-				id: "08B046CC63D372B3"
-				item: "create:polished_rose_quartz"
-				type: "item"
-			}]
-			title: "&6量产玫瑰石英"
-			x: 10.5d
-			y: 4.0d
-		}
-		{
-			dependencies: ["6148ECBD054BE8F3"]
-			id: "51D6BE1C859FBF1A"
-			tasks: [{
-				id: "2F155CFC084CD899"
+				id: "3879B144C8AAFC8C"
 				item: "immersiveengineering:electron_tube"
 				type: "item"
 			}]
-			x: 12.817346938775543d
-			y: 6.021938775510193d
+			x: 12.5d
+			y: 6.5d
 		}
 		{
-			dependencies: [
-				"51D6BE1C859FBF1A"
-				"51AD403E075B4587"
-			]
-			id: "7CD39D6F5E032512"
+			dependencies: ["575494C93DAD95D5"]
+			id: "322E0F6897A2D5FB"
 			tasks: [{
-				id: "7E4974ACD0D5CFF9"
+				id: "197F63D33F1062AB"
 				item: "immersiveengineering:toolupgrade_revolver_electro"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 6.0d
-		}
-		{
-			dependencies: ["3F37643F28E61620"]
-			id: "51AD403E075B4587"
-			tasks: [{
-				id: "5D31533752DEEDFA"
-				item: "create_dd:calculation_mechanism"
-				type: "item"
-			}]
-			x: 14.0d
-			y: 5.0d
+			x: 13.5d
+			y: 7.0d
 		}
 		{
 			dependencies: [
-				"3A4EF78AE3210A5E"
-				"7AE62C3E07FAAA6E"
-				"705C326DBEE9FEC8"
+				"322E0F6897A2D5FB"
+				"28CBB93704345791"
 			]
-			description: [""]
-			hide_dependency_lines: true
-			id: "34F77D8FB175C757"
-			tasks: [
-				{
-					id: "7232C91AD9E4BCBA"
-					title: "灌装机"
-					type: "checkmark"
-				}
-				{
-					id: "36C2B5C5BB66A600"
-					item: "immersiveengineering:fluid_pump"
-					type: "item"
-				}
-			]
-			title: "&6灌装机"
-			x: 14.0d
-			y: 3.0d
-		}
-		{
-			dependencies: ["34F77D8FB175C757"]
-			id: "3F37643F28E61620"
+			id: "7DB50F72D65346B2"
+			shape: "pentagon"
+			size: 3.0d
 			tasks: [{
-				id: "0977D5DEC08342CF"
-				item: "immersiveengineering:plate_duroplast"
+				id: "1C6690A3F29A7A98"
+				item: "thermal:energy_cell_frame"
 				type: "item"
 			}]
-			x: 14.0d
-			y: 4.0d
+			x: 13.5d
+			y: 9.0d
 		}
 		{
-			dependencies: ["17E9642589F17BE2"]
-			id: "210645987C506DF1"
-			tasks: [
-				{
-					id: "6254F974429C575E"
-					item: "create:dough"
-					type: "item"
-				}
-				{
-					id: "2A2AEB7EA682AB1D"
-					item: "minecraft:lime_dye"
-					type: "item"
-				}
-				{
-					id: "482D7253F828D6FE"
-					item: "minecraft:water_bucket"
-					type: "item"
-				}
-			]
-			title: "&6粘液球量产"
-			x: 14.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["210645987C506DF1"]
-			id: "1585B59300A80411"
+			dependencies: ["6BD5E537AB96529E"]
+			id: "414DA18E21CBEBD9"
 			tasks: [{
-				count: 256L
-				id: "7EE815BAC8CBD749"
-				item: "minecraft:slime_ball"
-				type: "item"
-			}]
-			x: 15.0d
-			y: 2.0d
-		}
-		{
-			dependencies: ["3DAD36FB74FC0B1D"]
-			id: "28CAD76D24CF1CAB"
-			tasks: [{
-				id: "6764095333973F4E"
+				id: "19E806E6F0B8D0D6"
 				item: "thermal:rf_coil"
 				type: "item"
 			}]
 			x: 10.5d
-			y: 5.0d
-		}
-		{
-			dependencies: ["3F37643F28E61620"]
-			id: "147D028F3CB2DFA9"
-			tasks: [{
-				id: "312084AE2E887490"
-				item: "immersiveengineering:component_electronic_adv"
-				type: "item"
-			}]
-			x: 15.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["147D028F3CB2DFA9"]
-			id: "7A3215A7B7B8BD32"
-			tasks: [{
-				id: "66FAA186A42BC0C4"
-				item: "kubejs:calculation_mechanism"
-				type: "item"
-			}]
-			x: 15.0d
-			y: 5.0d
+			y: 6.5d
 		}
 		{
 			dependencies: [
-				"7CD39D6F5E032512"
-				"7A3215A7B7B8BD32"
+				"6D487531D83FC806"
+				"414DA18E21CBEBD9"
 			]
-			id: "27FF6C846EE2E782"
-			shape: "hexagon"
-			size: 2.5d
+			id: "5A3B8D588B2DFB69"
 			tasks: [{
-				id: "0A078C72B90F4408"
-				item: "thermal:energy_cell_frame"
+				id: "3C2163B5A84A0828"
+				item: "thermal:machine_chiller"
 				type: "item"
 			}]
-			title: "&6新纪元！！！"
-			x: 15.785714285714299d
-			y: 6.5764455782312865d
+			x: 11.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["2417C6728C7512FC"]
+			id: "6BD5E537AB96529E"
+			tasks: [{
+				count: 256L
+				id: "2C2DD77EA7821918"
+				item: "create:polished_rose_quartz"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5E64FB6BCCC2DCC2"]
+			id: "2417C6728C7512FC"
+			tasks: [{
+				id: "5DFDD5357A56D5A0"
+				item: "kubejs:rose_quartz_fluid_bucket"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3DBE4D0DD20AE7F9"]
+			id: "5E64FB6BCCC2DCC2"
+			tasks: [
+				{
+					count: 4L
+					id: "46AAFADDA5D9BAD8"
+					item: "minecraft:quartz"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "37261BDCA14AD0BF"
+					item: "minecraft:redstone"
+					type: "item"
+				}
+			]
+			x: 8.5d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"4EF9DC3C984883CE"
+				"575494C93DAD95D5"
+			]
+			id: "28CBB93704345791"
+			tasks: [{
+				id: "55D7D758374CD0B1"
+				item: "kubejs:calculation_mechanism"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["6F585CAC89A82037"]
+			id: "4EF9DC3C984883CE"
+			tasks: [{
+				id: "00341EB3E68AD313"
+				item: "immersiveengineering:component_electronic_adv"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["7539FEA03D853768"]
+			id: "6F585CAC89A82037"
+			tasks: [{
+				id: "1009A0847A574E86"
+				item: "immersiveengineering:plate_duroplast"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["48D8D3CE8FBCA2C3"]
+			hide_dependency_lines: true
+			id: "7539FEA03D853768"
+			tasks: [{
+				id: "7D0397220E5C26DF"
+				title: "&6灌装机"
+				type: "checkmark"
+			}]
+			x: 9.5d
+			y: 7.0d
 		}
 	]
-	title: "No.2-2"
+	title: "No.2-2 Base Industry"
 }

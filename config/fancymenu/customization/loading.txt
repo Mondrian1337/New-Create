@@ -49,7 +49,7 @@ customization {
   width = 264
   action = deep_customization_element:drippy_overlay_progress_bar
   actionid = b1df8ec1-b0ea-4ec6-9bf0-55c1f831af1c1704707741940
-  y = 215
+  y = 214
   height = 10
 }
 

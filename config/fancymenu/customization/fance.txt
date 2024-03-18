@@ -294,11 +294,11 @@ customization {
 customization {
   path = FancyMenu/title.png
   orientation = top-left
-  x = 157
-  width = 303
+  x = 149
+  width = 331
   action = addtexture
   actionid = aaacb27e-d682-43fe-8fc2-97d2c2ba894c1710210874566
-  y = 58
+  y = 78
   height = 51
 }
 
@@ -312,9 +312,9 @@ customization {
   refresh = false
   bouncing = true
   vanilla-like = false
-  x = 249
+  x = 261
   actionid = 3a5095cd-b1d7-4c39-b2cf-ef8c3745a3f31710210902900
   action = addsplash
-  y = 144
+  y = 155
 }
 

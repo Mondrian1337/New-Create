@@ -121,17 +121,17 @@ ServerEvents.recipes(e => {
 
 	// Thermal Mechines
 	let Mechines = [
-		'thermal:machine_brewer','thermal:machine_crystallizer','thermal:machine_crafter',
-		'thermal:machine_bottler','thermal:machine_pyrolyzer','thermal:machine_refinery',
-		'thermal:machine_furnace','thermal:machine_sawmill','thermal:machine_pulverizer',
-		'thermal:machine_chiller','thermal:machine_crucible','thermal:machine_press',
-		'thermal:machine_centrifuge','thermal:machine_insolator','thermal:machine_smelter',
+		'thermal:machine_brewer', 'thermal:machine_crystallizer', 'thermal:machine_crafter',
+		'thermal:machine_bottler', 'thermal:machine_pyrolyzer', 'thermal:machine_refinery',
+		'thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer',
+		'thermal:machine_chiller', 'thermal:machine_crucible', 'thermal:machine_press',
+		'thermal:machine_centrifuge', 'thermal:machine_insolator', 'thermal:machine_smelter',
 	]
-	Mechines.forEach(remove=>{
-		e.remove({output:remove})
+	Mechines.forEach(remove => {
+		e.remove({ output: remove })
 	})
 
-	
+
 	// 删除id
 	let Remove_ID = [
 		'thermal:devices/tree_extractor/tree_extractor_dark_oak',
@@ -159,15 +159,15 @@ ServerEvents.recipes(e => {
 	Remove_Type.forEach(Type => {
 		e.remove({ type: Type })
 	})
-	
+
 	//移除所有工作台合成齿轮配方
 	e.remove({ output: '#forge:gears', type: "minecraft:crafting_shaped" })
 
 	//删除mod合成表
-	let Remove_Mod_recipes =[
+	let Remove_Mod_recipes = [
 
 	]
-	Remove_Mod_recipes.forEach(Type=>{
-		e.remove({mod:Type})
+	Remove_Mod_recipes.forEach(Type => {
+		e.remove({ mod: Type })
 	})
 })
