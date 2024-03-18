@@ -93,3 +93,5 @@ StartupEvents.registry('item', e => {
 		e.create(Name, 'create:sequenced_assembly')
 	})
 })
+
+// test
