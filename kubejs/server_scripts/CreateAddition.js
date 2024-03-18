@@ -123,11 +123,7 @@ ServerEvents.recipes(e => {
 		"maxChargeRate": 200
 	}).id('immersiveengineering:crafting/rs_engineering')
 
-<<<<<<< HEAD
-	//原油蒸馏
-=======
 	// 原油蒸馏
->>>>>>> efbf1193e72c6e2d94cd6cd92db287bd744f2f91
 	e.custom({
 		"type": "createdieselgenerators:distillation",
 		"ingredients": [
