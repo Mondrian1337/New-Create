@@ -2,11 +2,11 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "no61"
-	group: "1C480BC57A26FD58"
+	group: "1544C503D6236682"
 	icon: "ae2:wireless_terminal"
 	id: "2CFB7EA9E0AF847D"
-	order_index: 0
+	order_index: 2
 	quest_links: [ ]
 	quests: [ ]
-	title: "No.6-1"
+	title: "No.3-3"
 }

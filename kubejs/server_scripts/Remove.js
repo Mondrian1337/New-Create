@@ -110,12 +110,28 @@ ServerEvents.recipes(e => {
 		'createdieselgenerators:pumpjack_crank',
 		'create_dd:industrial_casing',
 		'thermal:rf_coil',
-		'create_dd:steel_casing'
+		'create_dd:steel_casing',
+		'immersiveengineering:electron_tube',
+		'minecraft:slime_ball'
 	]
 	Remove_Item.forEach(Item => {
 		e.remove({ output: Item })
 	})
 
+
+	// Thermal Mechines
+	let Mechines = [
+		'thermal:machine_brewer','thermal:machine_crystallizer','thermal:machine_crafter',
+		'thermal:machine_bottler','thermal:machine_pyrolyzer','thermal:machine_refinery',
+		'thermal:machine_furnace','thermal:machine_sawmill','thermal:machine_pulverizer',
+		'thermal:machine_chiller','thermal:machine_crucible','thermal:machine_press',
+		'thermal:machine_centrifuge','thermal:machine_insolator','thermal:machine_smelter',
+	]
+	Mechines.forEach(remove=>{
+		e.remove({output:remove})
+	})
+
+	
 	// 删除id
 	let Remove_ID = [
 		'thermal:devices/tree_extractor/tree_extractor_dark_oak',
@@ -126,6 +142,9 @@ ServerEvents.recipes(e => {
 		'immersiveengineering:blastfurnace/steel',
 		'immersiveengineering:crafting/raw_hammercrushing_iron',
 		'immersiveengineering:crafting/hammercrushing_iron',
+		'thermal:machine_frame',
+		'immersiveengineering:crafting/fluid_pipe',
+		'thermal:energy_cell_frame'
 	]
 	Remove_ID.forEach(ID => {
 		e.remove({ id: ID })

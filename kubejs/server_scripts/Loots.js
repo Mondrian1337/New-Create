@@ -49,6 +49,6 @@ LootJS.modifiers(e => {
 	// 烈焰人掉落头颅（吃抢夺附魔)
 	e.addEntityLootModifier("minecraft:blaze")
 		.killedByPlayer()
-		.randomChanceWithEnchantment("minecraft:looting", [0, 0.1, 0.15, 0.17])
+		.randomChanceWithEnchantment("minecraft:looting", [0, 0.1, 0.15, 0.17])// 无抢夺0% 抢夺1-10% 抢夺2-15% 抢夺3-17%
 		.addLoot('kubejs:blaze_head')
 })

@@ -1,10 +1,9 @@
 {
 	chapter_groups: [
 		{ id: "7D51E071024525B7", title: "&6No.2 原始社会发展" }
-		{ id: "1544C503D6236682", title: "&6No.3  第一次工业革命" }
-		{ id: "7D6869CA2DA09498", title: "&6No.4 第二次工业革命" }
-		{ id: "0AD4DC2E906068B1", title: "&6No.5 飞向太空!" }
-		{ id: "1C480BC57A26FD58", title: "&6No.6 高尖端科技技术" }
-		{ id: "2A249420D048661C", title: "&6 No.7 完结撒花~" }
+		{ id: "1544C503D6236682", title: "&6No.3  工业革命" }
+		{ id: "0AD4DC2E906068B1", title: "&6No.4 飞向太空!" }
+		{ id: "1C480BC57A26FD58", title: "&6No.5 高尖端科技技术" }
+		{ id: "2A249420D048661C", title: "&6 No.6 完结撒花~" }
 	]
 }

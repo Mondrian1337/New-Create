@@ -9,6 +9,10 @@ ItemEvents.tooltip(e => {
 		translate('tooltip.kubejs.grass_fiber')
 	])
 
+	e.add('immersiveengineering:toolupgrade_revolver_electro',[
+		translate('tooltip.immersiveengineering.toolupgrade_revolver_electro')
+	])
+
 	//
 	const flintTools = [
 		'sword', 'pickaxe', 'axe', 'handaxe', 'shovel'
