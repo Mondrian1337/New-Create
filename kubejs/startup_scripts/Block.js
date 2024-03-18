@@ -28,7 +28,7 @@ StartupEvents.registry('block', e => {
 	const iron = 'minecraft:needs_iron_tool'
 	const gold = 'minecraft:needs_gold_tool'
 	const nether = 'forge:needs_netherite_tool'
-	
+
 	// 烧焦圆石
 	Block('charred_cobblestone', 'stone', 3, 3, pickaxe, wooden, true)
 	// 铸铁块

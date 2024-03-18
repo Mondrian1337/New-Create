@@ -226,13 +226,13 @@ ServerEvents.recipes(e => {
 		E: '#forge:ingots/andesite_alloy'
 	})
 
-	shaped_table('6x createaddition:capacitor',[
+	shaped_table('6x createaddition:capacitor', [
 		' AAA ',
 		' ABA ',
 		' ACA ',
 		'ADEDA',
 		'AFAFA'
-	],{
+	], {
 		A: '#forge:plates/aluminum',
 		B: 'immersiveengineering:wirecoil_copper',
 		C: 'immersiveengineering:component_electronic',
@@ -242,13 +242,13 @@ ServerEvents.recipes(e => {
 	})
 
 	// 红石通量单元框架
-	shaped_table('thermal:energy_cell_frame',[
+	shaped_table('thermal:energy_cell_frame', [
 		'ABABA',
 		'BCDCB',
 		'ADEDA',
 		'BCDCB',
 		'ABABA'
-	],{
+	], {
 		A: '#forge:plates/lumium',
 		B: '#forge:plates/lead',
 		C: 'immersiveengineering:toolupgrade_revolver_electro',

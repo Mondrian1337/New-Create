@@ -1,7 +1,9 @@
 /.vscode
 /backups
+/config
 /coremods
 /CustomSkinLoader
+/crash-reports
 /fancymenu_data
 /fancymenu_setups
 /icon.png

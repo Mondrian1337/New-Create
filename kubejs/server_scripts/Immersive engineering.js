@@ -270,11 +270,11 @@ ServerEvents.recipes(e => {
 	}).id('immersiveengineering:blueprint/electron_tube')
 
 	// 加强电子管
-	shaped('immersiveengineering:toolupgrade_revolver_electro',[
+	shaped('immersiveengineering:toolupgrade_revolver_electro', [
 		'AAA',
 		'DED',
 		'BCB'
-	],{
+	], {
 		A: 'immersiveengineering:electron_tube',
 		B: '#forge:rods/copper',
 		C: '#forge:wires/copper',
@@ -283,7 +283,7 @@ ServerEvents.recipes(e => {
 	}).id('immersiveengineering:crafting/toolupgrade_revolver_electro')
 
 	// 流体管道
-	compacting('immersiveengineering:fluid_pipe',[
+	compacting('immersiveengineering:fluid_pipe', [
 		'4x kubejs:cast_iron_sheet',
 		'2x minecraft:slime_ball'
 	])
