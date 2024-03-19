@@ -1,5 +1,5 @@
 ItemEvents.tooltip(e => {
-	let { translate } = Text
+	const { translate } = Text
 	// 草绳
 	e.add('kubejs:grass_string', [
 		translate('tooltip.kubejs.grass_string')
@@ -10,14 +10,12 @@ ItemEvents.tooltip(e => {
 	])
 
 	// 手枪
-	e.add('immersiveengineering:toolupgrade_revolver_electro',[
-		translate('tooltip.immersiveengineering.toolupgrade_revolver_electro')
+	e.add('immersiveengineering:toolupgrade_revolver_electro', [
+		translate('tooltip.ie.toolupgrade_revolver_electro')
 	])
 
 	//
-	const flintTools = [
-		'sword', 'pickaxe', 'axe', 'handaxe', 'shovel'
-	]
+	const flintTools = ['sword', 'pickaxe', 'axe', 'handaxe', 'shovel']
 
 	// 燧石工具
 	flintTools.forEach(tools => {

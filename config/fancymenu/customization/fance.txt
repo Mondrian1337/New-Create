@@ -19,6 +19,11 @@ customization {
 }
 
 customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_copyright_button%
+  action = hidebutton
+}
+
+customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
   orientation = mid-left
   x = 16
@@ -149,11 +154,6 @@ customization {
   action = setbuttontexture
   backgroundhovered = FancyMenu/config.png
   backgroundnormal = FancyMenu/config.png
-}
-
-customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_copyright_button%
-  action = hidebutton
 }
 
 customization {
@@ -294,12 +294,12 @@ customization {
 customization {
   path = FancyMenu/title.png
   orientation = top-left
-  x = 149
-  width = 331
+  x = 161
+  width = 287
   action = addtexture
   actionid = aaacb27e-d682-43fe-8fc2-97d2c2ba894c1710210874566
-  y = 78
-  height = 51
+  y = 56
+  height = 44
 }
 
 customization {
@@ -312,9 +312,9 @@ customization {
   refresh = false
   bouncing = true
   vanilla-like = false
-  x = 261
+  x = 247
   actionid = 3a5095cd-b1d7-4c39-b2cf-ef8c3745a3f31710210902900
   action = addsplash
-  y = 155
+  y = 140
 }
 

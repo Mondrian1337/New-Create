@@ -453,13 +453,19 @@ ServerEvents.recipes(e => {
 	// 动力构件
 	sequenced_assembly([
 		'kubejs:kinetic_mechanism'
-	], '#minecraft:logs', [
-		cutting('#minecraft:logs', '#minecraft:logs'),
-		pressing('#minecraft:logs', '#minecraft:logs'),
-		deploying('#minecraft:logs', ['create:cogwheel', 'create:cogwheel']),
-		deploying('#minecraft:logs', ['#create:shaft_add', '#create:shaft_add']),
-		deploying('#minecraft:logs', ['create:andesite_alloy', 'create:andesite_alloy'])
+	], '#minecraft:wooden_slabs', [
+		deploying('#minecraft:wooden_slabs', ['create:cogwheel', 'create:cogwheel']),
+		deploying('#minecraft:wooden_slabs', ['#create:shaft_add', '#create:shaft_add']),
+		deploying('#minecraft:wooden_slabs', ['create:andesite_alloy', 'create:andesite_alloy'])
 	]).loops(1).transitionalItem('kubejs:in_kinetic_mechanism')
+
+	// 密封构件
+	sequenced_assembly([
+		'kubejs:sealed_mechanism'
+	], 'kubejs:kinetic_mechanism', [
+		deploying('kubejs:sealed_mechanism', ['kubejs:sealed_mechanism', '#forge:cured_rubber']),
+		deploying('kubejs:sealed_mechanism', ['kubejs:sealed_mechanism', '#forge:nuggets/iron'])
+	]).loops(8).transitionalItem('kubejs:in_sealed_mechanism')
 
 	// 交流发电机
 	mechanical_crafting('createaddition:alternator', [
@@ -519,12 +525,8 @@ ServerEvents.recipes(e => {
 	e.custom({
 		"type": "create_new_age:energising",
 		"energy_needed": 1200,
-		"ingredients": [
-			{ "tag": "forge:ingots/zinc" }
-		],
-		"results": [
-			{ "item": "kubejs:plating_zinc_ingot" }
-		]
+		"ingredients": [{ "tag": "forge:ingots/zinc" }],
+		"results": [{ "item": "kubejs:plating_zinc_ingot" }]
 	})
 
 	// 锌加工液
@@ -566,6 +568,16 @@ ServerEvents.recipes(e => {
 		deploying('immersiveengineering:circuit_board', ['kubejs:inductive_mechanism', 'kubejs:inductive_mechanism']),
 		deploying('immersiveengineering:circuit_board', ['kubejs:zinc_electron_tube', 'kubejs:zinc_electron_tube'])
 	]).transitionalItem('immersiveengineering:circuit_board').loops(1).damageIngredient('immersiveengineering:wirecutter')
+
+	// 坚固板
+	sequenced_assembly([
+		Item.of('create:sturdy_sheet').withChance(0.75),
+		Item.of('minecraft:gravel').withChance(0.25)
+	], '#forge:dusts/obsidian', [
+		pressing('create:unprocessed_obsidian_sheet', [
+			'create:unprocessed_obsidian_sheet'
+		])
+	]).loops(10).transitionalItem('create:unprocessed_obsidian_sheet')
 
 	// 特斯拉线圈
 	mechanical_crafting('createaddition:tesla_coil', [
@@ -712,17 +724,14 @@ ServerEvents.recipes(e => {
 
 	// 智能构建
 	sequenced_assembly([
-		Item.of('create_dd:calculation_mechanism').withChance(0.6),
-		Item.of('create:cogwheel').withChance(0.2),
-		Item.of('ad_astra:steel_ingot').withChance(0.1),
-		Item.of('minecraft:oak_button').withChance(0.1)],
-		'#forge:plates/steel', [
+		'create_dd:calculation_mechanism'
+	], '#forge:plates/steel', [
 		pressing('#forge:plates/steel', '#forge:plates/steel'),
 		deploying('#forge:plates/steel', ['immersiveengineering:plate_duroplast', 'immersiveengineering:plate_duroplast']),
 		deploying('#forge:plates/steel', ['create:cogwheel', 'create:cogwheel']),
 		deploying('#forge:plates/steel', ['#forge:nuggets/brass', '#forge:nuggets/brass']),
 		pressing('#forge:plates/steel', '#forge:plates/steel')
-	]).loops(2).transitionalItem('#forge:plates/steel')
+	]).loops(1).transitionalItem('#forge:plates/steel')
 
 	// 粘液球量产
 	mixing('minecraft:slime_ball', [
@@ -740,4 +749,13 @@ ServerEvents.recipes(e => {
 		deploying('#forge:plates/lumium', ['immersiveengineering:wirecutter', 'immersiveengineering:wirecutter']),
 		pressing('#forge:plates/lumium', '#forge:plates/lumium')
 	]).loops(1).transitionalItem('#forge:plates/lumium').damageIngredient('immersiveengineering:wirecutter')
+
+	// 下界构件
+	sequenced_assembly([
+		'kubejs:infernal_mechanism'
+	], 'create:precision_mechanism', [
+		filling('kubejs:infernal_mechanism', ['kubejs:infernal_mechanism', Fluid.of('minecraft:lava', 100)]),
+		deploying('kubejs:infernal_mechanism', ['kubejs:infernal_mechanism', '#forge:plates/obsidian']),
+		filling('kubejs:infernal_mechanism', ['kubejs:infernal_mechanism', Fluid.of('kubejs:soul', 100)])
+	]).loops(1).transitionalItem('kubejs:in_infernal_mechanism')
 })

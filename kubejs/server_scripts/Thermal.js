@@ -38,6 +38,11 @@ ServerEvents.recipes(e => {
 		Fluid.of('thermal:latex', 200)
 	])
 
+	// 硫化橡胶
+	smelting('thermal:cured_rubber', [
+		'thermal:rubber'
+	]).xp(10)
+
 	// 植物乳胶
 	e.custom({
 		"type": "caupona:aspic_melt",

@@ -543,4 +543,10 @@ ServerEvents.recipes(e => {
 	pressing('kubejs:cast_iron_sheet', [
 		'kubejs:cast_iron_ingot'
 	])
+
+	// 液态灵魂
+	mixing(Fluid.of('kubejs:soul', 50), [
+		'4x minecraft:weeping_vines',
+		'4x minecraft:twisting_vines'
+	]).heated()
 })

@@ -23,7 +23,7 @@
 		{
 			dependencies: ["57B10D84AF8804DC"]
 			description: [
-				"&a通过你的不懈努力，你突然脑洞大开&r"
+				"&a通过你的不懈努力，你突然脑洞大开(不是物理)&r"
 				"&a发现了新的物品：&r&e安山合金&r"
 				"&b至此你开始了新的旅途&r"
 			]
@@ -49,7 +49,7 @@
 		{
 			dependencies: ["20B347816F814F10"]
 			id: "0D90E2B1E5186F01"
-			shape: "rsquare"
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "56B7B108A13F3B62"
@@ -259,7 +259,7 @@
 		{
 			dependencies: ["66E133258A1C7B7B"]
 			id: "486C9B56954BA447"
-			shape: "rsquare"
+			shape: "hexagon"
 			size: 1.5d
 			tasks: [{
 				id: "099DBAF827214FE0"
@@ -696,6 +696,19 @@
 			}]
 			x: -1.0d
 			y: -1.0d
+		}
+		{
+			description: ["{image:kubejs:textures/images/6.png width:50 height:50 align:1}"]
+			id: "75C3550B51F8A601"
+			subtitle: "&4感觉有点邪门"
+			tasks: [{
+				id: "00AA8C1ACD299623"
+				item: "kubejs:infernal_mechanism"
+				type: "item"
+			}]
+			title: "&3多多少少带点恩怨("
+			x: -5.0d
+			y: -0.5d
 		}
 	]
 	title: "No.2-1  Create"
