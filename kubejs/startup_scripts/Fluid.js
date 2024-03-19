@@ -12,8 +12,6 @@ StartupEvents.registry('fluid', e => {
 	]
 	Fluid.forEach(([Name, Color]) => {
 		e.create(Name)
-			.thinTexture(Color)
-			.thickTexture(Color)
 			.bucketColor(Color)
 			.flowingTexture('kubejs:block/flowing')
 			.stillTexture('kubejs:block/still')
