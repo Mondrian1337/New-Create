@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "no1"
+	group: "7D6869CA2DA09498"
+	icon: "thermal:machine_furnace"
+	id: "25FC0F4076CF1414"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "No.3-1 IE + Thermal"
+}
