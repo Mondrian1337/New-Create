@@ -18,9 +18,13 @@ StartupEvents.registry('block', e => {
 
 	// 定义方块
 	let Block = [
+		// 烧焦圆石
 		['charred_cobblestone', 'stone', 3, 3, 'pickaxe', 'wooden', true],
+		// 铸铁块
 		['cast_iron_block', 'metal', 5, 5, 'pickaxe', 'stone', true],
+		// 熔炉核心
 		['furnace_core', 'stone', 3, 3, 'pickaxe', 'stone', true],
+		// 充电铁块
 		['charge_iron_block', 'metal', 5, 5, 'pickaxe', 'stone', true]
 	]
 

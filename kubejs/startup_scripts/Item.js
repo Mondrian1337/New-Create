@@ -16,11 +16,11 @@ StartupEvents.registry('item', e => {
 		['cast_electron_tube', 64, 'common', false],
 		// 锌电子管
 		['zinc_electron_tube', 64, 'common', false],
-		// 
+		// 坚固构件
 		['sturdy_mechanism', 64, 'common', false],
-		//
+		// 密封构件
 		['sealed_mechanism', 64, 'common', false],
-		//
+		// 动力构件
 		['kinetic_mechanism', 64, 'common', false],
 		// 彩虹月币
 		['rainbow_mooncoin', 16, 'epic', false],
@@ -47,7 +47,7 @@ StartupEvents.registry('item', e => {
 		['in_large_cogwheel', 64, 'common', false],
 		// 铸铁锭
 		['cast_iron_ingot', 64, 'common', false],
-		// 
+		// 合成轴承
 		['primary_bearing', 64, 'common', false],
 		// 铸铁板
 		['cast_iron_sheet', 64, 'common', false],
@@ -55,17 +55,17 @@ StartupEvents.registry('item', e => {
 		['carbon_plate', 64, 'common', false],
 		// 碳棒
 		['carbon_rod', 64, 'common', false],
-		// 
+		// 焦煤棒
 		['coking_coal_rod', 64, 'common', false],
-		// 
+		// 幽静构件
 		['abstruse_mechanism', 64, 'common', false],
-		//
+		// 计算构件
 		['calculation_mechanism', 64, 'common', false],
-		//
+		// 电脑构件
 		['computer_mechanism', 64, 'common', false],
-		//
+		// 电磁构件
 		['inductive_mechanism', 64, 'common', false],
-		//
+		// 下届构件
 		['infernal_mechanism', 64, 'common', false]
 	]
 	Item.forEach(([
@@ -81,12 +81,19 @@ StartupEvents.registry('item', e => {
 	})
 	// 半成品注册
 	let In_Item = [
+		// 幽静构件(未完成)
 		['in_abstruse_mechanism'],
+		// 计算构件(未完成)
 		['in_calculation_mechanism'],
+		// 电磁构件(未完成)
 		['in_inductive_mechanism'],
+		// 下届构件(未完成)
 		['in_infernal_mechanism'],
+		// 动力构件(未完成)
 		['in_kinetic_mechanism'],
+		// 密封构件(未完成)
 		['in_sealed_mechanism'],
+		//坚固构件(未完成)
 		['in_sturdy_mechanism']
 	]
 	In_Item.forEach(([Name]) => {
