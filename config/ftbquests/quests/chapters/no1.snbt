@@ -7,6 +7,41 @@
 	id: "25FC0F4076CF1414"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["7DB50F72D65346B2"]
+			id: "37CB5D8FF3EBE1F7"
+			size: 2.5d
+			tasks: [{
+				id: "29865ECE5D6F5453"
+				item: "thermal:energy_cell_frame"
+				type: "item"
+			}]
+			x: -7.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["37CB5D8FF3EBE1F7"]
+			id: "57D1D29330B51315"
+			tasks: [{
+				id: "3EC125D02DCEBF8D"
+				item: "thermal:machine_refinery"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["37CB5D8FF3EBE1F7"]
+			id: "0321E033B2D080B8"
+			tasks: [{
+				id: "389588AF03057611"
+				item: "thermal:machine_pyrolyzer"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -0.5d
+		}
+	]
 	title: "No.3-1 IE + Thermal"
 }
