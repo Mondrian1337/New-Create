@@ -17,7 +17,9 @@ StartupEvents.registry('fluid', e => {
 		// 混合汽油
 		['mixed_gasoline', 0xF0E68C],
 		// 玫瑰石英溶液
-		['rose_quartz_fluid', 0xFF1493]
+		['rose_quartz_fluid', 0xFF1493],
+		// 精炼油+
+		['high_grade_refined_oil', 0xDAA520]
 	]
 	Fluid.forEach(([Name, Color]) => {
 		e.create(Name)

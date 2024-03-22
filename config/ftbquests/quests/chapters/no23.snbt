@@ -939,7 +939,9 @@
 			y: 7.0d
 		}
 		{
+			dependencies: ["350A56E5147E87CC"]
 			description: ["&4I gusses you need this&r"]
+			hide_dependency_lines: true
 			id: "0B0EA0A7A063610A"
 			rewards: [{
 				id: "6B7AE1750716CBDB"
