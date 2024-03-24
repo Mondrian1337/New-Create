@@ -549,4 +549,13 @@ ServerEvents.recipes(e => {
 		'4x minecraft:weeping_vines',
 		'4x minecraft:twisting_vines'
 	]).heated()
+
+	// 锌锭获取
+	shaped('create:zinc_ingot',[
+		'AAA',
+		'AAA',
+		'AAA'
+	],{
+		A: 'create:zinc_nugget'
+	})
 })

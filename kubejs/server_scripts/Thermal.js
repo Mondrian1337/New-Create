@@ -183,4 +183,18 @@ ServerEvents.recipes(e => {
 		D: 'thermal:energy_cell_frame',
 		E: '#forge:plates/industrial_iron'
 	})
+
+	// 流体灌装机
+	shaped('thermal:machine_bottler',[
+		'AAA',
+		'BCD',
+		'EFE'
+	],{
+		A: 'thermal:invar_plate',
+		B: 'thermal:signalum_glass',
+		C: 'thermal:fluid_cell_frame',
+		D: '#forge:gears/lumium',
+		E: '#forge:plates/lead',
+		F: 'create:fluid_tank'
+	})
 })

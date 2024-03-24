@@ -129,8 +129,30 @@
 				type: "item"
 			}]
 			title: "&6电子管量产"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5B5AB021C4F4BFB8"]
+			id: "696726FEA75D95E4"
+			tasks: [{
+				id: "48D944A197227EC5"
+				item: "thermal:fluid_cell_frame"
+				type: "item"
+			}]
 			x: -1.0d
-			y: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["696726FEA75D95E4"]
+			id: "6DF67AF650313D57"
+			tasks: [{
+				id: "5276EBC234BCB9A3"
+				item: "thermal:machine_bottler"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
 		}
 	]
 	title: "No.3-1 IE + Thermal"
