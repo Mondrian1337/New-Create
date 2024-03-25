@@ -331,7 +331,7 @@ ServerEvents.recipes(e => {
 		'CCC',
 		'C C'
 	], {
-		C: 'kubejs:cast_iron_ingot'
+		C: '#forge:ingots/cast_iron'
 	}).id('minecraft:iron_helmet')
 
 	// 铸铁胸甲
@@ -340,7 +340,7 @@ ServerEvents.recipes(e => {
 		'CCC',
 		'CCC'
 	], {
-		C: 'kubejs:cast_iron_ingot'
+		C: '#forge:ingots/cast_iron'
 	}).id('minecraft:iron_chestplate')
 
 	// 铸铁裤腿
@@ -349,7 +349,7 @@ ServerEvents.recipes(e => {
 		'C C',
 		'C C'
 	], {
-		C: 'kubejs:cast_iron_ingot'
+		C: '#forge:ingots/cast_iron'
 	}).id('minecraft:iron_leggings')
 
 	// 铸铁靴子
@@ -357,7 +357,7 @@ ServerEvents.recipes(e => {
 		'C C',
 		'C C'
 	], {
-		C: 'kubejs:cast_iron_ingot'
+		C: '#forge:ingots/cast_iron'
 	}).id('minecraft:iron_boots')
 
 	// 铸铁剑
@@ -366,7 +366,7 @@ ServerEvents.recipes(e => {
 		'C',
 		'R'
 	], {
-		C: 'kubejs:cast_iron_ingot',
+		C: '#forge:ingots/cast_iron',
 		R: '#forge:rods/wooden'
 	}).id('minecraft:iron_sword')
 
@@ -376,7 +376,7 @@ ServerEvents.recipes(e => {
 		' R ',
 		' R '
 	], {
-		C: 'kubejs:cast_iron_ingot',
+		C: '#forge:ingots/cast_iron',
 		R: '#forge:rods/wooden'
 	}).id('minecraft:iron_pickaxe')
 
@@ -386,7 +386,7 @@ ServerEvents.recipes(e => {
 		'CR',
 		' R'
 	], {
-		C: 'kubejs:cast_iron_ingot',
+		C: '#forge:ingots/cast_iron',
 		R: '#forge:rods/wooden'
 	}).id('minecraft:iron_axe')
 
@@ -396,7 +396,7 @@ ServerEvents.recipes(e => {
 		'R',
 		'R'
 	], {
-		C: 'kubejs:cast_iron_ingot',
+		C: '#forge:ingots/cast_iron',
 		R: '#forge:rods/wooden'
 	}).id('minecraft:iron_shovel')
 
@@ -406,7 +406,7 @@ ServerEvents.recipes(e => {
 		' R',
 		' R'
 	], {
-		C: 'kubejs:cast_iron_ingot',
+		C: '#forge:ingots/cast_iron',
 		R: '#forge:rods/wooden'
 	}).id('minecraft:iron_hoe')
 
@@ -541,7 +541,7 @@ ServerEvents.recipes(e => {
 
 	// 铸铁板
 	pressing('kubejs:cast_iron_sheet', [
-		'kubejs:cast_iron_ingot'
+		'#forge:ingots/cast_iron'
 	])
 
 	// 液态灵魂
@@ -549,4 +549,4 @@ ServerEvents.recipes(e => {
 		'4x minecraft:weeping_vines',
 		'4x minecraft:twisting_vines'
 	]).heated()
-})
+})  

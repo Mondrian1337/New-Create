@@ -102,4 +102,14 @@ ServerEvents.tags('item', e => {
 		'immersiveengineering:mold_packing_9',
 		'kubejs:mold_block'
 	])
+
+	// 铸铁锭
+	e.add('forge:ingots/cast_iron', [
+		'kubejs:cast_iron_ingot'
+	])
+
+	// 铸铁块
+	e.add('forge:storage_blocks/cast_iron', [
+		'kubejs:cast_iron_block'
+	])
 })
