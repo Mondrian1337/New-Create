@@ -19,11 +19,6 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_titlescreen_copyright_button%
-  action = hidebutton
-}
-
-customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_multiplayer_button%
   orientation = mid-left
   x = 16
@@ -157,6 +152,11 @@ customization {
 }
 
 customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_copyright_button%
+  action = hidebutton
+}
+
+customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_language_button%
   orientation = mid-left
   x = 120
@@ -277,7 +277,7 @@ customization {
   enable_scrolling = true
   shadow = true
   scale = 1.0
-  source = Minecraft Version:1.20.1 Forge-47.2.20%n%Modpack Version:Test
+  source = Minecraft Version:1.20.1 Forge-47.2.20%n%Modpack Version:0.7 Alpha
   text_border = 0
   case_mode = normal
   source_mode = direct

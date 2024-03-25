@@ -266,14 +266,46 @@
 			y: 3.0d
 		}
 		{
+			dependencies: ["55E2844C773D925A"]
 			id: "6671B5400A00D016"
 			tasks: [{
 				id: "43E7E8F0EE823C48"
 				item: "kubejs:infernal_mechanism"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 3.5d
+			x: -1.8035714285714377d
+			y: 3.519047619047619d
+		}
+		{
+			dependencies: ["7B85EDD5B12A2552"]
+			hide_dependency_lines: true
+			id: "2F1FCB055A94C83F"
+			tasks: [{
+				id: "082A8EDB6C32CEDC"
+				item: "thermal:machine_insolator"
+				type: "item"
+			}]
+			title: "&6也许你需要量产？"
+			x: -3.708333333333343d
+			y: 3.519047619047626d
+		}
+		{
+			dependencies: ["2F1FCB055A94C83F"]
+			id: "55E2844C773D925A"
+			tasks: [
+				{
+					id: "0FC71B2F1E90DB1F"
+					item: "minecraft:weeping_vines"
+					type: "item"
+				}
+				{
+					id: "39D5E2BB7200E25D"
+					item: "minecraft:twisting_vines"
+					type: "item"
+				}
+			]
+			x: -2.755952380952394d
+			y: 3.519047619047626d
 		}
 	]
 	title: "No.3-1 IE + Thermal"
