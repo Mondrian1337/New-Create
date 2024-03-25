@@ -755,4 +755,10 @@ ServerEvents.recipes(e => {
 		deploying('kubejs:infernal_mechanism', ['kubejs:infernal_mechanism', '#forge:plates/obsidian']),
 		filling('kubejs:infernal_mechanism', ['kubejs:infernal_mechanism', Fluid.of('kubejs:soul', 100)])
 	]).loops(1).transitionalItem('kubejs:in_infernal_mechanism')
+
+	// 加强电子管量产
+	filling('2x immersiveengineering:toolupgrade_revolver_electro',[
+		'immersiveengineering:circuit_board',
+		Fluid.of('kubejs:high_grade_refined_oil',200)
+	])
 })

@@ -532,7 +532,7 @@
 			}]
 			title: "&4新时代！"
 			x: -1.25d
-			y: 6.25d
+			y: 7.5d
 		}
 		{
 			dependencies: ["38636D2545C44520"]
@@ -543,8 +543,8 @@
 				type: "item"
 			}]
 			title: "&3获取！"
-			x: 0.5535714285714235d
-			y: 6.154761904761912d
+			x: 1.1339285714285623d
+			y: 5.25595238095238d
 		}
 		{
 			dependencies: ["65F1A3A80971DFEC"]
@@ -598,8 +598,8 @@
 				type: "item"
 			}]
 			title: "&6或许可以走另一条路"
-			x: -3.732142857142861d
-			y: 6.297619047619058d
+			x: -4.5d
+			y: 7.5d
 		}
 		{
 			dependencies: ["1F23917DBF624EE0"]
@@ -768,6 +768,25 @@
 			}]
 			x: -3.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["5BE2081DBA1307AA"]
+			id: "04C3B676F7174B7B"
+			tasks: [
+				{
+					id: "2787BF006BF7F4BE"
+					item: "create:zinc_ingot"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "70017B2FD26BCC8E"
+					item: { Count: 9b, id: "create:zinc_nugget" }
+					type: "item"
+				}
+			]
+			x: -10.5d
+			y: -0.5d
 		}
 	]
 	title: "No.2-1  Create"

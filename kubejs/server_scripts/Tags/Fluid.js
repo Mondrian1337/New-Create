@@ -23,4 +23,9 @@ ServerEvents.tags('fluid', e => {
 	e.add('forge:mixed_gasoline', [
 		'kubejs:mixed_gasoline'
 	])
+	
+	// 精炼油
+	e.add('thermal:refined_fuel',[
+		'thermal:refined_fuel'
+	])
 })

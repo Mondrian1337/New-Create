@@ -938,6 +938,45 @@
 			x: 9.5d
 			y: 7.0d
 		}
+		{
+			dependencies: ["350A56E5147E87CC"]
+			description: ["&4I gusses you need this&r"]
+			hide_dependency_lines: true
+			id: "0B0EA0A7A063610A"
+			rewards: [{
+				id: "6B7AE1750716CBDB"
+				item: {
+					Count: 1b
+					id: "immersiveengineering:wirecutter"
+					tag: {
+						Damage: 0
+						Unbreakable: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5B360BF99AFB23A7"
+					item: {
+						Count: 1b
+						id: "immersiveengineering:wirecutter"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "72805C8105167285"
+					item: "minecraft:netherite_block"
+					type: "item"
+				}
+			]
+			title: "&4????"
+			x: 8.0d
+			y: 3.5d
+		}
 	]
 	title: "No.2-2 Base Industry"
 }

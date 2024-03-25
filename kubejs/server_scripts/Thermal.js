@@ -156,4 +156,45 @@ ServerEvents.recipes(e => {
 		E: 'immersiveengineering:circuit_board',
 		F: 'thermal:rf_coil'
 	})
+
+	// 流体精炼机
+	shaped('thermal:machine_refinery',[
+		'FAF',
+		'BCB',
+		'DED'
+	],{
+		A: 'immersiveengineering:circuit_board',
+		B: '#forge:plates/invar',
+		C: 'thermal:energy_cell_frame',
+		D: '#forge:plates/industrial_iron',
+		E: 'thermal:rf_coil',
+		F: 'minecraft:bucket'
+	})
+	
+	// 热解炉
+	shaped('thermal:machine_pyrolyzer',[
+		'ABA',
+		'CDC',
+		'EEE'
+	],{
+		A: '#forge:plates/nickel',
+		B: 'create_dd:infernal_mechanism',
+		C: 'thermal:rf_coil',
+		D: 'thermal:energy_cell_frame',
+		E: '#forge:plates/industrial_iron'
+	})
+
+	// 流体灌装机
+	shaped('thermal:machine_bottler',[
+		'AAA',
+		'BCD',
+		'EFE'
+	],{
+		A: 'thermal:invar_plate',
+		B: 'thermal:signalum_glass',
+		C: 'thermal:fluid_cell_frame',
+		D: '#forge:gears/lumium',
+		E: '#forge:plates/lead',
+		F: 'create:fluid_tank'
+	})
 })

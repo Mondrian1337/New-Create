@@ -253,4 +253,23 @@ ServerEvents.recipes(e => {
 		'4x kubejs:cast_iron_sheet',
 		'2x minecraft:slime_ball'
 	])
+
+	// 高级精炼油
+	e.custom({
+		"type": "immersiveengineering:mixer",
+		"energy": 2000,
+		"fluid": {
+			"amount": 500,
+			"tag": 'thermal:refined_fuel'
+		},
+		"inputs": [
+			{
+				"tag": 'forge:tar'
+			}
+		],
+		"result": {
+			"amount": 500,
+			"fluid": 'kubejs:high_grade_refined_oil'
+		}
+	})
 })
