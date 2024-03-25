@@ -172,7 +172,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 塑料片
-	e.recipes.thermal.chiller('2x kubejs:plastic_sheet', [
+	chiller('2x kubejs:plastic_sheet', [
 		Fluid.of('kubejs:mixed_gasoline', 150)
 	]).energy(250)
 
