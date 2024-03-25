@@ -113,7 +113,12 @@ ServerEvents.recipes(e => {
 		'create_dd:steel_casing',
 		'immersiveengineering:electron_tube',
 		'minecraft:slime_ball',
-		'create_dd:mithril_ingot'
+		'create_dd:mithril_ingot',
+		'thermal:emerald_dust',
+		'thermal:device_rock_gen',
+		'thermal:rose_gold_ingot',
+		'thermal:fluid_cell_frame'
+
 	]
 	Remove_Item.forEach(Item => {
 		e.remove({ output: Item })

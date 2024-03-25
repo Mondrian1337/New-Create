@@ -116,8 +116,8 @@
 				item: "kubejs:high_grade_refined_oil_bucket"
 				type: "item"
 			}]
-			x: -2.0d
-			y: 0.0d
+			x: -1.9821428571428683d
+			y: 0.28571428571428825d
 		}
 		{
 			dependencies: ["5B5AB021C4F4BFB8"]
@@ -141,7 +141,7 @@
 				type: "item"
 			}]
 			x: -1.0d
-			y: 0.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["696726FEA75D95E4"]
@@ -151,8 +151,129 @@
 				item: "thermal:machine_bottler"
 				type: "item"
 			}]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"2F5EF5768AC4284A"
+				"5B5AB021C4F4BFB8"
+				"008E3859A0DE7117"
+			]
+			id: "627E37F5B45CFC17"
+			tasks: [{
+				id: "56CC4D582DADBB37"
+				item: "kubejs:mithril_fluid_bucket"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"627E37F5B45CFC17"
+				"6DF67AF650313D57"
+			]
+			id: "72E7BB363904DD98"
+			tasks: [{
+				id: "644C7DA1F4A5C652"
+				item: "create_dd:mithril_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["37CB5D8FF3EBE1F7"]
+			hide_dependency_lines: true
+			id: "013311E6F1722D52"
+			tasks: [{
+				id: "7631B0CA6626B2D2"
+				title: "&6粉碎机"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["013311E6F1722D52"]
+			id: "008E3859A0DE7117"
+			tasks: [{
+				id: "04CF0576ED69209F"
+				item: "mekanism:dust_emerald"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["72E7BB363904DD98"]
+			id: "7B85EDD5B12A2552"
+			tasks: [{
+				id: "6720860EA6A76425"
+				item: "create_dd:mithril_casing"
+				type: "item"
+			}]
 			x: 0.0d
-			y: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7B85EDD5B12A2552"
+				"149A937936D08DE9"
+			]
+			id: "5F0AFF91451D6835"
+			tasks: [{
+				id: "1480303AD9C8AAB5"
+				item: "thermal:device_rock_gen"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["73DEE011EAF7D46A"]
+			id: "149A937936D08DE9"
+			tasks: [{
+				id: "0A9BECD8624C6079"
+				item: "thermal:rose_gold_gear"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["285B90A0250D5EA3"]
+			id: "73DEE011EAF7D46A"
+			tasks: [{
+				count: 4L
+				id: "2A7FFE22C657F9C7"
+				item: "thermal:rose_gold_ingot"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6671B5400A00D016"]
+			id: "285B90A0250D5EA3"
+			tasks: [{
+				id: "69AE63467EB68CE7"
+				item: "thermal:machine_smelter"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			id: "6671B5400A00D016"
+			tasks: [{
+				id: "43E7E8F0EE823C48"
+				item: "kubejs:infernal_mechanism"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 3.5d
 		}
 	]
 	title: "No.3-1 IE + Thermal"
