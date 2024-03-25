@@ -15,6 +15,7 @@
 				title: "&6宝藏"
 				type: "checkmark"
 			}]
+			title: "&6发现新东西"
 			x: -3.0d
 			y: 0.0d
 		}
@@ -69,7 +70,7 @@
 				value: 1L
 			}]
 			title: "&6？？？"
-			x: -2.0d
+			x: 1.0d
 			y: 0.0d
 		}
 		{
@@ -203,6 +204,86 @@
 			}]
 			x: 0.0d
 			y: -1.5d
+		}
+		{
+			dependencies: ["652FC13F4D188579"]
+			id: "191B9EB4065B7668"
+			tasks: [{
+				id: "1EC7EC17D69E0466"
+				item: {
+					Count: 1b
+					id: "constructionwand:stone_wand"
+					tag: {
+						Damage: 0
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"652FC13F4D188579"
+				"191B9EB4065B7668"
+			]
+			id: "2CD3F1CAA382E25E"
+			tasks: [{
+				id: "7F1EDE46DA961283"
+				item: {
+					Count: 1b
+					id: "constructionwand:iron_wand"
+					tag: {
+						Damage: 0
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"652FC13F4D188579"
+				"2CD3F1CAA382E25E"
+			]
+			id: "3519AB38DC22C000"
+			tasks: [{
+				id: "287E7E4640D4825C"
+				item: {
+					Count: 1b
+					id: "constructionwand:diamond_wand"
+					tag: {
+						Damage: 0
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"652FC13F4D188579"
+				"3519AB38DC22C000"
+			]
+			id: "50A215E95BA20AFF"
+			tasks: [{
+				id: "40CFE6609CCA51D3"
+				item: {
+					Count: 1b
+					id: "constructionwand:infinity_wand"
+					tag: {
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.5d
 		}
 	]
 	title: "&5新奇的小玩意儿"
