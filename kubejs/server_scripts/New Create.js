@@ -551,11 +551,7 @@ ServerEvents.recipes(e => {
 	]).heated()
 
 	// 锌锭获取
-	shaped('create:zinc_ingot',[
-		'AAA',
-		'AAA',
-		'AAA'
-	],{
-		A: 'create:zinc_nugget'
-	})
+	shapeless('create:zinc_ingot',[
+		'9x  create:zinc_nugget'
+	])
 })
