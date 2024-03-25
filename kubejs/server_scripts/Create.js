@@ -289,16 +289,13 @@ ServerEvents.recipes(e => {
 
 	// 精密部件
 	sequenced_assembly([
-		Item.of('create:precision_mechanism').withChance(0.75),
-		Item.of('create:cogwheel').withChance(0.1),
-		Item.of('create:shaft').withChance(0.1),
-		Item.of('create:electron_tube').withChance(0.05)
+		'create:precision_mechanism'
 	], '#forge:plates/gold', [
 		deploying('#forge:plates/gold', ['create:electron_tube', 'create:electron_tube']),
 		deploying('#forge:plates/gold', ['#forge:nuggets/brass', '#forge:nuggets/brass']),
 		deploying('#forge:plates/gold', ['minecraft:redstone', 'minecraft:redstone']),
 		pressing('#forge:plates/gold', '#forge:plates/gold')
-	]).loops(3).transitionalItem('#forge:plates/gold')
+	]).loops(1).transitionalItem('#forge:plates/gold')
 
 	// 动力合成器
 	sequenced_assembly('7x create:mechanical_crafter', 'create:brass_casing', [

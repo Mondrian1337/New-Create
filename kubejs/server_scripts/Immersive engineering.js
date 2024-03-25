@@ -36,12 +36,8 @@ ServerEvents.recipes(e => {
 	// 铜锭
 	e.custom({
 		"type": "immersiveengineering:alloy",
-		"input0": {
-			"tag": "forge:raw_materials/copper"
-		},
-		"input1": {
-			"tag": "minecraft:coals"
-		},
+		"input0": { "tag": "forge:raw_materials/copper" },
+		"input1": { "tag": "minecraft:coals" },
 		"result": {
 			"base_ingredient": {
 				"tag": "forge:ingots/copper"
@@ -54,16 +50,10 @@ ServerEvents.recipes(e => {
 	// 铸铁
 	e.custom({
 		"type": "immersiveengineering:alloy",
-		"input0": {
-			"tag": "forge:ingots/iron"
-		},
-		"input1": {
-			"tag": "forge:ingots/iron"
-		},
+		"input0": { "tag": "forge:ingots/iron" },
+		"input1": { "tag": "forge:ingots/iron" },
 		"result": {
-			"base_ingredient": {
-				"item": "kubejs:cast_iron_ingot"
-			},
+			"base_ingredient": { "item": "kubejs:cast_iron_ingot" },
 			"conut": 1
 		},
 		"time": 150
@@ -95,12 +85,8 @@ ServerEvents.recipes(e => {
 	// 锡锭
 	e.custom({
 		"type": "immersiveengineering:alloy",
-		"input0": {
-			"item": 'create:crushed_raw_tin'
-		},
-		"input1": {
-			"tag": "minecraft:coals"
-		},
+		"input0": { "item": 'create:crushed_raw_tin' },
+		"input1": { "tag": "minecraft:coals" },
 		"result": {
 			"base_ingredient": {
 				"tag": 'forge:ingots/tin'
@@ -114,14 +100,10 @@ ServerEvents.recipes(e => {
 	e.custom({
 		"type": "immersiveengineering:alloy",
 		"input0": {
-			"base_ingredient": {
-				"tag": 'forge:ingots/copper'
-			},
+			"base_ingredient": { "tag": 'forge:ingots/copper' },
 			"count": 3
 		},
-		"input1": {
-			"tag": 'forge:ingots/tin'
-		},
+		"input1": { "tag": 'forge:ingots/tin' },
 		"result": {
 			"count": 4,
 			"item": 'thermal:bronze_ingot'
@@ -180,15 +162,11 @@ ServerEvents.recipes(e => {
 		"type": "immersiveengineering:metal_press",
 		"energy": 2400,
 		"input": {
-			"base_ingredient": {
-				"tag": 'forge:plates/industrial_iron'
-			},
+			"base_ingredient": { "tag": 'forge:plates/industrial_iron' },
 			"count": 4
 		},
 		"mold": 'kubejs:mold_block',
-		"result": {
-			"item": 'create_dd:industrial_casing'
-		}
+		"result": { "item": 'create_dd:industrial_casing' }
 	})
 
 	// 金属模具:块
@@ -202,13 +180,9 @@ ServerEvents.recipes(e => {
 				},
 				"count": 3
 			},
-			{
-				"item": "immersiveengineering:wirecutter"
-			}
+			{ "item": "immersiveengineering:wirecutter" }
 		],
-		"result": {
-			"item": 'kubejs:mold_block'
-		}
+		"result": { "item": 'kubejs:mold_block' }
 	})
 
 	// 混合汽油
@@ -250,18 +224,10 @@ ServerEvents.recipes(e => {
 		"type": "immersiveengineering:blueprint",
 		"category": "components",
 		"inputs": [
-			{
-				"tag": "forge:glass"
-			},
-			{
-				"tag": "forge:plates/nickel"
-			},
-			{
-				"tag": "forge:wires/copper"
-			},
-			{
-				"item": 'kubejs:plastic_sheet'
-			}
+			{ "tag": "forge:glass" },
+			{ "tag": "forge:plates/nickel" },
+			{ "tag": "forge:wires/copper" },
+			{ "item": 'kubejs:plastic_sheet' }
 		],
 		"result": {
 			"count": 3,

@@ -590,7 +590,7 @@
 				"675821C6A6BF5D79"
 			]
 			id: "2A6ECB62936181D8"
-			shape: "diamond"
+			shape: "octagon"
 			size: 3.0d
 			tasks: [{
 				id: "0F93224CA78BBBD2"
@@ -698,6 +698,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["42C2AC946745ED5F"]
 			description: ["{image:kubejs:textures/images/6.png width:50 height:50 align:1}"]
 			id: "75C3550B51F8A601"
 			subtitle: "&4感觉有点邪门"
@@ -708,7 +709,65 @@
 			}]
 			title: "&3多多少少带点恩怨("
 			x: -5.0d
-			y: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D5BA975FF84BAF7"]
+			id: "42C2AC946745ED5F"
+			tasks: [
+				{
+					id: "233C0635F05E28B0"
+					item: "minecraft:weeping_vines"
+					type: "item"
+				}
+				{
+					id: "1F7C84F99398F654"
+					item: "minecraft:twisting_vines"
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["22EF721A6422F327"]
+			id: "047425D9AA501EF9"
+			tasks: [{
+				id: "1961C3F2B574D331"
+				item: "thermal:device_tree_extractor"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["047425D9AA501EF9"]
+			id: "7EF5D95D55971A97"
+			tasks: [{
+				id: "036D92B984165195"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:cured_rubber"
+					}
+				}
+				title: "Any #forge:cured_rubber"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["047425D9AA501EF9"]
+			id: "20FA1954A2D5DF7A"
+			tasks: [{
+				id: "1989924528B56283"
+				item: "kubejs:sealed_mechanism"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5BE2081DBA1307AA"]
