@@ -576,6 +576,26 @@
 			y: 2.0d
 		}
 		{
+<<<<<<< HEAD
+=======
+			dependencies: [
+				"22F5E5229A1402A9"
+				"675821C6A6BF5D79"
+			]
+			id: "2A6ECB62936181D8"
+			shape: "gear"
+			size: 3.0d
+			tasks: [{
+				id: "0F93224CA78BBBD2"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			title: "&6或许可以走另一条路"
+			x: -4.5d
+			y: 7.5d
+		}
+		{
+>>>>>>> 92870987c80c7d47a389cba409ffeb77339358c6
 			dependencies: ["1F23917DBF624EE0"]
 			id: "03281B3D8E89E49F"
 			tasks: [{
@@ -672,6 +692,23 @@
 			y: -1.0d
 		}
 		{
+<<<<<<< HEAD
+=======
+			dependencies: ["7EEC8440A5ECEEEA"]
+			description: ["{image:kubejs:textures/images/6.png width:50 height:50 align:1}"]
+			id: "75C3550B51F8A601"
+			subtitle: "&4感觉有点邪门"
+			tasks: [{
+				id: "00AA8C1ACD299623"
+				item: "kubejs:infernal_mechanism"
+				type: "item"
+			}]
+			title: "&3多多少少带点恩怨("
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+>>>>>>> 92870987c80c7d47a389cba409ffeb77339358c6
 			dependencies: ["5BE2081DBA1307AA"]
 			id: "04C3B676F7174B7B"
 			tasks: [
