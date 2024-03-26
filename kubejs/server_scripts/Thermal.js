@@ -275,4 +275,17 @@ ServerEvents.recipes(e => {
 		Fluid.of('kubejs:high_grade_refined_oil'),
 		'thermal:energy_cell_frame'
 	])
+
+	// 感应炉
+	shaped('thermal:machine_smelter',[
+		'AAA',
+		'CBD',
+		'AEA'
+	],{
+		A: 'thermal:invar_plate',
+		B:'kubejs:infernal_mechanism',
+		C: 'thermal:obsidian_glass',
+		D: 'thermal:energy_cell_frame',
+		E: 'kubejs:cast_electron_tube'
+	})
 })

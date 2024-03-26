@@ -698,6 +698,7 @@
 			y: -1.0d
 		}
 		{
+			dependencies: ["7EEC8440A5ECEEEA"]
 			description: ["{image:kubejs:textures/images/6.png width:50 height:50 align:1}"]
 			id: "75C3550B51F8A601"
 			subtitle: "&4感觉有点邪门"
@@ -707,8 +708,8 @@
 				type: "item"
 			}]
 			title: "&3多多少少带点恩怨("
-			x: -5.0d
-			y: -0.5d
+			x: -3.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["5BE2081DBA1307AA"]

@@ -291,7 +291,4 @@ ServerEvents.recipes(e => {
 			"fluid": 'kubejs:mithril_fluid'
 		}
 	})
-
-	// 玫瑰金齿轮
-	
 })
