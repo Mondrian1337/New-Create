@@ -64,7 +64,7 @@ ServerEvents.recipes(e => {
 		smelter_catalyst,
 		smelter_recycle,
 		stirling_fuel
-	} =  e.recipes.thermal
+	} = e.recipes.thermal
 
 	// 橡胶
 	compacting('2x thermal:rubber', [
@@ -191,11 +191,11 @@ ServerEvents.recipes(e => {
 	})
 
 	// 流体精炼机
-	shaped('thermal:machine_refinery',[
+	shaped('thermal:machine_refinery', [
 		'FAF',
 		'BCB',
 		'DED'
-	],{
+	], {
 		A: 'immersiveengineering:circuit_board',
 		B: '#forge:plates/invar',
 		C: 'thermal:energy_cell_frame',
@@ -203,13 +203,13 @@ ServerEvents.recipes(e => {
 		E: 'thermal:rf_coil',
 		F: 'minecraft:bucket'
 	})
-	
+
 	// 热解炉
-	shaped('thermal:machine_pyrolyzer',[
+	shaped('thermal:machine_pyrolyzer', [
 		'ABA',
 		'CDC',
 		'EEE'
-	],{
+	], {
 		A: '#forge:plates/nickel',
 		B: 'create_dd:infernal_mechanism',
 		C: 'thermal:rf_coil',
@@ -218,11 +218,11 @@ ServerEvents.recipes(e => {
 	})
 
 	// 流体灌装机
-	shaped('thermal:machine_bottler',[
+	shaped('thermal:machine_bottler', [
 		'AAA',
 		'BCD',
 		'EFE'
-	],{
+	], {
 		A: 'thermal:invar_plate',
 		B: 'thermal:signalum_glass',
 		C: 'thermal:fluid_cell_frame',
@@ -232,17 +232,17 @@ ServerEvents.recipes(e => {
 	})
 
 	// 秘银锭
-	bottler('create_dd:mithril_ingot',[
-		Fluid.of('kubejs:mithril_fluid',500),
+	bottler('create_dd:mithril_ingot', [
+		Fluid.of('kubejs:mithril_fluid', 500),
 		'#forge:ingots/silver'
 	]).energy(1000)
 
 	// 造石机
-	shaped('thermal:device_rock_gen',[
+	shaped('thermal:device_rock_gen', [
 		'ABA',
 		'CDE',
 		'FGF'
-	],{
+	], {
 		A: 'create_dd:mithril_ingot',
 		B: 'thermal:redstone_servo',
 		C: 'minecraft:water_bucket',
@@ -253,25 +253,25 @@ ServerEvents.recipes(e => {
 	})
 
 	// 玫瑰金粉
-	crystallizer('2x thermal:rose_gold_dust',[
-		Fluid.of('kubejs:rose_gold_fluid',200),
+	crystallizer('2x thermal:rose_gold_dust', [
+		Fluid.of('kubejs:rose_gold_fluid', 200),
 		'#forge:dusts/iron',
 		'#forge:dusts/gold'
 	]).energy(800)
 
 	// 玫瑰金溶液
-	crucible(Fluid.of('kubejs:rose_gold_fluid',400),[
+	crucible(Fluid.of('kubejs:rose_gold_fluid', 400), [
 		'create_things_and_misc:rose_quartz_sheet'
 	]).energy(1200)
 
 	//玫瑰金锭
-	smelter('thermal:rose_gold_ingot',[
+	smelter('thermal:rose_gold_ingot', [
 		'thermal:rose_gold_dust',
 		'thermal:tar'
 	])
 
 	// 流体单元框架
-	filling('thermal:fluid_cell_frame',[
+	filling('thermal:fluid_cell_frame', [
 		Fluid.of('kubejs:high_grade_refined_oil'),
 		'thermal:energy_cell_frame'
 	])

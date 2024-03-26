@@ -22,31 +22,6 @@
 			click: ""
 			corner: false
 			dev: false
-			height: 10.0d
-			hover: [ ]
-			image: "minecraft:block/grass_block_side"
-			order: 1
-			rotation: 0.0d
-			width: 10.0d
-			x: 46.0d
-			y: 17.5d
-		}
-		{
-			click: ""
-			corner: false
-			dev: false
-			height: 10.0d
-			hover: [ ]
-			image: "biomesoplenty:block/flowering_oak_sapling"
-			rotation: 0.0d
-			width: 10.0d
-			x: 45.5d
-			y: 9.5d
-		}
-		{
-			click: ""
-			corner: false
-			dev: false
 			height: 1.0d
 			hover: [ ]
 			image: "minecraft:block/nether_portal"
@@ -54,18 +29,6 @@
 			width: 0.03125d
 			x: 66.5d
 			y: 16.0d
-		}
-		{
-			click: ""
-			corner: false
-			dev: false
-			height: 2.5d
-			hover: [ ]
-			image: "minecraft:textures/icon/icon.png"
-			rotation: 0.0d
-			width: 13.5d
-			x: 46.0d
-			y: 24.0d
 		}
 	]
 	order_index: 1
@@ -98,6 +61,7 @@
 					type: "command"
 				}
 			]
+			shape: "gear"
 			size: 3.0d
 			tasks: [{
 				dimension: "minecraft:overworld"
@@ -164,8 +128,8 @@
 				type: "item"
 			}]
 			title: "&3合成燧石"
-			x: 34.60000000000001d
-			y: 18.10000000000002d
+			x: 34.5d
+			y: 18.0d
 		}
 		{
 			dependencies: ["7B74B177D551BAD5"]
@@ -183,8 +147,8 @@
 				type: "item"
 			}]
 			title: "&3草绳"
-			x: 34.60000000000001d
-			y: 17.10000000000002d
+			x: 34.5d
+			y: 17.0d
 		}
 		{
 			dependencies: [
@@ -219,8 +183,8 @@
 				type: "item"
 			}]
 			title: "&1多功能工具"
-			x: 36.600000000000016d
-			y: 17.60000000000002d
+			x: 36.5d
+			y: 17.5d
 		}
 		{
 			dependencies: ["366BC6C1AD97484E"]
@@ -238,8 +202,8 @@
 				type: "item"
 			}]
 			title: "&6Crafting Table!"
-			x: 39.100000000000016d
-			y: 15.10000000000002d
+			x: 39.0d
+			y: 15.0d
 		}
 		{
 			dependencies: [
@@ -274,8 +238,8 @@
 				type: "item"
 			}]
 			title: "&3挖矿时间"
-			x: 40.600000000000016d
-			y: 15.10000000000002d
+			x: 39.0d
+			y: 12.0d
 		}
 		{
 			dependencies: [
@@ -302,8 +266,8 @@
 				type: "item"
 			}]
 			title: "&3伐木"
-			x: 40.600000000000016d
-			y: 13.60000000000002d
+			x: 40.5d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -330,15 +294,12 @@
 				type: "item"
 			}]
 			title: "&3高效工作"
-			x: 40.600000000000016d
-			y: 16.60000000000002d
+			x: 37.5d
+			y: 13.5d
 		}
 		{
 			dependencies: ["7239DB54A7FD4EE8"]
-			description: [
-				""
-				"{image:kubejs:textures/images/2.png width:50 height:50 align:1}"
-			]
+			description: ["{image:kubejs:textures/images/2.png width:50 height:50 align:1}"]
 			id: "29F8B46988F72E7C"
 			rewards: [{
 				count: 16
@@ -354,8 +315,8 @@
 				type: "item"
 			}]
 			title: "&3原始人,起洞!"
-			x: 42.100000000000016d
-			y: 15.10000000000002d
+			x: 40.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["33EF23C3B61A384E"]
@@ -380,8 +341,8 @@
 				type: "item"
 			}]
 			title: "&3原木"
-			x: 42.100000000000016d
-			y: 13.60000000000002d
+			x: 42.0d
+			y: 13.5d
 		}
 		{
 			dependencies: ["1AC1EB6F7D19CA5D"]
@@ -400,8 +361,8 @@
 				type: "item"
 			}]
 			title: "&3沙砾"
-			x: 42.100000000000016d
-			y: 16.60000000000002d
+			x: 37.5d
+			y: 12.0d
 		}
 		{
 			dependencies: ["1B5BBBF90F96D167"]
@@ -481,6 +442,7 @@
 				"&2&m终于进入新阶段了&r&r"
 			]
 			id: "4E2DA87949EAE5F7"
+			subtitle: "明明毫无意义啊喂!"
 			tasks: [
 				{
 					id: "7A29AADF9B45306A"
@@ -539,8 +501,8 @@
 				}
 			]
 			title: "&3石制工具套件"
-			x: 33.6d
-			y: 20.599999999999987d
+			x: 33.5d
+			y: 20.5d
 		}
 		{
 			dependencies: [
@@ -572,8 +534,8 @@
 				type: "item"
 			}]
 			title: "&3第一块木板"
-			x: 39.100000000000016d
-			y: 16.60000000000002d
+			x: 39.0d
+			y: 16.5d
 		}
 		{
 			dependencies: ["5E0A98F312F8A995"]
@@ -610,8 +572,8 @@
 				}
 			]
 			title: "&3锯子"
-			x: 39.100000000000016d
-			y: 13.60000000000002d
+			x: 39.0d
+			y: 13.5d
 		}
 		{
 			dependencies: [
@@ -879,8 +841,8 @@
 				title: "Any #forge:ingots/bronze"
 				type: "item"
 			}]
-			x: 38.0d
-			y: 23.0d
+			x: 38.06138392857143d
+			y: 23.017857142857146d
 		}
 		{
 			dependencies: ["11E001D323FC5722"]
@@ -903,8 +865,8 @@
 				type: "item"
 			}]
 			title: "小小的也很可爱!"
-			x: 34.60000000000001d
-			y: 16.10000000000002d
+			x: 34.5d
+			y: 16.0d
 		}
 		{
 			dependencies: [
@@ -930,8 +892,8 @@
 				title: "Any #minecraft:logs"
 				type: "item"
 			}]
-			x: 36.600000000000016d
-			y: 16.10000000000002d
+			x: 36.5d
+			y: 16.0d
 		}
 		{
 			dependencies: ["2BB8EC9F1782C4DE"]
@@ -946,8 +908,8 @@
 				type: "checkmark"
 			}]
 			title: "&6铜工具?"
-			x: 39.617857142857154d
-			y: 21.832142857142824d
+			x: 39.597098214285715d
+			y: 21.839285714285708d
 		}
 		{
 			dependencies: ["2515602CF3C6878B"]
@@ -1120,8 +1082,8 @@
 		}
 		{
 			dependencies: [
-				"2715B39EFD8060FF"
 				"6B3FB60CBF3CB68A"
+				"17A15D75F1EC5311"
 			]
 			id: "42B17692177022C8"
 			tasks: [{
@@ -1136,8 +1098,8 @@
 				title: "Any #forge:ingots/tin"
 				type: "item"
 			}]
-			x: 38.0d
-			y: 22.0d
+			x: 38.097098214285715d
+			y: 22.01785714285714d
 		}
 		{
 			dependencies: ["25E790CA72DE9B02"]
@@ -1245,9 +1207,17 @@
 			size: 2.0d
 			tasks: [{
 				id: "7B36110120CC2812"
-				item: "kubejs:cast_iron_ingot"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/cast_iron"
+					}
+				}
+				title: "Any #forge:ingots/cast_iron"
 				type: "item"
 			}]
+			title: "铸铁!"
 			x: 46.0d
 			y: 22.0d
 		}
@@ -1625,8 +1595,8 @@
 				type: "checkmark"
 			}]
 			title: "&6快速回家"
-			x: 36.599479166666654d
-			y: 15.083333333333336d
+			x: 36.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["5E0A98F312F8A995"]
@@ -1644,8 +1614,8 @@
 				type: "item"
 			}]
 			title: "&3好好睡觉"
-			x: 37.83757440476188d
-			y: 15.083333333333343d
+			x: 37.5d
+			y: 15.0d
 		}
 		{
 			dependencies: ["7D20A5EC9D4FD648"]
@@ -1818,8 +1788,8 @@
 				}
 			]
 			title: "&6生火"
-			x: 48.00424107142855d
-			y: 19.05357142857143d
+			x: 47.0d
+			y: 20.0d
 		}
 		{
 			dependencies: ["240B6094033926D5"]
@@ -1829,8 +1799,8 @@
 				item: "createaddition:electric_motor"
 				type: "item"
 			}]
-			x: 58.0d
-			y: 20.5d
+			x: 57.0d
+			y: 21.5d
 		}
 		{
 			description: [
@@ -1843,13 +1813,13 @@
 				"&a例如各种板子和各种锭,没有就是把合成删了&r"
 				"&4有许许多多的板子和锭,如果一种合成不了那就换另一种方法&r"
 				""
-				""
 				"&4注意事项:&r"
 				"&a如果机械动力的机械手无法放置物品,请检查你是否使用FTB Chunk圈了区块&r"
 				"&e使用了FTB Chunk&r"
 				"&9圈了区块后机械动力的许多机械无法正常运行，请删除你所圈的区块&r"
 			]
 			id: "21E35649CA8399DE"
+			subtitle: "&b本整合包可能非常坐牢!"
 			tasks: [{
 				id: "2C7E53E5E7378E56"
 				title: "&4安全声明!!!"
@@ -1898,6 +1868,12 @@
 			x: 53.5d
 			y: 15.5d
 		}
+		{
+			id: "63F3434C0F1ADECD"
+			title: "关于开发者"
+			x: 27.0d
+			y: 20.0d
+		}
 	]
-	title: "&6No.1 发展"
+	title: "&6No.1 开端"
 }
