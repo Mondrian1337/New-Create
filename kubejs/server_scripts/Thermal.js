@@ -32,6 +32,39 @@ ServerEvents.recipes(e => {
 		smoking,
 		stonecutting
 	} = e.recipes.minecraft
+	// Thermal
+	let {
+		bottler,
+		brewer,
+		centrifuge,
+		chiller,
+		compression_fuel,
+		crucible,
+		crystallizer,
+		disenchantment_fuel,
+		fisher_boost,
+		furnace,
+		gourmand_fuel,
+		hive_extractor,
+		insolator,
+		insolator_catalyst,
+		lapidary_fuel,
+		magmatic_fuel,
+		numismatic_fuel,
+		potion_diffuser_boost,
+		press,
+		pulverizer,
+		pulverizer_catalyst,
+		pulverizer_recycle,
+		pyrolyzer,
+		refinery,
+		rock_gen,
+		sawmill,
+		smelter,
+		smelter_catalyst,
+		smelter_recycle,
+		stirling_fuel
+	} =  e.recipes.thermal
 
 	// 橡胶
 	compacting('2x thermal:rubber', [
@@ -139,7 +172,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 塑料片
-	e.recipes.thermal.chiller('2x kubejs:plastic_sheet', [
+	chiller('2x kubejs:plastic_sheet', [
 		Fluid.of('kubejs:mixed_gasoline', 150)
 	]).energy(250)
 
@@ -197,4 +230,49 @@ ServerEvents.recipes(e => {
 		E: '#forge:plates/lead',
 		F: 'create:fluid_tank'
 	})
+
+	// 秘银锭
+	bottler('create_dd:mithril_ingot',[
+		Fluid.of('kubejs:mithril_fluid',500),
+		'#forge:ingots/silver'
+	]).energy(1000)
+
+	// 造石机
+	shaped('thermal:device_rock_gen',[
+		'ABA',
+		'CDE',
+		'FGF'
+	],{
+		A: 'create_dd:mithril_ingot',
+		B: 'thermal:redstone_servo',
+		C: 'minecraft:water_bucket',
+		D: 'create_dd:mithril_casing',
+		E: 'minecraft:lava_bucket',
+		F: '#forge:ingots/invar',
+		G: '#forge:gears/rose_gold'
+	})
+
+	// 玫瑰金粉
+	crystallizer('2x thermal:rose_gold_dust',[
+		Fluid.of('kubejs:rose_gold_fluid',200),
+		'#forge:dusts/iron',
+		'#forge:dusts/gold'
+	]).energy(800)
+
+	// 玫瑰金溶液
+	crucible(Fluid.of('kubejs:rose_gold_fluid',400),[
+		'create_things_and_misc:rose_quartz_sheet'
+	]).energy(1200)
+
+	//玫瑰金锭
+	smelter('thermal:rose_gold_ingot',[
+		'thermal:rose_gold_dust',
+		'thermal:tar'
+	])
+
+	// 流体单元框架
+	filling('thermal:fluid_cell_frame',[
+		Fluid.of('kubejs:high_grade_refined_oil'),
+		'thermal:energy_cell_frame'
+	])
 })

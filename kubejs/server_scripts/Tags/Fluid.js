@@ -28,4 +28,9 @@ ServerEvents.tags('fluid', e => {
 	e.add('thermal:refined_fuel',[
 		'thermal:refined_fuel'
 	])
+
+	// 高级精炼油
+	e.add('forge:high_grade_refined_oil',[
+		'kubejs:high_grade_refined_oil'
+	])
 })

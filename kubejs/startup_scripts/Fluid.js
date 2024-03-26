@@ -19,7 +19,11 @@ StartupEvents.registry('fluid', e => {
 		// 玫瑰石英溶液
 		['rose_quartz_fluid', 0xFF1493],
 		// 精炼油+
-		['high_grade_refined_oil', 0xDAA520]
+		['high_grade_refined_oil', 0xDAA520],
+		// 秘银液
+		['mithril_fluid', 0x2E8B57],
+		// 玫瑰金溶液
+		['rose_gold_fluid', 0xFF69B4]
 	]
 	Fluid.forEach(([Name, Color]) => {
 		e.create(Name)

@@ -272,4 +272,26 @@ ServerEvents.recipes(e => {
 			"fluid": 'kubejs:high_grade_refined_oil'
 		}
 	})
+
+	// 秘银溶液
+	e.custom({
+		"type": "immersiveengineering:mixer",
+		"energy": 2000,
+		"fluid": {
+			"amount": 250,
+			"tag": 'forge:high_grade_refined_oil'
+		},
+		"inputs": [
+			{
+				"item": 'mekanism:dust_emerald'
+			}
+		],
+		"result": {
+			"amount": 250,
+			"fluid": 'kubejs:mithril_fluid'
+		}
+	})
+
+	// 玫瑰金齿轮
+	
 })
