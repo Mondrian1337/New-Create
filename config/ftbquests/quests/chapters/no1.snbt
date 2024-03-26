@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
+			dependencies: ["1C6690A3F29A7A98"]
 			id: "37CB5D8FF3EBE1F7"
 			shape: "gear"
 			size: 2.5d
@@ -283,8 +284,8 @@
 				item: "kubejs:infernal_mechanism"
 				type: "item"
 			}]
-			x: -1.8035714285714377d
-			y: 3.519047619047619d
+			x: 1.5d
+			y: 4.0d
 		}
 		{
 			dependencies: [
@@ -327,7 +328,7 @@
 				type: "item"
 			}]
 			x: -2.5d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["5CB80958E4F38E5D"]

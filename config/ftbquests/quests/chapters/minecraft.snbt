@@ -932,10 +932,10 @@
 					type: "observation"
 				}
 				{
-					id: "000D4B5CE5A93175"
+					id: "3AC3744A99373501"
 					item: {
 						Count: 1b
-						id: "mekanismtools:bronze_pickaxe"
+						id: "kubejs:bronze_pickaxe"
 						tag: {
 							Damage: 0
 						}
