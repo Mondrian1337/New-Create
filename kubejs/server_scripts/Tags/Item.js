@@ -44,7 +44,7 @@ ServerEvents.tags('item', e => {
 	])
 
 	// 工具
-	e.add('kuebjs:tools', [
+	e.add('kubejs:tools', [
 		'#forge:hammer',
 		'#forge:saw'
 	])

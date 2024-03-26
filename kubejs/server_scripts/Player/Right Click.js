@@ -1,5 +1,5 @@
 BlockEvents.rightClicked(e => {
-	const { player, block, item, server } = e
+	const { player, block, item } = e
 	if (player.offHandItem == 'minecraft:stick' &&
 		player.mainHandItem == 'minecraft:flint' &&
 		block.id == 'minecraft:coal_block') {

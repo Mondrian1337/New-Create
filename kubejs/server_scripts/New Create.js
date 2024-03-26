@@ -430,7 +430,7 @@ ServerEvents.recipes(e => {
 		B: '#minecraft:wooden_buttons',
 		S: 'minecraft:smooth_stone',
 		C: '#forge:plates/copper'
-	}).id('minecraft:stonecutter').damageIngredient('#kuebjs:tools')
+	}).id('minecraft:stonecutter').damageIngredient('#kubejs:tools')
 
 	// 轴承
 	shaped('2x kubejs:primary_bearing', [
@@ -552,6 +552,6 @@ ServerEvents.recipes(e => {
 
 	// 锌锭获取
 	shapeless('create:zinc_ingot',[
-		'9x  create:zinc_nugget'
+		'9x create:zinc_nugget'
 	])
 })
