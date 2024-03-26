@@ -9,8 +9,8 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["7DB50F72D65346B2"]
 			id: "37CB5D8FF3EBE1F7"
+			shape: "gear"
 			size: 2.5d
 			tasks: [{
 				id: "29865ECE5D6F5453"
@@ -51,9 +51,17 @@
 			id: "741F01395998E3C5"
 			tasks: [{
 				id: "5C1FEC318534B413"
-				item: "thermal:tar"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tar"
+					}
+				}
+				title: "Any #forge:tar"
 				type: "item"
 			}]
+			title: "焦油"
 			x: -4.5d
 			y: -0.5d
 		}
@@ -229,7 +237,7 @@
 				type: "item"
 			}]
 			x: 1.0d
-			y: 2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["73DEE011EAF7D46A"]
@@ -239,8 +247,8 @@
 				item: "thermal:rose_gold_gear"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 3.0d
+			x: 2.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["285B90A0250D5EA3"]
@@ -251,7 +259,7 @@
 				item: "thermal:rose_gold_ingot"
 				type: "item"
 			}]
-			x: 0.0d
+			x: 1.5d
 			y: 3.0d
 		}
 		{
@@ -262,12 +270,14 @@
 				item: "thermal:machine_smelter"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 3.0d
+			x: 2.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["55E2844C773D925A"]
+			description: ["{image:kubejs:textures/images/6.png width:50 height:50 align:1}"]
 			id: "6671B5400A00D016"
+			subtitle: "有点阴间了"
 			tasks: [{
 				id: "43E7E8F0EE823C48"
 				item: "kubejs:infernal_mechanism"
@@ -277,8 +287,10 @@
 			y: 3.519047619047619d
 		}
 		{
-			dependencies: ["7B85EDD5B12A2552"]
-			hide_dependency_lines: true
+			dependencies: [
+				"7B85EDD5B12A2552"
+				"21992DD6D3A1121F"
+			]
 			id: "2F1FCB055A94C83F"
 			tasks: [{
 				id: "082A8EDB6C32CEDC"
@@ -286,8 +298,8 @@
 				type: "item"
 			}]
 			title: "&6也许你需要量产？"
-			x: -3.708333333333343d
-			y: 3.519047619047626d
+			x: -0.2083333333333428d
+			y: 3.019047619047626d
 		}
 		{
 			dependencies: ["2F1FCB055A94C83F"]
@@ -304,8 +316,40 @@
 					type: "item"
 				}
 			]
-			x: -2.755952380952394d
-			y: 3.519047619047626d
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			id: "5CB80958E4F38E5D"
+			tasks: [{
+				id: "4CC3F2C7D0AC52B5"
+				item: "thermal:machine_pulverizer"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["5CB80958E4F38E5D"]
+			id: "093DD3F380F8FE42"
+			tasks: [{
+				id: "298286D82A179498"
+				item: "thermal_extra:soul_sand_dust"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["093DD3F380F8FE42"]
+			id: "21992DD6D3A1121F"
+			tasks: [{
+				id: "661F9DBCDB3DE6A5"
+				item: "thermal_extra:soul_infused_glass"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 4.0d
 		}
 	]
 	title: "No.3-1 IE + Thermal"
