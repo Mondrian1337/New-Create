@@ -5,18 +5,6 @@
 	group: "7D51E071024525B7"
 	icon: "create:wrench"
 	id: "1B2DCAFA2439A323"
-	images: [{
-		click: ""
-		corner: false
-		dev: false
-		height: 8.0d
-		hover: [ ]
-		image: "create:textures/gui/logo.png"
-		rotation: 0.0d
-		width: 8.0d
-		x: -13.0d
-		y: 2.0d
-	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -141,8 +129,8 @@
 				item: "create:white_sail"
 				type: "item"
 			}]
-			x: -9.38095238095238d
-			y: -0.35714285714285765d
+			x: -9.80803571428573d
+			y: -0.5119047619047521d
 		}
 		{
 			dependencies: ["20B347816F814F10"]
@@ -302,6 +290,7 @@
 		{
 			dependencies: ["45A8978CA9C2F92A"]
 			id: "6B2F686717DD843E"
+			shape: "pentagon"
 			tasks: [{
 				id: "00AF5A450248CD15"
 				item: "create:water_wheel"
@@ -314,6 +303,7 @@
 		{
 			dependencies: ["6B2F686717DD843E"]
 			id: "6DFBC5FD742BF0EA"
+			shape: "pentagon"
 			tasks: [{
 				id: "3ABC355774ADDAC7"
 				item: "create:large_water_wheel"
@@ -490,6 +480,7 @@
 					type: "item"
 				}
 			]
+			title: "准备考电工证"
 			x: -9.0d
 			y: 5.0d
 		}
@@ -531,8 +522,8 @@
 				type: "item"
 			}]
 			title: "&4新时代！"
-			x: -1.25d
-			y: 7.5d
+			x: -1.8080357142857366d
+			y: 5.702380952380956d
 		}
 		{
 			dependencies: ["38636D2545C44520"]
@@ -585,6 +576,8 @@
 			y: 2.0d
 		}
 		{
+<<<<<<< HEAD
+=======
 			dependencies: [
 				"22F5E5229A1402A9"
 				"675821C6A6BF5D79"
@@ -602,6 +595,7 @@
 			y: 7.5d
 		}
 		{
+>>>>>>> 92870987c80c7d47a389cba409ffeb77339358c6
 			dependencies: ["1F23917DBF624EE0"]
 			id: "03281B3D8E89E49F"
 			tasks: [{
@@ -698,6 +692,8 @@
 			y: -1.0d
 		}
 		{
+<<<<<<< HEAD
+=======
 			dependencies: ["7EEC8440A5ECEEEA"]
 			description: ["{image:kubejs:textures/images/6.png width:50 height:50 align:1}"]
 			id: "75C3550B51F8A601"
@@ -712,6 +708,7 @@
 			y: 0.5d
 		}
 		{
+>>>>>>> 92870987c80c7d47a389cba409ffeb77339358c6
 			dependencies: ["5BE2081DBA1307AA"]
 			id: "04C3B676F7174B7B"
 			tasks: [
@@ -727,8 +724,8 @@
 					type: "item"
 				}
 			]
-			x: -10.5d
-			y: -0.5d
+			x: -10.91517857142859d
+			y: -0.5119047619047521d
 		}
 	]
 	title: "No.2-1  Create"

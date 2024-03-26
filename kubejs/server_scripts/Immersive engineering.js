@@ -39,9 +39,7 @@ ServerEvents.recipes(e => {
 		"input0": { "tag": "forge:raw_materials/copper" },
 		"input1": { "tag": "minecraft:coals" },
 		"result": {
-			"base_ingredient": {
-				"tag": "forge:ingots/copper"
-			},
+			"base_ingredient": { "tag": "forge:ingots/copper" },
 			"conut": 1
 		},
 		"time": 300
@@ -88,9 +86,7 @@ ServerEvents.recipes(e => {
 		"input0": { "item": 'create:crushed_raw_tin' },
 		"input1": { "tag": "minecraft:coals" },
 		"result": {
-			"base_ingredient": {
-				"tag": 'forge:ingots/tin'
-			},
+			"base_ingredient": { "tag": 'forge:ingots/tin' },
 			"count": 1
 		},
 		"time": 300
@@ -175,9 +171,7 @@ ServerEvents.recipes(e => {
 		"category": "molds",
 		"inputs": [
 			{
-				"base_ingredient": {
-					"tag": "forge:plates/steel"
-				},
+				"base_ingredient": { "tag": "forge:plates/steel" },
 				"count": 3
 			},
 			{ "item": "immersiveengineering:wirecutter" }
@@ -208,15 +202,11 @@ ServerEvents.recipes(e => {
 		"type": "immersiveengineering:metal_press",
 		"energy": 2400,
 		"input": {
-			"base_ingredient": {
-				"tag": 'forge:ingots/steel'
-			},
+			"base_ingredient": { "tag": 'forge:ingots/steel' },
 			"count": 4
 		},
 		"mold": 'kubejs:mold_block',
-		"result": {
-			"item": 'create_dd:steel_casing'
-		}
+		"result": { "item": 'create_dd:steel_casing' }
 	})
 
 	// 真空管
@@ -262,11 +252,7 @@ ServerEvents.recipes(e => {
 			"amount": 500,
 			"tag": 'thermal:refined_fuel'
 		},
-		"inputs": [
-			{
-				"tag": 'forge:tar'
-			}
-		],
+		"inputs": [{ "tag": 'forge:tar' }],
 		"result": {
 			"amount": 500,
 			"fluid": 'kubejs:high_grade_refined_oil'
@@ -281,11 +267,7 @@ ServerEvents.recipes(e => {
 			"amount": 250,
 			"tag": 'forge:high_grade_refined_oil'
 		},
-		"inputs": [
-			{
-				"item": 'mekanism:dust_emerald'
-			}
-		],
+		"inputs": [{ "item": 'mekanism:dust_emerald' }],
 		"result": {
 			"amount": 250,
 			"fluid": 'kubejs:mithril_fluid'

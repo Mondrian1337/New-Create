@@ -13,6 +13,18 @@
 	id: "71430DA3593987FF"
 	order_index: 1
 	quest_links: [ ]
+<<<<<<< HEAD
+	quests: [{
+		id: "6D487531D83FC806"
+		tasks: [{
+			id: "35EE64BB3684784C"
+			item: "kubejs:mixed_gasoline_bucket"
+			type: "item"
+		}]
+		x: 11.5d
+		y: 5.5d
+	}]
+=======
 	quests: [
 		{
 			dependencies: ["6959B15D3B53F1DA"]
@@ -978,5 +990,6 @@
 			y: 3.5d
 		}
 	]
+>>>>>>> 92870987c80c7d47a389cba409ffeb77339358c6
 	title: "No.2-2 Base Industry"
 }

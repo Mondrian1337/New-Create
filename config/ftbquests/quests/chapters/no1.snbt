@@ -9,7 +9,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["7DB50F72D65346B2"]
 			id: "37CB5D8FF3EBE1F7"
 			shape: "gear"
 			size: 2.5d
@@ -52,9 +51,17 @@
 			id: "741F01395998E3C5"
 			tasks: [{
 				id: "5C1FEC318534B413"
-				item: "thermal:tar"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:tar"
+					}
+				}
+				title: "Any #forge:tar"
 				type: "item"
 			}]
+			title: "焦油"
 			x: -4.5d
 			y: -0.5d
 		}
@@ -268,14 +275,16 @@
 		}
 		{
 			dependencies: ["55E2844C773D925A"]
+			description: ["{image:kubejs:textures/images/6.png width:50 height:50 align:1}"]
 			id: "6671B5400A00D016"
+			subtitle: "有点阴间了"
 			tasks: [{
 				id: "43E7E8F0EE823C48"
 				item: "kubejs:infernal_mechanism"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 4.0d
+			x: -1.8035714285714377d
+			y: 3.519047619047619d
 		}
 		{
 			dependencies: [
