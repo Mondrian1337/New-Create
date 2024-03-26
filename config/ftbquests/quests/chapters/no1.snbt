@@ -11,6 +11,7 @@
 		{
 			dependencies: ["7DB50F72D65346B2"]
 			id: "37CB5D8FF3EBE1F7"
+			shape: "gear"
 			size: 2.5d
 			tasks: [{
 				id: "29865ECE5D6F5453"

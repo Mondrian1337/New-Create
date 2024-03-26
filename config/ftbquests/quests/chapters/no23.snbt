@@ -812,7 +812,7 @@
 				"28CBB93704345791"
 			]
 			id: "7DB50F72D65346B2"
-			shape: "pentagon"
+			shape: "gear"
 			size: 3.0d
 			tasks: [{
 				id: "1C6690A3F29A7A98"

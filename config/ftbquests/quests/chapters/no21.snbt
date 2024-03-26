@@ -590,7 +590,7 @@
 				"675821C6A6BF5D79"
 			]
 			id: "2A6ECB62936181D8"
-			shape: "diamond"
+			shape: "gear"
 			size: 3.0d
 			tasks: [{
 				id: "0F93224CA78BBBD2"
