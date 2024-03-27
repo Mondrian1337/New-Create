@@ -1,4 +1,4 @@
-const DisplayName = {
+let DisplayName = {
 	kubejs: `New Create`
 }
 Object.keys(DisplayName).forEach(key => {
