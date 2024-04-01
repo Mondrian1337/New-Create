@@ -23,7 +23,7 @@ StartupEvents.registry('item', e => {
 		// 钻石锯子
 		['diamond_saw', 'axe', 5, 1200, 1.0, 3],
 		// 青铜镐
-		['bronze_pickaxe', 'pickaxe', 1, 650, 1.0, 2]
+		['bronze_pickaxe', 'pickaxe', 1, 650, 4.0, 2]
 
 	]
 	Tool.forEach(([
