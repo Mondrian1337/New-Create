@@ -1,6 +1,6 @@
 StartupEvents.registry('block', e => {
 	// 工具类型
-	const ToolType = {
+	const TOOL_TYPE = {
 		pickaxe: 'minecraft:mineable/pickaxe',
 		shovel: 'minecraft:mineable/shovel',
 		axe: 'minecraft:mineable/axe',
@@ -8,7 +8,7 @@ StartupEvents.registry('block', e => {
 		hoe: 'minecraft:mineable/hoe'
 	}
 	// 挖掘等级
-	const MiningLevel = {
+	const MININ_GLEVEL = {
 		wooden: 'minecraft:needs_wooden_tool',
 		stone: 'minecraft:needs_stone_tool',
 		iron: 'minecraft:needs_iron_tool',
@@ -30,20 +30,20 @@ StartupEvents.registry('block', e => {
 
 	// 循环
 	Block.forEach(([
-		Name,
-		SoundType,
-		Hardness,
-		Resistance,
-		Tool,
-		Grade,
-		RequiresTool
+		NAME,
+		SOUND_TYPE,
+		HARDNESS,
+		RESIS_TANCE,
+		TOOL,
+		GRADE,
+		REQUIRESTOOL,
 	]) => {
-		e.create(Name)
-			.soundType(SoundType)
-			.hardness(Hardness)
-			.resistance(Resistance)
-			.tagBlock(ToolType[Tool])
-			.tagBlock(MiningLevel[Grade])
-			.requiresTool(RequiresTool)
+		e.create(NAME)
+			.soundType(SOUND_TYPE)
+			.hardness(HARDNESS)
+			.resistance(RESIS_TANCE)
+			.tagBlock(TOOL_TYPE[TOOL])
+			.tagBlock(MININ_GLEVEL[GRADE])
+			.requiresTool(REQUIRESTOOL)
 	})
 })
