@@ -117,8 +117,8 @@ ServerEvents.recipes(e => {
 		'thermal:emerald_dust',
 		'thermal:device_rock_gen',
 		'thermal:rose_gold_ingot',
-		'thermal:fluid_cell_frame'
-
+		'thermal:fluid_cell_frame',
+		'thermal_extra:soul_sand_dust'
 	]
 	Remove_Item.forEach(Item => {
 		e.remove({ output: Item })
@@ -146,6 +146,7 @@ ServerEvents.recipes(e => {
 		'create_dd:crafting/mechanical_belt_from_rubber',
 		'ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals',
 		'immersiveengineering:blastfurnace/steel',
+		'createaddition:filling/treated_wood_planks',
 		'immersiveengineering:crafting/raw_hammercrushing_iron',
 		'immersiveengineering:crafting/hammercrushing_iron',
 		'thermal:machine_frame',

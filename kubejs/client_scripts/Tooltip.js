@@ -1,12 +1,12 @@
 ItemEvents.tooltip(e => {
 	const { translate } = Text
 	// 草绳
-	e.add('kubejs:grass_string', [
-		translate('tooltip.kubejs.grass_string')
+	e.add('new_create:grass_string', [
+		translate('tooltip.new_create.grass_string')
 	])
 	// 杂草
-	e.add('kubejs:grass_fiber', [
-		translate('tooltip.kubejs.grass_fiber')
+	e.add('new_create:grass_fiber', [
+		translate('tooltip.new_create.grass_fiber')
 	])
 
 	// 手枪
@@ -19,8 +19,8 @@ ItemEvents.tooltip(e => {
 
 	// 燧石工具
 	flintTools.forEach(tools => {
-		e.add(`kubejs:flint_${tools}`, [
-			translate('tooltip.kubejs.flint_tools')
+		e.add(`new_create:flint_${tools}`, [
+			translate('tooltip.new_create.flint_tools')
 		])
 	})
 })

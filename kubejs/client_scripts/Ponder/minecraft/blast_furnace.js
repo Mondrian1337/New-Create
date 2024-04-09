@@ -3,7 +3,7 @@ Ponder.registry(e => {
         .scene(
             'minecraft:blast_furnace',
             '原版高炉建造',
-            'kubejs:blast_furnace',
+            'new_create:blast_furnace',
             (scene, utils) => {
                 // 底盘
                 // scene.configureBasePlate(0, 0, 5)

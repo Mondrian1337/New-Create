@@ -122,7 +122,7 @@
 			id: "5B5AB021C4F4BFB8"
 			tasks: [{
 				id: "45C8A764B8A289B4"
-				item: "kubejs:high_grade_refined_oil_bucket"
+				item: "new_create:high_grade_refined_oil_bucket"
 				type: "item"
 			}]
 			x: -1.9821428571428683d
@@ -172,7 +172,7 @@
 			id: "627E37F5B45CFC17"
 			tasks: [{
 				id: "56CC4D582DADBB37"
-				item: "kubejs:mithril_fluid_bucket"
+				item: "new_create:mithril_fluid_bucket"
 				type: "item"
 			}]
 			x: -2.0d
@@ -276,14 +276,15 @@
 		}
 		{
 			dependencies: ["55E2844C773D925A"]
-			description: ["{image:kubejs:textures/images/6.png width:50 height:50 align:1}"]
+			description: ["{image:new_create:textures/images/6.png width:50 height:50 align:1}"]
 			id: "6671B5400A00D016"
-			subtitle: "有点阴间了"
+			subtitle: "&c有点阴间了"
 			tasks: [{
 				id: "43E7E8F0EE823C48"
-				item: "kubejs:infernal_mechanism"
+				item: "new_create:infernal_mechanism"
 				type: "item"
 			}]
+			title: "多多少少有点邪门?"
 			x: 1.5d
 			y: 4.0d
 		}
@@ -305,6 +306,7 @@
 		{
 			dependencies: ["2F1FCB055A94C83F"]
 			id: "55E2844C773D925A"
+			subtitle: "&c下界的两种作物"
 			tasks: [
 				{
 					id: "0FC71B2F1E90DB1F"
@@ -317,6 +319,7 @@
 					type: "item"
 				}
 			]
+			title: "红蓝红蓝碰"
 			x: 0.5d
 			y: 4.0d
 		}
@@ -327,8 +330,8 @@
 				item: "thermal:machine_pulverizer"
 				type: "item"
 			}]
-			x: -2.5d
-			y: 4.0d
+			x: -1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["5CB80958E4F38E5D"]
@@ -339,7 +342,7 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 3.5d
+			y: 4.0d
 		}
 		{
 			dependencies: ["093DD3F380F8FE42"]

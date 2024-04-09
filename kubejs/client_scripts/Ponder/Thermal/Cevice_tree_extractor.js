@@ -3,7 +3,7 @@ Ponder.registry(e => {
 		.scene(
 			'thermal:device_tree_extractor',
 			'树汁提取器使用',
-			'kubejs:device_tree_extractor',
+			'new_create:device_tree_extractor',
 			(scene, utils) => {
 				// 底盘和整棵树
 				scene.showBasePlate()

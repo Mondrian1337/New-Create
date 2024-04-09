@@ -3,13 +3,13 @@ LootJS.modifiers(e => {
 	e.addBlockLootModifier('minecraft:gravel')
 		.removeLoot(Ingredient.all)
 		.addAlternativesLoot(
-			LootEntry.of('kubejs:flint_knapp').when(c => c.randomChance(0.3)),
+			LootEntry.of('new_create:flint_knapp').when(c => c.randomChance(0.3)),
 			LootEntry.of('minecraft:gravel').when(c => c.randomChance(1))
 		)
 	// 草丛掉杂草
 	e.addBlockLootModifier('minecraft:grass')
 		.addAlternativesLoot(
-			LootEntry.of('kubejs:grass_fiber').when(c => c.randomChance(0.5))
+			LootEntry.of('new_create:grass_fiber').when(c => c.randomChance(0.5))
 		)
 	//铁矿掉粉碎铁矿石
 	e.addBlockLootModifier('#forge:ores/iron')
@@ -50,5 +50,5 @@ LootJS.modifiers(e => {
 	e.addEntityLootModifier("minecraft:blaze")
 		.killedByPlayer()
 		.randomChanceWithEnchantment("minecraft:looting", [0, 0.1, 0.15, 0.17])// 无抢夺0% 抢夺1-10% 抢夺2-15% 抢夺3-17%
-		.addLoot('kubejs:blaze_head')
+		.addLoot('new_create:blaze_head')
 })

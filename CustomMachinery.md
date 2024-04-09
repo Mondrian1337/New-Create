@@ -34,9 +34,9 @@ StartupEvents.registry("block", (event) => {
 
 **power_crusher.json**
 
-```js
+```json
 {
-    "name": "测试机器",															方块名字
+    "name": "测试机器",														   方块名字
     "appearance": {															   外观
         "block": "kubejs:machine/power_crusher_off",						   方块
         "hardness": 1,														   硬度

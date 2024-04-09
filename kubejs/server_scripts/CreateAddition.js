@@ -16,7 +16,7 @@ ServerEvents.recipes(e => {
 		splashing,
 		item_application
 	} = e.recipes.create
-	// KubeJS
+	// new_create
 	let {
 		shaped,
 		shapeless
@@ -144,11 +144,11 @@ ServerEvents.recipes(e => {
 				"amount": 50
 			},
 			{
-				"fluid": 'kubejs:kerosene',
+				"fluid": 'new_create:kerosene',
 				"amount": 50
 			},
 			{
-				"fluid": 'kubejs:industrial_fuel',
+				"fluid": 'new_create:industrial_fuel',
 				"amount": 50
 			}
 		]

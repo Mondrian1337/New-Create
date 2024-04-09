@@ -17,5 +17,6 @@
 	}
 	pause_game: false
 	progression_mode: "linear"
+	title: "&bNew Create"
 	version: 13
 }

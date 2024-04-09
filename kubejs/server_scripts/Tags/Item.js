@@ -11,12 +11,12 @@ ServerEvents.tags('item', e => {
 
 	// 线
 	e.add('forge:string', [
-		'kubejs:grass_string'
+		'new_create:grass_string'
 	])
 
 	//烧焦圆石
 	e.add("forge:cobblestone", [
-		'kubejs:charred_cobblestone'
+		'new_create:charred_cobblestone'
 	])
 
 	// 草
@@ -31,27 +31,27 @@ ServerEvents.tags('item', e => {
 
 	// 锯子
 	e.add('forge:saw', [
-		'kubejs:flint_saw',
-		'kubejs:iron_saw',
-		'kubejs:diamond_saw'
+		'new_create:flint_saw',
+		'new_create:iron_saw',
+		'new_create:diamond_saw'
 	])
 
 	// 锤子
 	e.add('forge:hammer', [
-		'kubejs:stone_hammer',
-		'kubejs:iron_hammer',
-		'kubejs:diamond_hammer'
+		'new_create:stone_hammer',
+		'new_create:iron_hammer',
+		'new_create:diamond_hammer'
 	])
 
 	// 工具
-	e.add('kubejs:tools', [
+	e.add('new_create:tools', [
 		'#forge:hammer',
 		'#forge:saw'
 	])
 
 	//合成轴承
 	e.add('create:shaft_add', [
-		'kubejs:primary_bearing',
+		'new_create:primary_bearing',
 		'create:shaft'
 	])
 
@@ -66,11 +66,11 @@ ServerEvents.tags('item', e => {
 
 	// 燧石工具
 	e.add('forge:tools/flint', [
-		'kubejs:flint_sword',
-		'kubejs:flint_pickaxe',
-		'kubejs:flint_axe',
-		'kubejs:flint_handaxe',
-		'kubejs:flint_shovel'
+		'new_create:flint_sword',
+		'new_create:flint_pickaxe',
+		'new_create:flint_axe',
+		'new_create:flint_handaxe',
+		'new_create:flint_shovel'
 	])
 
 	// 安山金属粒
@@ -100,16 +100,16 @@ ServerEvents.tags('item', e => {
 		'immersiveengineering:mold_wire',
 		'immersiveengineering:mold_packing_4',
 		'immersiveengineering:mold_packing_9',
-		'kubejs:mold_block'
+		'new_create:mold_block'
 	])
 
 	// 铸铁锭
 	e.add('forge:ingots/cast_iron', [
-		'kubejs:cast_iron_ingot'
+		'new_create:cast_iron_ingot'
 	])
 
 	// 铸铁块
 	e.add('forge:storage_blocks/cast_iron', [
-		'kubejs:cast_iron_block'
+		'new_create:cast_iron_block'
 	])
 })

@@ -17,7 +17,7 @@ ServerEvents.recipes(e => {
 		splashing,
 		item_application
 	} = e.recipes.create
-	// KubeJS
+	// new_create
 	let {
 		shaped,
 		shapeless
@@ -40,11 +40,11 @@ ServerEvents.recipes(e => {
 		'CBC',
 		'  D'
 	], {
-		A: 'kubejs:stone_hammer',
+		A: 'new_create:stone_hammer',
 		B: '#minecraft:planks',
 		C: 'minecraft:flint',
 		D: 'minecraft:smooth_stone'
-	}).damageIngredient('kubejs:stone_hammer')
+	}).damageIngredient('new_create:stone_hammer')
 
 	//石磨
 	shaped('create:millstone', [
@@ -60,42 +60,42 @@ ServerEvents.recipes(e => {
 	}).damageIngredient('#forge:hammer')
 
 	// 小齿轮(半成品)
-	stonecutting('kubejs:in_cogwheel', [
+	stonecutting('new_create:in_cogwheel', [
 		'#forge:treated_wood_slab'
 	])
 	cutting([
-		Item.of('kubejs:in_cogwheel').withChance(1.0),
-		Item.of('kubejs:in_cogwheel').withChance(0.3)
+		Item.of('new_create:in_cogwheel').withChance(1.0),
+		Item.of('new_create:in_cogwheel').withChance(0.3)
 	], '#forge:treated_wood_slab')
 
 	// 大齿轮(半成品)
-	stonecutting('kubejs:in_large_cogwheel', [
+	stonecutting('new_create:in_large_cogwheel', [
 		'#forge:treated_wood'
 	])
 	cutting([
-		Item.of('kubejs:in_large_cogwheel').withChance(1.0),
-		Item.of('kubejs:in_large_cogwheel').withChance(0.3)
+		Item.of('new_create:in_large_cogwheel').withChance(1.0),
+		Item.of('new_create:in_large_cogwheel').withChance(0.3)
 	], '#forge:treated_wood')
 
 	// 小齿轮
 	shapeless('create:cogwheel', [
-		'kubejs:in_cogwheel',
-		'kubejs:primary_bearing',
+		'new_create:in_cogwheel',
+		'new_create:primary_bearing',
 		'#forge:hammer'
 	]).damageIngredient('#forge:hammer')
 	deploying('create:cogwheel', [
-		'kubejs:in_cogwheel',
+		'new_create:in_cogwheel',
 		'create:shaft'
 	])
 
 	// 大齿轮
 	shapeless('create:large_cogwheel', [
-		'kubejs:in_large_cogwheel',
-		'kubejs:primary_bearing',
+		'new_create:in_large_cogwheel',
+		'new_create:primary_bearing',
 		'#forge:hammer'
 	]).damageIngredient('#forge:hammer')
 	deploying('create:large_cogwheel', [
-		'kubejs:in_large_cogwheel',
+		'new_create:in_large_cogwheel',
 		'create:shaft'
 	])
 
@@ -136,7 +136,7 @@ ServerEvents.recipes(e => {
 		'SCS',
 		'SSS'
 	], {
-		S: 'kubejs:charred_cobblestone',
+		S: 'new_create:charred_cobblestone',
 		C: '#forge:ingots/copper'
 	})
 
@@ -154,7 +154,7 @@ ServerEvents.recipes(e => {
 	mixing('minecraft:iron_ingot', [
 		Item.of('create:crushed_raw_iron'),
 		Item.of('#forge:dusts/coal'),
-		Fluid.of('kubejs:working_fluid', 250)
+		Fluid.of('new_create:working_fluid', 250)
 	])
 
 	//煤粉
@@ -164,7 +164,7 @@ ServerEvents.recipes(e => {
 	], '#minecraft:coals')
 
 	//加工液
-	mixing(Fluid.of('kubejs:working_fluid', 500), [
+	mixing(Fluid.of('new_create:working_fluid', 500), [
 		'2x immersiveengineering:slag',
 		Fluid.of('minecraft:water', 500)
 	])
@@ -175,7 +175,7 @@ ServerEvents.recipes(e => {
 		'ABA',
 		' A '
 	], {
-		A: "kubejs:cast_iron_sheet",
+		A: "new_create:cast_iron_sheet",
 		B: '#create:shaft_add'
 	})
 
@@ -185,12 +185,12 @@ ServerEvents.recipes(e => {
 		'ABA',
 		' A '
 	], {
-		A: "kubejs:cast_iron_sheet",
+		A: "new_create:cast_iron_sheet",
 		B: "minecraft:netherrack"
 	})
 
 	// 安山混合物
-	shaped('kubejs:andesite_compound', [
+	shaped('new_create:andesite_compound', [
 		'AAA',
 		'AWC',
 		'CCC'
@@ -201,8 +201,8 @@ ServerEvents.recipes(e => {
 	}).replaceIngredient('minecraft:water_bucket', 'minecraft:bucket')
 
 	//安山混合液
-	mixing(Fluid.of('kubejs:andesite_compound_fluid', 1000), [
-		'kubejs:andesite_compound',
+	mixing(Fluid.of('new_create:andesite_compound_fluid', 1000), [
+		'new_create:andesite_compound',
 		Fluid.of('minecraft:water', 1000)
 	]).heated()
 
@@ -213,7 +213,7 @@ ServerEvents.recipes(e => {
 		'BDB'
 	], {
 		A: "minecraft:copper_ingot",
-		B: "kubejs:cast_iron_sheet",
+		B: "new_create:cast_iron_sheet",
 		C: 'create:fluid_tank',
 		D: '#forge:plates/copper'
 	})
@@ -221,7 +221,7 @@ ServerEvents.recipes(e => {
 	//安山合金
 	filling('create:andesite_alloy', [
 		'minecraft:andesite',
-		Fluid.of('kubejs:andesite_compound_fluid', 50)
+		Fluid.of('new_create:andesite_compound_fluid', 50)
 	])
 
 	//安山机壳
@@ -236,15 +236,15 @@ ServerEvents.recipes(e => {
 		'DED',
 		'FFF'
 	], {
-		D: "kubejs:cast_iron_sheet",
-		E: "kubejs:cast_iron_ingot",
+		D: "new_create:cast_iron_sheet",
+		E: "new_create:cast_iron_ingot",
 		F: "create:andesite_casing"
 	})
 
 	//黄铜锭
 	mixing('2x create:brass_ingot', [
 		'2x thermal:bronze_ingot',
-		Fluid.of('kubejs:andesite_compound_fluid', 50)
+		Fluid.of('new_create:andesite_compound_fluid', 50)
 	]).heated()
 
 	// 风车轴承
@@ -256,7 +256,7 @@ ServerEvents.recipes(e => {
 		A: "#minecraft:planks",
 		B: "#minecraft:logs",
 		C: "create:andesite_casing",
-		D: "kubejs:charred_cobblestone"
+		D: "new_create:charred_cobblestone"
 	})
 
 	// 电子管
@@ -352,20 +352,20 @@ ServerEvents.recipes(e => {
 		A: 'minecraft:smooth_stone',
 		B: 'create:andesite_alloy',
 		C: '#minecraft:planks',
-		D: 'kubejs:kinetic_mechanism'
+		D: 'new_create:kinetic_mechanism'
 	})
 
 	// 碳板
-	compacting('2x kubejs:carbon_plate', [
+	compacting('2x new_create:carbon_plate', [
 		'8x #forge:dusts/coal',
-		Fluid.of('kubejs:working_fluid', 100)
+		Fluid.of('new_create:working_fluid', 100)
 	]).heated()
 
 	// 碳棒
-	mixing('2x kubejs:carbon_rod', [
-		'8x kubejs:carbon_plate',
-		'2x kubejs:coking_coal_rod',
-		Fluid.of('kubejs:working_fluid', 200)
+	mixing('2x new_create:carbon_rod', [
+		'8x new_create:carbon_plate',
+		'2x new_create:coking_coal_rod',
+		Fluid.of('new_create:working_fluid', 200)
 	]).heated()
 
 	// 焦炭
@@ -375,7 +375,7 @@ ServerEvents.recipes(e => {
 	], 'thermal:coal_coke')
 
 	// 焦炭棒
-	compacting('kubejs:coking_coal_rod', [
+	compacting('new_create:coking_coal_rod', [
 		'4x immersiveengineering:dust_coke',
 		'#create:shaft_add',
 		Fluid.of("minecraft:lava", 25)
@@ -389,10 +389,10 @@ ServerEvents.recipes(e => {
 		'ABCBA',
 		' ABA '
 	], {
-		A: 'kubejs:carbon_plate',
+		A: 'new_create:carbon_plate',
 		B: 'immersiveengineering:coil_lv',
-		C: 'kubejs:carbon_rod',
-		D: 'kubejs:inductive_mechanism'
+		C: 'new_create:carbon_rod',
+		D: 'new_create:inductive_mechanism'
 	})
 
 	// 空线轴
@@ -401,7 +401,7 @@ ServerEvents.recipes(e => {
 		'DBC',
 		' A '
 	], {
-		A: 'kubejs:cast_iron_sheet',
+		A: 'new_create:cast_iron_sheet',
 		B: '#forge:nuggets/iron',
 		C: '#forge:hammer',
 		D: '#forge:saw'
@@ -409,8 +409,8 @@ ServerEvents.recipes(e => {
 
 	// 工业铁锭
 	compacting('2x create_dd:industrial_iron_ingot', [
-		'2x kubejs:cast_iron_ingot',
-		Fluid.of('kubejs:working_fluid', 100)
+		'2x new_create:cast_iron_ingot',
+		Fluid.of('new_create:working_fluid', 100)
 	]).heated()
 
 	// 余烬合金
@@ -439,30 +439,30 @@ ServerEvents.recipes(e => {
 
 	// 电磁构件
 	sequenced_assembly([
-		'kubejs:inductive_mechanism'
+		'new_create:inductive_mechanism'
 	], 'immersiveengineering:coil_lv', [
 		pressing('immersiveengineering:coil_lv', 'immersiveengineering:coil_lv'),
-		deploying('immersiveengineering:coil_lv', ['kubejs:carbon_plate', 'kubejs:carbon_plate']),
+		deploying('immersiveengineering:coil_lv', ['new_create:carbon_plate', 'new_create:carbon_plate']),
 		deploying('immersiveengineering:coil_lv', ['create:electron_tube', 'create:electron_tube']),
 		deploying('immersiveengineering:coil_lv', ['#forge:ingots/zinc', '#forge:ingots/zinc'])
-	]).loops(1).transitionalItem('kubejs:in_inductive_mechanism')
+	]).loops(1).transitionalItem('new_create:in_inductive_mechanism')
 
 	// 动力构件
 	sequenced_assembly([
-		'kubejs:kinetic_mechanism'
+		'new_create:kinetic_mechanism'
 	], '#minecraft:wooden_slabs', [
 		deploying('#minecraft:wooden_slabs', ['create:cogwheel', 'create:cogwheel']),
 		deploying('#minecraft:wooden_slabs', ['#create:shaft_add', '#create:shaft_add']),
 		deploying('#minecraft:wooden_slabs', ['create:andesite_alloy', 'create:andesite_alloy'])
-	]).loops(1).transitionalItem('kubejs:in_kinetic_mechanism')
+	]).loops(1).transitionalItem('new_create:in_kinetic_mechanism')
 
 	// 密封构件
 	sequenced_assembly([
-		'kubejs:sealed_mechanism'
-	], 'kubejs:kinetic_mechanism', [
-		deploying('kubejs:sealed_mechanism', ['kubejs:sealed_mechanism', '#forge:cured_rubber']),
-		deploying('kubejs:sealed_mechanism', ['kubejs:sealed_mechanism', '#forge:nuggets/iron'])
-	]).loops(8).transitionalItem('kubejs:in_sealed_mechanism')
+		'new_create:sealed_mechanism'
+	], 'new_create:kinetic_mechanism', [
+		deploying('new_create:sealed_mechanism', ['new_create:sealed_mechanism', '#forge:cured_rubber']),
+		deploying('new_create:sealed_mechanism', ['new_create:sealed_mechanism', '#forge:nuggets/iron'])
+	]).loops(8).transitionalItem('new_create:in_sealed_mechanism')
 
 	// 交流发电机
 	mechanical_crafting('createaddition:alternator', [
@@ -471,12 +471,12 @@ ServerEvents.recipes(e => {
 		'BCDCB',
 		'EBCBE'
 	], {
-		A: 'kubejs:carbon_plate',
-		B: 'kubejs:cast_iron_sheet',
+		A: 'new_create:carbon_plate',
+		B: 'new_create:cast_iron_sheet',
 		C: 'immersiveengineering:coil_lv',
 		D: 'create:shaft',
 		E: '#forge:plates/brass',
-		F: 'kubejs:inductive_mechanism'
+		F: 'new_create:inductive_mechanism'
 	})
 
 	// 碳刷
@@ -485,9 +485,9 @@ ServerEvents.recipes(e => {
 		'BCB',
 		'AAA'
 	], {
-		A: 'kubejs:cast_iron_sheet',
-		B: 'kubejs:carbon_plate',
-		C: 'kubejs:carbon_rod'
+		A: 'new_create:cast_iron_sheet',
+		B: 'new_create:carbon_plate',
+		C: 'new_create:carbon_rod'
 	})
 
 	// 普通激发器
@@ -514,8 +514,8 @@ ServerEvents.recipes(e => {
 		B: '#forge:plates/brass',
 		C: 'create:shaft',
 		D: 'createaddition:capacitor',
-		E: 'kubejs:inductive_mechanism',
-		F: 'kubejs:zinc_electron_tube'
+		E: 'new_create:inductive_mechanism',
+		F: 'new_create:zinc_electron_tube'
 	})
 
 	// 电镀锌
@@ -523,26 +523,26 @@ ServerEvents.recipes(e => {
 		"type": "create_new_age:energising",
 		"energy_needed": 1200,
 		"ingredients": [{ "tag": "forge:ingots/zinc" }],
-		"results": [{ "item": "kubejs:plating_zinc_ingot" }]
+		"results": [{ "item": "new_create:plating_zinc_ingot" }]
 	})
 
 	// 锌加工液
-	compacting(Fluid.of('kubejs:zinc_fluid', 500), [
-		Item.of('kubejs:plating_zinc_ingot', 2),
-		Fluid.of('kubejs:working_fluid', 250)
+	compacting(Fluid.of('new_create:zinc_fluid', 500), [
+		Item.of('new_create:plating_zinc_ingot', 2),
+		Fluid.of('new_create:working_fluid', 250)
 	]).heated()
 
 	// 锌电子管
-	filling('kubejs:zinc_electron_tube', [
+	filling('new_create:zinc_electron_tube', [
 		'#forge:plates/zinc',
-		Fluid.of('kubejs:zinc_fluid', 100)
+		Fluid.of('new_create:zinc_fluid', 100)
 	])
 
 	// 康铜粉
 	mixing('4x immersiveengineering:dust_constantan', [
 		'2x immersiveengineering:dust_copper',
 		'2x immersiveengineering:dust_nickel',
-		Fluid.of('kubejs:working_fluid', 50)
+		Fluid.of('new_create:working_fluid', 50)
 	]).heated()
 
 	// 康铜锭
@@ -562,8 +562,8 @@ ServerEvents.recipes(e => {
 	sequenced_assembly('immersiveengineering:logic_circuit', 'immersiveengineering:circuit_board', [
 		deploying('immersiveengineering:circuit_board', ['immersiveengineering:wirecutter', 'immersiveengineering:wirecutter']),
 		deploying('immersiveengineering:circuit_board', ['createaddition:copper_wire', 'createaddition:copper_wire']),
-		deploying('immersiveengineering:circuit_board', ['kubejs:inductive_mechanism', 'kubejs:inductive_mechanism']),
-		deploying('immersiveengineering:circuit_board', ['kubejs:zinc_electron_tube', 'kubejs:zinc_electron_tube'])
+		deploying('immersiveengineering:circuit_board', ['new_create:inductive_mechanism', 'new_create:inductive_mechanism']),
+		deploying('immersiveengineering:circuit_board', ['new_create:zinc_electron_tube', 'new_create:zinc_electron_tube'])
 	]).transitionalItem('immersiveengineering:circuit_board').loops(1).damageIngredient('immersiveengineering:wirecutter')
 
 	// 坚固板
@@ -587,34 +587,34 @@ ServerEvents.recipes(e => {
 		A: '#forge:plates/brass',
 		B: '#forge:rods/iron',
 		C: 'createaddition:capacitor',
-		D: 'kubejs:cast_electron_tube',
+		D: 'new_create:cast_electron_tube',
 		E: 'createaddition:electric_motor',
 		F: 'create_things_and_misc:vibration_mechanism',
 		G: 'create:brass_casing'
 	})
 
 	// 铸铁量产
-	compacting(Fluid.of('kubejs:cast_fluid', 400), [
+	compacting(Fluid.of('new_create:cast_fluid', 400), [
 		'2x minecraft:iron_ingot',
 		'mekanism:dust_coal'
 	]).heated()
 
-	filling('kubejs:cast_iron_ingot', [
+	filling('new_create:cast_iron_ingot', [
 		'#forge:plates/iron',
-		Fluid.of('kubejs:cast_fluid', 100)
+		Fluid.of('new_create:cast_fluid', 100)
 	])
 
 	// 铸铁电子管
-	filling('kubejs:cast_electron_tube', [
-		'kubejs:zinc_electron_tube',
-		Fluid.of('kubejs:cast_fluid', 100)
+	filling('new_create:cast_electron_tube', [
+		'new_create:zinc_electron_tube',
+		Fluid.of('new_create:cast_fluid', 100)
 	])
 
 	// 钢粉
 	mixing('2x immersiveengineering:dust_steel', [
 		'2x immersiveengineering:dust_iron',
 		'2x mekanism:dust_coal',
-		Fluid.of('kubejs:working_fluid', 100)
+		Fluid.of('new_create:working_fluid', 100)
 	]).heated()
 
 	// 铁粉
@@ -642,8 +642,8 @@ ServerEvents.recipes(e => {
 		'CDC',
 		'ABA'
 	], {
-		A: 'kubejs:cast_iron_sheet',
-		B: 'kubejs:carbon_plate',
+		A: 'new_create:cast_iron_sheet',
+		B: 'new_create:carbon_plate',
 		C: '#forge:ingots/zinc',
 		D: 'minecraft:lead'
 	}).id('createdieselgenerators:crafting/pumpjack_head')
@@ -653,7 +653,7 @@ ServerEvents.recipes(e => {
 		'AAA',
 		'BBB'
 	], {
-		A: 'kubejs:cast_iron_sheet',
+		A: 'new_create:cast_iron_sheet',
 		B: 'create:andesite_alloy'
 	}).id('create:crafting/kinetics/metal_girder')
 
@@ -703,14 +703,14 @@ ServerEvents.recipes(e => {
 	]).loops(1).transitionalItem('create_things_and_misc:rose_quartz_sheet').damageIngredient('immersiveengineering:wirecutter')
 
 	// 玫瑰石英量产产线
-	mixing(Fluid.of('kubejs:rose_quartz_fluid', 200), [
+	mixing(Fluid.of('new_create:rose_quartz_fluid', 200), [
 		'4x minecraft:redstone',
 		'4x minecraft:quartz'
 	]).heated()
 
 	filling('create:polished_rose_quartz', [
 		'minecraft:quartz',
-		Fluid.of('kubejs:rose_quartz_fluid', 100)
+		Fluid.of('new_create:rose_quartz_fluid', 100)
 	])
 
 	// 机器框架
@@ -738,7 +738,7 @@ ServerEvents.recipes(e => {
 	])
 
 	// 计算构件
-	sequenced_assembly('kubejs:calculation_mechanism', '#forge:plates/lumium', [
+	sequenced_assembly('new_create:calculation_mechanism', '#forge:plates/lumium', [
 		deploying('#forge:plates/lumium', ['#forge:gears/invar', '#forge:gears/invar']),
 		deploying('#forge:plates/lumium', ['createaddition:capacitor', 'createaddition:capacitor']),
 		deploying('#forge:plates/lumium', ['#forge:nuggets/lead', '#forge:nuggets/lead']),
@@ -749,16 +749,33 @@ ServerEvents.recipes(e => {
 
 	// 下界构件
 	sequenced_assembly([
-		'kubejs:infernal_mechanism'
+		'new_create:infernal_mechanism'
 	], 'create:precision_mechanism', [
-		filling('kubejs:infernal_mechanism', ['kubejs:infernal_mechanism', Fluid.of('minecraft:lava', 100)]),
-		deploying('kubejs:infernal_mechanism', ['kubejs:infernal_mechanism', '#forge:plates/obsidian']),
-		filling('kubejs:infernal_mechanism', ['kubejs:infernal_mechanism', Fluid.of('kubejs:soul', 100)])
-	]).loops(1).transitionalItem('kubejs:in_infernal_mechanism')
+		filling('new_create:infernal_mechanism', ['new_create:infernal_mechanism', Fluid.of('minecraft:lava', 100)]),
+		deploying('new_create:infernal_mechanism', ['new_create:infernal_mechanism', '#forge:plates/obsidian']),
+		filling('new_create:infernal_mechanism', ['new_create:infernal_mechanism', Fluid.of('new_create:soul', 100)])
+	]).loops(1).transitionalItem('new_create:in_infernal_mechanism')
 
 	// 加强电子管量产
-	filling('2x immersiveengineering:toolupgrade_revolver_electro',[
+	filling('2x immersiveengineering:toolupgrade_revolver_electro', [
 		'immersiveengineering:circuit_board',
-		Fluid.of('kubejs:high_grade_refined_oil',200)
+		Fluid.of('new_create:high_grade_refined_oil', 200)
 	])
+
+	// 振动台
+	mechanical_crafting('vintageimprovements:vibrating_table', [
+		'WAFAW',
+		'HSPSH',
+		'ASVSA',
+		'ACCCA'
+	], {
+		A: '#forge:andesite_alloy',
+		S: '#vintageimprovements:springs',
+		C: 'create:andesite_casing',
+		P: 'create:piston_extension_pole',
+		F: '#minecraft:wooden_pressure_plates',
+		H: '#create:shaft_add',
+		V: 'create_things_and_misc:vibration_mechanism',
+		W: '#minecraft:wooden_slabs'
+	}).id('vintageimprovements:craft/vibrating_table')
 })

@@ -16,7 +16,7 @@ ServerEvents.recipes(e => {
 		sequenced_assembly,
 		splashing
 	} = e.recipes.create
-	// KubeJS
+	// new_create
 	let {
 		shaped,
 		shapeless
@@ -80,9 +80,7 @@ ServerEvents.recipes(e => {
 	e.custom({
 		"type": "caupona:aspic_melt",
 		"amount": 100,
-		"aspic": {
-			"item": "thermal:rubber"
-		},
+		"aspic": { "item": "thermal:rubber" },
 		"fluid": "thermal:latex",
 		"time": 100
 	})
@@ -97,7 +95,7 @@ ServerEvents.recipes(e => {
 		C: '#create:casing',
 		F: 'flopper:flopper',
 		B: 'minecraft:bucket',
-		Z: 'kubejs:cast_iron_block'
+		Z: 'new_create:cast_iron_block'
 	}).id('thermal:device_tree_extractor')
 
 	// 樱花
@@ -105,75 +103,60 @@ ServerEvents.recipes(e => {
 		"type": "thermal:tree_extractor",
 		"trunk": 'minecraft:cherry_log',
 		"leaves": 'minecraft:cherry_leaves',
-		"result": {
-			"fluid": "thermal:latex",
-			"amount": 250
-		}
+		"result": { "fluid": "thermal:latex", "amount": 250 }
 	}).id('thermal:devices/tree_extractor/tree_extractor_cherry')
+
 	//金合欢
 	e.custom({
 		"type": "thermal:tree_extractor",
 		"trunk": 'minecraft:acacia_log',
 		"leaves": 'minecraft:acacia_leaves',
-		"result": {
-			"fluid": "thermal:latex",
-			"amount": 250
-		}
+		"result": { "fluid": "thermal:latex", "amount": 250 }
 	}).id('thermal:devices/tree_extractor/tree_extractor_acacia')
+
 	// 白桦
 	e.custom({
 		"type": "thermal:tree_extractor",
 		"trunk": 'minecraft:birch_log',
 		"leaves": 'minecraft:birch_leaves',
-		"result": {
-			"fluid": "thermal:latex",
-			"amount": 2250
-		}
+		"result": { "fluid": "thermal:latex", "amount": 2250 }
 	}).id('thermal:devices/tree_extractor/tree_extractor_birch')
+
 	// 橡树
 	e.custom({
 		"type": "thermal:tree_extractor",
 		"trunk": 'minecraft:oak_log',
 		"leaves": 'minecraft:oak_leaves',
-		"result": {
-			"fluid": "thermal:latex",
-			"amount": 250
-		}
+		"result": { "fluid": "thermal:latex", "amount": 250 }
 	}).id('thermal:devices/tree_extractor/tree_extractor_oak')
+
 	// 云杉
 	e.custom({
 		"type": "thermal:tree_extractor",
 		"trunk": 'minecraft:spruce_log',
 		"leaves": 'minecraft:spruce_leaves',
-		"result": {
-			"fluid": "thermal:latex",
-			"amount": 250
-		}
+		"result": { "fluid": "thermal:latex", "amount": 250 }
 	}).id('thermal:devices/tree_extractor/tree_extractor_spruce')
+
 	//丛林
 	e.custom({
 		"type": "thermal:tree_extractor",
 		"trunk": "minecraft:jungle_log",
 		"leaves": "minecraft:jungle_leaves",
-		"result": {
-			"fluid": "thermal:latex",
-			"amount": 250
-		}
+		"result": { "fluid": "thermal:latex", "amount": 250 }
 	})
+
 	//深色
 	e.custom({
 		"type": "thermal:tree_extractor",
 		"trunk": "minecraft:dark_oak_log",
 		"leaves": "minecraft:dark_oak_leaves",
-		"result": {
-			"fluid": "thermal:latex",
-			"amount": 250
-		}
+		"result": { "fluid": "thermal:latex", "amount": 250 }
 	})
 
 	// 塑料片
-	chiller('2x kubejs:plastic_sheet', [
-		Fluid.of('kubejs:mixed_gasoline', 150)
+	chiller('2x new_create:plastic_sheet', [
+		Fluid.of('new_create:mixed_gasoline', 150)
 	]).energy(250)
 
 	// 极速冷冻机
@@ -185,7 +168,7 @@ ServerEvents.recipes(e => {
 		A: '#forge:plates/industrial_iron',
 		B: '#forge:gears/constantan',
 		C: 'thermal:machine_frame',
-		D: 'kubejs:cast_iron_sheet',
+		D: 'new_create:cast_iron_sheet',
 		E: 'immersiveengineering:circuit_board',
 		F: 'thermal:rf_coil'
 	})
@@ -233,7 +216,7 @@ ServerEvents.recipes(e => {
 
 	// 秘银锭
 	bottler('create_dd:mithril_ingot', [
-		Fluid.of('kubejs:mithril_fluid', 500),
+		Fluid.of('new_create:mithril_fluid', 500),
 		'#forge:ingots/silver'
 	]).energy(1000)
 
@@ -254,13 +237,13 @@ ServerEvents.recipes(e => {
 
 	// 玫瑰金粉
 	crystallizer('2x thermal:rose_gold_dust', [
-		Fluid.of('kubejs:rose_gold_fluid', 200),
+		Fluid.of('new_create:rose_gold_fluid', 200),
 		'#forge:dusts/iron',
 		'#forge:dusts/gold'
 	]).energy(800)
 
 	// 玫瑰金溶液
-	crucible(Fluid.of('kubejs:rose_gold_fluid', 400), [
+	crucible(Fluid.of('new_create:rose_gold_fluid', 400), [
 		'create_things_and_misc:rose_quartz_sheet'
 	]).energy(1200)
 
@@ -272,20 +255,38 @@ ServerEvents.recipes(e => {
 
 	// 流体单元框架
 	filling('thermal:fluid_cell_frame', [
-		Fluid.of('kubejs:high_grade_refined_oil'),
+		Fluid.of('new_create:high_grade_refined_oil'),
 		'thermal:energy_cell_frame'
 	])
 
 	// 感应炉
-	shaped('thermal:machine_smelter',[
+	shaped('thermal:machine_smelter', [
 		'AAA',
 		'CBD',
 		'AEA'
-	],{
+	], {
 		A: 'thermal:invar_plate',
-		B:'kubejs:infernal_mechanism',
+		B: 'new_create:infernal_mechanism',
 		C: 'thermal:obsidian_glass',
 		D: 'thermal:energy_cell_frame',
-		E: 'kubejs:cast_electron_tube'
+		E: 'new_create:cast_electron_tube'
+	})
+
+	// 灵魂沙粉末
+	e.custom({
+		"type": "vintageimprovements:vibrating",
+		"ingredients": [{ "tag": "minecraft:soul_fire_base_blocks" }],
+		"results": [
+			{
+				"item": "thermal_extra:soul_sand_dust", "amount": 1, "chance": 0.4
+			},
+			{
+				"item": "minecraft:soul_sand", "amount": 1, "chance": 0.3
+			},
+			{
+				"item": "minecraft:soul_soil", "amount": 1, "chance": 0.3
+			}
+		],
+		"processingTime": 300
 	})
 })

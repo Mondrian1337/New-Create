@@ -1,4 +1,5 @@
 StartupEvents.registry('item', e => {
+	const ModID = 'new_create:'
 	let Item = [
 		// 燧石碎片
 		['flint_knapp', 64, 'uncommon', false],
@@ -74,7 +75,7 @@ StartupEvents.registry('item', e => {
 		Rarity,
 		Glow
 	]) => {
-		e.create(Name)
+		e.create(ModID + Name)
 			.maxStackSize(Maxstacksize)
 			.rarity(Rarity)
 			.glow(Glow)
@@ -97,6 +98,6 @@ StartupEvents.registry('item', e => {
 		['in_sturdy_mechanism']
 	]
 	In_Item.forEach(([Name]) => {
-		e.create(Name, 'create:sequenced_assembly')
+		e.create(ModID + Name, 'create:sequenced_assembly')
 	})
 })

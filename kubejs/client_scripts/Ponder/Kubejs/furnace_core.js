@@ -1,9 +1,9 @@
 Ponder.registry(e => {
-	e.create('kubejs:furnace_core')
+	e.create('new_create:furnace_core')
 		.scene(
-			'kubejs:furnace_core',
+			'new_create:furnace_core',
 			'熔炉核心合成',
-			'kubejs:furnace_core',
+			'new_create:furnace_core',
 			(scene, utils) => {
 				scene.showBasePlate()
 				scene.idle(20)
@@ -35,7 +35,7 @@ Ponder.registry(e => {
 				scene.idle(20)
 				scene.world.setBlocks([1, 1, 1, 3, 3, 3], "minecraft:air")
 				scene.idle(5)
-				scene.world.createItemEntity([2, 1, 2], Direction.down, "kubejs:furnace_core")
+				scene.world.createItemEntity([2, 1, 2], Direction.down, "new_create:furnace_core")
 				scene.idle(5)
 			}
 		)

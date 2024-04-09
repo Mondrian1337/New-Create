@@ -324,3 +324,8 @@ customization {
   y = 140
 }
 
+customization {
+  identifier = %id=376298%
+  action = hidebutton
+}
+

@@ -37,13 +37,13 @@ JEIEvents.hideItems(e => {
 		'extendedcrafting:black_iron_slate',
 		'extendedcrafting:crystaltine_component',
 		'extendedcrafting:the_ultimate_component',
-		'kubejs:in_abstruse_mechanism',
-		'kubejs:in_calculation_mechanism',
-		'kubejs:in_inductive_mechanism',
-		'kubejs:in_infernal_mechanism',
-		'kubejs:in_kinetic_mechanism',
-		'kubejs:in_sturdy_mechanism',
-		'kubejs:in_sealed_mechanism'	
+		'new_create:in_abstruse_mechanism',
+		'new_create:in_calculation_mechanism',
+		'new_create:in_inductive_mechanism',
+		'new_create:in_infernal_mechanism',
+		'new_create:in_kinetic_mechanism',
+		'new_create:in_sturdy_mechanism',
+		'new_create:in_sealed_mechanism'	
 	]
 	Item.forEach(Item => {
 		e.hide(Item)

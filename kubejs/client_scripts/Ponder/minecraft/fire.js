@@ -3,7 +3,7 @@ Ponder.registry(e => {
 		.scene(
 			'minecraft:stick',
 			'生火',
-			'kubejs:fire',
+			'new_create:fire',
 			(scene, until) => {
 				scene.showBasePlate()
 				scene.idle(20)

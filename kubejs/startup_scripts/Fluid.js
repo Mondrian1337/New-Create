@@ -1,4 +1,5 @@
 StartupEvents.registry('fluid', e => {
+	const ModID = 'new_create:'
 	let Fluid = [
 		// 安山合金溶液
 		['andesite_compound_fluid', 0x808080],
@@ -26,18 +27,18 @@ StartupEvents.registry('fluid', e => {
 		['rose_gold_fluid', 0xFF69B4]
 	]
 	Fluid.forEach(([Name, Color]) => {
-		e.create(Name)
+		e.create(ModID + Name)
 			.thickTexture(Color)
 			.bucketColor(Color)
-			.flowingTexture('kubejs:block/flowing')
-			.stillTexture('kubejs:block/still')
+			.flowingTexture('new_create:block/flowing')
+			.stillTexture('new_create:block/still')
 	})
 
-	// 特殊注册(这里用于注册特殊的Fluid,例如独立贴图,没有桶之类的)
+	// 特殊注册(这里用于注册特殊的Fluid,例如独立贴图,没有桶,没有世界流体之类的)
 	// 液态灵魂
-	e.create('soul')
+	e.create(ModID + 'soul')
 		.noBucket()
 		.noBlock()
-		.flowingTexture('kubejs:block/soul_flowing')
-		.stillTexture('kubejs:block/soul_still')
+		.flowingTexture('new_create:block/soul_flowing')
+		.stillTexture('new_create:block/soul_still')
 })

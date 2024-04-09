@@ -98,7 +98,14 @@
 			id: "54D1253B1BBB0CA4"
 			tasks: [{
 				id: "7C653C3F23475828"
-				item: "create:brass_ingot"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/brass"
+					}
+				}
+				title: "Any #forge:ingots/brass"
 				type: "item"
 			}]
 			x: -9.095238095238095d
@@ -171,7 +178,14 @@
 			id: "5D3F84762ED61E6A"
 			tasks: [{
 				id: "31F05A2744B0186A"
-				item: "minecraft:slime_ball"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:slimeballs"
+					}
+				}
+				title: "Any #forge:slimeballs"
 				type: "item"
 			}]
 			x: -9.5d
@@ -199,7 +213,7 @@
 			dependencies: ["1F23917DBF624EE0"]
 			id: "34A1D0679852D9C1"
 			tasks: [{
-				id: "4347F718A85A88CB"
+				id: "37AD8977497EA0B4"
 				item: "create:polished_rose_quartz"
 				type: "item"
 			}]
@@ -221,7 +235,7 @@
 		}
 		{
 			dependencies: ["1A09D4635FED3126"]
-			description: ["{image:kubejs:textures/images/3.png width:50 height:50 align:1}"]
+			description: ["{image:new_create:textures/images/3.png width:50 height:50 align:1}"]
 			id: "73561804225FF7A6"
 			rewards: [
 				{
@@ -363,7 +377,7 @@
 			dependencies: ["65F1A3A80971DFEC"]
 			description: [
 				"                   &a就是不让你用蒸汽引擎&r"
-				"{image:kubejs:textures/images/1.png width:100 height:100 align:1}"
+				"{image:new_create:textures/images/1.png width:100 height:100 align:1}"
 			]
 			id: "5F846849DADC8AE5"
 			tasks: [{
@@ -393,7 +407,14 @@
 			id: "670C5F4A9F98CAA8"
 			tasks: [{
 				id: "06E81AA4487395D9"
-				item: "immersiveengineering:dust_coke"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/coal_coke"
+					}
+				}
+				title: "Any #forge:dusts/coal_coke"
 				type: "item"
 			}]
 			x: -1.0357142857142918d
@@ -415,7 +436,7 @@
 			id: "494D4872B69E33F4"
 			tasks: [{
 				id: "31BAA68F495D28D7"
-				item: "kubejs:coking_coal_rod"
+				item: "new_create:coking_coal_rod"
 				type: "item"
 			}]
 			x: -0.035714285714291805d
@@ -429,7 +450,7 @@
 			id: "38636D2545C44520"
 			tasks: [{
 				id: "042F3C052BF6B430"
-				item: "kubejs:carbon_rod"
+				item: "new_create:carbon_rod"
 				type: "item"
 			}]
 			x: 0.4642857142857082d
@@ -440,7 +461,14 @@
 			id: "1B77C78FF4A1F107"
 			tasks: [{
 				id: "06DAD52FCEDD59F5"
-				item: "mekanism:dust_coal"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/coal"
+					}
+				}
+				title: "Any #forge:dusts/coal"
 				type: "item"
 			}]
 			x: -1.5357142857142918d
@@ -451,7 +479,7 @@
 			id: "22F5E5229A1402A9"
 			tasks: [{
 				id: "362D0358DE4D3247"
-				item: "kubejs:carbon_plate"
+				item: "new_create:carbon_plate"
 				type: "item"
 			}]
 			x: -0.5357142857142918d
@@ -567,7 +595,7 @@
 			id: "675821C6A6BF5D79"
 			tasks: [{
 				id: "26A069312D55A5BE"
-				item: "kubejs:inductive_mechanism"
+				item: "new_create:inductive_mechanism"
 				type: "item"
 			}]
 			x: -3.485119047619051d
@@ -578,7 +606,7 @@
 			id: "22EF721A6422F327"
 			tasks: [{
 				id: "496AC7DDB8AC801B"
-				item: "kubejs:kinetic_mechanism"
+				item: "new_create:kinetic_mechanism"
 				type: "item"
 			}]
 			x: -3.0d
@@ -667,7 +695,14 @@
 			id: "260A96BFFF557F7A"
 			tasks: [{
 				id: "2E22C28316297DE8"
-				item: "immersiveengineering:dust_iron"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/iron"
+					}
+				}
+				title: "Any #forge:dusts/iron"
 				type: "item"
 			}]
 			x: -1.0d
@@ -678,7 +713,14 @@
 			id: "26E4F1B18E33BC23"
 			tasks: [{
 				id: "7D100DB6E61429B1"
-				item: "immersiveengineering:dust_steel"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/steel"
+					}
+				}
+				title: "Any #forge:dusts/steel"
 				type: "item"
 			}]
 			x: -1.0d
@@ -688,27 +730,19 @@
 			dependencies: ["26E4F1B18E33BC23"]
 			id: "2AC46F4E8D1CA776"
 			tasks: [{
-				count: 256L
 				id: "61EB58C4D24EF694"
-				item: "ad_astra:steel_ingot"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/steel"
+					}
+				}
 				title: "&6钢锭量产"
 				type: "item"
 			}]
 			x: -1.0d
 			y: -1.0d
-		}
-		{
-			description: ["{image:kubejs:textures/images/6.png width:50 height:50 align:1}"]
-			id: "75C3550B51F8A601"
-			subtitle: "&4感觉有点邪门"
-			tasks: [{
-				id: "00AA8C1ACD299623"
-				item: "kubejs:infernal_mechanism"
-				type: "item"
-			}]
-			title: "&3多多少少带点恩怨("
-			x: -5.0d
-			y: -0.5d
 		}
 	]
 	title: "No.2-1  Create"

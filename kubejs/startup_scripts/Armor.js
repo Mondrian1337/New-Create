@@ -1,5 +1,5 @@
 ItemEvents.armorTierRegistry(e => {
-	e.add('radiant', tier => {
+	e.add('new_create:radiant', tier => {
 		tier.durabilityMultiplier = 35 // 耐久系数,具体得上wiki看公式
 		tier.slotProtections = [6, 8, 10, 6] // 护甲值,分别对应[鞋子 裤腿 胸甲 头盔]
 		tier.toughness = 4  // 韧性
@@ -10,8 +10,9 @@ ItemEvents.armorTierRegistry(e => {
 	})
 })
 // 物品贴图照常放在item
-// 身上的贴图要放在assets/kubejs/textures/models/armor
+// 身上的贴图要放在assets/new_create/textures/models/armor
 StartupEvents.registry('item', e => {
+	const ModID = 'new_create:'
 	const Item = (
 		Name,  // Item ID
 		Type, // 类型
@@ -19,7 +20,7 @@ StartupEvents.registry('item', e => {
 		Tire,  // 盔甲图层
 		Glow  // 是否发光
 	) => {
-		e.create(Name, Type)
+		e.create(ModID + Name, Type)
 			.rarity(Rarity)
 			.tier(Tire)
 			.glow(Glow)

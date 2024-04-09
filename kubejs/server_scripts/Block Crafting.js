@@ -5,8 +5,8 @@ BlockCrafting.addMultiblockStructure(
 		.pattern('aaa', 'bcb', 'bbb')
 		.pattern('aaa', 'bdb', 'bbb')
 		.where('a', 'minecraft:smooth_stone')
-		.where('b', 'kubejs:cast_iron_block')
-		.where('c', 'kubejs:furnace_core')
+		.where('b', 'new_create:cast_iron_block')
+		.where('c', 'new_create:furnace_core')
 		.center('d', 'minecraft:glass')
 		.craftingItem('immersiveengineering:hammer')
 		.resultItem('minecraft:blast_furnace')
@@ -15,7 +15,7 @@ BlockCrafting.addMultiblockStructure(
 
 // 熔炉核心
 BlockCrafting.addMultiblockStructure(
-	MultiblockStructureBuilder.create('kubejs:furnace_core')
+	MultiblockStructureBuilder.create('new_create:furnace_core')
 		.pattern('aaa', 'aaa', 'aaa')
 		.pattern('aaa', 'aba', 'aaa')
 		.pattern('aaa', 'aAa', 'aaa')
@@ -23,6 +23,6 @@ BlockCrafting.addMultiblockStructure(
 		.where('b', 'minecraft:redstone_block')
 		.center('A', 'minecraft:cobblestone')
 		.craftingItem('immersiveengineering:hammer')
-		.resultItem('kubejs:furnace_core')
+		.resultItem('new_create:furnace_core')
 		.build()
 )

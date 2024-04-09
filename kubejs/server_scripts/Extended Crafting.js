@@ -16,7 +16,7 @@ ServerEvents.recipes(e => {
 		sequenced_assembly,
 		splashing
 	} = e.recipes.create
-	// KubeJS
+	// new_create
 	let {
 		shaped,
 		shapeless
@@ -120,7 +120,7 @@ ServerEvents.recipes(e => {
 				"item": 'create:large_cogwheel'
 			},
 			"E": {
-				"item": 'kubejs:cast_iron_block'
+				"item": 'new_create:cast_iron_block'
 			},
 			"F": {
 				"tag": "minecraft:planks"
@@ -219,10 +219,10 @@ ServerEvents.recipes(e => {
 		'EDBDE',
 		'CCCCC'
 	], {
-		A: 'kubejs:cast_iron_sheet',
+		A: 'new_create:cast_iron_sheet',
 		B: 'create:shaft',
 		C: 'create:andesite_casing',
-		D: 'kubejs:carbon_plate',
+		D: 'new_create:carbon_plate',
 		E: '#forge:ingots/andesite_alloy'
 	})
 
@@ -237,7 +237,7 @@ ServerEvents.recipes(e => {
 		B: 'immersiveengineering:wirecoil_copper',
 		C: 'immersiveengineering:component_electronic',
 		D: 'immersiveengineering:logic_circuit',
-		E: 'kubejs:inductive_mechanism',
+		E: 'new_create:inductive_mechanism',
 		F: '#forge:wires/iron'
 	})
 
@@ -253,6 +253,6 @@ ServerEvents.recipes(e => {
 		B: '#forge:plates/lead',
 		C: 'immersiveengineering:toolupgrade_revolver_electro',
 		D: 'thermal:rf_coil',
-		E: 'kubejs:calculation_mechanism'
+		E: 'new_create:calculation_mechanism'
 	})
 })

@@ -1,4 +1,5 @@
 StartupEvents.registry('item', e => {
+	const ModID = 'new_create:'
 	let Tool = [
 		// 燧石剑
 		['flint_sword', 'sword', 1, 100, 2, 0],
@@ -23,8 +24,7 @@ StartupEvents.registry('item', e => {
 		// 钻石锯子
 		['diamond_saw', 'axe', 5, 1200, 1.0, 3],
 		// 青铜镐
-		['bronze_pickaxe', 'pickaxe', 1, 650, 4.0, 2]
-
+		['bronze_pickaxe', 'pickaxe', 1, 650, 5.5, 2]
 	]
 	Tool.forEach(([
 		Name, // Item id
@@ -34,7 +34,7 @@ StartupEvents.registry('item', e => {
 		Speed, // 挖掘速度
 		Setlevel // 工具等级
 	]) => {
-		e.create(Name, Type)
+		e.create(ModID + Name, Type)
 			.attackDamageBaseline(Damage)
 			.unstackable()
 			.modifyTier(tier => {

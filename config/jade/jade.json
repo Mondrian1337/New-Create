@@ -20,7 +20,7 @@
     "builtinCamouflage": true
   },
   "overlay": {
-    "activeTheme": "jade:create",
+    "activeTheme": "jade:top",
     "themesHash": -328442023,
     "overlayPosX": 0.5,
     "overlayPosY": 1.0,

@@ -16,7 +16,7 @@ ServerEvents.recipes(e => {
 		sequenced_assembly,
 		splashing
 	} = e.recipes.create
-	// KubeJS
+	// new_create
 	let {
 		shaped,
 		shapeless
@@ -51,7 +51,7 @@ ServerEvents.recipes(e => {
 		"input0": { "tag": "forge:ingots/iron" },
 		"input1": { "tag": "forge:ingots/iron" },
 		"result": {
-			"base_ingredient": { "item": "kubejs:cast_iron_ingot" },
+			"base_ingredient": { "item": "new_create:cast_iron_ingot" },
 			"conut": 1
 		},
 		"time": 150
@@ -63,7 +63,7 @@ ServerEvents.recipes(e => {
 		'ECA',
 		'CF '
 	], {
-		A: "kubejs:charred_cobblestone",
+		A: "new_create:charred_cobblestone",
 		B: "#forge:string",
 		C: "#forge:rods/wooden",
 		E: '#forge:hammer',
@@ -77,18 +77,25 @@ ServerEvents.recipes(e => {
 		'PPP'
 	], {
 		P: '#minecraft:planks',
-		E: 'kubejs:embalming_fluid_bucket'
-	}).replaceIngredient('kubejs:embalming_fluid_bucket', 'minecraft:bucket')
+		E: 'new_create:embalming_fluid_bucket'
+	}).replaceIngredient('new_create:embalming_fluid_bucket', 'minecraft:bucket')
+
+	mixing('8x immersiveengineering:treated_wood_horizontal', [
+		'8x #minecraft:planks',
+		{ fluidTag: "forge:creosote", amount: 1000 }
+	]).id('immersiveengineering:crafting/treated_wood_horizontal')
+
+	mixing('immersiveengineering:treated_wood_horizontal', [
+		'#minecraft:planks',
+		{ fluidTag: "forge:creosote", amount: 125 }
+	])
 
 	// 锡锭
 	e.custom({
 		"type": "immersiveengineering:alloy",
 		"input0": { "item": 'create:crushed_raw_tin' },
 		"input1": { "tag": "minecraft:coals" },
-		"result": {
-			"base_ingredient": { "tag": 'forge:ingots/tin' },
-			"count": 1
-		},
+		"result": { "base_ingredient": { "tag": 'forge:ingots/tin' }, "count": 1 },
 		"time": 300
 	})
 
@@ -140,7 +147,7 @@ ServerEvents.recipes(e => {
 
 	// 铁板金属
 	compacting('2x immersiveengineering:sheetmetal_iron', [
-		'4x kubejs:cast_iron_sheet'
+		'4x new_create:cast_iron_sheet'
 	]).id('immersiveengineering:crafting/sheetmetal_iron')
 
 	// 传送带
@@ -161,7 +168,7 @@ ServerEvents.recipes(e => {
 			"base_ingredient": { "tag": 'forge:plates/industrial_iron' },
 			"count": 4
 		},
-		"mold": 'kubejs:mold_block',
+		"mold": 'new_create:mold_block',
 		"result": { "item": 'create_dd:industrial_casing' }
 	})
 
@@ -176,7 +183,7 @@ ServerEvents.recipes(e => {
 			},
 			{ "item": "immersiveengineering:wirecutter" }
 		],
-		"result": { "item": 'kubejs:mold_block' }
+		"result": { "item": 'new_create:mold_block' }
 	})
 
 	// 混合汽油
@@ -193,7 +200,7 @@ ServerEvents.recipes(e => {
 		},
 		"result": {
 			"amount": 40,
-			"fluid": "kubejs:mixed_gasoline"
+			"fluid": "new_create:mixed_gasoline"
 		}
 	})
 
@@ -205,7 +212,7 @@ ServerEvents.recipes(e => {
 			"base_ingredient": { "tag": 'forge:ingots/steel' },
 			"count": 4
 		},
-		"mold": 'kubejs:mold_block',
+		"mold": 'new_create:mold_block',
 		"result": { "item": 'create_dd:steel_casing' }
 	})
 
@@ -217,7 +224,7 @@ ServerEvents.recipes(e => {
 			{ "tag": "forge:glass" },
 			{ "tag": "forge:plates/nickel" },
 			{ "tag": "forge:wires/copper" },
-			{ "item": 'kubejs:plastic_sheet' }
+			{ "item": "new_create:plastic_sheet" }
 		],
 		"result": {
 			"count": 3,
@@ -234,13 +241,13 @@ ServerEvents.recipes(e => {
 		A: 'immersiveengineering:electron_tube',
 		B: '#forge:rods/copper',
 		C: '#forge:wires/copper',
-		D: 'kubejs:carbon_plate',
+		D: 'new_create:carbon_plate',
 		E: 'create_dd:calculation_mechanism'
 	}).id('immersiveengineering:crafting/toolupgrade_revolver_electro')
 
 	// 流体管道
 	compacting('immersiveengineering:fluid_pipe', [
-		'4x kubejs:cast_iron_sheet',
+		'4x new_create:cast_iron_sheet',
 		'2x minecraft:slime_ball'
 	])
 
@@ -248,29 +255,17 @@ ServerEvents.recipes(e => {
 	e.custom({
 		"type": "immersiveengineering:mixer",
 		"energy": 2000,
-		"fluid": {
-			"amount": 500,
-			"tag": 'thermal:refined_fuel'
-		},
+		"fluid": { "amount": 500, "tag": 'thermal:refined_fuel' },
 		"inputs": [{ "tag": 'forge:tar' }],
-		"result": {
-			"amount": 500,
-			"fluid": 'kubejs:high_grade_refined_oil'
-		}
+		"result": { "amount": 500, "fluid": 'new_create:high_grade_refined_oil' }
 	})
 
 	// 秘银溶液
 	e.custom({
 		"type": "immersiveengineering:mixer",
 		"energy": 2000,
-		"fluid": {
-			"amount": 250,
-			"tag": 'forge:high_grade_refined_oil'
-		},
+		"fluid": { "amount": 250, "tag": 'forge:high_grade_refined_oil' },
 		"inputs": [{ "item": 'mekanism:dust_emerald' }],
-		"result": {
-			"amount": 250,
-			"fluid": 'kubejs:mithril_fluid'
-		}
+		"result": { "amount": 250, "fluid": 'new_create:mithril_fluid' }
 	})
 })

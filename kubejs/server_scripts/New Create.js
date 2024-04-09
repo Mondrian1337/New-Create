@@ -16,7 +16,7 @@ ServerEvents.recipes(e => {
 		sequenced_assembly,
 		splashing
 	} = e.recipes.create
-	//  KubeJS
+	//  new_create
 	let {
 		shaped,
 		shapeless
@@ -56,57 +56,57 @@ ServerEvents.recipes(e => {
 		}
 	)
 	// 燧石剑
-	shaped('kubejs:flint_sword', [
+	shaped('new_create:flint_sword', [
 		'F',
 		'G',
 		'R'
 	], {
 		F: 'minecraft:flint',
 		R: '#forge:rods/wooden',
-		G: 'kubejs:grass_string'
+		G: 'new_create:grass_string'
 	})
 
 	// 燧石镐
-	shaped('kubejs:flint_pickaxe', [
+	shaped('new_create:flint_pickaxe', [
 		'FGF',
 		' R ',
 		' R '
 	], {
 		F: 'minecraft:flint',
 		R: '#forge:rods/wooden',
-		G: 'kubejs:grass_string'
+		G: 'new_create:grass_string'
 	})
 
 	// 燧石斧
-	shaped('kubejs:flint_axe', [
+	shaped('new_create:flint_axe', [
 		'FG',
 		'FR',
 		' R'
 	], {
 		F: 'minecraft:flint',
 		R: '#forge:rods/wooden',
-		G: 'kubejs:grass_string'
+		G: 'new_create:grass_string'
 	})
 
 	// 燧石短柄斧
-	shaped('kubejs:flint_handaxe', [
+	shaped('new_create:flint_handaxe', [
 		'FS',
 		' R'
 	], {
-		F: 'kubejs:flint_knapp',
+		F: 'new_create:flint_knapp',
 		S: '#forge:string',
 		R: '#forge:rods/wooden'
 	})
 
 	// 燧石锹
-	shaped('kubejs:flint_shovel', [
+	shaped('new_create:flint_shovel', [
 		'F',
 		'G',
 		'R'
 	], {
 		F: 'minecraft:flint',
 		R: '#forge:rods/wooden',
-		G: 'kubejs:grass_string'
+		G: 'new_create:grass_string'
 	})
 
 	// 工作台
@@ -134,12 +134,12 @@ ServerEvents.recipes(e => {
 		'FF',
 		'FF',
 	], {
-		F: 'kubejs:flint_knapp'
+		F: 'new_create:flint_knapp'
 	})
 
 	// 草绳
-	shapeless('kubejs:grass_string', [
-		'3x kubejs:grass_fiber'
+	shapeless('new_create:grass_string', [
+		'3x new_create:grass_fiber'
 	])
 
 	// 石头→营火烧
@@ -148,12 +148,12 @@ ServerEvents.recipes(e => {
 	]).cookingTime(500)
 
 	// 石头→烧焦圆石→营火烧
-	campfire_cooking("kubejs:charred_cobblestone", [
+	campfire_cooking("new_create:charred_cobblestone", [
 		'minecraft:stone'
 	]).cookingTime(500)
 
 	// 烧焦圆石→熔炉,烧焦圆石→高炉
-	blasting('kubejs:charred_cobblestone', [
+	blasting('new_create:charred_cobblestone', [
 		'#forge:cobblestone'
 	]).cookingTime(350).xp(20)
 
@@ -163,7 +163,7 @@ ServerEvents.recipes(e => {
 		'ECD',
 		' C '
 	], {
-		A: 'kubejs:charred_cobblestone',
+		A: 'new_create:charred_cobblestone',
 		B: '#forge:string',
 		C: '#forge:rods/wooden',
 		D: '#forge:hammer',
@@ -178,7 +178,7 @@ ServerEvents.recipes(e => {
 		'BCD',
 		' E '
 	], {
-		A: 'kubejs:charred_cobblestone',
+		A: 'new_create:charred_cobblestone',
 		B: 'farmersdelight:flint_knife',
 		C: '#forge:string',
 		D: '#forge:hammer',
@@ -193,7 +193,7 @@ ServerEvents.recipes(e => {
 		'ACE',
 		' C '
 	], {
-		A: 'kubejs:charred_cobblestone',
+		A: 'new_create:charred_cobblestone',
 		B: '#forge:string',
 		C: '#forge:rods/wooden',
 		D: 'farmersdelight:flint_knife',
@@ -209,7 +209,7 @@ ServerEvents.recipes(e => {
 		' D '
 	], {
 		A: '#forge:string',
-		B: 'kubejs:charred_cobblestone',
+		B: 'new_create:charred_cobblestone',
 		C: 'farmersdelight:flint_knife',
 		D: '#forge:rods/wooden',
 		E: '#forge:hammer'
@@ -223,7 +223,7 @@ ServerEvents.recipes(e => {
 		'ECD',
 		' C '
 	], {
-		A: 'kubejs:charred_cobblestone',
+		A: 'new_create:charred_cobblestone',
 		B: '#forge:string',
 		C: '#forge:rods/wooden',
 		D: 'farmersdelight:flint_knife',
@@ -244,7 +244,7 @@ ServerEvents.recipes(e => {
 		D: '#forge:rods/wooden',
 		E: '#forge:hammer',
 		S: '#forge:saw'
-	}).damageIngredient('kubejs:stone_hamemr')
+	}).damageIngredient('new_create:stone_hamemr')
 
 	// 石锤
 	shaped('#forge:hammer', [
@@ -259,7 +259,7 @@ ServerEvents.recipes(e => {
 	}).damageIngredient('farmersdelight:flint_knife')
 
 	// 铁锤
-	shaped('kubejs:iron_hammer', [
+	shaped('new_create:iron_hammer', [
 		' IS',
 		' RI',
 		'R  '
@@ -270,7 +270,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 钻石锤
-	shaped('kubejs:diamond_hammer', [
+	shaped('new_create:diamond_hammer', [
 		' DS',
 		' RD',
 		'R  '
@@ -282,11 +282,11 @@ ServerEvents.recipes(e => {
 
 	// 木棍
 	shapeless('4x minecraft:stick', [
-		'#minecraft:planks', 'kubejs:flint_saw'
-	]).damageIngredient('kubejs:flint_saw')
+		'#minecraft:planks', 'new_create:flint_saw'
+	]).damageIngredient('new_create:flint_saw')
 
 	// 燧石锯子
-	shaped('kubejs:flint_saw', [
+	shaped('new_create:flint_saw', [
 		'AB ',
 		'A B',
 		' CD'
@@ -298,7 +298,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 铁锯子
-	shaped('kubejs:iron_saw', [
+	shaped('new_create:iron_saw', [
 		'AB ',
 		'A B',
 		' CD'
@@ -310,7 +310,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 钻石锯子
-	shaped('kubejs:diamond_saw', [
+	shaped('new_create:diamond_saw', [
 		'AB ',
 		'A B',
 		' CD'
@@ -411,11 +411,11 @@ ServerEvents.recipes(e => {
 	}).id('minecraft:iron_hoe')
 
 	// 铸铁块<=>铸铁锭
-	shapeless('kubejs:cast_iron_block', [
-		'9x kubejs:cast_iron_ingot'
+	shapeless('new_create:cast_iron_block', [
+		'9x new_create:cast_iron_ingot'
 	])
-	shapeless('9x kubejs:cast_iron_ingot', [
-		'kubejs:cast_iron_block'
+	shapeless('9x new_create:cast_iron_ingot', [
+		'new_create:cast_iron_block'
 	])
 
 	// 切石机
@@ -430,14 +430,14 @@ ServerEvents.recipes(e => {
 		B: '#minecraft:wooden_buttons',
 		S: 'minecraft:smooth_stone',
 		C: '#forge:plates/copper'
-	}).id('minecraft:stonecutter').damageIngredient('#kubejs:tools')
+	}).id('minecraft:stonecutter').damageIngredient('#new_create:tools')
 
 	// 轴承
-	shaped('2x kubejs:primary_bearing', [
+	shaped('2x new_create:primary_bearing', [
 		'C',
 		'C'
 	], {
-		C: 'kubejs:charred_cobblestone'
+		C: 'new_create:charred_cobblestone'
 	})
 
 	// 防腐液 
@@ -445,7 +445,7 @@ ServerEvents.recipes(e => {
 		"type": "caupona:boiling",
 		"from": "thermal:latex",
 		"time": 200,
-		"to": "kubejs:embalming_fluid"
+		"to": "new_create:embalming_fluid"
 	})
 
 	// 粘土缸→烧制粘土缸
@@ -455,16 +455,17 @@ ServerEvents.recipes(e => {
 
 	// 二阶高级工作台
 	shaped('extendedcrafting:advanced_table', [
-		'AAA',
+		'APA',
 		'BCD',
 		'EFE'
 	], {
-		A: '#forge:storage_blocks/bronze',
+		A: '#forge:ingots/bronze',
 		B: "#forge:hammer",
 		D: "#forge:saw",
 		C: "minecraft:crafting_table",
-		E: "kubejs:charred_cobblestone",
-		F: "minecraft:smooth_stone"
+		E: "new_create:charred_cobblestone",
+		F: "minecraft:smooth_stone",
+		P: '#forge:plates/bronze'
 	})
 
 	// 青铜板
@@ -490,7 +491,7 @@ ServerEvents.recipes(e => {
 
 	// 平滑石头
 	shapeless('minecraft:smooth_stone', [
-		'kubejs:charred_cobblestone',
+		'new_create:charred_cobblestone',
 		'#forge:clay'
 	])
 
@@ -526,32 +527,46 @@ ServerEvents.recipes(e => {
 	]).loops(64).transitionalItem('minecraft:gold_ingot')
 
 	// 充电铁块<=>充电铁锭
-	shapeless('kubejs:charge_iron_block', [
+	shapeless('new_create:charge_iron_block', [
 		'9x create_new_age:overcharged_iron'
 	])
 	shapeless('9x create_new_age:overcharged_iron', [
-		'kubejs:charge_iron_block'
+		'new_create:charge_iron_block'
 	])
 
 	// 铜锭量产
 	mixing('2x minecraft:copper_ingot', [
 		'2x minecraft:raw_copper',
-		Fluid.of('kubejs:working_fluid', 100)
+		Fluid.of('new_create:working_fluid', 100)
 	]).heated()
 
 	// 铸铁板
-	pressing('kubejs:cast_iron_sheet', [
+	pressing('new_create:cast_iron_sheet', [
 		'#forge:ingots/cast_iron'
 	])
 
+	compacting('3x new_create:cast_iron_sheet', [
+		'2x #forge:ingots/cast_iron'
+	])
+
 	// 液态灵魂
-	mixing(Fluid.of('kubejs:soul', 50), [
+	mixing(Fluid.of('new_create:soul', 50), [
 		'4x minecraft:weeping_vines',
 		'4x minecraft:twisting_vines'
 	]).heated()
 
 	// 锌锭获取
-	shapeless('create:zinc_ingot',[
+	shapeless('create:zinc_ingot', [
 		'9x create:zinc_nugget'
 	])
+
+	// 青铜镐
+	shaped('new_create:bronze_pickaxe', [
+		'BBB',
+		' R ',
+		' R '
+	], {
+		B: '#forge:ingots/bronze',
+		R: '#forge:rods/wooden'
+	})
 })

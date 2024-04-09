@@ -114,7 +114,7 @@
 			id: "3E073FC5B24E8DA1"
 			tasks: [{
 				id: "517F668EDB730301"
-				item: "kubejs:plating_zinc_ingot"
+				item: "new_create:plating_zinc_ingot"
 				type: "item"
 			}]
 			x: 0.452380952380949d
@@ -125,7 +125,7 @@
 			id: "56FC7B94E78611DF"
 			tasks: [{
 				id: "3C94DA1DC8CD982E"
-				item: "kubejs:zinc_fluid_bucket"
+				item: "new_create:zinc_fluid_bucket"
 				type: "item"
 			}]
 			x: 1.5d
@@ -139,7 +139,7 @@
 			id: "7C43B6168E6D80E1"
 			tasks: [{
 				id: "614575C4381E2229"
-				item: "kubejs:zinc_electron_tube"
+				item: "new_create:zinc_electron_tube"
 				type: "item"
 			}]
 			x: 2.5d
@@ -251,7 +251,7 @@
 				{
 					count: 16L
 					id: "7D4D93F035AAEA04"
-					item: "kubejs:cast_iron_block"
+					item: "new_create:cast_iron_block"
 					type: "item"
 				}
 				{
@@ -267,7 +267,7 @@
 				}
 				{
 					id: "20B6A7E40D769D6B"
-					item: "kubejs:furnace_core"
+					item: "new_create:furnace_core"
 					type: "item"
 				}
 				{
@@ -282,6 +282,7 @@
 					type: "item"
 				}
 			]
+			title: "高炉,预备!"
 			x: 1.8214285714285836d
 			y: 3.5809058779761926d
 		}
@@ -314,7 +315,7 @@
 			]
 			description: [
 				"                          &4古希腊掌管机壳的神&r"
-				"{image:kubejs:textures/images/4.png width:100 height:100 align:1}"
+				"{image:new_create:textures/images/4.png width:100 height:100 align:1}"
 			]
 			id: "1C64E58F82BAF3FA"
 			tasks: [{
@@ -355,7 +356,7 @@
 			tasks: [{
 				count: 10L
 				id: "0D50B3019A24270D"
-				item: "kubejs:working_fluid_bucket"
+				item: "new_create:working_fluid_bucket"
 				type: "item"
 			}]
 			title: "&5加工液量产"
@@ -508,7 +509,7 @@
 			id: "33F5A9C5D6F8ED62"
 			tasks: [{
 				id: "05E0782A4AF5F07E"
-				item: "kubejs:cast_electron_tube"
+				item: "new_create:cast_electron_tube"
 				type: "item"
 			}]
 			x: 4.0d
@@ -522,7 +523,7 @@
 			id: "7BE6C15697F9757C"
 			tasks: [{
 				id: "5FCE3ABF1EDE7983"
-				item: "kubejs:cast_fluid_bucket"
+				item: "new_create:cast_fluid_bucket"
 				type: "item"
 			}]
 			x: 2.5d
@@ -605,7 +606,7 @@
 			id: "3F4B0B88F1B80CB1"
 			tasks: [{
 				id: "792C7C9E3B608DB2"
-				item: "kubejs:mold_block"
+				item: "new_create:mold_block"
 				type: "item"
 			}]
 			x: 8.5d
@@ -642,7 +643,7 @@
 			]
 			description: [
 				"                          &a万事俱备！开抽！&r"
-				"{image:kubejs:textures/images/5.png width:100 height:100 align:1}"
+				"{image:new_create:textures/images/5.png width:100 height:100 align:1}"
 			]
 			id: "0FFDD1889DBAD879"
 			tasks: [{
@@ -731,7 +732,7 @@
 			id: "2D88E78573250089"
 			tasks: [{
 				id: "5E06C9E21B60F8D9"
-				item: "kubejs:kerosene_bucket"
+				item: "new_create:kerosene_bucket"
 				type: "item"
 			}]
 			x: 10.5d
@@ -742,7 +743,7 @@
 			id: "22D49972B51452CE"
 			tasks: [{
 				id: "6E3DC82BB5411F6D"
-				item: "kubejs:industrial_fuel_bucket"
+				item: "new_create:industrial_fuel_bucket"
 				type: "item"
 			}]
 			x: 12.0d
@@ -767,7 +768,7 @@
 			id: "6D487531D83FC806"
 			tasks: [{
 				id: "35EE64BB3684784C"
-				item: "kubejs:mixed_gasoline_bucket"
+				item: "new_create:mixed_gasoline_bucket"
 				type: "item"
 			}]
 			x: 11.5d
@@ -778,7 +779,7 @@
 			id: "6A726C92FF74F0C0"
 			tasks: [{
 				id: "32A4CCE0F8AED48A"
-				item: "kubejs:plastic_sheet"
+				item: "new_create:plastic_sheet"
 				type: "item"
 			}]
 			x: 12.5d
@@ -813,13 +814,13 @@
 			]
 			id: "7DB50F72D65346B2"
 			shape: "gear"
-			size: 3.0d
+			size: 2.0d
 			tasks: [{
 				id: "1C6690A3F29A7A98"
 				item: "thermal:energy_cell_frame"
 				type: "item"
 			}]
-			x: 13.5d
+			x: 13.0d
 			y: 9.0d
 		}
 		{
@@ -864,7 +865,7 @@
 			id: "2417C6728C7512FC"
 			tasks: [{
 				id: "5DFDD5357A56D5A0"
-				item: "kubejs:rose_quartz_fluid_bucket"
+				item: "new_create:rose_quartz_fluid_bucket"
 				type: "item"
 			}]
 			x: 8.5d
@@ -898,7 +899,7 @@
 			id: "28CBB93704345791"
 			tasks: [{
 				id: "55D7D758374CD0B1"
-				item: "kubejs:calculation_mechanism"
+				item: "new_create:calculation_mechanism"
 				type: "item"
 			}]
 			x: 12.0d
