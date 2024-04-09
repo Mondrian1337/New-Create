@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3D5F25CAE2865380"
+	group: "2A249420D048661C"
+	icon: "minecraft:clock"
+	id: "3D5F25CAE2865380"
+	order_index: 0
+	quest_links: [ ]
+	quests: [ ]
+	title: "？？？"
+}
