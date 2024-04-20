@@ -329,6 +329,7 @@
 			y: 4.0d
 		}
 		{
+			dependencies: ["02C702D9B6C35B1C"]
 			id: "093DD3F380F8FE42"
 			tasks: [{
 				id: "298286D82A179498"
@@ -354,6 +355,17 @@
 				type: "item"
 			}]
 			x: -0.5d
+			y: 4.0d
+		}
+		{
+			id: "02C702D9B6C35B1C"
+			tasks: [{
+				id: "0F9408BEB0E5382C"
+				item: "vintageimprovements:vibrating_table"
+				type: "item"
+			}]
+			title: "&6古希腊掌管震动的神"
+			x: -2.5d
 			y: 4.0d
 		}
 	]
