@@ -14,9 +14,10 @@ ServerEvents.recipes(e => {
 		pressing,
 		sandpaper_polishing,
 		sequenced_assembly,
-		splashing
+		splashing,
+		item_application
 	} = e.recipes.create
-	//  New Create
+	//  KubeJS
 	const {
 		shaped,
 		shapeless

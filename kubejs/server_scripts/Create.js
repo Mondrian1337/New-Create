@@ -18,7 +18,7 @@ ServerEvents.recipes(e => {
 		item_application
 	} = e.recipes.create
 	const { extruding } = e.recipes.create_mechanical_extruder
-	// new_create
+	// KubeJS
 	const {
 		shaped,
 		shapeless

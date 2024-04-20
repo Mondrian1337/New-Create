@@ -16,7 +16,7 @@ ServerEvents.recipes(e => {
 		splashing,
 		item_application
 	} = e.recipes.create
-	// new_create
+	// KubeJS
 	const {
 		shaped,
 		shapeless

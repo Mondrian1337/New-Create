@@ -14,9 +14,10 @@ ServerEvents.recipes(e => {
 		pressing,
 		sandpaper_polishing,
 		sequenced_assembly,
-		splashing
+		splashing,
+		item_application
 	} = e.recipes.create
-	// new_create
+	// KubeJS
 	const {
 		shaped,
 		shapeless
@@ -36,7 +37,7 @@ ServerEvents.recipes(e => {
 		shaped_table,
 		shapeless_table
 	} = e.recipes.extendedcrafting
-	
+
 	// e.custom({
 	// 	"type": "extendedcrafting:shaped_table",
 	// 	"pattern": [
@@ -72,28 +73,14 @@ ServerEvents.recipes(e => {
 			"  F  "
 		],
 		"key": {
-			"A": {
-				"tag": "forge:ingots/bronze"
-			},
-			"B": {
-				"tag": "forge:plates/bronze"
-			},
-			"C": {
-				"tag": "minecraft:oak_logs"
-			},
-			"D": {
-				"item": "create:cogwheel"
-			},
-			"E": {
-				"tag": "create:shaft_add"
-			},
-			"F": {
-				"item": "create:whisk"
-			}
+			"A": { "tag": "forge:ingots/bronze" },
+			"B": { "tag": "forge:plates/bronze" },
+			"C": { "tag": "minecraft:oak_logs" },
+			"D": { "item": "create:cogwheel" },
+			"E": { "tag": "create:shaft_add" },
+			"F": { "item": "create:whisk" }
 		},
-		"result": {
-			"item": "create:mechanical_mixer"
-		}
+		"result": { "item": "create:mechanical_mixer" }
 	})
 
 
@@ -108,28 +95,14 @@ ServerEvents.recipes(e => {
 			" EEE "
 		],
 		"key": {
-			"A": {
-				"tag": 'create:shaft_add'
-			},
-			"B": {
-				"tag": "minecraft:logs"
-			},
-			"C": {
-				"item": "create:cogwheel"
-			},
-			"D": {
-				"item": 'create:large_cogwheel'
-			},
-			"E": {
-				"item": 'new_create:cast_iron_block'
-			},
-			"F": {
-				"tag": "minecraft:planks"
-			}
+			"A": { "tag": 'create:shaft_add' },
+			"B": { "tag": "minecraft:logs" },
+			"C": { "item": "create:cogwheel" },
+			"D": { "item": 'create:large_cogwheel' },
+			"E": { "item": 'new_create:cast_iron_block' },
+			"F": { "tag": "minecraft:planks" }
 		},
-		"result": {
-			"item": 'create:mechanical_press'
-		}
+		"result": { "item": 'create:mechanical_press' }
 	})
 
 
