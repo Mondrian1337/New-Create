@@ -1,28 +1,22 @@
+const ModID = 'new_create:'
 ItemEvents.armorTierRegistry(e => {
-	e.add('new_create:radiant', tier => {
-		tier.durabilityMultiplier = 35 // 耐久系数,具体得上wiki看公式
-		tier.slotProtections = [6, 8, 10, 6] // 护甲值,分别对应[鞋子 裤腿 胸甲 头盔]
-		tier.toughness = 4  // 韧性
-		tier.knockbackResistance = 0.6  // 防击退,钻石0.3,同时代表着每件各0.3(30%)
-		tier.enchantmentValue = 12  // 附魔等级
-		tier.repairIngredient = '#forge:ingots/refined_radiance'  // 修复材料(填写#Tag)
-		tier.equipSound = 'minecraft:item.armor.equip_diamond'  // 穿戴音效
+	e.add(ModID + 'radiant', armor => {
+		armor.durabilityMultiplier = 70 // 耐久系数,具体得上wiki看公式
+		armor.slotProtections = [6, 8, 10, 6] // 护甲值,分别对应[鞋子 裤腿 胸甲 头盔]
+		armor.toughness = 4  // 韧性
+		armor.knockbackResistance = 0.6  // 防击退,钻石0.3,同时代表着每件各0.3(30%)
+		armor.enchantmentValue = 12  // 附魔等级
+		armor.repairIngredient = '#forge:ingots/refined_radiance'  // 修复材料(填写#Tag)
+		armor.equipSound = 'minecraft:item.armor.equip_diamond'  // 穿戴音效
 	})
 })
 // 物品贴图照常放在item
 // 身上的贴图要放在assets/new_create/textures/models/armor
 StartupEvents.registry('item', e => {
-	const ModID = 'new_create:'
-	const Item = (
-		Name,  // Item ID
-		Type, // 类型
-		Rarity,  // 稀有度
-		Tire,  // 盔甲图层
-		Glow  // 是否发光
-	) => {
+	const Item = (Name, Type, Rarity, Tire, Glow) => {
 		e.create(ModID + Name, Type)
 			.rarity(Rarity)
-			.tier(Tire)
+			.tier(ModID + Tire)
 			.glow(Glow)
 	}
 	// 光辉套

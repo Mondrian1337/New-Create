@@ -3,6 +3,8 @@
   "minecraft.ponder.blast_furnace.text_1": "手持工程师锤右键玻璃进行建造",
   "minecraft.ponder.stick.header": "生火",
   "minecraft.ponder.stick.text_1": "§e左手手持木棍,右手手持燧石",
+  "kubejs.ponder.squeezer.header": "工业挤压机",
+  "kubejs.ponder.squeezer.text_1": "§b用工程师锤右击中间的木桶",
   "new_create.ponder.furnace_core.header": "熔炉核心合成",
   "new_create.ponder.furnace_core.text_1": "手持工程师锤右键中间的圆石方块",
   "immersiveengineering.ponder.tag.structure": "结构",

@@ -26,7 +26,6 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["2A6ECB62936181D8"]
 			id: "7A6F269DAD792360"
 			tasks: [{
 				id: "5DBC5A1B4BF8A2A8"
@@ -151,6 +150,7 @@
 				"1B1094269CB6A281"
 			]
 			id: "695B6A8765FF64D5"
+			subtitle: "古希腊掌管铝板的神"
 			tasks: [{
 				id: "4706A619864B7E3B"
 				item: "createaddition:capacitor"
@@ -218,8 +218,8 @@
 				type: "item"
 			}]
 			title: "&6Puls"
-			x: -0.077380952380949d
-			y: 1.5652901785714306d
+			x: 0.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["6345D4923272CC38"]
@@ -230,8 +230,8 @@
 				type: "item"
 			}]
 			title: "&6一代更比一代强!"
-			x: 1.5297619047619122d
-			y: 1.511718749999993d
+			x: 1.5d
+			y: 1.5d
 		}
 		{
 			dependencies: ["4EE63A4D36E8A6C4"]
@@ -367,9 +367,15 @@
 			dependencies: ["350A56E5147E87CC"]
 			id: "25598A1289E07375"
 			tasks: [{
-				count: 256L
 				id: "4A13ADF2FD033949"
-				item: "minecraft:copper_ingot"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/copper"
+					}
+				}
+				title: "Any #forge:ingots/copper"
 				type: "item"
 			}]
 			title: "&5铜锭量产"
@@ -418,8 +424,8 @@
 				item: "immersiveengineering:light_engineering"
 				type: "item"
 			}]
-			x: 6.357142857142854d
-			y: 0.535621279761898d
+			x: 6.5d
+			y: 0.5d
 		}
 		{
 			dependencies: [
@@ -456,7 +462,7 @@
 				item: "immersiveengineering:conveyor_basic"
 				type: "item"
 			}]
-			x: 7.0d
+			x: 6.5d
 			y: 1.5d
 		}
 		{
@@ -832,7 +838,7 @@
 				type: "item"
 			}]
 			x: 10.5d
-			y: 6.5d
+			y: 5.5d
 		}
 		{
 			dependencies: [
@@ -852,13 +858,13 @@
 			dependencies: ["2417C6728C7512FC"]
 			id: "6BD5E537AB96529E"
 			tasks: [{
-				count: 256L
+				count: 16L
 				id: "2C2DD77EA7821918"
 				item: "create:polished_rose_quartz"
 				type: "item"
 			}]
-			x: 9.5d
-			y: 6.0d
+			x: 10.5d
+			y: 6.5d
 		}
 		{
 			dependencies: ["5E64FB6BCCC2DCC2"]
@@ -868,7 +874,7 @@
 				item: "new_create:rose_quartz_fluid_bucket"
 				type: "item"
 			}]
-			x: 8.5d
+			x: 9.5d
 			y: 6.0d
 		}
 		{
@@ -888,7 +894,7 @@
 					type: "item"
 				}
 			]
-			x: 8.5d
+			x: 9.5d
 			y: 7.0d
 		}
 		{
@@ -936,8 +942,8 @@
 				title: "&6灌装机"
 				type: "checkmark"
 			}]
-			x: 9.5d
-			y: 7.0d
+			x: 11.0d
+			y: 8.5d
 		}
 		{
 			dependencies: ["7DB50F72D65346B2"]
@@ -975,8 +981,8 @@
 				}
 			]
 			title: "&4????"
-			x: 8.0d
-			y: 3.5d
+			x: 8.5d
+			y: 1.0d
 		}
 	]
 	title: "No.2-2 Base Industry"

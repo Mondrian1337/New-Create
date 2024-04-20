@@ -7,6 +7,15 @@
 	id: "3D5F25CAE2865380"
 	order_index: 0
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "111B9834A26450CD"
+		tasks: [{
+			id: "06DC023D96CA849C"
+			item: "minecraft:clock"
+			type: "item"
+		}]
+		x: 0.0d
+		y: 0.0d
+	}]
 	title: "？？？"
 }

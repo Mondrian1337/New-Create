@@ -19,7 +19,7 @@ StartupEvents.registry('fluid', e => {
 		['mixed_gasoline', 0xF0E68C],
 		// 玫瑰石英溶液
 		['rose_quartz_fluid', 0xFF1493],
-		// 精炼油+
+		// 精炼油
 		['high_grade_refined_oil', 0xDAA520],
 		// 秘银液
 		['mithril_fluid', 0x2E8B57],
@@ -30,8 +30,8 @@ StartupEvents.registry('fluid', e => {
 		e.create(ModID + Name)
 			.thickTexture(Color)
 			.bucketColor(Color)
-			.flowingTexture('new_create:block/flowing')
-			.stillTexture('new_create:block/still')
+			.flowingTexture(ModID + 'fluid/flowing')
+			.stillTexture(ModID + 'fluid/still')
 	})
 
 	// 特殊注册(这里用于注册特殊的Fluid,例如独立贴图,没有桶,没有世界流体之类的)
@@ -39,6 +39,6 @@ StartupEvents.registry('fluid', e => {
 	e.create(ModID + 'soul')
 		.noBucket()
 		.noBlock()
-		.flowingTexture('new_create:block/soul_flowing')
-		.stillTexture('new_create:block/soul_still')
+		.flowingTexture(ModID + 'fluid/soul_flowing')
+		.stillTexture(ModID + 'fluid/soul_still')
 })

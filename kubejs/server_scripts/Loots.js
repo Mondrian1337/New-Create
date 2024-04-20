@@ -2,15 +2,15 @@ LootJS.modifiers(e => {
 	// 砂砾掉小燧石
 	e.addBlockLootModifier('minecraft:gravel')
 		.removeLoot(Ingredient.all)
-		.addAlternativesLoot(
-			LootEntry.of('new_create:flint_knapp').when(c => c.randomChance(0.3)),
-			LootEntry.of('minecraft:gravel').when(c => c.randomChance(1))
+		.addAlternativesLoot(LootEntry.of('new_create:flint_knapp')
+			.when(c => c.randomChance(0.3)),
+			LootEntry.of('minecraft:gravel')
+				.when(c => c.randomChance(1))
 		)
 	// 草丛掉杂草
 	e.addBlockLootModifier('minecraft:grass')
-		.addAlternativesLoot(
-			LootEntry.of('new_create:grass_fiber').when(c => c.randomChance(0.5))
-		)
+		.addAlternativesLoot(LootEntry.of('new_create:grass_fiber')
+			.when(c => c.randomChance(0.5)))
 	//铁矿掉粉碎铁矿石
 	e.addBlockLootModifier('#forge:ores/iron')
 		.removeLoot(Ingredient.all)
@@ -38,9 +38,10 @@ LootJS.modifiers(e => {
 		.removeLoot('minecraft:copper_ingot')
 	// 所有矿石掉落矿渣
 	e.addBlockLootModifier('#forge:ores')
-		.addAlternativesLoot(
-			LootEntry.of('immersiveengineering:slag').when(c => c.randomChance(0.7)),
-			LootEntry.of('2x immersiveengineering:slag').when(c => c.randomChance(0.3))
+		.addAlternativesLoot(LootEntry.of('immersiveengineering:slag')
+			.when(c => c.randomChance(0.7)),
+			LootEntry.of('2x immersiveengineering:slag')
+				.when(c => c.randomChance(0.3))
 		)
 	// 锌矿掉落粉碎锌矿石
 	e.addBlockLootModifier('#forge:ores/zinc')

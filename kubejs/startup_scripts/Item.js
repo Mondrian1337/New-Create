@@ -66,19 +66,15 @@ StartupEvents.registry('item', e => {
 		['computer_mechanism', 64, 'common', false],
 		// 电磁构件
 		['inductive_mechanism', 64, 'common', false],
-		// 下届构件
+		// 下界构件
 		['infernal_mechanism', 64, 'common', false]
 	]
-	Item.forEach(([
-		Name,
-		Maxstacksize,
-		Rarity,
-		Glow
-	]) => {
+	Item.forEach(([Name, Maxstacksize, Rarity, Glow]) => {
 		e.create(ModID + Name)
 			.maxStackSize(Maxstacksize)
 			.rarity(Rarity)
 			.glow(Glow)
+			.tag(ModID + 'items')
 	})
 	// 半成品注册
 	let In_Item = [

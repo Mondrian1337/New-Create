@@ -52,12 +52,32 @@
 				}
 				{
 					command: "/give @p minecraft:player_head{SkullOwner:{Name:'xiaolizi_'}}"
+					icon: {
+						Count: 1b
+						id: "minecraft:player_head"
+						tag: {
+							SkullOwner: {
+								Name: "xiaolizi_"
+							}
+						}
+					}
 					id: "4C8D9B77B48F2655"
+					title: "栗子"
 					type: "command"
 				}
 				{
 					command: "/give @p minecraft:player_head{SkullOwner:{Name:'Qi_Month'}}"
+					icon: {
+						Count: 1b
+						id: "minecraft:player_head"
+						tag: {
+							SkullOwner: {
+								Name: "Qi_Month"
+							}
+						}
+					}
 					id: "6B56FAA04D5B46E5"
+					title: "柒月"
 					type: "command"
 				}
 			]
@@ -143,7 +163,14 @@
 			}]
 			tasks: [{
 				id: "1FDEA9277218678B"
-				item: "new_create:grass_string"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:string"
+					}
+				}
+				title: "Any #forge:string"
 				type: "item"
 			}]
 			title: "&3草绳"
@@ -202,7 +229,7 @@
 				type: "item"
 			}]
 			title: "&6Crafting Table!"
-			x: 39.0d
+			x: 39.5d
 			y: 15.0d
 		}
 		{
@@ -238,7 +265,7 @@
 				type: "item"
 			}]
 			title: "&3挖矿时间"
-			x: 39.0d
+			x: 39.5d
 			y: 12.0d
 		}
 		{
@@ -266,7 +293,7 @@
 				type: "item"
 			}]
 			title: "&3伐木"
-			x: 40.5d
+			x: 41.0d
 			y: 13.5d
 		}
 		{
@@ -294,7 +321,7 @@
 				type: "item"
 			}]
 			title: "&3高效工作"
-			x: 37.5d
+			x: 38.0d
 			y: 13.5d
 		}
 		{
@@ -309,13 +336,19 @@
 			}]
 			subtitle: "&c是谁让你觉得可以抽卡的,是原神吗("
 			tasks: [{
-				count: 32L
 				id: "579D495AB3C4C589"
-				item: { Count: 32b, id: "minecraft:cobblestone" }
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:cobblestone"
+					}
+				}
+				title: "Any #forge:cobblestone"
 				type: "item"
 			}]
 			title: "&3原始人,起洞!"
-			x: 40.5d
+			x: 41.0d
 			y: 12.0d
 		}
 		{
@@ -341,7 +374,7 @@
 				type: "item"
 			}]
 			title: "&3原木"
-			x: 40.5d
+			x: 41.0d
 			y: 15.0d
 		}
 		{
@@ -355,13 +388,19 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 32L
 				id: "4FC73587A09A03FB"
-				item: { Count: 32b, id: "minecraft:gravel" }
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:gravel"
+					}
+				}
+				title: "Any #forge:gravel"
 				type: "item"
 			}]
 			title: "&3沙砾"
-			x: 37.5d
+			x: 38.0d
 			y: 12.0d
 		}
 		{
@@ -380,8 +419,8 @@
 				type: "item"
 			}]
 			title: "&3锤子"
-			x: 38.100000000000016d
-			y: 19.100000000000012d
+			x: 38.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["730438679F2E34EF"]
@@ -409,8 +448,8 @@
 				type: "item"
 			}]
 			title: "&3烧制物品！"
-			x: 36.600000000000016d
-			y: 19.100000000000012d
+			x: 36.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["46CE046E36D1E9EC"]
@@ -432,8 +471,8 @@
 				type: "item"
 			}]
 			title: "&3烧制物品其一"
-			x: 35.10000000000001d
-			y: 19.100000000000012d
+			x: 35.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["6E8D524A504AD514"]
@@ -521,7 +560,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 2L
+				count: 4L
 				id: "4BA36E193FA0B561"
 				item: {
 					Count: 1b
@@ -534,8 +573,8 @@
 				type: "item"
 			}]
 			title: "&3第一块木板"
-			x: 39.0d
-			y: 16.5d
+			x: 39.5d
+			y: 16.0d
 		}
 		{
 			dependencies: ["5E0A98F312F8A995"]
@@ -572,7 +611,7 @@
 				}
 			]
 			title: "&3锯子"
-			x: 39.0d
+			x: 39.5d
 			y: 13.5d
 		}
 		{
@@ -594,8 +633,8 @@
 				type: "item"
 			}]
 			title: "&3烧制物品其二"
-			x: 36.600000000000016d
-			y: 20.599999999999987d
+			x: 36.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["59A06A813564EA72"]
@@ -604,6 +643,11 @@
 				"&9通过合金窑，你可以烧制铜锭&r"
 				"&a进入铜器时代！&r"
 			]
+			icon: {
+				Count: 1b
+				id: "immersiveengineering:alloy_smelter"
+				tag: { }
+			}
 			id: "17A15D75F1EC5311"
 			rewards: [{
 				id: "43C17610244AA3F8"
@@ -630,8 +674,8 @@
 				}
 			]
 			title: "&3合金窑"
-			x: 38.100000000000016d
-			y: 20.599999999999987d
+			x: 38.0d
+			y: 20.5d
 		}
 		{
 			dependencies: ["17A15D75F1EC5311"]
@@ -659,8 +703,8 @@
 				type: "item"
 			}]
 			title: "&3第一块金属"
-			x: 39.600000000000016d
-			y: 20.599999999999987d
+			x: 39.5d
+			y: 20.5d
 		}
 		{
 			dependencies: [
@@ -682,8 +726,8 @@
 				type: "item"
 			}]
 			title: "&3第一块铜板!"
-			x: 39.600000000000016d
-			y: 19.100000000000012d
+			x: 39.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["69F096A8B3BEFF94"]
@@ -702,8 +746,8 @@
 				type: "item"
 			}]
 			title: "&9额...机器?"
-			x: 38.100000000000016d
-			y: 17.60000000000002d
+			x: 38.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["2D745F08BA3F92F7"]
@@ -783,7 +827,7 @@
 		{
 			dependencies: ["2AC2EFDD8EAAA7D4"]
 			description: [
-				"&a制作一个&2石磨&r和&2手摇曲柄&r&r"
+				"&a制作一个&2石磨&r&a和&2手摇曲柄&r&r"
 				"&d可以进行一些矿物的简单获取&r"
 			]
 			id: "38383DFF428AF0E9"
@@ -815,9 +859,8 @@
 			id: "6B3FB60CBF3CB68A"
 			subtitle: "用石磨磨碎"
 			tasks: [{
-				count: 16L
-				id: "7AAB0E6C1198CB78"
-				item: { Count: 16b, id: "create:crushed_raw_tin" }
+				id: "2CB6652C5DAB3F9A"
+				item: "create:crushed_raw_tin"
 				type: "item"
 			}]
 			x: 36.5d
@@ -908,8 +951,8 @@
 				type: "checkmark"
 			}]
 			title: "&6铜工具?"
-			x: 39.597098214285715d
-			y: 21.839285714285708d
+			x: 39.5d
+			y: 22.0d
 		}
 		{
 			dependencies: ["2515602CF3C6878B"]
@@ -1015,8 +1058,8 @@
 				item: "thermal:rubber"
 				type: "item"
 			}]
-			x: 35.10000000000001d
-			y: 23.59999999999993d
+			x: 35.0d
+			y: 23.5d
 		}
 		{
 			dependencies: ["2AC2EFDD8EAAA7D4"]
@@ -1079,8 +1122,8 @@
 				item: "minecraft:clay_ball"
 				type: "item"
 			}]
-			x: 35.10000000000001d
-			y: 20.599999999999987d
+			x: 35.0d
+			y: 20.5d
 		}
 		{
 			dependencies: [
@@ -1100,8 +1143,8 @@
 				title: "Any #forge:ingots/tin"
 				type: "item"
 			}]
-			x: 38.097098214285715d
-			y: 22.01785714285714d
+			x: 38.0d
+			y: 22.0d
 		}
 		{
 			dependencies: ["25E790CA72DE9B02"]
@@ -1121,8 +1164,8 @@
 				}
 			]
 			title: "加油!"
-			x: 39.600000000000016d
-			y: 17.60000000000002d
+			x: 39.5d
+			y: 17.5d
 		}
 		{
 			dependencies: ["4256CEC6F890C8D1"]
@@ -1146,8 +1189,10 @@
 		}
 		{
 			dependencies: ["2BB8EC9F1782C4DE"]
+			icon: "immersiveengineering:blastbrick"
 			id: "3A473E646F259743"
 			tasks: [{
+				count: 27L
 				id: "4B3A65445A6A5408"
 				item: "immersiveengineering:blastbrick"
 				type: "item"
@@ -1159,12 +1204,13 @@
 			dependencies: ["2BB8EC9F1782C4DE"]
 			id: "57903FCA47EF155F"
 			tasks: [{
+				count: 27L
 				id: "6742BBDB7CEA3BFE"
 				item: "immersiveengineering:cokebrick"
 				type: "item"
 			}]
-			x: 41.600000000000016d
-			y: 20.599999999999987d
+			x: 41.5d
+			y: 20.5d
 		}
 		{
 			dependencies: ["706944B05AB03623"]
@@ -1231,9 +1277,17 @@
 			id: "706944B05AB03623"
 			tasks: [{
 				id: "19969851DF9BF447"
-				item: "immersiveengineering:slag"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:slag"
+					}
+				}
+				title: "Any #forge:slag"
 				type: "item"
 			}]
+			title: "矿渣"
 			x: 39.5d
 			y: 25.0d
 		}
@@ -1245,8 +1299,8 @@
 				item: "immersiveengineering:creosote_bucket"
 				type: "item"
 			}]
-			x: 41.5654761904762d
-			y: 21.866666666666628d
+			x: 41.5d
+			y: 22.0d
 		}
 		{
 			dependencies: ["603D7BE6F9FED860"]
@@ -1260,8 +1314,8 @@
 				item: "immersiveengineering:treated_wood_horizontal"
 				type: "item"
 			}]
-			x: 43.168526785714285d
-			y: 21.875d
+			x: 43.0d
+			y: 22.0d
 		}
 		{
 			dependencies: ["6823C3573F9FA2B6"]
@@ -1307,7 +1361,7 @@
 			hide_dependency_lines: true
 			icon: "minecraft:netherrack"
 			id: "20A872AC6608D6F4"
-			size: 3.0d
+			size: 2.0d
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "2793497E06464B1D"
@@ -1321,9 +1375,15 @@
 			dependencies: ["6823C3573F9FA2B6"]
 			id: "0331E2E5A91C4EA0"
 			tasks: [{
-				count: 3L
 				id: "212AE53270DF77D9"
-				item: "minecraft:diamond"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:gems/diamond"
+					}
+				}
+				title: "Any #forge:gems/diamond"
 				type: "item"
 			}]
 			title: "&6亮闪闪！"
@@ -1334,9 +1394,15 @@
 			dependencies: ["0331E2E5A91C4EA0"]
 			id: "751A430A5BF08E1C"
 			tasks: [{
-				count: 10L
 				id: "67D24C5C6605E307"
-				item: { Count: 10b, id: "minecraft:obsidian" }
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:obsidian"
+					}
+				}
+				title: "Any #forge:obsidian"
 				type: "item"
 			}]
 			x: 47.0d
@@ -1360,11 +1426,18 @@
 		{
 			dependencies: ["20A872AC6608D6F4"]
 			id: "2A43BD5F277E422A"
-			tasks: [{
-				id: "10C36FF61504792E"
-				item: "create:mechanical_press"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "10C36FF61504792E"
+					item: "create:mechanical_press"
+					type: "item"
+				}
+				{
+					id: "0A56AD599F80AC18"
+					item: "create:depot"
+					type: "item"
+				}
+			]
 			title: "&3铛！"
 			x: 53.0d
 			y: 18.0d
@@ -1407,7 +1480,14 @@
 			id: "62864688AD6F3A16"
 			tasks: [{
 				id: "7440FA79D2BAA8FF"
-				item: "minecraft:blaze_rod"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:rods/blaze"
+					}
+				}
+				title: "Any #forge:rods/blaze"
 				type: "item"
 			}]
 			x: 55.0d
@@ -1518,12 +1598,13 @@
 				type: "item"
 			}]
 			title: "&4道路千万条，安全第一条"
-			x: 61.5d
-			y: 18.0d
+			x: 60.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["20A872AC6608D6F4"]
 			id: "16D16B70B7048697"
+			subtitle: "&6Or PVE Boss"
 			tasks: [{
 				entity: "minecraft:piglin_brute"
 				id: "7F00A807C47DFDD8"
@@ -1616,7 +1697,7 @@
 				type: "item"
 			}]
 			title: "&3好好睡觉"
-			x: 37.5d
+			x: 38.0d
 			y: 15.0d
 		}
 		{
@@ -1644,13 +1725,26 @@
 			tasks: [
 				{
 					id: "0F8E6BDC4F97CBC7"
-					item: "minecraft:redstone_block"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:storage_blocks/redstone"
+						}
+					}
+					title: "Any #forge:storage_blocks/redstone"
 					type: "item"
 				}
 				{
-					count: 8L
 					id: "20FFCB44D6C01805"
-					item: "minecraft:quartz"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:gems/quartz"
+						}
+					}
+					title: "Any #forge:gems/quartz"
 					type: "item"
 				}
 			]
@@ -1728,7 +1822,7 @@
 				type: "item"
 			}]
 			x: 57.0d
-			y: 20.5d
+			y: 21.5d
 		}
 		{
 			dependencies: ["3ED4088F5DEB249F"]
@@ -1794,7 +1888,7 @@
 			y: 20.0d
 		}
 		{
-			dependencies: ["240B6094033926D5"]
+			dependencies: ["66A3B9A7108CF0D5"]
 			id: "6F45D5E1B4B9BA35"
 			tasks: [{
 				id: "5BCAA122A53EA7EF"
@@ -1802,7 +1896,7 @@
 				type: "item"
 			}]
 			x: 57.0d
-			y: 21.5d
+			y: 20.5d
 		}
 		{
 			description: [
@@ -1837,9 +1931,15 @@
 			]
 			id: "7224B2B81B276B73"
 			tasks: [{
-				count: 128L
 				id: "43A696CCEE88B375"
-				item: "new_create:cast_iron_ingot"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:ingots/cast_iron"
+					}
+				}
+				title: "Any #forge:ingots/cast_iron"
 				type: "item"
 			}]
 			title: "&6也许你需要量产"

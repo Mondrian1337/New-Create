@@ -1,6 +1,6 @@
 ServerEvents.recipes(e => {
 	// Create
-	let {
+	const {
 		compacting,
 		crushing,
 		cutting,
@@ -17,12 +17,12 @@ ServerEvents.recipes(e => {
 		splashing
 	} = e.recipes.create
 	// new_create
-	let {
+	const {
 		shaped,
 		shapeless
 	} = e.recipes.kubejs
 	// Minecraft
-	let {
+	const {
 		blasting,
 		campfire_cooking,
 		crafting_shaped,
@@ -36,6 +36,7 @@ ServerEvents.recipes(e => {
 		shaped_table,
 		shapeless_table
 	} = e.recipes.extendedcrafting
+	
 	// e.custom({
 	// 	"type": "extendedcrafting:shaped_table",
 	// 	"pattern": [
@@ -226,7 +227,8 @@ ServerEvents.recipes(e => {
 		E: '#forge:ingots/andesite_alloy'
 	})
 
-	shaped_table('6x createaddition:capacitor', [
+	// 电容
+	shaped_table('12x createaddition:capacitor', [
 		' AAA ',
 		' ABA ',
 		' ACA ',

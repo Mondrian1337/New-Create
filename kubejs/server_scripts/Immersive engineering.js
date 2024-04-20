@@ -1,6 +1,6 @@
 ServerEvents.recipes(e => {
 	// Create
-	let {
+	const {
 		compacting,
 		crushing,
 		cutting,
@@ -17,12 +17,12 @@ ServerEvents.recipes(e => {
 		splashing
 	} = e.recipes.create
 	// new_create
-	let {
+	const {
 		shaped,
 		shapeless
 	} = e.recipes.kubejs
 	// Minecraft
-	let {
+	const {
 		blasting,
 		campfire_cooking,
 		crafting_shaped,
@@ -165,8 +165,8 @@ ServerEvents.recipes(e => {
 		"type": "immersiveengineering:metal_press",
 		"energy": 2400,
 		"input": {
-			"base_ingredient": { "tag": 'forge:plates/industrial_iron' },
-			"count": 4
+			"base_ingredient":
+				{ "tag": 'forge:plates/industrial_iron' }, "count": 4
 		},
 		"mold": 'new_create:mold_block',
 		"result": { "item": 'create_dd:industrial_casing' }
@@ -178,8 +178,8 @@ ServerEvents.recipes(e => {
 		"category": "molds",
 		"inputs": [
 			{
-				"base_ingredient": { "tag": "forge:plates/steel" },
-				"count": 3
+				"base_ingredient":
+					{ "tag": "forge:plates/steel" }, "count": 3
 			},
 			{ "item": "immersiveengineering:wirecutter" }
 		],

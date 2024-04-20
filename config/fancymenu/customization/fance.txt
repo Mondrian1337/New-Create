@@ -123,6 +123,11 @@ customization {
 }
 
 customization {
+  identifier = %id=376298%
+  action = hidebutton
+}
+
+customization {
   identifier = %id=49361%
   action = hidebutton
 }
@@ -306,26 +311,5 @@ customization {
   actionid = aaacb27e-d682-43fe-8fc2-97d2c2ba894c1710210874566
   y = 56
   height = 44
-}
-
-customization {
-  orientation = top-left
-  basecolor = #80ceff
-  shadow = true
-  splashfilepath = FancyMenu/text.txt
-  rotation = 0.0
-  scale = 2.0
-  refresh = false
-  bouncing = true
-  vanilla-like = false
-  x = 247
-  actionid = 3a5095cd-b1d7-4c39-b2cf-ef8c3745a3f31710210902900
-  action = addsplash
-  y = 140
-}
-
-customization {
-  identifier = %id=376298%
-  action = hidebutton
 }
 

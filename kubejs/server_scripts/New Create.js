@@ -1,6 +1,6 @@
 ServerEvents.recipes(e => {
 	//  Create
-	let {
+	const {
 		compacting,
 		crushing,
 		cutting,
@@ -16,13 +16,13 @@ ServerEvents.recipes(e => {
 		sequenced_assembly,
 		splashing
 	} = e.recipes.create
-	//  new_create
-	let {
+	//  New Create
+	const {
 		shaped,
 		shapeless
 	} = e.recipes.kubejs
 	//  Minecraft
-	let {
+	const {
 		blasting,
 		campfire_cooking,
 		crafting_shaped,
@@ -34,26 +34,24 @@ ServerEvents.recipes(e => {
 	} = e.recipes.minecraft
 
 	//  木板
-	e.forEachRecipe(
-		{
-			type: 'crafting_shapeless',
-			input: '#minecraft:logs',
-			output: '#minecraft:planks'
-		},
-		(recipe) => {
-			let {
-				originalRecipeIngredients,
-				originalRecipeResult
-			} = recipe;
+	e.forEachRecipe({
+		type: 'crafting_shapeless',
+		input: '#minecraft:logs',
+		output: '#minecraft:planks'
+	}, (recipe) => {
+		let {
+			originalRecipeIngredients,
+			originalRecipeResult
+		} = recipe;
 
-			e.shapeless(
-				originalRecipeResult.withCount(2),
-				originalRecipeIngredients.toArray().concat([
-					'farmersdelight:flint_knife'
-				])
-			).damageIngredient('farmersdelight:flint_knife')
-				.id(recipe.getId())
-		}
+		e.shapeless(
+			originalRecipeResult.withCount(2),
+			originalRecipeIngredients.toArray().concat([
+				'farmersdelight:flint_knife'
+			])
+		).damageIngredient('farmersdelight:flint_knife')
+			.id(recipe.getId())
+	}
 	)
 	// 燧石剑
 	shaped('new_create:flint_sword', [

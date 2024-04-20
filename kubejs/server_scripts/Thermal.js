@@ -1,6 +1,6 @@
 ServerEvents.recipes(e => {
 	// Create
-	let {
+	const {
 		compacting,
 		crushing,
 		cutting,
@@ -17,12 +17,12 @@ ServerEvents.recipes(e => {
 		splashing
 	} = e.recipes.create
 	// new_create
-	let {
+	const {
 		shaped,
 		shapeless
 	} = e.recipes.kubejs
 	// Minecraft
-	let {
+	const {
 		blasting,
 		campfire_cooking,
 		crafting_shaped,
@@ -33,7 +33,7 @@ ServerEvents.recipes(e => {
 		stonecutting
 	} = e.recipes.minecraft
 	// Thermal
-	let {
+	const {
 		bottler,
 		brewer,
 		centrifuge,
@@ -103,7 +103,7 @@ ServerEvents.recipes(e => {
 		"type": "thermal:tree_extractor",
 		"trunk": 'minecraft:cherry_log',
 		"leaves": 'minecraft:cherry_leaves',
-		"result": { "fluid": "thermal:latex", "amount": 250 }
+		"result": { "fluid": "thermal:latex", "amount": 50 }
 	}).id('thermal:devices/tree_extractor/tree_extractor_cherry')
 
 	//金合欢
@@ -111,7 +111,7 @@ ServerEvents.recipes(e => {
 		"type": "thermal:tree_extractor",
 		"trunk": 'minecraft:acacia_log',
 		"leaves": 'minecraft:acacia_leaves',
-		"result": { "fluid": "thermal:latex", "amount": 250 }
+		"result": { "fluid": "thermal:latex", "amount": 50 }
 	}).id('thermal:devices/tree_extractor/tree_extractor_acacia')
 
 	// 白桦
@@ -119,7 +119,7 @@ ServerEvents.recipes(e => {
 		"type": "thermal:tree_extractor",
 		"trunk": 'minecraft:birch_log',
 		"leaves": 'minecraft:birch_leaves',
-		"result": { "fluid": "thermal:latex", "amount": 2250 }
+		"result": { "fluid": "thermal:latex", "amount": 50 }
 	}).id('thermal:devices/tree_extractor/tree_extractor_birch')
 
 	// 橡树
@@ -127,7 +127,7 @@ ServerEvents.recipes(e => {
 		"type": "thermal:tree_extractor",
 		"trunk": 'minecraft:oak_log',
 		"leaves": 'minecraft:oak_leaves',
-		"result": { "fluid": "thermal:latex", "amount": 250 }
+		"result": { "fluid": "thermal:latex", "amount": 50 }
 	}).id('thermal:devices/tree_extractor/tree_extractor_oak')
 
 	// 云杉
@@ -135,7 +135,7 @@ ServerEvents.recipes(e => {
 		"type": "thermal:tree_extractor",
 		"trunk": 'minecraft:spruce_log',
 		"leaves": 'minecraft:spruce_leaves',
-		"result": { "fluid": "thermal:latex", "amount": 250 }
+		"result": { "fluid": "thermal:latex", "amount": 50 }
 	}).id('thermal:devices/tree_extractor/tree_extractor_spruce')
 
 	//丛林
@@ -143,7 +143,7 @@ ServerEvents.recipes(e => {
 		"type": "thermal:tree_extractor",
 		"trunk": "minecraft:jungle_log",
 		"leaves": "minecraft:jungle_leaves",
-		"result": { "fluid": "thermal:latex", "amount": 250 }
+		"result": { "fluid": "thermal:latex", "amount": 50 }
 	})
 
 	//深色
@@ -151,7 +151,7 @@ ServerEvents.recipes(e => {
 		"type": "thermal:tree_extractor",
 		"trunk": "minecraft:dark_oak_log",
 		"leaves": "minecraft:dark_oak_leaves",
-		"result": { "fluid": "thermal:latex", "amount": 250 }
+		"result": { "fluid": "thermal:latex", "amount": 50 }
 	})
 
 	// 塑料片
@@ -277,16 +277,32 @@ ServerEvents.recipes(e => {
 		"type": "vintageimprovements:vibrating",
 		"ingredients": [{ "tag": "minecraft:soul_fire_base_blocks" }],
 		"results": [
-			{
-				"item": "thermal_extra:soul_sand_dust", "amount": 1, "chance": 0.4
-			},
-			{
-				"item": "minecraft:soul_sand", "amount": 1, "chance": 0.3
-			},
-			{
-				"item": "minecraft:soul_soil", "amount": 1, "chance": 0.3
-			}
+			{ "item": "thermal_extra:soul_sand_dust", "amount": 1, "chance": 0.4 },
+			{ "item": "minecraft:soul_sand", "amount": 1, "chance": 0.3 },
+			{ "item": "minecraft:soul_soil", "amount": 1, "chance": 0.3 }
 		],
-		"processingTime": 300
+		"processingTime": 100
+	})
+
+	// 硬化玻璃
+	mixing('4x thermal:obsidian_glass', [
+		'minecraft:fire_charge',
+		'#minecraft:sand',
+		'#forge:gems/quartz',
+		'#forge:obsidian'
+	]).heated().id('thermal:fire_charge/obsidian_glass_2')
+
+	// 有机灌注机
+	shaped('thermal:machine_insolator', [
+		'PCP',
+		'FGF',
+		'IBI'
+	], {
+		P: 'new_create:cast_iron_sheet',
+		C: 'new_create:cast_iron_casing',
+		F: 'create:fluid_pipe',
+		I: '#forge:ingots/cast_iron',
+		B: '#forge:storage_blocks/cast_iron',
+		G: '#thermal:glass/hardened'
 	})
 })

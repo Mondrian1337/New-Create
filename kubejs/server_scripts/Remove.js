@@ -152,7 +152,8 @@ ServerEvents.recipes(e => {
 		'thermal:machine_frame',
 		'immersiveengineering:crafting/fluid_pipe',
 		'thermal:energy_cell_frame',
-		'immersiveengineering:blastfurnace/steel_block'
+		'immersiveengineering:blastfurnace/steel_block',
+		'createdieselgenerators:crafting/engine_piston'
 	]
 	Remove_ID.forEach(ID => {
 		e.remove({ id: ID })

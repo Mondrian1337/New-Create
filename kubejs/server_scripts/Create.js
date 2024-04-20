@@ -1,6 +1,6 @@
 ServerEvents.recipes(e => {
 	// Create
-	let {
+	const {
 		compacting,
 		crushing,
 		cutting,
@@ -17,13 +17,14 @@ ServerEvents.recipes(e => {
 		splashing,
 		item_application
 	} = e.recipes.create
+	const { extruding } = e.recipes.create_mechanical_extruder
 	// new_create
-	let {
+	const {
 		shaped,
 		shapeless
 	} = e.recipes.kubejs
 	// Minecraft
-	let {
+	const {
 		blasting,
 		campfire_cooking,
 		crafting_shaped,
@@ -65,7 +66,7 @@ ServerEvents.recipes(e => {
 	])
 	cutting([
 		Item.of('new_create:in_cogwheel').withChance(1.0),
-		Item.of('new_create:in_cogwheel').withChance(0.3)
+		Item.of('new_create:in_cogwheel').withChance(0.15)
 	], '#forge:treated_wood_slab')
 
 	// 大齿轮(半成品)
@@ -74,7 +75,7 @@ ServerEvents.recipes(e => {
 	])
 	cutting([
 		Item.of('new_create:in_large_cogwheel').withChance(1.0),
-		Item.of('new_create:in_large_cogwheel').withChance(0.3)
+		Item.of('new_create:in_large_cogwheel').withChance(0.15)
 	], '#forge:treated_wood')
 
 	// 小齿轮
@@ -190,27 +191,24 @@ ServerEvents.recipes(e => {
 	})
 
 	// 安山混合物
-	shaped('new_create:andesite_compound', [
-		'AAA',
-		'AWC',
-		'CCC'
-	], {
-		A: '#forge:andesite/nuggets',
-		C: '#forge:clay',
-		W: 'minecraft:water_bucket'
-	}).replaceIngredient('minecraft:water_bucket', 'minecraft:bucket')
+
+	mixing('new_create:andesite_compound', [
+		'4x #forge:andesite/nuggets',
+		'4x #forge:clay',
+		Fluid.of('minecraft:water', 1000)
+	])
 
 	//安山混合液
-	mixing(Fluid.of('new_create:andesite_compound_fluid', 1000), [
+	mixing(Fluid.of('new_create:andesite_compound_fluid', 500), [
 		'new_create:andesite_compound',
-		Fluid.of('minecraft:water', 1000)
+		Fluid.of('minecraft:water', 100)
 	]).heated()
 
 	//注液器
 	shaped('create:spout', [
 		'BAB',
 		'BCB',
-		'BDB'
+		' D '
 	], {
 		A: "minecraft:copper_ingot",
 		B: "new_create:cast_iron_sheet",
@@ -234,11 +232,12 @@ ServerEvents.recipes(e => {
 	shaped('create:mechanical_saw', [
 		' D ',
 		'DED',
-		'FFF'
+		'FSF'
 	], {
 		D: "new_create:cast_iron_sheet",
 		E: "new_create:cast_iron_ingot",
-		F: "create:andesite_casing"
+		F: "create:andesite_casing",
+		S: '#create:shaft_add'
 	})
 
 	//黄铜锭
@@ -280,12 +279,12 @@ ServerEvents.recipes(e => {
 	}).id('create:crafting/kinetics/belt_connector')
 
 	// 黄铜机壳
-	sequenced_assembly('create:brass_casing', 'create:andesite_casing', [
-		deploying('create:andesite_casing', ['create:andesite_casing', 'create:brass_sheet']),
-		deploying('create:andesite_casing', ['create:andesite_casing', 'minecraft:redstone']),
-		deploying('create:andesite_casing', ['create:andesite_casing', 'create:electron_tube']),
-		pressing('create:andesite_casing', 'create:andesite_casing')
-	]).loops(1).transitionalItem('create:andesite_casing')
+	shapeless('create:brass_casing', [
+		'#forge:plates/brass',
+		'create:electron_tube',
+		'#forge:dusts/redstone',
+		'create:andesite_casing'
+	])
 
 	// 精密部件
 	sequenced_assembly([
@@ -764,7 +763,8 @@ ServerEvents.recipes(e => {
 
 	// 振动台
 	mechanical_crafting('vintageimprovements:vibrating_table', [
-		'WAFAW',
+		'A   A',
+		'AWFWA',
 		'HSPSH',
 		'ASVSA',
 		'ACCCA'
@@ -778,4 +778,29 @@ ServerEvents.recipes(e => {
 		V: 'create_things_and_misc:vibration_mechanism',
 		W: '#minecraft:wooden_slabs'
 	}).id('vintageimprovements:craft/vibrating_table')
+
+	// 铸铁机壳
+	filling('new_create:cast_iron_casing', [
+		Fluid.of('new_create:cast_fluid', 100),
+		'#forge:treated_wood'
+	])
+
+	// 造石机
+	shaped('create_mechanical_extruder:mechanical_extruder', [
+		' E ',
+		'FCF',
+		'JBJ'
+	], {
+		F: 'flopper:flopper',
+		E: 'createdieselgenerators:engine_piston',
+		B: '#forge:storage_blocks/cast_iron',
+		C: 'create:andesite_funnel',
+		J: 'create:brass_casing'
+	}).id('create_mechanical_extruder:mechanical_extruder')
+
+	// 安山岩
+	extruding('minecraft:andesite', [
+		Fluid.of('new_create:andesite_compound_fluid'),
+		Fluid.of('minecraft:lava'),
+	])
 })

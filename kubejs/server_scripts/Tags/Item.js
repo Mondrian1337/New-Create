@@ -112,4 +112,9 @@ ServerEvents.tags('item', e => {
 	e.add('forge:storage_blocks/cast_iron', [
 		'new_create:cast_iron_block'
 	])
+
+	// 机壳
+	e.add('create:casing', [
+		'new_create:cast_iron_casing'
+	])
 })

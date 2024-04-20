@@ -108,8 +108,8 @@
 				title: "Any #forge:ingots/brass"
 				type: "item"
 			}]
-			x: -9.095238095238095d
-			y: 1.1666666666666643d
+			x: -9.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["0D90E2B1E5186F01"]
@@ -137,8 +137,8 @@
 				type: "item"
 			}]
 			title: "&4指你咋滴！"
-			x: -8.285714285714285d
-			y: 0.6428571428571459d
+			x: -8.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["04A33BA59DBA29ED"]
@@ -148,8 +148,8 @@
 				item: "create:white_sail"
 				type: "item"
 			}]
-			x: -9.38095238095238d
-			y: -0.35714285714285765d
+			x: -9.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["20B347816F814F10"]
@@ -218,8 +218,8 @@
 				type: "item"
 			}]
 			title: "&6第一块粉色钻石"
-			x: -7.297619047619058d
-			y: 0.6428571428571459d
+			x: -7.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["34A1D0679852D9C1"]
@@ -230,8 +230,8 @@
 				type: "item"
 			}]
 			title: "&5不能导电"
-			x: -6.258928571428569d
-			y: 0.7023809523809632d
+			x: -6.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["1A09D4635FED3126"]
@@ -251,7 +251,7 @@
 					type: "item"
 				}
 			]
-			subtitle: "&3阿米诺斯是小猫的意思(眼神闪躲"
+			subtitle: "&31..1..4..."
 			tasks: [
 				{
 					count: 256L
@@ -281,8 +281,8 @@
 				type: "item"
 			}]
 			title: "&4机壳升级版"
-			x: -6.250000000000007d
-			y: 1.9761904761904816d
+			x: -6.0d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -346,7 +346,7 @@
 				type: "item"
 			}]
 			title: "&3不够精密"
-			x: -5.0d
+			x: -4.5d
 			y: 2.0d
 		}
 		{
@@ -358,7 +358,7 @@
 				type: "item"
 			}]
 			title: "&6Crafting Table - 3"
-			x: -4.0d
+			x: -3.5d
 			y: 2.0d
 		}
 		{
@@ -370,8 +370,8 @@
 				type: "item"
 			}]
 			title: "&3好烫！"
-			x: -8.214285714285737d
-			y: -0.375d
+			x: -8.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["65F1A3A80971DFEC"]
@@ -386,8 +386,8 @@
 				type: "item"
 			}]
 			title: "&6终极Power!"
-			x: -8.178571428571452d
-			y: -1.2723214285714306d
+			x: -8.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["22EF721A6422F327"]
@@ -399,8 +399,8 @@
 				type: "item"
 			}]
 			title: "&6一对大家伙！"
-			x: -2.035714285714292d
-			y: 2.0193452380952337d
+			x: -1.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["5C114910264DE84F"]
@@ -417,8 +417,8 @@
 				title: "Any #forge:dusts/coal_coke"
 				type: "item"
 			}]
-			x: -1.0357142857142918d
-			y: 2.0193452380952337d
+			x: -0.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["0D90E2B1E5186F01"]
@@ -439,8 +439,8 @@
 				item: "new_create:coking_coal_rod"
 				type: "item"
 			}]
-			x: -0.035714285714291805d
-			y: 2.0193452380952337d
+			x: 0.5d
+			y: 2.0d
 		}
 		{
 			dependencies: [
@@ -453,8 +453,8 @@
 				item: "new_create:carbon_rod"
 				type: "item"
 			}]
-			x: 0.4642857142857082d
-			y: 3.0193452380952337d
+			x: 0.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["5C114910264DE84F"]
@@ -471,8 +471,8 @@
 				title: "Any #forge:dusts/coal"
 				type: "item"
 			}]
-			x: -1.5357142857142918d
-			y: 3.0193452380952337d
+			x: -1.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["1B77C78FF4A1F107"]
@@ -482,8 +482,8 @@
 				item: "new_create:carbon_plate"
 				type: "item"
 			}]
-			x: -0.5357142857142918d
-			y: 3.0193452380952337d
+			x: -0.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["0D90E2B1E5186F01"]
@@ -552,15 +552,15 @@
 			]
 			id: "6959B15D3B53F1DA"
 			shape: "gear"
-			size: 2.5d
+			size: 2.0d
 			tasks: [{
 				id: "3575C08D7DCB1667"
 				item: "create_new_age:generator_coil"
 				type: "item"
 			}]
 			title: "&4新时代！"
-			x: -1.25d
-			y: 6.25d
+			x: -2.0d
+			y: 6.0d
 		}
 		{
 			dependencies: ["38636D2545C44520"]
@@ -571,8 +571,8 @@
 				type: "item"
 			}]
 			title: "&3获取！"
-			x: 0.5535714285714235d
-			y: 6.154761904761912d
+			x: 0.5d
+			y: 6.0d
 		}
 		{
 			dependencies: ["65F1A3A80971DFEC"]
@@ -583,8 +583,8 @@
 				title: "&4注意！"
 				type: "checkmark"
 			}]
-			x: -7.255952380952387d
-			y: -1.2738095238095184d
+			x: -7.0d
+			y: -1.5d
 		}
 		{
 			dependencies: [
@@ -593,41 +593,27 @@
 				"539C27AC7BDA8727"
 			]
 			id: "675821C6A6BF5D79"
+			shape: "gear"
+			size: 1.5d
 			tasks: [{
 				id: "26A069312D55A5BE"
 				item: "new_create:inductive_mechanism"
 				type: "item"
 			}]
-			x: -3.485119047619051d
-			y: 3.68452380952381d
+			x: -3.5d
+			y: 3.5d
 		}
 		{
 			dependencies: ["539C27AC7BDA8727"]
 			id: "22EF721A6422F327"
+			subtitle: "&b&m玩构件玩的"
 			tasks: [{
 				id: "496AC7DDB8AC801B"
 				item: "new_create:kinetic_mechanism"
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.5d
 			y: 2.0d
-		}
-		{
-			dependencies: [
-				"22F5E5229A1402A9"
-				"675821C6A6BF5D79"
-			]
-			id: "2A6ECB62936181D8"
-			shape: "gear"
-			size: 3.0d
-			tasks: [{
-				id: "0F93224CA78BBBD2"
-				item: "createaddition:alternator"
-				type: "item"
-			}]
-			title: "&6或许可以走另一条路"
-			x: -3.732142857142861d
-			y: 6.297619047619058d
 		}
 		{
 			dependencies: ["1F23917DBF624EE0"]
@@ -637,8 +623,8 @@
 				item: "create_dd:integrated_mechanism"
 				type: "item"
 			}]
-			x: -7.255952380952387d
-			y: -0.3690476190476133d
+			x: -7.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["03281B3D8E89E49F"]
@@ -654,8 +640,8 @@
 				type: "item"
 			}]
 			title: "&6梦回飞轮!"
-			x: -6.208333333333336d
-			y: -0.3690476190476133d
+			x: -6.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["7EEC8440A5ECEEEA"]
@@ -665,8 +651,8 @@
 				item: "create:railway_casing"
 				type: "item"
 			}]
-			x: -2.0446428571428683d
-			y: 0.059523809523817306d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0712EE16A99BF165"]
@@ -676,19 +662,26 @@
 				item: "create:track_station"
 				type: "item"
 			}]
-			x: -2.0446428571428683d
-			y: -0.8690476190476133d
+			x: -2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5C114910264DE84F"]
 			id: "7EEC8440A5ECEEEA"
 			tasks: [{
 				id: "6B50180BF0970E53"
-				item: "create:powdered_obsidian"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:dusts/obsidian"
+					}
+				}
+				title: "Any #forge:dusts/obsidian"
 				type: "item"
 			}]
-			x: -2.0089285714285765d
-			y: 1.0654761904761898d
+			x: -2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5C114910264DE84F"]
@@ -743,6 +736,37 @@
 			}]
 			x: -1.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["486C9B56954BA447"]
+			id: "371B3D4C9196C8BB"
+			shape: "rsquare"
+			tasks: [{
+				id: "1350D16C5C11D9FE"
+				item: "create_mechanical_extruder:mechanical_extruder"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["371B3D4C9196C8BB"]
+			id: "641D9AB445D95A5F"
+			rewards: [{
+				count: 32
+				id: "46F32D73906371B5"
+				item: "create:brass_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 256L
+				id: "553183B1C3B91A24"
+				item: "minecraft:andesite"
+				type: "item"
+			}]
+			title: "刷安山岩"
+			x: -7.0d
+			y: 3.5d
 		}
 	]
 	title: "No.2-1  Create"

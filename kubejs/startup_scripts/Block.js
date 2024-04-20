@@ -20,31 +20,25 @@ StartupEvents.registry('block', e => {
 	// 定义方块
 	let Block = [
 		// 烧焦圆石
-		['charred_cobblestone', 'stone', 3, 3, 'pickaxe', 'wooden', true],
+		['charred_cobblestone', 'stone', 3, 3, 'pickaxe', 'wooden'],
 		// 铸铁块
-		['cast_iron_block', 'metal', 5, 5, 'pickaxe', 'stone', true],
+		['cast_iron_block', 'metal', 5, 5, 'pickaxe', 'stone'],
 		// 熔炉核心
-		['furnace_core', 'stone', 3, 3, 'pickaxe', 'stone', true],
+		['furnace_core', 'stone', 3, 3, 'pickaxe', 'stone'],
 		// 充电铁块
-		['charge_iron_block', 'metal', 5, 5, 'pickaxe', 'stone', true]
+		['charge_iron_block', 'metal', 5, 5, 'pickaxe', 'stone'],
+		// 铸铁机壳
+		['cast_iron_casing', 'wood', 5, 5, 'pickaxe', 'wooden']
 	]
 
-	// 循环
-	Block.forEach(([
-		Name,
-		SoundType,
-		Hardness,
-		ResisTance,
-		Tool,
-		Grade,
-		RequiresTool
-	]) => {
+	Block.forEach(([Name, SoundType, Hardness, ResisTance, Tool, Grade]) => {
 		e.create(ModID + Name)
 			.soundType(SoundType)
 			.hardness(Hardness)
 			.resistance(ResisTance)
 			.tagBlock(Tool_Type[Tool])
 			.tagBlock(Minin_Glevel[Grade])
-			.requiresTool(RequiresTool)
+			.tagItem(ModID + 'items')
+			.requiresTool(true)
 	})
 })

@@ -29,7 +29,7 @@
 				item: "thermal:machine_refinery"
 				type: "item"
 			}]
-			x: -5.5d
+			x: -6.0d
 			y: 0.5d
 		}
 		{
@@ -108,6 +108,11 @@
 				"7F503F3E9FCF5B90"
 				"741F01395998E3C5"
 			]
+			icon: {
+				Count: 1b
+				id: "immersiveengineering:mixer"
+				tag: { }
+			}
 			id: "2F5EF5768AC4284A"
 			tasks: [{
 				id: "7948117D1D82E2BB"
@@ -324,17 +329,6 @@
 			y: 4.0d
 		}
 		{
-			id: "5CB80958E4F38E5D"
-			tasks: [{
-				id: "4CC3F2C7D0AC52B5"
-				item: "thermal:machine_pulverizer"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["5CB80958E4F38E5D"]
 			id: "093DD3F380F8FE42"
 			tasks: [{
 				id: "298286D82A179498"
@@ -342,14 +336,21 @@
 				type: "item"
 			}]
 			x: -1.5d
-			y: 4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["093DD3F380F8FE42"]
 			id: "21992DD6D3A1121F"
 			tasks: [{
 				id: "661F9DBCDB3DE6A5"
-				item: "thermal_extra:soul_infused_glass"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "thermal:glass/hardened"
+					}
+				}
+				title: "Any #thermal:glass/hardened"
 				type: "item"
 			}]
 			x: -0.5d

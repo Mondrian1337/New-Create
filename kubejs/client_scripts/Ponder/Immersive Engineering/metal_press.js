@@ -3,7 +3,7 @@ Ponder.registry(e => {
 		.scene(
 			'immersiveengineering:metal_press',
 			'金属冲压机',
-			'kubejs:ie_1',
+			'new_create:ie_1',
 			(scene, utils) => {
 				// 红石工程块
 				const rs_engineering = 'immersiveengineering:rs_engineering'
@@ -62,11 +62,8 @@ Ponder.registry(e => {
 					30,
 					utils.grid.at(5, 2, 5),
 					'down'
-				)
-					.rightClick()
-					.withItem('immersiveengineering:hammer')
+				).rightClick().withItem('immersiveengineering:hammer')
 				scene.overlay.showOutline('green', {}, [5, 2, 5], 30)
 				scene.idle(30)
-			}
-		)
+			})
 })
