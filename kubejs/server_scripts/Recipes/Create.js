@@ -809,9 +809,7 @@ ServerEvents.recipes(e => {
 	// 纯净石英
 	e.custom({
 		"type": "vintageimprovements:centrifugation",
-		"ingredients": [
-			{ "tag": "forge:sand" },
-		],
+		"ingredients": [{ "tag": "forge:sand" },],
 		"results": [
 			{ "item": "new_create:pure_quartz", "chance": 0.175 },
 			{ "item": "minecraft:stick", "chance": 0.4 },
