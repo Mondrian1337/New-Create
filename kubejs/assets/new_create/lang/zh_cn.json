@@ -74,6 +74,11 @@
 	"item.new_create.mithril_fluid_bucket": "秘银溶液桶",
 	"item.new_create.rose_gold_fluid_bucket": "玫瑰金溶液桶",
 	"item.new_create.bronze_pickaxe": "青铜镐",
+	"item.new_create.radiant_sword": "光辉刃",
+	"item.new_create.radiant_pickaxe": "光辉镐",
+	"item.new_create.radiant_axe": "光辉斧",
+	"item.new_create.radiant_shovel": "光辉锹",
+	"item.new_create.pure_quartz": "纯净石英",
 	"block.new_create.charred_cobblestone": "烧焦圆石",
 	"block.new_create.cast_iron_block": "铸铁块",
 	"block.new_create.furnace_core": "熔炉核心",
@@ -93,6 +98,8 @@
 	"block.new_create.mithril_fluid": "秘银溶液",
 	"block.new_create.rose_gold_fluid": "玫瑰金溶液",
 	"block.new_create.cast_iron_casing": "铸铁机壳",
+	"block.new_create.machine_core": "测试机器",
+	"block.new_create.glass": "熔融玻璃",
 	"fluid.new_create.andesite_compound_fluid": "安山混合液",
 	"fluid.new_create.embalming_fluid": "防腐液",
 	"fluid.new_create.working_fluid": "加工液",
@@ -106,8 +113,11 @@
 	"fluid.new_create.high_grade_refined_oil": "高级精炼油",
 	"fluid.new_create.mithril_fluid": "秘银溶液",
 	"fluid.new_create.rose_gold_fluid": "玫瑰金溶液",
+	"fluid.new_create.glass": "熔融玻璃",
+	"machine.new_create.machine_core": "测试机器",
 	"tooltip.new_create.grass_string": "§b一种勉强可以替代线的绳子,可以做点东西",
 	"tooltip.new_create.grass_fiber": "§b在除草的时候可以获得,或许可以编成草绳",
 	"tooltip.new_create.flint_tools": "§b一种原始到不能在原始的工具,§b但是勉勉强强能用",
-	"tooltip.ie.toolupgrade_revolver_electro": "§a似乎是一个很有用的东西"
+	"tooltip.ie.toolupgrade_revolver_electro": "§a似乎是一个很有用的东西",
+	"tooltip.new_create.pure_quartz": "§b挖掘沙子有1%的概率掉落"
 }

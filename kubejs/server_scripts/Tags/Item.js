@@ -117,4 +117,9 @@ ServerEvents.tags('item', e => {
 	e.add('create:casing', [
 		'new_create:cast_iron_casing'
 	])
+
+	// 石英
+	e.add('forge:gems/quartz', [
+		'new_create:pure_quartz'
+	])
 })

@@ -1,8 +1,0 @@
-{
-	"type": "stonecutting",
-	"ingredient": {
-		"item": "caupona:lateres"
-	},
-	"result": "minecraft:brick",
-	"count": 1
-}

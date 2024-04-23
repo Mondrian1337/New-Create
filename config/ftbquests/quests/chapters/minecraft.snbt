@@ -89,9 +89,9 @@
 				id: "19B7E149783D0D88"
 				type: "dimension"
 			}]
-			title: "&3Welcome ! ! !"
-			x: 29.42142857142856d
-			y: 17.992857142857165d
+			title: "&3Welcome!!!"
+			x: 30.0d
+			y: 17.5d
 		}
 		{
 			dependencies: ["75C1C1D7BC5E550D"]
@@ -110,8 +110,8 @@
 				type: "item"
 			}]
 			title: "&3杂草获取"
-			x: 32.599999999999994d
-			y: 16.60000000000002d
+			x: 32.5d
+			y: 16.5d
 		}
 		{
 			dependencies: ["75C1C1D7BC5E550D"]
@@ -130,8 +130,8 @@
 				type: "item"
 			}]
 			title: "&3小燧石"
-			x: 32.599999999999994d
-			y: 18.60000000000002d
+			x: 32.5d
+			y: 18.5d
 		}
 		{
 			dependencies: ["5C5120075EDB3ECF"]
@@ -482,63 +482,17 @@
 			]
 			id: "4E2DA87949EAE5F7"
 			subtitle: "明明毫无意义啊喂!"
-			tasks: [
-				{
-					id: "7A29AADF9B45306A"
-					item: {
-						Count: 1b
-						id: "minecraft:stone_sword"
-						tag: {
-							Damage: 0
-						}
+			tasks: [{
+				id: "3CA0160D69C33C79"
+				item: {
+					Count: 1b
+					id: "minecraft:stone_pickaxe"
+					tag: {
+						Damage: 0
 					}
-					type: "item"
 				}
-				{
-					id: "0694FAF9C8F3F358"
-					item: {
-						Count: 1b
-						id: "minecraft:stone_pickaxe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "3EFF76B5F01BB4BB"
-					item: {
-						Count: 1b
-						id: "minecraft:stone_shovel"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "2BF53DB6EFC699DB"
-					item: {
-						Count: 1b
-						id: "minecraft:stone_axe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-				{
-					id: "5D351B5D747AFFB3"
-					item: {
-						Count: 1b
-						id: "minecraft:stone_hoe"
-						tag: {
-							Damage: 0
-						}
-					}
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			title: "&3石制工具套件"
 			x: 33.5d
 			y: 20.5d
@@ -672,6 +626,11 @@
 					}
 					type: "item"
 				}
+				{
+					id: "693213AFE9A0B823"
+					item: "immersiveengineering:manual"
+					type: "item"
+				}
 			]
 			title: "&3合金窑"
 			x: 38.0d
@@ -794,17 +753,24 @@
 			dependencies: ["2D16703D178AB2C0"]
 			description: ["&a※你已经掌握了齿轮合成的方法&r"]
 			id: "5A260B030BEC3846"
-			rewards: [{
-				id: "3D5E5501A9E7BB85"
-				item: {
-					Count: 1b
-					id: "new_create:iron_hammer"
-					tag: {
-						Damage: 0
+			rewards: [
+				{
+					id: "3D5E5501A9E7BB85"
+					item: {
+						Count: 1b
+						id: "new_create:iron_hammer"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "52B9BEE22DC46193"
+					item: "create:large_water_wheel"
+					type: "item"
+				}
+			]
 			subtitle: "&5初中物理知识:大小齿轮变速!"
 			tasks: [
 				{
@@ -850,7 +816,7 @@
 					type: "item"
 				}
 			]
-			title: "&3磨磨磨！~"
+			title: "&3磨磨磨!"
 			x: 35.0d
 			y: 22.0d
 		}
@@ -881,7 +847,7 @@
 						value: "forge:ingots/bronze"
 					}
 				}
-				title: "Any #forge:ingots/bronze"
+				title: "青铜"
 				type: "item"
 			}]
 			x: 38.06138392857143d
@@ -932,7 +898,7 @@
 						value: "minecraft:logs"
 					}
 				}
-				title: "Any #minecraft:logs"
+				title: "任意一种木头"
 				type: "item"
 			}]
 			x: 36.5d
@@ -1119,7 +1085,14 @@
 			tasks: [{
 				count: 32L
 				id: "27E8FA1AE99BAAF7"
-				item: "minecraft:clay_ball"
+				item: {
+					Count: 1b
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:clay"
+					}
+				}
+				title: "黏土"
 				type: "item"
 			}]
 			x: 35.0d
@@ -1915,6 +1888,8 @@
 				"&9圈了区块后机械动力的许多机械无法正常运行，请删除你所圈的区块&r"
 			]
 			id: "21E35649CA8399DE"
+			shape: "hexagon"
+			size: 3.0d
 			subtitle: "&b本整合包可能非常坐牢!"
 			tasks: [{
 				id: "2C7E53E5E7378E56"
@@ -1922,7 +1897,7 @@
 				type: "checkmark"
 			}]
 			x: 27.0d
-			y: 18.0d
+			y: 17.5d
 		}
 		{
 			dependencies: [
@@ -1976,6 +1951,19 @@
 			x: 27.0d
 			y: 20.0d
 		}
+		{
+			dependencies: ["75C1C1D7BC5E550D"]
+			id: "189F0180B440F084"
+			subtitle: "&b为了防止实在脸黑,你可以用9个泥土或9个沙子合成一个砂砾"
+			tasks: [{
+				id: "7A9ECE9C39E93316"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			title: "&b非洲人就是你"
+			x: 31.0d
+			y: 19.5d
+		}
 	]
-	title: "&6No.1 开端"
+	title: "&6火与石之歌"
 }

@@ -1,7 +1,0 @@
-{
-  "type": "caupona:fluid_food",
-  "fluid": "caupona:stock",
-  "heal": 2,
-  "parts": 4,
-  "sat": 1.0
-}

@@ -594,14 +594,14 @@
 			]
 			id: "675821C6A6BF5D79"
 			shape: "gear"
-			size: 1.5d
+			size: 1.25d
 			tasks: [{
 				id: "26A069312D55A5BE"
 				item: "new_create:inductive_mechanism"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 3.5d
+			x: -3.75d
+			y: 3.75d
 		}
 		{
 			dependencies: ["539C27AC7BDA8727"]
@@ -769,5 +769,5 @@
 			y: 3.5d
 		}
 	]
-	title: "No.2-1  Create"
+	title: "&6机械的曙光"
 }

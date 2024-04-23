@@ -26,17 +26,17 @@ StartupEvents.registry('item', e => {
 		// 青铜镐
 		['bronze_pickaxe', 'pickaxe', 'common', false, 1, 450, 5.5, 2],
 		// 光辉刃
-		['radiant_sword', 'sword', 'epic', true, 10, 2048, 6, 4],
+		['radiant_sword', 'sword', 'epic', true, 10, 2048, 10, 4],
 		// 光辉镐
-		['radiant_pickaxe', 'pickaxe', 'epic', true, 7, 2048, 6, 4],
+		['radiant_pickaxe', 'pickaxe', 'epic', true, 7, 2048, 10, 4],
 		// 光辉斧
-		['radiant_axe', 'axe', 'epic', true, 12, 2048, 6, 4],
+		['radiant_axe', 'axe', 'epic', true, 12, 2048, 10, 4],
 		// 光辉锹
-		['radiant_shovel', 'shovel', 'epic', true, 7, 2048, 6, 4]
+		['radiant_shovel', 'shovel', 'epic', true, 7, 2048, 10, 4]
 	]
 	Tool.forEach(([
 		Name, // Item id
-		Type, // 工具类型
+		Type, // 工具类型	
 		Rarity, // 稀有度
 		Glow, // 发光
 		Damage, // 基础伤害(所填数值+3=游戏内面板)
@@ -49,6 +49,7 @@ StartupEvents.registry('item', e => {
 			.rarity(Rarity)
 			.glow(Glow)
 			.unstackable()
+			.tag(ModID + 'items')
 			.modifyTier(tool => {
 				tool.uses = Use
 				tool.speed = Speed

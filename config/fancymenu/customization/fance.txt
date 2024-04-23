@@ -73,7 +73,7 @@ customization {
 
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_quit_button%
-  width = 126
+  width = 124
   action = resizebutton
   height = 20
 }
@@ -140,7 +140,7 @@ customization {
 customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_options_button%
   orientation = mid-left
-  x = 119
+  x = 120
   action = movebutton
   y = 15
 }
@@ -163,7 +163,7 @@ customization {
   loopbackgroundanimations = true
   restartbackgroundanimations = true
   action = setbuttontexture
-  backgroundhovered = FancyMenu/config.png
+  backgroundhovered = FancyMenu/config_2.png
   backgroundnormal = FancyMenu/config.png
 }
 
