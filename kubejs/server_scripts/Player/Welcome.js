@@ -1,4 +1,3 @@
-// 欢迎
 PlayerEvents.loggedIn(e => {
 	const { server } = e
 	server.runCommandSilent(`tellraw @a "Welcome ${e.player.username} to the New Create!!!"`)

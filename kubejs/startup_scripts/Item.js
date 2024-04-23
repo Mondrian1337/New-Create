@@ -2,15 +2,13 @@ StartupEvents.registry('item', e => {
 	const ModID = 'new_create:'
 	let Item = [
 		// 燧石碎片
-		['flint_knapp', 64, 'uncommon', false],
+		['flint_knapp', 64, 'common', false],
 		// 彩虹锭
 		['rainbow_ingot', 64, 'epic', false],
 		// 塑料板
 		['plastic_sheet', 64, 'common', false],
 		// 冲压模具-块
 		['mold_block', 1, 'common', false],
-		// 烈焰人的头
-		['blaze_head', 64, 'uncommon', false],
 		// 电镀锌
 		['plating_zinc_ingot', 64, 'common', false],
 		// 铸铁电子管
@@ -58,6 +56,8 @@ StartupEvents.registry('item', e => {
 		['carbon_rod', 64, 'common', false],
 		// 焦煤棒
 		['coking_coal_rod', 64, 'common', false],
+		// 纯净石英
+		['pure_quartz', 64, 'uncommon', false],
 		// 幽静构件
 		['abstruse_mechanism', 64, 'common', false],
 		// 计算构件
@@ -95,5 +95,6 @@ StartupEvents.registry('item', e => {
 	]
 	In_Item.forEach(([Name]) => {
 		e.create(ModID + Name, 'create:sequenced_assembly')
+			.tag(ModID + 'items')
 	})
 })

@@ -36,7 +36,7 @@ StartupEvents.registry('item', e => {
 	]
 	Tool.forEach(([
 		Name, // Item id
-		Type, // 工具类型
+		Type, // 工具类型	
 		Rarity, // 稀有度
 		Glow, // 发光
 		Damage, // 基础伤害(所填数值+3=游戏内面板)
@@ -49,6 +49,7 @@ StartupEvents.registry('item', e => {
 			.rarity(Rarity)
 			.glow(Glow)
 			.unstackable()
+			.tag(ModID + 'items')
 			.modifyTier(tool => {
 				tool.uses = Use
 				tool.speed = Speed

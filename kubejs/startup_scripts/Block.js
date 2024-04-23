@@ -13,7 +13,7 @@ StartupEvents.registry('block', e => {
 		wooden: 'minecraft:needs_wooden_tool',
 		stone: 'minecraft:needs_stone_tool',
 		iron: 'minecraft:needs_iron_tool',
-		gold: 'minecraft:needs_gold_tool',
+		golded: 'minecraft:needs_gold_tool',
 		nether: 'forge:needs_netherite_tool'
 	}
 

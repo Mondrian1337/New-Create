@@ -119,8 +119,8 @@
 				title: "&6混合器"
 				type: "checkmark"
 			}]
-			x: -3.1607142857142847d
-			y: 0.30357142857142705d
+			x: -3.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["2F5EF5768AC4284A"]
@@ -130,8 +130,8 @@
 				item: "new_create:high_grade_refined_oil_bucket"
 				type: "item"
 			}]
-			x: -1.9821428571428683d
-			y: 0.28571428571428825d
+			x: -2.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["5B5AB021C4F4BFB8"]
@@ -206,7 +206,7 @@
 				title: "&6粉碎机"
 				type: "checkmark"
 			}]
-			x: -4.0d
+			x: -3.0d
 			y: 2.5d
 		}
 		{
@@ -218,7 +218,7 @@
 				type: "item"
 			}]
 			x: -3.0d
-			y: 2.0d
+			y: 1.5d
 		}
 		{
 			dependencies: ["72E7BB363904DD98"]
@@ -242,7 +242,7 @@
 				item: "thermal:device_rock_gen"
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.0d
 			y: 1.0d
 		}
 		{
@@ -253,8 +253,8 @@
 				item: "thermal:rose_gold_gear"
 				type: "item"
 			}]
-			x: 2.0d
-			y: 2.0d
+			x: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["285B90A0250D5EA3"]
@@ -265,8 +265,8 @@
 				item: "thermal:rose_gold_ingot"
 				type: "item"
 			}]
-			x: 1.5d
-			y: 3.0d
+			x: 1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6671B5400A00D016"]
@@ -276,11 +276,14 @@
 				item: "thermal:machine_smelter"
 				type: "item"
 			}]
-			x: 2.5d
-			y: 3.5d
+			x: 1.0d
+			y: 2.0d
 		}
 		{
-			dependencies: ["55E2844C773D925A"]
+			dependencies: [
+				"55E2844C773D925A"
+				"093DD3F380F8FE42"
+			]
 			description: ["{image:new_create:textures/images/6.png width:50 height:50 align:1}"]
 			id: "6671B5400A00D016"
 			subtitle: "&c有点阴间了"
@@ -290,26 +293,10 @@
 				type: "item"
 			}]
 			title: "多多少少有点邪门?"
-			x: 1.5d
-			y: 4.0d
+			x: 1.0d
+			y: 3.0d
 		}
 		{
-			dependencies: [
-				"7B85EDD5B12A2552"
-				"21992DD6D3A1121F"
-			]
-			id: "2F1FCB055A94C83F"
-			tasks: [{
-				id: "082A8EDB6C32CEDC"
-				item: "thermal:machine_insolator"
-				type: "item"
-			}]
-			title: "&6也许你需要量产？"
-			x: -0.2083333333333428d
-			y: 3.019047619047626d
-		}
-		{
-			dependencies: ["2F1FCB055A94C83F"]
 			id: "55E2844C773D925A"
 			subtitle: "&c下界的两种作物"
 			tasks: [
@@ -324,8 +311,8 @@
 					type: "item"
 				}
 			]
-			title: "红蓝红蓝碰"
-			x: 0.5d
+			title: "&b这不是皇室战争"
+			x: 1.0d
 			y: 4.0d
 		}
 		{
@@ -333,31 +320,22 @@
 			id: "093DD3F380F8FE42"
 			tasks: [{
 				id: "298286D82A179498"
-				item: "thermal_extra:soul_sand_dust"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 3.0d
-		}
-		{
-			dependencies: ["093DD3F380F8FE42"]
-			id: "21992DD6D3A1121F"
-			tasks: [{
-				id: "661F9DBCDB3DE6A5"
 				item: {
 					Count: 1b
 					id: "itemfilters:tag"
 					tag: {
-						value: "thermal:glass/hardened"
+						value: "forge:dusts/soul_sand"
 					}
 				}
-				title: "Any #thermal:glass/hardened"
+				title: "Any #forge:dusts/soul_sand"
 				type: "item"
 			}]
-			x: -0.5d
-			y: 4.0d
+			title: "&b闻起来有点像薄荷"
+			x: 0.0d
+			y: 3.0d
 		}
 		{
+			dependencies: ["68FA0865F8329BEF"]
 			id: "02C702D9B6C35B1C"
 			tasks: [{
 				id: "0F9408BEB0E5382C"
@@ -365,8 +343,69 @@
 				type: "item"
 			}]
 			title: "&6古希腊掌管震动的神"
-			x: -2.5d
+			x: 0.0d
 			y: 4.0d
+		}
+		{
+			id: "68FA0865F8329BEF"
+			tasks: [{
+				id: "3C84309C36AFE6D7"
+				item: "vintageimprovements:spring_coiling_machine"
+				type: "item"
+			}]
+			title: "&b这东西威力老大了捏"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["149A937936D08DE9"]
+			id: "162AD456A9098EBC"
+			rewards: [{
+				count: 4
+				id: "4A6F9CB932FE1D4B"
+				item: "create:basin"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.0d
+			subtitle: "&b这里的风景呀真好看"
+			tasks: [{
+				id: "1B283AD7E46B1703"
+				item: "vintageimprovements:centrifuge"
+				type: "item"
+			}]
+			title: "&b大风车吱呀吱哟哟地转"
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["162AD456A9098EBC"]
+			description: ["{image:new_create:textures/images/7.png width:50 height:50 align:1}"]
+			id: "0CE928327BB29A80"
+			rewards: [{
+				id: "0B6837DE930143BF"
+				item: {
+					Count: 1b
+					id: "new_create:radiant_sword"
+					tag: {
+						Damage: 0
+						RepairCost: 0
+						display: {
+							Name: "{\"text\":\"纯粹骨钉\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "纯粹!"
+			tasks: [{
+				id: "76E3EF25DFB82BED"
+				item: "new_create:pure_quartz"
+				type: "item"
+			}]
+			title: "&c纯粹!"
+			x: 2.0d
+			y: 1.0d
 		}
 	]
 	title: "No.3-1 IE + Thermal"

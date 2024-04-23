@@ -1,4 +1,11 @@
 ServerEvents.tags('fluid', e => {
+	// 分茶
+	e.add('caupona:boilable', [
+		'thermal:latex',
+		'new_create:glass',
+		'new_create:embalming_fluid'
+	])
+	
 	// 工业燃油
 	e.add('forge:industrial_fuel', [
 		'new_create:industrial_fuel'

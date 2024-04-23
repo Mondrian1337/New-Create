@@ -305,8 +305,8 @@
 				item: "createaddition:electrum_ingot"
 				type: "item"
 			}]
-			x: 3.529761904761905d
-			y: 3.51171875d
+			x: 3.5d
+			y: 3.5d
 		}
 		{
 			dependencies: [
@@ -985,5 +985,5 @@
 			y: 1.0d
 		}
 	]
-	title: "No.2-2 Base Industry"
+	title: "&6能源与机械"
 }
