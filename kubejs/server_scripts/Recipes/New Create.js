@@ -171,6 +171,10 @@ ServerEvents.recipes(e => {
 		"time": 100
 	})
 
+	mixing(Fluid.of('new_create:glass', 100), [
+		'#forge:sand'
+	]).heated()
+
 	// 玻璃
 	mixing('minecraft:glass', [
 		Fluid.of('new_create:glass', 50)

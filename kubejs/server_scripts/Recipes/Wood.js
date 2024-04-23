@@ -4,9 +4,7 @@ ServerEvents.recipes(event => {
 		let result = e.substring(0, pos + 1) + 'stripped_' + e.substring(pos + 1)
 		event.custom({
 			"type": "farmersdelight:cutting",
-			"ingredients": [
-				{ "item": e }
-			],
+			"ingredients": [{ "item": e }],
 			"result": [
 				{ "item": result },
 				{ "item": "farmersdelight:tree_bark" }

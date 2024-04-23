@@ -26,13 +26,13 @@ StartupEvents.registry('item', e => {
 		// 青铜镐
 		['bronze_pickaxe', 'pickaxe', 'common', false, 1, 450, 5.5, 2],
 		// 光辉刃
-		['radiant_sword', 'sword', 'epic', true, 10, 2048, 6, 4],
+		['radiant_sword', 'sword', 'epic', true, 10, 2048, 10, 4],
 		// 光辉镐
-		['radiant_pickaxe', 'pickaxe', 'epic', true, 7, 2048, 6, 4],
+		['radiant_pickaxe', 'pickaxe', 'epic', true, 7, 2048, 10, 4],
 		// 光辉斧
-		['radiant_axe', 'axe', 'epic', true, 12, 2048, 6, 4],
+		['radiant_axe', 'axe', 'epic', true, 12, 2048, 10, 4],
 		// 光辉锹
-		['radiant_shovel', 'shovel', 'epic', true, 7, 2048, 6, 4]
+		['radiant_shovel', 'shovel', 'epic', true, 7, 2048, 10, 4]
 	]
 	Tool.forEach(([
 		Name, // Item id

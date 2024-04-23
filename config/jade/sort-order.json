@@ -113,10 +113,6 @@
   "custommachinery:machine_server_data_provider": null,
   "custommachinery:machine_component_provider": null,
   "waystones:waystone": null,
-  "mekanism:data_provider": null,
-  "mekanism:entity_data_provider": null,
-  "mekanism:tooltip_renderer": null,
-  "mekanism:remove_builtin": null,
   "minecraft:fluid_storage": null,
   "immersiveengineering:multiblock_icon": null,
   "minecraft:brewing_stand": null,
@@ -174,5 +170,9 @@
   "ae2:part_icon": null,
   "ae2:part_tooltip": null,
   "ae2:part_mod_name": null,
+  "mekanism:data_provider": null,
+  "mekanism:entity_data_provider": null,
+  "mekanism:tooltip_renderer": null,
+  "mekanism:remove_builtin": null,
   "pipez:pipe": null
 }

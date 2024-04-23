@@ -67,7 +67,7 @@ StartupEvents.registry('item', e => {
 		// 电磁构件
 		['inductive_mechanism', 64, 'common', false],
 		// 下界构件
-		['infernal_mechanism', 64, 'common', false]
+		['infernal_mechanism', 64, 'common', false],
 	]
 	Item.forEach(([Name, Maxstacksize, Rarity, Glow]) => {
 		e.create(ModID + Name)

@@ -42,7 +42,7 @@ StartupEvents.registry('fluid', e => {
 		.flowingTexture(ModID + 'fluid/soul_flowing')
 		.stillTexture(ModID + 'fluid/soul_still')
 
-	// 液态灵魂
+	// 熔融玻璃
 	e.create(ModID + 'glass')
 		.noBucket()
 		.noBlock()

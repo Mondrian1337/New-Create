@@ -200,6 +200,11 @@
 		{
 			dependencies: ["37CB5D8FF3EBE1F7"]
 			hide_dependency_lines: true
+			icon: {
+				Count: 1b
+				id: "immersiveengineering:crusher"
+				tag: { }
+			}
 			id: "013311E6F1722D52"
 			tasks: [{
 				id: "7631B0CA6626B2D2"
