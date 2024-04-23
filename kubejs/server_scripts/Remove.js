@@ -1,7 +1,6 @@
 ServerEvents.recipes(e => {
 	// 删除Item
 	let Remove_Item = [
-		'#minecraft:planks',
 		'#forge:tools/wooden',
 		'minecraft:stone_sword',
 		'minecraft:stone_pickaxe',
