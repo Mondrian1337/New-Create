@@ -58,3 +58,13 @@ JEIEvents.addFluids(e => {
 		e.add(Fluid)
 	})
 })
+
+// 添加信息
+JEIEvents.information(e => {
+	const { translatable } = Text
+
+	// 硅晶
+	e.add('new_craete:silicon_crystal', [
+		translatable('jei.new_create.silicon_crystal')
+	])
+})

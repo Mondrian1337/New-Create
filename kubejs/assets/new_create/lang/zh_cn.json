@@ -79,6 +79,8 @@
 	"item.new_create.radiant_axe": "光辉斧",
 	"item.new_create.radiant_shovel": "光辉锹",
 	"item.new_create.pure_quartz": "纯净石英",
+	"item.new_create.saw_silicon": "粗硅",
+	"item.new_create.silicon_crystal": "硅晶",
 	"block.new_create.charred_cobblestone": "烧焦圆石",
 	"block.new_create.cast_iron_block": "铸铁块",
 	"block.new_create.furnace_core": "熔炉核心",
@@ -88,7 +90,6 @@
 	"block.new_create.zinc_fluid": "锌溶液",
 	"block.new_create.cast_fluid": "铸铁溶液",
 	"block.new_create.charge_iron_block": "充电铁块",
-	"block.ad_astra.etrionic_blast_furnace": "等离子高炉",
 	"block.new_create.industrial_fuel": "工业燃油",
 	"block.new_create.kerosene": "煤油",
 	"block.new_create.mixed_gasoline": "混合汽油",
@@ -119,5 +120,6 @@
 	"tooltip.new_create.grass_fiber": "§b在除草的时候可以获得,或许可以编成草绳",
 	"tooltip.new_create.flint_tools": "§b一种原始到不能在原始的工具,§b但是勉勉强强能用",
 	"tooltip.ie.toolupgrade_revolver_electro": "§a似乎是一个很有用的东西",
-	"tooltip.new_create.pure_quartz": "§b挖掘沙子有1%的概率掉落"
+	"tooltip.new_create.pure_quartz": "§b挖掘沙子有1%的概率掉落",
+	"jei.new_create.silicon_crystal": "§b粗硅在还原时形成的结晶体"
 }

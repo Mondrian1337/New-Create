@@ -212,7 +212,7 @@
 				type: "checkmark"
 			}]
 			x: -3.0d
-			y: 2.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["013311E6F1722D52"]
@@ -262,7 +262,10 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["285B90A0250D5EA3"]
+			dependencies: [
+				"637A003C17ED085E"
+				"6671B5400A00D016"
+			]
 			id: "73DEE011EAF7D46A"
 			tasks: [{
 				count: 4L
@@ -274,15 +277,16 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["6671B5400A00D016"]
+			dependencies: ["73835F2AF14AC407"]
 			id: "285B90A0250D5EA3"
 			tasks: [{
 				id: "69AE63467EB68CE7"
 				item: "thermal:machine_smelter"
 				type: "item"
 			}]
-			x: 1.0d
-			y: 2.0d
+			title: "又双叒叕是新炉子"
+			x: 2.0d
+			y: 3.0d
 		}
 		{
 			dependencies: [
@@ -299,7 +303,7 @@
 			}]
 			title: "多多少少有点邪门?"
 			x: 1.0d
-			y: 3.0d
+			y: 2.0d
 		}
 		{
 			id: "55E2844C773D925A"
@@ -318,7 +322,7 @@
 			]
 			title: "&b这不是皇室战争"
 			x: 1.0d
-			y: 4.0d
+			y: 3.0d
 		}
 		{
 			dependencies: ["02C702D9B6C35B1C"]
@@ -348,8 +352,8 @@
 				type: "item"
 			}]
 			title: "&6古希腊掌管震动的神"
-			x: 0.0d
-			y: 4.0d
+			x: -1.0d
+			y: 3.0d
 		}
 		{
 			id: "68FA0865F8329BEF"
@@ -359,7 +363,7 @@
 				type: "item"
 			}]
 			title: "&b这东西威力老大了捏"
-			x: -1.0d
+			x: -2.0d
 			y: 3.0d
 		}
 		{
@@ -410,6 +414,63 @@
 			}]
 			title: "&c纯粹!"
 			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"637A003C17ED085E"
+				"0CE928327BB29A80"
+			]
+			id: "73835F2AF14AC407"
+			subtitle: "还记得前面的电弧炉吗?"
+			tasks: [{
+				id: "20ACA71DC5274538"
+				item: "new_create:saw_silicon"
+				type: "item"
+			}]
+			title: "&c化学最好的一集"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["285B90A0250D5EA3"]
+			id: "21F3B9E76EFFCE3B"
+			tasks: [{
+				id: "7818620561CF794D"
+				item: "ae2:silicon"
+				type: "item"
+			}]
+			title: "硅?"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"21F3B9E76EFFCE3B"
+				"0F5B696D9B636C16"
+			]
+			id: "015E76603457CFF2"
+			shape: "hexagon"
+			tasks: [{
+				id: "551F7043D5F60DE3"
+				item: "new_create:silicon_crystal"
+				type: "item"
+			}]
+			title: "硅!"
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["015E76603457CFF2"]
+			id: "49AC7CD17CF5AF37"
+			shape: "gear"
+			subtitle: "感谢你在测试的过程中发现的全部bug"
+			tasks: [{
+				id: "32E350A4A24869BA"
+				title: "这就是0.8-Alpha的全部内容了"
+				type: "checkmark"
+			}]
+			x: 3.0d
 			y: 1.0d
 		}
 	]

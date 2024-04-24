@@ -13,4 +13,8 @@ ServerEvents.recipes(e => {
 	e.replaceInput('ad_astra:etrionic_blast_furnace', '#forge:plates/iron', 'new_create:cast_iron_sheet')
 	// 钢锭替换
 	e.replaceOutput({}, 'immersiveengineering:ingot_steel', 'ad_astra:steel_ingot')
+	// 硅
+	e.replaceInput({}, 'ae2:silicon', 'new_create:silicon_crystal')
+	// 传动杆 
+	e.replaceInput({}, 'create:shaft', '#create:shaft_add')
 })

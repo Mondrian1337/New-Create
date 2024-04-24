@@ -1,5 +1,5 @@
 BlockEvents.modification(e => {
-	const BlockNames = [
+	let BlockNames = [
 		'minecraft:dark_oak_log', 'minecraft:dark_oak_wood', 'minecraft:stripped_dark_oak_log', 'minecraft:stripped_dark_oak_wood',
 		'minecraft:oak_log', 'minecraft:oak_wood', 'minecraft:stripped_oak_log', 'minecraft:stripped_oak_wood',
 		'minecraft:acacia_log', 'minecraft:acacia_wood', 'minecraft:stripped_acacia_log', 'minecraft:stripped_acacia_wood',

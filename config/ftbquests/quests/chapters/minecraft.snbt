@@ -388,6 +388,7 @@
 				type: "item"
 			}]
 			tasks: [{
+				count: 32L
 				id: "4FC73587A09A03FB"
 				item: {
 					Count: 1b
@@ -1170,8 +1171,8 @@
 				item: "immersiveengineering:blastbrick"
 				type: "item"
 			}]
-			x: 41.600000000000016d
-			y: 19.100000000000012d
+			x: 41.5d
+			y: 19.0d
 		}
 		{
 			dependencies: ["2BB8EC9F1782C4DE"]
@@ -1873,7 +1874,7 @@
 		}
 		{
 			description: [
-				"&4本整合包为半专家整合包!!!&r"
+				"&4本整合包为专家包!!!&r"
 				"&4需要一定量的模组基础以及各个模组物品的自动化产线搭建&r"
 				"&4萌新玩这个整合包可能会很吃力!!!&r"
 				"&a不用怕,既然选择了你也可以玩下去,慢慢来&r"
@@ -1944,12 +1945,6 @@
 			title: "&6高炉合成"
 			x: 53.5d
 			y: 15.5d
-		}
-		{
-			id: "63F3434C0F1ADECD"
-			title: "关于开发者"
-			x: 27.0d
-			y: 20.0d
 		}
 		{
 			dependencies: ["75C1C1D7BC5E550D"]

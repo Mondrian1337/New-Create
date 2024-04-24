@@ -288,4 +288,19 @@ ServerEvents.recipes(e => {
 	shapeless('create:zinc_ingot', [
 		'9x create:zinc_nugget'
 	])
+
+	// 纯净石英
+	e.custom({
+		"type": "vintageimprovements:centrifugation",
+		"ingredients": [{ "tag": "forge:sand" },],
+		"results": [
+			{ "item": "new_create:pure_quartz", "chance": 0.175 },
+			{ "item": "minecraft:stick", "chance": 0.4 },
+			{ "item": "minecraft:dead_bush", "chance": 0.3 },
+			{ "item": 'minecraft:gold_nugget', "chance": 0.3 },
+			{ "item": 'createaddition:electrum_nugget', "chance": 0.3 },
+			{ "item": 'new_create:saw_silicon', "chance": 0.03 }
+		],
+		"processingTime": 250
+	})
 })
