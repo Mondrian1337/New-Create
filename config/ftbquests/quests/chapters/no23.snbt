@@ -26,16 +26,6 @@
 			y: -0.5d
 		}
 		{
-			id: "7A6F269DAD792360"
-			tasks: [{
-				id: "5DBC5A1B4BF8A2A8"
-				item: "createaddition:alternator"
-				type: "item"
-			}]
-			x: 2.5d
-			y: 1.0d
-		}
-		{
 			dependencies: ["58118D754E67D822"]
 			id: "23307DC6434DC928"
 			tasks: [{
@@ -50,7 +40,6 @@
 			dependencies: [
 				"7C43B6168E6D80E1"
 				"695B6A8765FF64D5"
-				"7A6F269DAD792360"
 			]
 			description: ["{image:#FFFFFF width:100 height:100 align:1}"]
 			id: "439B67F0239B0130"
