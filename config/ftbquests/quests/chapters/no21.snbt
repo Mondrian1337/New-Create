@@ -5,18 +5,6 @@
 	group: "7D51E071024525B7"
 	icon: "create:wrench"
 	id: "1B2DCAFA2439A323"
-	images: [{
-		click: ""
-		corner: false
-		dev: false
-		height: 8.0d
-		hover: [ ]
-		image: "create:textures/gui/logo.png"
-		rotation: 0.0d
-		width: 8.0d
-		x: -13.0d
-		y: 2.0d
-	}]
 	order_index: 0
 	quest_links: [ ]
 	quests: [
@@ -767,6 +755,25 @@
 			title: "刷安山岩"
 			x: -7.0d
 			y: 3.5d
+		}
+		{
+			dependencies: ["1D5BA975FF84BAF7"]
+			id: "0F5B696D9B636C16"
+			rewards: [{
+				count: 3
+				id: "3E69BB11C62B80D3"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "6CC077C0F39AE0B3"
+				item: "vintageimprovements:belt_grinder"
+				type: "item"
+			}]
+			title: "&b砂纸Pro Max"
+			x: -4.5d
+			y: 0.5d
 		}
 	]
 	title: "&6机械的曙光"

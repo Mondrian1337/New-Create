@@ -122,4 +122,9 @@ ServerEvents.tags('item', e => {
 	e.add('forge:gems/quartz', [
 		'new_create:pure_quartz'
 	])
+
+	// 硅
+	e.add('forge:silicon', [
+		'new_create:silicon_crystal'
+	])
 })

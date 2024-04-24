@@ -269,4 +269,15 @@ ServerEvents.recipes(e => {
 		"inputs": [{ "item": 'mekanism:dust_emerald' }],
 		"result": { "amount": 250, "fluid": 'new_create:mithril_fluid' }
 	})
+
+	// 粗硅
+	e.custom({
+		"type": "immersiveengineering:arc_furnace",
+		"additives": [{ "tag": "forge:dusts/coal_coke" }],
+		"energy": 204800,
+		"input": { "item": "new_create:pure_quartz" },
+		"results": [{ "item": "new_create:saw_silicon" }],
+		"slag": { "item": "thermal:sulfur_dust" },
+		"time": 800
+	})
 })

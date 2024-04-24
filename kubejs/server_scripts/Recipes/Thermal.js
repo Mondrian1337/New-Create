@@ -278,9 +278,9 @@ ServerEvents.recipes(e => {
 		"type": "vintageimprovements:vibrating",
 		"ingredients": [{ "tag": "minecraft:soul_fire_base_blocks" }],
 		"results": [
-			{ "item": "thermal_extra:soul_sand_dust", "amount": 1, "chance": 0.4 },
-			{ "item": "minecraft:soul_sand", "amount": 1, "chance": 0.3 },
-			{ "item": "minecraft:soul_soil", "amount": 1, "chance": 0.3 }
+			{ "item": "thermal_extra:soul_sand_dust", "chance": 0.4 },
+			{ "item": "minecraft:soul_sand", "chance": 0.3 },
+			{ "item": "minecraft:soul_soil", "chance": 0.3 }
 		],
 		"processingTime": 100
 	})
@@ -306,4 +306,11 @@ ServerEvents.recipes(e => {
 		B: '#forge:storage_blocks/cast_iron',
 		G: '#thermal:glass/hardened'
 	})
+
+	// 硅
+	smelter([
+		'ae2:silicon',
+		'thermal:sulfur_dust'
+	], 'new_create:saw_silicon')
+		.energy(4800).id('ae2:blasting/silicon_from_certus_quartz_dust')
 })

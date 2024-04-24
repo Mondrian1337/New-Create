@@ -806,18 +806,42 @@ ServerEvents.recipes(e => {
 		J: 'create:brass_casing'
 	}).id('create_mechanical_extruder:mechanical_extruder')
 
-	// 纯净石英
+	// 硅晶
 	e.custom({
-		"type": "vintageimprovements:centrifugation",
-		"ingredients": [{ "tag": "forge:sand" },],
-		"results": [
-			{ "item": "new_create:pure_quartz", "chance": 0.175 },
-			{ "item": "minecraft:stick", "chance": 0.4 },
-			{ "item": "minecraft:dead_bush", "chance": 0.3 },
-			{ "item": 'minecraft:gold_nugget', "chance": 0.3 },
-			{ "item": 'createaddition:electrum_nugget', "chance": 0.3 },
-			{ "item": 'ae2:silicon', "chance": 0.02 }
-		],
-		"processingTime": 250
+		"type": "create:sequenced_assembly",
+		"ingredient": { "item": "ae2:silicon" },
+		"results": [{ "item": "new_create:silicon_crystal" }],
+		"sequence": [{
+			"type": "vintageimprovements:polishing",
+			"speed_limits": 3,
+			"ingredients": [{ "item": "ae2:silicon" }],
+			"results": [{ "item": "new_create:silicon_crystal" }],
+			"processingTime": 20
+		}],
+		"loops": 5,
+		"transitionalItem": { "item": "ae2:silicon" }
 	})
+
+	// 砂带
+	shaped('vintageimprovements:grinder_belt', [
+		'SSS',
+		'SBS',
+		'SSS'
+	], {
+		S: '#create:sandpaper',
+		B: 'create:belt_connector'
+	}).id('vintageimprovements:craft/grinder_belt')
+
+	// 砂带磨床
+	shaped('vintageimprovements:belt_grinder', [
+		'GGG',
+		'AMA',
+		'CSC'
+	], {
+		G: 'vintageimprovements:grinder_belt',
+		A: '#forge:andesite_alloy',
+		M: 'create:precision_mechanism',
+		C: 'create:andesite_casing',
+		S: '#create:shaft_add'
+	}).id('vintageimprovements:craft/belt_grinder')
 })

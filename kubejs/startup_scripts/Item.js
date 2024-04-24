@@ -32,6 +32,7 @@ StartupEvents.registry('item', e => {
 		// 杂草
 		['grass_fiber', 64, 'common', false],
 		['0', 64, 'uncommon', false],
+		['1', 64, 'uncommon', false],
 		['2', 64, 'uncommon', false],
 		['3', 64, 'uncommon', false],
 		['4', 64, 'uncommon', false],
@@ -68,6 +69,10 @@ StartupEvents.registry('item', e => {
 		['inductive_mechanism', 64, 'common', false],
 		// 下界构件
 		['infernal_mechanism', 64, 'common', false],
+		// 粗硅
+		['saw_silicon', 64, 'common', false],
+		// 硅晶
+		['silicon_crystal', 64, 'common', false]
 	]
 	Item.forEach(([Name, Maxstacksize, Rarity, Glow]) => {
 		e.create(ModID + Name)

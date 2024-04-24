@@ -302,18 +302,16 @@
 				"33F5A9C5D6F8ED62"
 				"113B30972B23CD10"
 			]
-			description: [
-				"                          &4古希腊掌管机壳的神&r"
-				"{image:new_create:textures/images/4.png width:100 height:100 align:1}"
-			]
+			description: ["{image:new_create:textures/images/4.png width:100 height:100 align:1}"]
 			id: "1C64E58F82BAF3FA"
+			subtitle: "&4古希腊掌管机壳的神&r"
 			tasks: [{
 				id: "7A0775094F6149F3"
 				item: "createaddition:tesla_coil"
 				type: "item"
 			}]
-			x: 5.0d
-			y: -1.5d
+			x: 5.5d
+			y: -2.0d
 		}
 		{
 			dependencies: [
@@ -403,7 +401,7 @@
 				type: "item"
 			}]
 			x: 5.5d
-			y: 0.0d
+			y: -0.5d
 		}
 		{
 			dependencies: ["25598A1289E07375"]
@@ -414,7 +412,7 @@
 				type: "item"
 			}]
 			x: 6.5d
-			y: 0.5d
+			y: -0.5d
 		}
 		{
 			dependencies: [
@@ -427,8 +425,8 @@
 				item: "immersiveengineering:rs_engineering"
 				type: "item"
 			}]
-			x: 6.1190476190476275d
-			y: -0.8929501488095255d
+			x: 7.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["0A0EDACAFB3D3068"]
@@ -474,8 +472,8 @@
 				type: "checkmark"
 			}]
 			title: "&6金属冲压机"
-			x: 7.571428571428569d
-			y: -0.298832775297619d
+			x: 7.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["48D8D3CE8FBCA2C3"]
@@ -972,6 +970,19 @@
 			title: "&4????"
 			x: 8.5d
 			y: 1.0d
+		}
+		{
+			dependencies: ["705C326DBEE9FEC8"]
+			icon: "immersiveengineering:arc_furnace"
+			id: "637A003C17ED085E"
+			tasks: [{
+				id: "04BBF921557B17D9"
+				title: "电弧炉"
+				type: "checkmark"
+			}]
+			title: "&b大大大大大大"
+			x: 8.5d
+			y: -2.0d
 		}
 	]
 	title: "&6能源与机械"
