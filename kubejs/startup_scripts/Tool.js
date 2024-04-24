@@ -50,6 +50,7 @@ StartupEvents.registry('item', e => {
 			.glow(Glow)
 			.unstackable()
 			.tag(ModID + 'items')
+			.tag(ModID + 'tools')
 			.modifyTier(tool => {
 				tool.uses = Use
 				tool.speed = Speed

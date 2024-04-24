@@ -69,7 +69,7 @@ ServerEvents.recipes(e => {
 		C: "#forge:rods/wooden",
 		E: '#forge:hammer',
 		F: '#forge:saw'
-	}).damageIngredient('#kuebjs:tools')
+	}).damageIngredient('#new_create:tools')
 
 	// 防腐木板
 	shaped('8x immersiveengineering:treated_wood_horizontal', [
