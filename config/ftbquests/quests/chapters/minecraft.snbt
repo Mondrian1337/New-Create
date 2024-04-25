@@ -710,7 +710,10 @@
 			y: 17.5d
 		}
 		{
-			dependencies: ["2D745F08BA3F92F7"]
+			dependencies: [
+				"2D745F08BA3F92F7"
+				"17441F3276DFB9CA"
+			]
 			description: [
 				"                           &a合成齿轮？！&r"
 				"{image:new_create:textures/images/1.png width:50 height:50 align:1}"
@@ -1072,9 +1075,9 @@
 			]
 			id: "2D745F08BA3F92F7"
 			tasks: [{
-				id: "000CB1D0EAB0ED4A"
-				item: "new_create:embalming_fluid_bucket"
-				type: "item"
+				id: "39D6A74C50147C4B"
+				title: "防腐液"
+				type: "checkmark"
 			}]
 			x: 33.5d
 			y: 25.0d
@@ -1958,6 +1961,121 @@
 			title: "&b非洲人就是你"
 			x: 31.0d
 			y: 19.5d
+		}
+		{
+			dependencies: ["3ED4088F5DEB249F"]
+			id: "3FC68420B4E84A79"
+			rewards: [{
+				count: 64
+				id: "6400BD07B22A4BC8"
+				item: "new_create:cast_iron_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "42ED46A81010ADF6"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "309446247685F7F9"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2F98114521B7FE35"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2857DA2843D488EA"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "591780113958E0C7"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7611052289590266"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "77A04A74E8AB1517"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1FEA0A32EFAD9BCC"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03D97FBCEE19874A"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "铸铁套"
+			x: 46.0d
+			y: 24.0d
 		}
 	]
 	title: "&6火与石之歌"
