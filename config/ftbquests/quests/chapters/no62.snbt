@@ -13,8 +13,29 @@
 		}
 	}
 	id: "1EB80EB6050AF185"
+	images: [{
+		click: ""
+		corner: false
+		dev: false
+		height: 10.0d
+		hover: [ ]
+		image: "sgjourney:item/classic_stargate"
+		rotation: 0.0d
+		width: 10.0d
+		x: 1.5d
+		y: 1.0d
+	}]
 	order_index: 1
 	quest_links: [ ]
-	quests: [ ]
+	quests: [{
+		id: "12B10BDF22A853A6"
+		tasks: [{
+			id: "17DE3EDE270B8606"
+			title: "&4星门！"
+			type: "checkmark"
+		}]
+		x: 1.5d
+		y: 1.0d
+	}]
 	title: "No.4-2  Star Trip"
 }
