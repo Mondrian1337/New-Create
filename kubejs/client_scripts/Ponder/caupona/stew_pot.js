@@ -1,6 +1,6 @@
 Ponder.registry(e => {
 	e.create('caupona:stew_pot')
-		.scene('caupona:stew_pot', '煮沸', 'kubejs:stew_pot', scene => {
+		.scene('caupona:stew_pot', '煮沸', 'new_create:stew_pot', scene => {
 			scene.showBasePlate()
 			scene.idle(20)
 			scene.world.showSection([1, 1, 1], Direction.down)

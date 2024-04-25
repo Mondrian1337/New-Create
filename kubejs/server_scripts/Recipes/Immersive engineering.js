@@ -69,17 +69,21 @@ ServerEvents.recipes(e => {
 		C: "#forge:rods/wooden",
 		E: '#forge:hammer',
 		F: '#forge:saw'
-	}).damageIngredient('#kuebjs:tools')
+	}).damageIngredient('#new_create:tools')
 
 	// 防腐木板
 	shaped('8x immersiveengineering:treated_wood_horizontal', [
 		'PPP',
-		'PEP',
+		'PCP',
 		'PPP'
 	], {
 		P: '#minecraft:planks',
-		E: 'new_create:embalming_fluid_bucket'
-	}).replaceIngredient('new_create:embalming_fluid_bucket', 'minecraft:bucket')
+		C: Item.of('ceramicbucket:ceramic_bucket',
+			'{Fluid:{Amount:1000,FluidName:"new_create:embalming_fluid"}}')
+			.weakNBT()
+	}).replaceIngredient(Item.of('ceramicbucket:ceramic_bucket',
+		'{Fluid:{Amount:1000,FluidName:"new_create:embalming_fluid"}}')
+		.weakNBT(), 'ceramicbucket:ceramic_bucket')
 
 	mixing('8x immersiveengineering:treated_wood_horizontal', [
 		'8x #minecraft:planks',
@@ -90,6 +94,11 @@ ServerEvents.recipes(e => {
 		'#minecraft:planks',
 		{ fluidTag: "forge:creosote", amount: 125 }
 	])
+
+	filling('immersiveengineering:treated_wood_horizontal', [
+		'#minecraft:planks',
+		{ fluidTag: "forge:creosote", amount: 125 }
+	]).id('createaddition:filling/treated_wood_planks')
 
 	// 锡锭
 	e.custom({

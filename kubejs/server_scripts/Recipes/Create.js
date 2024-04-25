@@ -54,7 +54,7 @@ ServerEvents.recipes(e => {
 		'DDD'
 	], {
 		A: '#minecraft:planks',
-		B: 'create:cogwheel',
+		B: '#forge:ingots/copper',
 		D: 'minecraft:smooth_stone',
 		C: '#minecraft:logs',
 	})

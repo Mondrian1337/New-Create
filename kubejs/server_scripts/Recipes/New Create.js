@@ -91,9 +91,14 @@ ServerEvents.recipes(e => {
 	]).cookingTime(500)
 
 	// 石头→烧焦圆石→营火烧
-	campfire_cooking("new_create:charred_cobblestone", [
+	campfire_cooking('new_create:charred_cobblestone', [
 		'minecraft:stone'
 	]).cookingTime(500)
+
+	// 陶瓷桶
+	campfire_cooking('ceramicbucket:ceramic_bucket', [
+		'ceramicbucket:unfired_clay_bucket'
+	]).cookingTime(250)
 
 	// 烧焦圆石→熔炉,烧焦圆石→高炉
 	blasting('new_create:charred_cobblestone', [
@@ -131,6 +136,14 @@ ServerEvents.recipes(e => {
 	shapeless('9x new_create:cast_iron_ingot', [
 		'new_create:cast_iron_block'
 	])
+
+	// 粘土桶
+	shaped('ceramicbucket:unfired_clay_bucket', [
+		'C C',
+		' C '
+	], {
+		C: '#forge:storage_blocks/clay'
+	}).id('ceramicbucket:unfired_clay_bucket')
 
 	// 切石机
 	shaped('minecraft:stonecutter', [
