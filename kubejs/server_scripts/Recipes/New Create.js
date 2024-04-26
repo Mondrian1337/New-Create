@@ -122,7 +122,7 @@ ServerEvents.recipes(e => {
 		D: '#forge:rods/wooden',
 		E: '#forge:hammer',
 		S: '#forge:saw'
-	}).damageIngredient('new_create:stone_hamemr')
+	}).damageIngredient('#forge:hammer').damageIngredient('#forge:saw')
 
 	// 木棍
 	shapeless('4x minecraft:stick', [
@@ -326,4 +326,13 @@ ServerEvents.recipes(e => {
 		],
 		"processingTime": 250
 	})
+
+	// 锡锭 and 铜锭 Fix
+	shapeless('thermal:tin_ingot', [
+		'9x #forge:nuggets/tin'
+	])
+
+	shapeless('minecraft:copper_ingot', [
+		'9x #forge:nuggets/copper'
+	])
 })
