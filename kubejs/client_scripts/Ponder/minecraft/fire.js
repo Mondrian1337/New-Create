@@ -10,11 +10,7 @@ Ponder.registry(e => {
 			scene.idle(20)
 			scene.addKeyframe()
 			scene.idle(20)
-			scene.showControls(
-				30,
-				until.grid.at(1, 1, 1),
-				'left'
-			)
+			scene.showControls(30, until.grid.at(1, 1, 1), 'left')
 				.rightClick()
 				.withItem('minecraft:stick')
 			scene.showControls(

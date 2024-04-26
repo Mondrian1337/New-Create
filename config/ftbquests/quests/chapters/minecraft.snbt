@@ -215,7 +215,6 @@
 		}
 		{
 			dependencies: ["366BC6C1AD97484E"]
-			description: ["&6解锁更多合成&r"]
 			id: "5E0A98F312F8A995"
 			rewards: [{
 				count: 4
@@ -223,6 +222,7 @@
 				item: "minecraft:oak_log"
 				type: "item"
 			}]
+			subtitle: "&6解锁更多合成&r"
 			tasks: [{
 				id: "5753699CD3ED0098"
 				item: "minecraft:crafting_table"
@@ -230,7 +230,7 @@
 			}]
 			title: "&6Crafting Table!"
 			x: 39.5d
-			y: 15.0d
+			y: 14.5d
 		}
 		{
 			dependencies: [
@@ -266,7 +266,7 @@
 			}]
 			title: "&3挖矿时间"
 			x: 39.5d
-			y: 12.0d
+			y: 11.5d
 		}
 		{
 			dependencies: [
@@ -294,7 +294,7 @@
 			}]
 			title: "&3伐木"
 			x: 41.0d
-			y: 13.5d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -322,7 +322,7 @@
 			}]
 			title: "&3高效工作"
 			x: 38.0d
-			y: 13.5d
+			y: 13.0d
 		}
 		{
 			dependencies: ["7239DB54A7FD4EE8"]
@@ -344,12 +344,12 @@
 						value: "forge:cobblestone"
 					}
 				}
-				title: "Any #forge:cobblestone"
+				title: "圆石"
 				type: "item"
 			}]
-			title: "&3原始人,起洞!"
+			title: "&b原始人,起洞!"
 			x: 41.0d
-			y: 12.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["33EF23C3B61A384E"]
@@ -370,12 +370,12 @@
 						value: "minecraft:logs"
 					}
 				}
-				title: "Any #minecraft:logs"
+				title: "原木"
 				type: "item"
 			}]
 			title: "&3原木"
 			x: 41.0d
-			y: 15.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["1AC1EB6F7D19CA5D"]
@@ -402,7 +402,7 @@
 			}]
 			title: "&3沙砾"
 			x: 38.0d
-			y: 12.0d
+			y: 11.5d
 		}
 		{
 			dependencies: ["1B5BBBF90F96D167"]
@@ -566,7 +566,7 @@
 			]
 			title: "&3锯子"
 			x: 39.5d
-			y: 13.5d
+			y: 13.0d
 		}
 		{
 			dependencies: [
@@ -1146,9 +1146,10 @@
 						value: "forge:ingots/tin"
 					}
 				}
-				title: "Any #forge:ingots/tin"
+				title: "锡"
 				type: "item"
 			}]
+			title: "锡"
 			x: 38.0d
 			y: 22.0d
 		}
@@ -1254,7 +1255,7 @@
 						value: "forge:ingots/iron"
 					}
 				}
-				title: "Any #forge:ingots/iron"
+				title: "铁!"
 				type: "item"
 			}]
 			title: "铁锭"
@@ -1377,6 +1378,7 @@
 			hide_dependency_lines: true
 			icon: "minecraft:netherrack"
 			id: "20A872AC6608D6F4"
+			shape: "octagon"
 			size: 2.0d
 			tasks: [{
 				dimension: "minecraft:the_nether"
@@ -1442,18 +1444,16 @@
 		{
 			dependencies: ["20A872AC6608D6F4"]
 			id: "2A43BD5F277E422A"
-			tasks: [
-				{
-					id: "10C36FF61504792E"
-					item: "create:mechanical_press"
-					type: "item"
-				}
-				{
-					id: "0A56AD599F80AC18"
-					item: "create:depot"
-					type: "item"
-				}
-			]
+			rewards: [{
+				id: "311DF4DDF106C43A"
+				item: "create:depot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "10C36FF61504792E"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
 			title: "&3铛！"
 			x: 53.0d
 			y: 18.0d
@@ -1539,7 +1539,7 @@
 			dependencies: ["2A43BD5F277E422A"]
 			id: "534623D5AD19B5EA"
 			tasks: [{
-				id: "3A49B2F4D23769BE"
+				id: "0791AFB06FA174EE"
 				item: "new_create:cast_iron_sheet"
 				type: "item"
 			}]
@@ -1550,6 +1550,7 @@
 		{
 			dependencies: ["534623D5AD19B5EA"]
 			id: "1B430050B27D9128"
+			subtitle: "不要忘记前面的置物台哦"
 			tasks: [{
 				id: "6F1ACC78E12FFFF6"
 				item: "create:spout"
@@ -1695,7 +1696,7 @@
 			}]
 			title: "&6快速回家"
 			x: 36.5d
-			y: 15.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["5E0A98F312F8A995"]
@@ -1714,7 +1715,7 @@
 			}]
 			title: "&3好好睡觉"
 			x: 38.0d
-			y: 15.0d
+			y: 14.5d
 		}
 		{
 			dependencies: ["7D20A5EC9D4FD648"]
@@ -1991,8 +1992,8 @@
 				}
 			]
 			title: "&6高炉合成"
-			x: 53.5d
-			y: 15.5d
+			x: 52.5d
+			y: 16.0d
 		}
 		{
 			dependencies: ["75C1C1D7BC5E550D"]
@@ -2121,6 +2122,25 @@
 			title: "铸铁套"
 			x: 46.0d
 			y: 24.0d
+		}
+		{
+			dependencies: ["5E0A98F312F8A995"]
+			id: "12B7F124F25AF827"
+			subtitle: "&b勉强能用"
+			tasks: [{
+				id: "7BDC6CB643B073CA"
+				item: {
+					Count: 1b
+					id: "new_create:flint_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&c防身"
+			x: 41.0d
+			y: 16.0d
 		}
 	]
 	title: "&6火与石之歌"

@@ -18,11 +18,11 @@ Ponder.registry(e => {
 				[3, 3, 1], [3, 3, 2], [3, 3, 3],
 			]
 			for (let block of blocks) {
-				scene.world.showSection(block, Direction.down)
+				scene.world.showSection(block, Direction.DOWN)
 				scene.idle(3)
 			}
 			scene.addKeyframe()
-			scene.text(30, '手持工程师锤右键中间的圆石方块', [2, 2, 0])
+			scene.text(30, '手持工程师锤右键中间的圆石', [2, 2, 0])
 			scene.showControls(
 				30,
 				utils.grid.at(2, 2, 0),
@@ -31,7 +31,7 @@ Ponder.registry(e => {
 			scene.idle(20)
 			scene.world.setBlocks([1, 1, 1, 3, 3, 3], "minecraft:air")
 			scene.idle(5)
-			scene.world.createItemEntity([2, 1, 2], Direction.down, "new_create:furnace_core")
+			scene.world.createItemEntity([2, 1, 2], Direction.DOWN, "new_create:furnace_core")
 			scene.idle(5)
 		})
 })

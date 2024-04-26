@@ -53,6 +53,11 @@ ServerEvents.recipes(e => {
 		).damageIngredient('farmersdelight:flint_knife').id(recipe.getId())
 	})
 
+	// 木炭
+	campfire_cooking('minecraft:charcoal', [
+		'#minecraft:logs'
+	]).cookingTime(400)
+
 	// 砂砾
 	shapeless('minecraft:gravel', [
 		'9x minecraft:dirt'
@@ -158,6 +163,11 @@ ServerEvents.recipes(e => {
 		S: 'minecraft:smooth_stone',
 		C: '#forge:plates/copper'
 	}).id('minecraft:stonecutter').damageIngredient('#new_create:tools')
+
+	// 铁锭
+	shapeless('minecraft:iron_ingot', [
+		'9x #forge:nuggets/iron'
+	])
 
 	// 轴承
 	shaped('2x new_create:primary_bearing', [

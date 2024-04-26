@@ -175,7 +175,7 @@ ServerEvents.recipes(e => {
 
 	//加工液
 	mixing(Fluid.of('new_create:working_fluid', 500), [
-		'2x immersiveengineering:slag',
+		'2x #forge:slag',
 		Fluid.of('minecraft:water', 500)
 	])
 

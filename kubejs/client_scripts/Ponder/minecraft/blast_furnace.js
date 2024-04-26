@@ -1,5 +1,5 @@
 Ponder.registry(e => {
-	e.create('minecraft:blast_furnace')
+	e.create(['minecraft:blast_furnace', 'new_create:furnace_core'])
 		.scene('minecraft:blast_furnace', '原版高炉建造', 'new_create:blast_furnace', (scene, utils) => {
 			// 底盘
 			// scene.configureBasePlate(0, 0, 5)
@@ -24,19 +24,14 @@ Ponder.registry(e => {
 				scene.idle(2)
 			}
 			scene.addKeyframe()
-			scene.text(30, "手持工程师锤右键玻璃进行建造", [2, 2, 0])
-			scene.showControls(
-				30,
-				utils.grid.at(2, 2, 0),
-				'up'
-			)
+			scene.text(30, "手持工程师锤右键玻璃", [2, 2, 0])
+			scene.showControls(30, utils.grid.at(2, 2, 0), 'up')
 				.rightClick()
 				.withItem('immersiveengineering:hammer')
 			scene.idle(20)
 			scene.world.setBlocks([1, 1, 1, 3, 3, 3,], "minecraft:air")
 			scene.idle(5)
-			scene.world.createItemEntity([2, 1, 2], Direction.down, "minecraft:blast_furnace")
+			scene.world.createItemEntity([2, 1, 2], Direction.down, "2x minecraft:blast_furnace")
 			scene.idle(5)
-		}
-		)
+		})
 })

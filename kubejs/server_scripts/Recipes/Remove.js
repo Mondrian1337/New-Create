@@ -52,7 +52,6 @@ ServerEvents.recipes(e => {
 		'#forge:tools/copper',
 		'extendedcrafting:advanced_table',
 		'create:mechanical_mixer',
-		'minecraft:flint_and_steel',
 		'create:zinc_ingot',
 		'create:mechanical_press',
 		'create:encased_fan',

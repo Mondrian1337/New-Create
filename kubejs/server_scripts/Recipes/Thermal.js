@@ -73,7 +73,7 @@ ServerEvents.recipes(e => {
 	])
 
 	// 硫化橡胶
-	smelting('thermal:cured_rubber', [
+	campfire_cooking('thermal:cured_rubber', [
 		'thermal:rubber'
 	]).xp(10)
 
