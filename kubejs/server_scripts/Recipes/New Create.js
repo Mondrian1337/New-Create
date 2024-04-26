@@ -53,6 +53,11 @@ ServerEvents.recipes(e => {
 		).damageIngredient('farmersdelight:flint_knife').id(recipe.getId())
 	})
 
+	// 木炭
+	campfire_cooking('minecraft:charcoal', [
+		'#minecraft:logs'
+	]).cookingTime(400)
+
 	// 砂砾
 	shapeless('minecraft:gravel', [
 		'9x minecraft:dirt'
@@ -113,11 +118,11 @@ ServerEvents.recipes(e => {
 	], {
 		A: '#forge:cobblestone',
 		B: '#minecraft:logs',
-		C: '#minecraft:coals',
+		C: 'minecraft:coal',
 		D: '#forge:rods/wooden',
 		E: '#forge:hammer',
 		S: '#forge:saw'
-	}).damageIngredient('new_create:stone_hamemr')
+	}).damageIngredient('#forge:hammer').damageIngredient('#forge:saw')
 
 	// 木棍
 	shapeless('4x minecraft:stick', [
@@ -158,6 +163,11 @@ ServerEvents.recipes(e => {
 		S: 'minecraft:smooth_stone',
 		C: '#forge:plates/copper'
 	}).id('minecraft:stonecutter').damageIngredient('#new_create:tools')
+
+	// 铁锭
+	shapeless('minecraft:iron_ingot', [
+		'9x #forge:nuggets/iron'
+	])
 
 	// 轴承
 	shaped('2x new_create:primary_bearing', [
@@ -317,12 +327,11 @@ ServerEvents.recipes(e => {
 		"processingTime": 250
 	})
 
-	// 锡锭
+	// 锡锭 and 铜锭 Fix
 	shapeless('thermal:tin_ingot', [
 		'9x #forge:nuggets/tin'
 	])
 
-	// 铜锭
 	shapeless('minecraft:copper_ingot', [
 		'9x #forge:nuggets/copper'
 	])

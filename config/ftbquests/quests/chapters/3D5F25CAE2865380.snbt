@@ -9,6 +9,7 @@
 	quest_links: [ ]
 	quests: [{
 		id: "111B9834A26450CD"
+		subtitle: "&b玩齿轮玩的"
 		tasks: [{
 			id: "06DC023D96CA849C"
 			item: "minecraft:clock"

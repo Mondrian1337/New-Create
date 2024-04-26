@@ -6,22 +6,14 @@ Ponder.registry(e => {
 			scene.world.showSection([1, 1, 1], Direction.down)
 			scene.addKeyframe()
 			scene.idle(10)
-			scene.text(30, '§e左手手持木棍,右手手持燧石', [1, 2, 1])
+			scene.text(30, '§e左手手持木棍\n§e右手手持燧石', [1, 2, 1])
 			scene.idle(20)
 			scene.addKeyframe()
 			scene.idle(20)
-			scene.showControls(
-				30,
-				until.grid.at(1, 1, 1),
-				'left'
-			)
+			scene.showControls(30, until.grid.at(1, 1, 1), 'left')
 				.rightClick()
 				.withItem('minecraft:stick')
-			scene.showControls(
-				30,
-				until.grid.at(1, 1, 1),
-				'right'
-			)
+			scene.showControls(30, until.grid.at(1, 1, 1), 'right')
 				.rightClick()
 				.withItem('minecraft:flint')
 			scene.idle(20)

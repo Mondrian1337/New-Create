@@ -238,7 +238,7 @@
 			id: "75C35519F8EA4B3D"
 			tasks: [
 				{
-					count: 16L
+					count: 2L
 					id: "7D4D93F035AAEA04"
 					item: "new_create:cast_iron_block"
 					type: "item"
@@ -249,7 +249,7 @@
 					type: "item"
 				}
 				{
-					count: 9L
+					count: 14L
 					id: "3659EB557C24DBE0"
 					item: "minecraft:smooth_stone"
 					type: "item"

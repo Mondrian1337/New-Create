@@ -65,8 +65,8 @@
 				}
 			]
 			title: "&3 工具!"
-			x: -12.0d
-			y: 1.0d
+			x: -13.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["0D90E2B1E5186F01"]
@@ -363,11 +363,9 @@
 		}
 		{
 			dependencies: ["65F1A3A80971DFEC"]
-			description: [
-				"                   &a就是不让你用蒸汽引擎&r"
-				"{image:new_create:textures/images/1.png width:100 height:100 align:1}"
-			]
+			description: ["{image:new_create:textures/images/1.png width:100 height:100 align:1}"]
 			id: "5F846849DADC8AE5"
+			subtitle: "&a就是不让你用蒸汽引擎&r"
 			tasks: [{
 				id: "3F75221D72774378"
 				item: "create_dd:furnace_engine"
@@ -564,8 +562,8 @@
 		}
 		{
 			dependencies: ["65F1A3A80971DFEC"]
-			description: ["                         &4蒸汽引擎被警用（&r"]
 			id: "616A61BB6BC7681D"
+			subtitle: "&4蒸汽引擎被警用（&r"
 			tasks: [{
 				id: "50F2E1E2C38A1D4E"
 				title: "&4注意！"
