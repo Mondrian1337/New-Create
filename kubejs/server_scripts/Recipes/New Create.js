@@ -108,7 +108,7 @@ ServerEvents.recipes(e => {
 	], {
 		A: '#forge:cobblestone',
 		B: '#minecraft:logs',
-		C: 'minecraft:coal',
+		C: '#minecraft:coals',
 		D: '#forge:rods/wooden',
 		E: '#forge:hammer',
 		S: '#forge:saw'
@@ -303,4 +303,14 @@ ServerEvents.recipes(e => {
 		],
 		"processingTime": 250
 	})
+
+	// 锡锭
+	shapeless('thermal:tin_ingot', [
+		'9x #forge:nuggets/tin'
+	])
+
+	// 铜锭
+	shapeless('minecraft:copper_ingot', [
+		'9x #forge:nuggets/copper'
+	])
 })
