@@ -34,7 +34,14 @@ StartupEvents.registry('fluid', e => {
 			.stillTexture(ModID + 'fluid/still')
 	})
 
-	// 特殊注册(这里用于注册特殊的Fluid,例如独立贴图,没有桶,没有世界流体之类的)
+	/* 
+	特殊注册
+	这里用于注册特殊的Fluid
+	如独立贴图
+	没有桶
+	没有世界流体之类的
+	*/
+	
 	// 液态灵魂
 	e.create(ModID + 'soul')
 		.noBucket()

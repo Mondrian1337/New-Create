@@ -24,10 +24,10 @@ Ponder.registry(e => {
 				scene.idle(2)
 			}
 			scene.addKeyframe()
-			scene.text(30, "手持工程师锤右键玻璃进行建造", [2, 2, 0])
+			scene.text(30, "手持工程师锤右键玻璃进行建造", [0.8, 3, 2])
 			scene.showControls(
 				30,
-				utils.grid.at(2, 2, 0),
+				utils.grid.at(1, 2, 2),
 				'up'
 			)
 				.rightClick()

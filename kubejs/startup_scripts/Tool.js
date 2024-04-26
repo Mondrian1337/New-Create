@@ -2,7 +2,7 @@ StartupEvents.registry('item', e => {
 	const ModID = 'new_create:'
 	let Tool = [
 		// 燧石剑
-		['flint_sword', 'sword', 'common', false, 1, 100, 2, 0],
+		['flint_sword', 'sword', 'common', false, 2, 100, 2, 0],
 		// 燧石镐
 		['flint_pickaxe', 'pickaxe', 'common', false, -2, 100, 2, 0],
 		// 燧石斧

@@ -149,7 +149,6 @@ ServerEvents.recipes(e => {
 		'ad_astra:alloying/steel_ingot_from_alloying_iron_ingot_and_coals',
 		'immersiveengineering:blastfurnace/steel',
 		'create:deploying/cogwheel',
-		'createaddition:filling/treated_wood_planks',
 		'immersiveengineering:crafting/raw_hammercrushing_iron',
 		'immersiveengineering:crafting/hammercrushing_iron',
 		'thermal:machine_frame',

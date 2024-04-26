@@ -12,6 +12,7 @@ JEIEvents.addItems(e => {
 		e.add(Item)
 	})
 })
+
 // 隐藏JEI内Item
 JEIEvents.hideItems(e => {
 	let Item = [
@@ -57,14 +58,4 @@ JEIEvents.addFluids(e => {
 	Fluid.forEach(e => {
 		e.add(Fluid)
 	})
-})
-
-// 添加信息
-JEIEvents.information(e => {
-	const { translatable } = Text
-
-	// 硅晶
-	e.add('new_craete:silicon_crystal', [
-		translatable('jei.new_create.silicon_crystal')
-	])
 })

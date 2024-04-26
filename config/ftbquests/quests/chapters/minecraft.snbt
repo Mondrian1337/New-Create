@@ -39,7 +39,7 @@
 			description: [
 				"&b欢迎游玩&r"
 				"&4New Create&r"
-				"&2您将从原始人开始发展&r"
+				"&2您将从最原始的阶段开始发展&r"
 				""
 			]
 			id: "75C1C1D7BC5E550D"
@@ -206,7 +206,7 @@
 						value: "forge:tools/knives"
 					}
 				}
-				title: "Any #forge:tools/knives"
+				title: "小刀"
 				type: "item"
 			}]
 			title: "&1多功能工具"
@@ -416,7 +416,7 @@
 						value: "forge:hammer"
 					}
 				}
-				title: "Any #forge:hammer"
+				title: "锤子"
 				type: "item"
 			}]
 			title: "&3锤子"
@@ -536,7 +536,6 @@
 			description: [
 				"&a制作一把锯子&r"
 				"&b更方便的合成木棍&r"
-				"&a前面木棍可以通过打树叶进行获取&r"
 			]
 			id: "4926BA40480454AE"
 			rewards: [{
@@ -710,11 +709,11 @@
 			y: 17.5d
 		}
 		{
-			dependencies: ["2D745F08BA3F92F7"]
-			description: [
-				"                           &a合成齿轮？！&r"
-				"{image:new_create:textures/images/1.png width:50 height:50 align:1}"
+			dependencies: [
+				"2D745F08BA3F92F7"
+				"17441F3276DFB9CA"
 			]
+			description: ["{image:new_create:textures/images/1.png width:50 height:50 align:1}"]
 			id: "2D16703D178AB2C0"
 			rewards: [{
 				count: 4
@@ -722,6 +721,7 @@
 				item: "minecraft:copper_ingot"
 				type: "item"
 			}]
+			subtitle: "&a合成齿轮？！&r"
 			tasks: [
 				{
 					id: "4E23945FBA6AACBA"
@@ -851,11 +851,18 @@
 				title: "青铜"
 				type: "item"
 			}]
-			x: 38.06138392857143d
-			y: 23.017857142857146d
+			x: 38.0d
+			y: 23.0d
 		}
 		{
 			dependencies: ["11E001D323FC5722"]
+			icon: {
+				Count: 1b
+				id: "new_create:flint_handaxe"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "68802C8BBFF5305F"
 			rewards: [{
 				id: "4D44BB6B4E789C8C"
@@ -863,26 +870,30 @@
 				type: "item"
 			}]
 			subtitle: "Mini~"
-			tasks: [{
-				id: "104017C1CBCB4870"
-				item: {
-					Count: 1b
-					id: "new_create:flint_handaxe"
-					tag: {
-						Damage: 0
+			tasks: [
+				{
+					id: "104017C1CBCB4870"
+					item: {
+						Count: 1b
+						id: "new_create:flint_handaxe"
+						tag: {
+							Damage: 0
+						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "5113040F7B3B2996"
+					item: "minecraft:stick"
+					type: "item"
+				}
+			]
 			title: "小小的也很可爱!"
 			x: 34.5d
 			y: 16.0d
 		}
 		{
-			dependencies: [
-				"68802C8BBFF5305F"
-				"1B5BBBF90F96D167"
-			]
+			dependencies: ["68802C8BBFF5305F"]
 			id: "79316DB94D602795"
 			rewards: [{
 				count: 2
@@ -1071,11 +1082,32 @@
 				"1D45C9BA70CFB5DA"
 			]
 			id: "2D745F08BA3F92F7"
-			tasks: [{
-				id: "000CB1D0EAB0ED4A"
-				item: "new_create:embalming_fluid_bucket"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "693C5F2BC62566BC"
+					item: "ceramicbucket:ceramic_bucket"
+					type: "item"
+				}
+				{
+					id: "4FBD9FF5174F89CE"
+					item: {
+						Count: 1b
+						id: "ceramicbucket:ceramic_bucket"
+						tag: {
+							Fluid: {
+								Amount: 1000
+								FluidName: "new_create:embalming_fluid"
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5ADCBFC6349878A8"
+					item: "ceramicbucket:unfired_clay_bucket"
+					type: "item"
+				}
+			]
 			x: 33.5d
 			y: 25.0d
 		}
@@ -1191,7 +1223,16 @@
 			id: "109C2B766057C39C"
 			tasks: [{
 				id: "2F568331EBB71263"
-				item: "new_create:working_fluid_bucket"
+				item: {
+					Count: 1b
+					id: "ceramicbucket:ceramic_bucket"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "new_create:working_fluid"
+						}
+					}
+				}
 				type: "item"
 			}]
 			x: 41.5d
@@ -1216,6 +1257,7 @@
 				title: "Any #forge:ingots/iron"
 				type: "item"
 			}]
+			title: "铁锭"
 			x: 41.5d
 			y: 25.0d
 		}
@@ -1874,7 +1916,7 @@
 		}
 		{
 			description: [
-				"&4本整合包为专家包!!!&r"
+				"&4本整合包属于硬核专家包!!!&r"
 				"&4需要一定量的模组基础以及各个模组物品的自动化产线搭建&r"
 				"&4萌新玩这个整合包可能会很吃力!!!&r"
 				"&a不用怕,既然选择了你也可以玩下去,慢慢来&r"
@@ -1884,11 +1926,17 @@
 				"&4有许许多多的板子和锭,如果一种合成不了那就换另一种方法&r"
 				""
 				"&4注意事项:&r"
+				"&b如果遇到了部分物品是英文的,请尝试F3+T重载材质包试试"
 				"&a如果机械动力的机械手无法放置物品,请检查你是否使用FTB Chunk圈了区块&r"
 				"&e使用了FTB Chunk&r"
 				"&9圈了区块后机械动力的许多机械无法正常运行，请删除你所圈的区块&r"
 			]
 			id: "21E35649CA8399DE"
+			rewards: [{
+				id: "36255D63DCD6800B"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
 			shape: "hexagon"
 			size: 3.0d
 			subtitle: "&b本整合包可能非常坐牢!"
@@ -1958,6 +2006,121 @@
 			title: "&b非洲人就是你"
 			x: 31.0d
 			y: 19.5d
+		}
+		{
+			dependencies: ["3ED4088F5DEB249F"]
+			id: "3FC68420B4E84A79"
+			rewards: [{
+				count: 64
+				id: "6400BD07B22A4BC8"
+				item: "new_create:cast_iron_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [
+				{
+					id: "42ED46A81010ADF6"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "309446247685F7F9"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2F98114521B7FE35"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2857DA2843D488EA"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "591780113958E0C7"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_hoe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7611052289590266"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "77A04A74E8AB1517"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1FEA0A32EFAD9BCC"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "03D97FBCEE19874A"
+					item: {
+						Count: 1b
+						id: "minecraft:iron_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "铸铁套"
+			x: 46.0d
+			y: 24.0d
 		}
 	]
 	title: "&6火与石之歌"

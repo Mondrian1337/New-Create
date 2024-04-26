@@ -4,19 +4,25 @@ ItemEvents.tooltip(e => {
 	e.add('new_create:grass_string', [
 		translate('tooltip.new_create.grass_string')
 	])
+
 	// 杂草
 	e.add('new_create:grass_fiber', [
 		translate('tooltip.new_create.grass_fiber')
 	])
 
 	// 纯净石英
-	e.add('new_create:pure_quartz',[
+	e.add('new_create:pure_quartz', [
 		translate('tooltip.new_create.pure_quartz')
 	])
 
 	// 手枪
 	e.add('immersiveengineering:toolupgrade_revolver_electro', [
 		translate('tooltip.ie.toolupgrade_revolver_electro')
+	])
+
+	// 木棍
+	e.add('minecraft:stick', [
+		translate('tooltip.mc.stick')
 	])
 
 	// 燧石工具

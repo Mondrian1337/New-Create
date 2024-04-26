@@ -51,7 +51,7 @@ ServerEvents.recipes(e => {
 		"key": {
 			"A": { "tag": "forge:ingots/bronze" },
 			"B": { "tag": "forge:plates/bronze" },
-			"C": { "tag": "minecraft:oak_logs" },
+			"C": { "tag": "minecraft:logs" },
 			"D": { "item": "create:cogwheel" },
 			"E": { "tag": "create:shaft_add" },
 			"F": { "item": "create:whisk" }
