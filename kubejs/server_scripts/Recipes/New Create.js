@@ -48,7 +48,7 @@ ServerEvents.recipes(e => {
 		e.shapeless(
 			originalRecipeResult.withCount(2),
 			originalRecipeIngredients.toArray().concat([
-				'farmersdelight:flint_knife'
+				'forge:wood_crafting_tools'
 			])
 		).damageIngredient('farmersdelight:flint_knife').id(recipe.getId())
 	})
@@ -126,8 +126,8 @@ ServerEvents.recipes(e => {
 
 	// 木棍
 	shapeless('4x minecraft:stick', [
-		'#minecraft:planks', 'new_create:flint_saw'
-	]).damageIngredient('new_create:flint_saw')
+		'#minecraft:planks', '#forge:saw'
+	]).damageIngredient('#forge:saw')
 
 	// 红砖
 	campfire_cooking('minecraft:brick', [
