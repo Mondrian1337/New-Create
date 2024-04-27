@@ -48,7 +48,7 @@ ServerEvents.recipes(e => {
 		e.shapeless(
 			originalRecipeResult.withCount(2),
 			originalRecipeIngredients.toArray().concat([
-				'forge:wood_crafting_tools'
+				'farmersdelight:flint_knife'
 			])
 		).damageIngredient('farmersdelight:flint_knife').id(recipe.getId())
 	})
