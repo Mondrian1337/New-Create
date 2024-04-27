@@ -51,7 +51,6 @@ StartupEvents.registry('fluid', e => {
 
 	// 熔融玻璃
 	e.create(ModID + 'glass')
-		.noBucket()
 		.noBlock()
 		.flowingTexture(ModID + 'fluid/glass_flowing')
 		.stillTexture(ModID + 'fluid/glass_still')

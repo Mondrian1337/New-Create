@@ -467,7 +467,7 @@
 			subtitle: "感谢你在测试的过程中发现的全部bug"
 			tasks: [{
 				id: "32E350A4A24869BA"
-				title: "这就是0.8-Alpha的全部内容了"
+				title: "&b这就是0.8-Alpha的全部内容了!"
 				type: "checkmark"
 			}]
 			x: 3.0d

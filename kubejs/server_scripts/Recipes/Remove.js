@@ -56,7 +56,6 @@ ServerEvents.recipes(e => {
 		'create:mechanical_press',
 		'create:encased_fan',
 		'create:propeller',
-		'minecraft:obsidian',
 		'create:empty_blaze_burner',
 		'create:spout',
 		'create:electron_tube',

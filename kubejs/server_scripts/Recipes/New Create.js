@@ -33,24 +33,26 @@ ServerEvents.recipes(e => {
 		smoking,
 		stonecutting
 	} = e.recipes.minecraft
+	// 熔化
+	const { melting } = e.recipes.melter
 
 	// 木板
 	e.forEachRecipe({
 		type: 'crafting_shapeless',
 		input: '#minecraft:logs',
 		output: '#minecraft:planks'
-	}, (recipe) => {
+	}, (Recipes) => {
 		let {
 			originalRecipeIngredients,
 			originalRecipeResult
-		} = recipe;
+		} = Recipes;
 
 		e.shapeless(
 			originalRecipeResult.withCount(2),
 			originalRecipeIngredients.toArray().concat([
 				'farmersdelight:flint_knife'
 			])
-		).damageIngredient('farmersdelight:flint_knife').id(recipe.getId())
+		).damageIngredient('farmersdelight:flint_knife').id(Recipes.getId())
 	})
 
 	// 木炭
@@ -61,6 +63,11 @@ ServerEvents.recipes(e => {
 	// 砂砾
 	shapeless('minecraft:gravel', [
 		'9x minecraft:dirt'
+	])
+
+	// 燧石
+	shapeless('new_create:flint_knapp', [
+		'3x minecraft:gravel'
 	])
 
 	shapeless('minecraft:gravel', [
@@ -118,7 +125,7 @@ ServerEvents.recipes(e => {
 	], {
 		A: '#forge:cobblestone',
 		B: '#minecraft:logs',
-		C: 'minecraft:coal',
+		C: '#minecraft:coals',
 		D: '#forge:rods/wooden',
 		E: '#forge:hammer',
 		S: '#forge:saw'
@@ -186,13 +193,9 @@ ServerEvents.recipes(e => {
 	})
 
 	// 熔融玻璃
-	e.custom({
-		"type": "caupona:aspic_melt",
-		"amount": 50,
-		"aspic": { "tag": "forge:sand" },
-		"fluid": "new_create:glass",
-		"time": 100
-	})
+	melting(Fluid.of('new_create:glass', 50), [
+		'#forge:sand'
+	]).minimumHeat(4)
 
 	mixing(Fluid.of('new_create:glass', 100), [
 		'#forge:sand'

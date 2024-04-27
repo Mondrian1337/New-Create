@@ -63,7 +63,6 @@
 	"item.new_create.cast_electron_tube": "铸铁电子管",
 	"item.new_create.zinc_electron_tube": "锌电子管",
 	"item.new_create.plating_zinc_ingot": "电镀锌",
-	"item.new_create.blaze_head": "烈焰人的头",
 	"item.new_create.mold_block": "金属模具：块",
 	"item.new_create.industrial_fuel_bucket": "工业燃油桶",
 	"item.new_create.kerosene_bucket": "煤油桶",
@@ -73,6 +72,7 @@
 	"item.new_create.high_grade_refined_oil_bucket": "高级精炼油桶",
 	"item.new_create.mithril_fluid_bucket": "秘银溶液桶",
 	"item.new_create.rose_gold_fluid_bucket": "玫瑰金溶液桶",
+	"item.new_create.glass_bucket": "熔融玻璃桶",
 	"item.new_create.bronze_pickaxe": "青铜镐",
 	"item.new_create.radiant_sword": "光辉刃",
 	"item.new_create.radiant_pickaxe": "光辉镐",
@@ -115,11 +115,5 @@
 	"fluid.new_create.mithril_fluid": "秘银溶液",
 	"fluid.new_create.rose_gold_fluid": "玫瑰金溶液",
 	"fluid.new_create.glass": "熔融玻璃",
-	"machine.new_create.machine_core": "测试机器",
-	"tooltip.new_create.grass_string": "§b一种勉强可以替代线的绳子,可以做点东西",
-	"tooltip.new_create.grass_fiber": "§b在除草的时候可以获得,或许可以编成草绳",
-	"tooltip.new_create.flint_tools": "§b一种原始到不能在原始的工具,§b但是勉勉强强能用",
-	"tooltip.new_create.pure_quartz": "§b挖掘沙子有1%的概率掉落",
-	"tooltip.mc.stick": "§b破坏树叶时有概率获得",
-	"tooltip.ie.toolupgrade_revolver_electro": "§a似乎是一个很有用的东西"
+	"machine.new_create.machine_core": "测试机器"
 }

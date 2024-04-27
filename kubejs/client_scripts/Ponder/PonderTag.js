@@ -27,6 +27,7 @@ Ponder.tags(e => {
 	e.createTag('new_create:ponder', 'new_create:cast_iron_ingot', '思索', '思索', [
 		'new_create:furnace_core',
 		'minecraft:blast_furnace',
-		'minecraft:stick'
+		'minecraft:stick',
+		'melter:melter'
 	])
 })

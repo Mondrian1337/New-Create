@@ -10,7 +10,7 @@ LootJS.modifiers(e => {
 	// 草丛掉杂草
 	e.addBlockLootModifier('minecraft:grass')
 		.addAlternativesLoot(LootEntry.of('new_create:grass_fiber')
-			.when(c => c.randomChance(0.5)))
+			.when(c => c.randomChance(0.55)))
 
 	// 纯净石英
 	e.addBlockLootModifier('#forge:sand')
@@ -49,7 +49,7 @@ LootJS.modifiers(e => {
 	// 所有矿石掉落矿渣
 	e.addBlockLootModifier('#forge:ores')
 		.addAlternativesLoot(LootEntry.of('immersiveengineering:slag')
-			.when(c => c.randomChance(0.7)),
+			.when(c => c.randomChance(0.45)),
 			LootEntry.of('2x immersiveengineering:slag')
 				.when(c => c.randomChance(0.3)))
 
@@ -57,4 +57,12 @@ LootJS.modifiers(e => {
 	e.addBlockLootModifier('#forge:ores/zinc')
 		.removeLoot('create:raw_zinc')
 		.addLoot('2x create:crushed_raw_zinc')
+
+	// 篝火掉本体
+	e.addBlockLootModifier('minecraft:campfire')
+		.removeLoot(Ingredient.all)
+		.addAlternativesLoot(LootEntry.of('minecraft:campfire')
+			.when(c => c.randomChance(0.25)))
+		.addAlternativesLoot(LootEntry.of('minecraft:charcoal')
+			.when(c => c.randomChance(0.75)))
 })

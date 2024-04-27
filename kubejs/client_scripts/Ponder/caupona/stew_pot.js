@@ -12,6 +12,5 @@ Ponder.registry(e => {
 			scene.addKeyframe()
 			scene.overlay.showOutline('blue', {}, [1, 1, 1], 15)
 			scene.text(15, '§b向内部添加燃料', [1, 2, 1])
-		}
-		)
+		})
 })

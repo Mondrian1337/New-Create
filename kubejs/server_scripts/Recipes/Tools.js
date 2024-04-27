@@ -46,9 +46,9 @@ ServerEvents.recipes(e => {
 
 	// 燧石锹
 	shaped('new_create:flint_shovel', [
-		'F',
-		'G',
-		'R'
+		'GFG',
+		' G ',
+		' R '
 	], {
 		F: 'minecraft:flint',
 		R: '#forge:rods/wooden',

@@ -466,7 +466,7 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 16L
+				count: 4L
 				id: "1144CE76CDDF2E4F"
 				item: "new_create:charred_cobblestone"
 				type: "item"
@@ -603,11 +603,18 @@
 				tag: { }
 			}
 			id: "17A15D75F1EC5311"
-			rewards: [{
-				id: "43C17610244AA3F8"
-				item: "farmersdelight:hot_cocoa"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "43C17610244AA3F8"
+					item: "farmersdelight:hot_cocoa"
+					type: "item"
+				}
+				{
+					id: "48DA5FC8FC24136F"
+					item: "immersiveengineering:manual"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					count: 8L
@@ -624,11 +631,6 @@
 							Damage: 0
 						}
 					}
-					type: "item"
-				}
-				{
-					id: "693213AFE9A0B823"
-					item: "immersiveengineering:manual"
 					type: "item"
 				}
 			]
@@ -709,10 +711,7 @@
 			y: 17.5d
 		}
 		{
-			dependencies: [
-				"2D745F08BA3F92F7"
-				"17441F3276DFB9CA"
-			]
+			dependencies: ["2D745F08BA3F92F7"]
 			description: ["{image:new_create:textures/images/1.png width:50 height:50 align:1}"]
 			id: "2D16703D178AB2C0"
 			rewards: [{
@@ -865,8 +864,9 @@
 			}
 			id: "68802C8BBFF5305F"
 			rewards: [{
+				count: 4
 				id: "4D44BB6B4E789C8C"
-				item: "pamhc2crops:hotcoffeeitem"
+				item: "minecraft:flint"
 				type: "item"
 			}]
 			subtitle: "Mini~"
@@ -1176,23 +1176,25 @@
 		}
 		{
 			dependencies: ["4256CEC6F890C8D1"]
+			description: ["{image:new_create:textures/images/8.png width:75 height:75 align:1}"]
 			hide_dependency_lines: false
 			id: "17441F3276DFB9CA"
+			rewards: [{
+				count: 9
+				id: "558CC8C50432E6B1"
+				item: "create:fluid_tank"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.25d
 			subtitle: "挺有意思的不是吗"
-			tasks: [
-				{
-					id: "2FAD2161086013A5"
-					item: "flopper:flopper"
-					type: "item"
-				}
-				{
-					id: "1CFC25F16315AB92"
-					item: "create:fluid_tank"
-					type: "item"
-				}
-			]
-			x: 37.0d
-			y: 23.0d
+			tasks: [{
+				id: "2FAD2161086013A5"
+				item: "flopper:flopper"
+				type: "item"
+			}]
+			x: 36.25d
+			y: 23.75d
 		}
 		{
 			dependencies: ["2BB8EC9F1782C4DE"]

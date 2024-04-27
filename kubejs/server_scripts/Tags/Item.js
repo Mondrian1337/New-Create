@@ -20,7 +20,7 @@ ServerEvents.tags('item', e => {
 	])
 
 	// 草
-	e.add('forge:grass', [
+	e.add('new_create:grass', [
 		'minecraft:grass',
 		'minecraft:fern',
 		'minecraft:tall_grass',
