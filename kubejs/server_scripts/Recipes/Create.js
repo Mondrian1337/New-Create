@@ -578,9 +578,7 @@ ServerEvents.recipes(e => {
 		Item.of('create:sturdy_sheet').withChance(0.75),
 		Item.of('minecraft:gravel').withChance(0.25)
 	], '#forge:dusts/obsidian', [
-		pressing('create:unprocessed_obsidian_sheet', [
-			'create:unprocessed_obsidian_sheet'
-		])
+		pressing('create:unprocessed_obsidian_sheet', ['create:unprocessed_obsidian_sheet'])
 	]).loops(10).transitionalItem('create:unprocessed_obsidian_sheet')
 
 	// 特斯拉线圈
