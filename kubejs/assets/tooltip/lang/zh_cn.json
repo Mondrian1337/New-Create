@@ -1,9 +1,10 @@
 {
-	"tooltip.new_create.grass_string": "§b一种勉强可以替代线的绳子,可以做点东西",
-	"tooltip.new_create.grass_fiber": "§b在除草的时候可以获得,或许可以编成草绳",
-	"tooltip.new_create.flint_tools": "§b一种原始到不能在原始的工具,§b但是勉勉强强能用",
-	"tooltip.new_create.pure_quartz": "§b挖掘沙子有1%的概率掉落",
+	"tooltip.nc.grass_string": "§b一种勉强可以替代线的绳子,可以做点东西",
+	"tooltip.nc.grass_fiber": "§b在除草的时候可以获得,或许可以编成草绳",
+	"tooltip.nc.flint_tools": "§b一种原始到不能在原始的工具,§b但是勉勉强强能用",
+	"tooltip.nc.pure_quartz": "§b挖掘沙子有1%的概率掉落",
 	"tooltip.mc.stick": "§b破坏树叶时有概率获得",
 	"tooltip.ie.toolupgrade_revolver_electro": "§a似乎是一个很有用的东西",
-	"tooltip.mt.melter": "§b热量等级:\n§b1级:火把\n§b2级:营火\n§b4级:熔岩\n§b8级:烈焰人燃烧室(熄灭)\n§b10级:烈焰人燃烧室(加热)\n§b16级:烈焰人燃烧室(超级加热)"
+	"tooltip.mt.melter": "§b使用思索查看搭建方式",
+	"info.jei.mt.melter": "§b热量等级:\n§b1级:火把\n§b2级:营火\n§b4级:熔岩\n§b8级:烈焰人燃烧室(熄灭)\n§b10级:烈焰人燃烧室(加热)\n§b16级:烈焰人燃烧室(超级加热)"
 }

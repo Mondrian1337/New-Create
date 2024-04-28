@@ -195,7 +195,7 @@ ServerEvents.recipes(e => {
 	// 熔融玻璃
 	melting(Fluid.of('new_create:glass', 50), [
 		'#forge:sand'
-	]).minimumHeat(4)
+	]).minimumHeat(2)
 
 	mixing(Fluid.of('new_create:glass', 100), [
 		'#forge:sand'

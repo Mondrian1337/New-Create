@@ -30,14 +30,14 @@ ServerEvents.tags('item', e => {
 	])
 
 	// 锯子
-	e.add('forge:saw', [
+	e.add('new_create:saw', [
 		'new_create:flint_saw',
 		'new_create:iron_saw',
 		'new_create:diamond_saw'
 	])
 
 	// 锤子
-	e.add('forge:hammer', [
+	e.add('new_create:hammer', [
 		'new_create:stone_hammer',
 		'new_create:iron_hammer',
 		'new_create:diamond_hammer'

@@ -45,7 +45,7 @@
 			id: "75C1C1D7BC5E550D"
 			rewards: [
 				{
-					count: 8
+					count: 16
 					id: "3C1F4F13B2216C4C"
 					item: "minecraft:cooked_beef"
 					type: "item"
@@ -78,6 +78,13 @@
 					}
 					id: "6B56FAA04D5B46E5"
 					title: "柒月"
+					type: "command"
+				}
+				{
+					command: "/gamerule keepInventory true"
+					icon: "minecraft:command_block"
+					id: "51667A8957405A43"
+					title: "&c死亡不掉落"
 					type: "command"
 				}
 			]
@@ -408,15 +415,15 @@
 			dependencies: ["1B5BBBF90F96D167"]
 			id: "730438679F2E34EF"
 			tasks: [{
-				id: "4612029BF05EA72D"
+				id: "59DF0D24E9F369CA"
 				item: {
 					Count: 1b
 					id: "itemfilters:tag"
 					tag: {
-						value: "forge:hammer"
+						value: "new_create:hammer"
 					}
 				}
-				title: "锤子"
+				title: "任意锤子"
 				type: "item"
 			}]
 			title: "&3锤子"
@@ -496,7 +503,7 @@
 			}]
 			title: "&3石制工具套件"
 			x: 33.5d
-			y: 20.5d
+			y: 19.0d
 		}
 		{
 			dependencies: [
@@ -546,21 +553,21 @@
 			}]
 			tasks: [
 				{
-					id: "10E818AF0EEC03F6"
+					count: 4L
+					id: "12152E00A8DEB658"
+					item: { Count: 4b, id: "minecraft:stick" }
+					type: "item"
+				}
+				{
+					id: "5851CD707AA47678"
 					item: {
 						Count: 1b
 						id: "itemfilters:tag"
 						tag: {
-							value: "forge:saw"
+							value: "new_create:saw"
 						}
 					}
-					title: "Any #forge:saw"
-					type: "item"
-				}
-				{
-					count: 4L
-					id: "12152E00A8DEB658"
-					item: { Count: 4b, id: "minecraft:stick" }
+					title: "任意锯子"
 					type: "item"
 				}
 			]
@@ -745,7 +752,7 @@
 					type: "item"
 				}
 			]
-			title: "&3齿轮!他加了齿轮!"
+			title: "&b是齿轮!他加了齿轮!"
 			x: 35.0d
 			y: 25.0d
 		}
@@ -766,6 +773,7 @@
 					type: "item"
 				}
 				{
+					count: 2
 					id: "52B9BEE22DC46193"
 					item: "create:large_water_wheel"
 					type: "item"
@@ -816,7 +824,7 @@
 					type: "item"
 				}
 			]
-			title: "&3磨磨磨!"
+			title: "&b磨磨磨!"
 			x: 35.0d
 			y: 22.0d
 		}
@@ -1041,38 +1049,58 @@
 		}
 		{
 			dependencies: ["2AC2EFDD8EAAA7D4"]
-			icon: "caupona:clay_cistern"
 			id: "01297601A65A9627"
-			tasks: [{
-				id: "5131589FCB5DF520"
-				item: "caupona:clay_cistern"
+			rewards: [{
+				id: "3E8D974F5DC4E58C"
+				item: {
+					Count: 1b
+					id: "ceramicbucket:ceramic_bucket"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "minecraft:lava"
+						}
+					}
+				}
 				type: "item"
 			}]
+			tasks: [
+				{
+					count: 17L
+					id: "4428E2D12BDBAFED"
+					item: "new_create:charred_cobblestone"
+					type: "item"
+				}
+				{
+					count: 23L
+					id: "0857D2F625595D3F"
+					item: "minecraft:stone"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "751501C951D81130"
+					item: "minecraft:bricks"
+					type: "item"
+				}
+				{
+					id: "7736476B5FCA9940"
+					item: "minecraft:clay"
+					type: "item"
+				}
+			]
+			title: "做一下准备"
 			x: 33.5d
 			y: 22.0d
 		}
 		{
 			dependencies: ["01297601A65A9627"]
 			id: "1D45C9BA70CFB5DA"
-			tasks: [
-				{
-					id: "4FE8947B282BFDD7"
-					item: "caupona:stew_pot"
-					type: "item"
-				}
-				{
-					id: "7EBBCFF06E32FCEA"
-					item: {
-						Count: 1b
-						id: "itemfilters:tag"
-						tag: {
-							value: "caupona:stoves"
-						}
-					}
-					title: "Any #caupona:stoves"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "6B2E4584AAA02846"
+				item: "melter:melter"
+				type: "item"
+			}]
 			x: 33.5d
 			y: 23.5d
 		}
@@ -1080,6 +1108,7 @@
 			dependencies: [
 				"4E7E549AC8058BC9"
 				"1D45C9BA70CFB5DA"
+				"0B6372CB96B584E4"
 			]
 			id: "2D745F08BA3F92F7"
 			tasks: [
@@ -1187,7 +1216,7 @@
 			}]
 			shape: "gear"
 			size: 1.25d
-			subtitle: "挺有意思的不是吗"
+			subtitle: "&b挺有意思的不是吗"
 			tasks: [{
 				id: "2FAD2161086013A5"
 				item: "flopper:flopper"
@@ -1322,7 +1351,10 @@
 			y: 22.0d
 		}
 		{
-			dependencies: ["603D7BE6F9FED860"]
+			dependencies: [
+				"603D7BE6F9FED860"
+				"14D8A85A958660A7"
+			]
 			description: [
 				"&b多余的杂酚油，搭配搅拌器制作防腐木板&r"
 				"&a第二种制作齿轮的方法&r"
@@ -1333,7 +1365,7 @@
 				item: "immersiveengineering:treated_wood_horizontal"
 				type: "item"
 			}]
-			x: 43.0d
+			x: 43.5d
 			y: 22.0d
 		}
 		{
@@ -1919,7 +1951,7 @@
 		}
 		{
 			description: [
-				"&4本整合包属于硬核专家包!!!&r"
+				"&c本整合包属于硬核专家包!现在退出去还来得及!&r"
 				"&4需要一定量的模组基础以及各个模组物品的自动化产线搭建&r"
 				"&4萌新玩这个整合包可能会很吃力!!!&r"
 				"&a不用怕,既然选择了你也可以玩下去,慢慢来&r"
@@ -1933,6 +1965,8 @@
 				"&a如果机械动力的机械手无法放置物品,请检查你是否使用FTB Chunk圈了区块&r"
 				"&e使用了FTB Chunk&r"
 				"&9圈了区块后机械动力的许多机械无法正常运行，请删除你所圈的区块&r"
+				""
+				"&c最后,感谢您的大力支持"
 			]
 			id: "21E35649CA8399DE"
 			rewards: [{
@@ -1945,9 +1979,10 @@
 			subtitle: "&b本整合包可能非常坐牢!"
 			tasks: [{
 				id: "2C7E53E5E7378E56"
-				title: "&4安全声明!!!"
+				title: "&4我同意以下内容"
 				type: "checkmark"
 			}]
+			title: "&c声明"
 			x: 27.0d
 			y: 17.5d
 		}
@@ -2014,7 +2049,7 @@
 			dependencies: ["3ED4088F5DEB249F"]
 			id: "3FC68420B4E84A79"
 			rewards: [{
-				count: 64
+				count: 48
 				id: "6400BD07B22A4BC8"
 				item: "new_create:cast_iron_ingot"
 				type: "item"
@@ -2143,6 +2178,102 @@
 			title: "&c防身"
 			x: 41.0d
 			y: 16.0d
+		}
+		{
+			dependencies: ["2AC2EFDD8EAAA7D4"]
+			id: "553BBA981FDA9EBA"
+			tasks: [{
+				id: "4E08E9C68FE50536"
+				item: "caupona:clay_cistern"
+				type: "item"
+			}]
+			x: 33.5d
+			y: 20.5d
+		}
+		{
+			dependencies: ["553BBA981FDA9EBA"]
+			id: "46AB72C31B2C5522"
+			tasks: [
+				{
+					id: "4728DC60575395EF"
+					item: "caupona:stew_pot"
+					type: "item"
+				}
+				{
+					id: "360E44C321367305"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "caupona:stoves"
+						}
+					}
+					title: "&b任意灶台"
+					type: "item"
+				}
+			]
+			title: "&b煲汤..?"
+			x: 32.0d
+			y: 22.0d
+		}
+		{
+			dependencies: ["46AB72C31B2C5522"]
+			id: "0B6372CB96B584E4"
+			tasks: [{
+				id: "05EEBCCA6F2EF88E"
+				item: {
+					Count: 1b
+					id: "ceramicbucket:ceramic_bucket"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "thermal:latex"
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "好黏.."
+			x: 32.0d
+			y: 23.5d
+		}
+		{
+			dependencies: ["797CC6360C318986"]
+			id: "14D8A85A958660A7"
+			subtitle: "&b这玩意比黏土的好使多了"
+			tasks: [{
+				id: "1C63B44F811D6F58"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			x: 43.5d
+			y: 25.0d
+		}
+		{
+			dependencies: ["12B7F124F25AF827"]
+			id: "058759595C6B8454"
+			tasks: [{
+				id: "253F1B892711EDE6"
+				item: {
+					Count: 1b
+					id: "new_create:flint_sword"
+					tag: {
+						Damage: 0
+						Enchantments: [{
+							id: "minecraft:fire_aspect"
+							lvl: 1s
+						}]
+						RepairCost: 1
+						display: {
+							Name: "{\"text\":\"§c神威无敌大将军\"}"
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "&cPro &bMax &a究极升级版!"
+			x: 41.0d
+			y: 17.5d
 		}
 	]
 	title: "&6火与石之歌"

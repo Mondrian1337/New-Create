@@ -12,7 +12,8 @@ BlockCrafting.addMultiblockStructure(
 		.center('d', 'minecraft:glass')
 		.craftingItem('immersiveengineering:hammer')
 		.resultItem('2x minecraft:blast_furnace')
-		.build())
+		.build()
+)
 
 // 熔炉核心
 BlockCrafting.addMultiblockStructure(
@@ -25,4 +26,15 @@ BlockCrafting.addMultiblockStructure(
 		.center('A', 'minecraft:cobblestone')
 		.craftingItem('immersiveengineering:hammer')
 		.resultItem('new_create:furnace_core')
-		.build())
+		.build()
+)
+
+// 熔化锅
+BlockCrafting.addMultiblockStructure(
+	MultiblockStructureFileBuilder.create('melter')
+		.file('thingpacks/New Create/blockcraft/melter.nbt')
+		.center('minecraft:clay')
+		.resultItem('2x melter:melter')
+		.craftingItemTag('new_create:hammer')
+		.build()
+)

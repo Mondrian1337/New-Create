@@ -66,6 +66,8 @@ ServerEvents.recipes(e => {
 		smelter_recycle,
 		stirling_fuel
 	} = e.recipes.thermal
+	// 熔化
+	const { melting } = e.recipes.melter
 
 	// 橡胶
 	compacting('2x thermal:rubber', [
@@ -78,13 +80,9 @@ ServerEvents.recipes(e => {
 	]).xp(10)
 
 	// 植物乳胶
-	e.custom({
-		"type": "caupona:aspic_melt",
-		"amount": 100,
-		"aspic": { "item": "thermal:rubber" },
-		"fluid": "thermal:latex",
-		"time": 100
-	})
+	melting(Fluid.of('thermal:latex', 100), [
+		'thermal:rubber'
+	]).minimumHeat(2)
 
 	// 树汁提取器
 	shaped('thermal:device_tree_extractor', [

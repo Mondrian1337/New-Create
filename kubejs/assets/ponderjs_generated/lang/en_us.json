@@ -48,9 +48,14 @@
   "thermal.ponder.device_tree_extractor.text_2": "§b一棵树有4个面,\n§b所以我们可以在4个面都放上机器↓",
   "caupona.ponder.stew_pot.header": "煮沸",
   "caupona.ponder.stew_pot.text_1": "§b向内部添加燃料",
-  "melter.ponder.melter.header": "熔化",
-  "melter.ponder.melter.text_1": "§b熔化锅可以将内部的物品\n§b融化成特定液体",
+  "melter.ponder.melter.header": "搭建",
+  "melter.ponder.melter.text_1": "§b用锤子右击黏土块",
   "melter.ponder.melter.text_2": "§b只需要将物品从\n§b上方投入融化炉...",
   "melter.ponder.melter.text_3": "§b别忘了添加热量",
-  "melter.ponder.melter.text_4": "§b等待..."
+  "melter.ponder.melter.text_4": "§b等待...",
+  "melter.ponder.melter_use.header": "使用",
+  "melter.ponder.melter_use.text_1": "§b熔化锅可以将内部的物品\n§b融化成特定液体",
+  "melter.ponder.melter_use.text_2": "§b将物品从\n§b上方投入熔化锅...",
+  "melter.ponder.melter_use.text_3": "§b添加热量",
+  "melter.ponder.melter_use.text_4": "§b等待..."
 }

@@ -1,5 +1,6 @@
 ServerEvents.recipes(e => {
 	const { shaped } = e.recipes.kubejs
+	const { campfire_cooking } = e.recipes.minecraft
 
 	// 燧石剑
 	shaped('new_create:flint_sword', [
@@ -11,6 +12,11 @@ ServerEvents.recipes(e => {
 		R: '#forge:rods/wooden',
 		G: 'new_create:grass_string'
 	})
+
+	// 燧石剑(升级版)
+	campfire_cooking(Item.of('new_create:flint_sword', "{Damage:0,RepairCost:1,display:{Name:'{\"text\":\"§c神威无敌大将军\"}'}}").enchant('minecraft:fire_aspect', 1), [
+		'new_create:flint_sword'
+	]).cookingTime(1200)
 
 	// 燧石镐
 	shaped('new_create:flint_pickaxe', [
@@ -151,7 +157,7 @@ ServerEvents.recipes(e => {
 		.damageIngredient('farmersdelight:flint_knife')
 
 	// 石锤
-	shaped('#forge:hammer', [
+	shaped('new_create:stone_hammer', [
 		'ABA',
 		' CD',
 		' C '

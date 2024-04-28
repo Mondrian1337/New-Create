@@ -41,11 +41,11 @@ ServerEvents.recipes(e => {
 		'CBC',
 		'  D'
 	], {
-		A: 'new_create:stone_hammer',
+		A: '#new_create:hammer',
 		B: '#minecraft:planks',
 		C: 'minecraft:flint',
-		D: 'minecraft:smooth_stone'
-	}).damageIngredient('new_create:stone_hammer')
+		D: '#forge:stone'
+	}).damageIngredient('#new_create:hammer')
 
 	//石磨
 	shaped('create:millstone', [
