@@ -65,4 +65,11 @@ LootJS.modifiers(e => {
 			.when(c => c.randomChance(0.25)))
 		.addAlternativesLoot(LootEntry.of('minecraft:charcoal')
 			.when(c => c.randomChance(0.75)))
+
+	
+	
+	// 手拿tnt打泥土有几率掉落钻石（示例）
+	e.addBlockLootModifier('minecraft:dirt')
+		.matchMainHand('minecraft:tnt')
+		.addLoot('2x minecraft:diamond')
 })
