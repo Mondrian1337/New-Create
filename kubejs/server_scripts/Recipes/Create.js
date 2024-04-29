@@ -87,8 +87,8 @@ ServerEvents.recipes(e => {
 	shapeless('create:cogwheel', [
 		'new_create:in_cogwheel',
 		'new_create:primary_bearing',
-		'#forge:hammer'
-	]).damageIngredient('#forge:hammer')
+		'#new_create:hammer'
+	]).damageIngredient('#new_create:hammer')
 	deploying('create:cogwheel', [
 		'new_create:in_cogwheel',
 		'create:shaft'
@@ -98,8 +98,8 @@ ServerEvents.recipes(e => {
 	shapeless('create:large_cogwheel', [
 		'new_create:in_large_cogwheel',
 		'new_create:primary_bearing',
-		'#forge:hammer'
-	]).damageIngredient('#forge:hammer')
+		'#new_create:hammer'
+	]).damageIngredient('#new_create:hammer')
 	deploying('create:large_cogwheel', [
 		'new_create:in_large_cogwheel',
 		'create:shaft'
@@ -112,8 +112,8 @@ ServerEvents.recipes(e => {
 	// 铜板
 	shapeless('create:copper_sheet', [
 		'#forge:ingots/copper',
-		'#forge:hammer'
-	]).damageIngredient('#forge:hammer')
+		'#new_create:hammer'
+	]).damageIngredient('#new_create:hammer')
 
 	// 早期出矿
 	milling([
@@ -410,9 +410,9 @@ ServerEvents.recipes(e => {
 	], {
 		A: 'new_create:cast_iron_sheet',
 		B: '#forge:nuggets/iron',
-		C: '#forge:hammer',
-		D: '#forge:saw'
-	}).damageIngredient('#forge:saw').damageIngredient('#forge:hammer')
+		C: '#new_create:hammer',
+		D: '#new_create:saw'
+	}).damageIngredient('#new_create:saw').damageIngredient('#new_create:hammer')
 
 	// 工业铁锭
 	compacting('2x create_dd:industrial_iron_ingot', [

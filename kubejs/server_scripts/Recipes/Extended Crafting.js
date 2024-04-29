@@ -67,8 +67,8 @@ ServerEvents.recipes(e => {
 			"  A  ",
 			"BBABB",
 			"FCDCF",
-			"BBABB",
-			" EEE "
+			"BGEGB",
+			" GGG "
 		],
 		"key": {
 			"A": { "tag": 'create:shaft_add' },
@@ -76,7 +76,8 @@ ServerEvents.recipes(e => {
 			"C": { "item": "create:cogwheel" },
 			"D": { "item": 'create:large_cogwheel' },
 			"E": { "item": 'new_create:cast_iron_block' },
-			"F": { "tag": "minecraft:planks" }
+			"F": { "tag": "minecraft:planks" },
+			"G": { "tag": 'forge:ingots/iron' }
 		},
 		"result": { "item": 'create:mechanical_press' }
 	})

@@ -1,4 +1,4 @@
 StartupEvents.modifyCreativeTab('kubejs:tab', e => {
-	e.setDisplayName('New Create')
+	e.setDisplayName(Text.translate('itemGroup.new_create.tab'))
 	e.setIcon('new_create:cast_iron_ingot')
 })

@@ -1,4 +1,11 @@
 BlockEvents.modification(e => {
+	// fix
+	e.modify('melter:melter', block => {
+		block.destroySpeed = 3
+	})
+})
+BlockEvents.modification(e => {
+	// 修改
 	let BlockNames = [
 		'minecraft:dark_oak_log', 'minecraft:dark_oak_wood', 'minecraft:stripped_dark_oak_log', 'minecraft:stripped_dark_oak_wood',
 		'minecraft:oak_log', 'minecraft:oak_wood', 'minecraft:stripped_oak_log', 'minecraft:stripped_oak_wood',

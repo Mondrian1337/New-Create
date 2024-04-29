@@ -2,10 +2,10 @@ StartupEvents.registry('block', e => {
 	const ModID = 'new_create:'
 	// 工具类型
 	const Tool_Type = {
-		pickaxe: 'minecraft:mineable/pickaxe',
-		shovel: 'minecraft:mineable/shovel',
-		axe: 'minecraft:mineable/axe',
 		sword: 'minecraft:mineable/sword',
+		pickaxe: 'minecraft:mineable/pickaxe',
+		axe: 'minecraft:mineable/axe',
+		shovel: 'minecraft:mineable/shovel',
 		hoe: 'minecraft:mineable/hoe'
 	}
 	// 挖掘等级
@@ -14,6 +14,7 @@ StartupEvents.registry('block', e => {
 		stone: 'minecraft:needs_stone_tool',
 		iron: 'minecraft:needs_iron_tool',
 		golded: 'minecraft:needs_gold_tool',
+		diamond: 'minecraft:needs_diamond_tool',
 		nether: 'forge:needs_netherite_tool'
 	}
 
@@ -24,14 +25,16 @@ StartupEvents.registry('block', e => {
 		// 铸铁块
 		['cast_iron_block', 'metal', 5, 5, 'pickaxe', 'stone'],
 		// 熔炉核心
-		['furnace_core', 'stone', 3, 3, 'pickaxe', 'stone'],
+		['furnace_core', 'stone', 3, 3, 'pickaxe', 'wooden'],
 		// 充电铁块
 		['charge_iron_block', 'metal', 5, 5, 'pickaxe', 'stone'],
 		// 铸铁机壳
 		['cast_iron_casing', 'wood', 5, 5, 'pickaxe', 'wooden'],
 		// 尘土
-		['dust', 'sand', 2, 2, 'sword', 'wooden']
+		['dust', 'sand', 2, 2, 'shovel', 'wooden']
 	]
+	
+	// 设置方法
 	Block.forEach(([Name, SoundType, Hardness, ResisTance, Tool, Grade]) => {
 		e.create(ModID + Name)
 			.soundType(SoundType)

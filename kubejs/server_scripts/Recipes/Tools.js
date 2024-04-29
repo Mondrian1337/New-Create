@@ -90,10 +90,10 @@ ServerEvents.recipes(e => {
 		A: 'new_create:charred_cobblestone',
 		B: '#forge:string',
 		C: '#forge:rods/wooden',
-		D: '#forge:hammer',
+		D: '#new_create:hammer',
 		E: 'farmersdelight:flint_knife'
 	})
-		.damageIngredient('#forge:hammer')
+		.damageIngredient('#new_create:hammer')
 		.damageIngredient('farmersdelight:flint_knife')
 
 	// 石剑
@@ -105,10 +105,10 @@ ServerEvents.recipes(e => {
 		A: 'new_create:charred_cobblestone',
 		B: 'farmersdelight:flint_knife',
 		C: '#forge:string',
-		D: '#forge:hammer',
+		D: '#new_create:hammer',
 		E: '#forge:rods/wooden'
 	})
-		.damageIngredient('#forge:hammer')
+		.damageIngredient('#new_create:hammer')
 		.damageIngredient('farmersdelight:flint_knife')
 
 	// 石斧
@@ -121,9 +121,9 @@ ServerEvents.recipes(e => {
 		B: '#forge:string',
 		C: '#forge:rods/wooden',
 		D: 'farmersdelight:flint_knife',
-		E: '#forge:hammer'
+		E: '#new_create:hammer'
 	})
-		.damageIngredient('#forge:hammer')
+		.damageIngredient('#new_create:hammer')
 		.damageIngredient('farmersdelight:flint_knife')
 
 	// 石锹
@@ -136,9 +136,9 @@ ServerEvents.recipes(e => {
 		B: 'new_create:charred_cobblestone',
 		C: 'farmersdelight:flint_knife',
 		D: '#forge:rods/wooden',
-		E: '#forge:hammer'
+		E: '#new_create:hammer'
 	})
-		.damageIngredient('#forge:hammer')
+		.damageIngredient('#new_create:hammer')
 		.damageIngredient('farmersdelight:flint_knife')
 
 	// 石锄
@@ -151,9 +151,9 @@ ServerEvents.recipes(e => {
 		B: '#forge:string',
 		C: '#forge:rods/wooden',
 		D: 'farmersdelight:flint_knife',
-		E: '#forge:hammer'
+		E: '#new_create:hammer'
 	})
-		.damageIngredient('#forge:hammer')
+		.damageIngredient('#new_create:hammer')
 		.damageIngredient('farmersdelight:flint_knife')
 
 	// 石锤

@@ -116,5 +116,5 @@
 	"fluid.new_create.mithril_fluid": "秘银溶液",
 	"fluid.new_create.rose_gold_fluid": "玫瑰金溶液",
 	"fluid.new_create.glass": "熔融玻璃",
-	"machine.new_create.machine_core": "测试机器"
+	"itemGroup.new_create.tab": "New Create"
 }

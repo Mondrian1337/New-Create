@@ -26,24 +26,22 @@ StartupEvents.registry('fluid', e => {
 		// 玫瑰金溶液
 		['rose_gold_fluid', 0xFF69B4]
 	]
+
+	// 设置方法
 	Fluid.forEach(([Name, Color]) => {
 		e.create(ModID + Name)
+			.tag(ModID + 'fluid')
 			.thickTexture(Color)
 			.bucketColor(Color)
 			.flowingTexture(ModID + 'fluid/flowing')
 			.stillTexture(ModID + 'fluid/still')
 	})
 
-	/* 
-	特殊注册
-	这里用于注册特殊的Fluid
-	如独立贴图
-	没有桶
-	没有世界流体之类的
-	*/
-	
+	// 特殊注册
+
 	// 液态灵魂
 	e.create(ModID + 'soul')
+		.tag(ModID + 'fluid')
 		.noBucket()
 		.noBlock()
 		.flowingTexture(ModID + 'fluid/soul_flowing')
@@ -51,6 +49,7 @@ StartupEvents.registry('fluid', e => {
 
 	// 熔融玻璃
 	e.create(ModID + 'glass')
+		.tag(ModID + 'fluid')
 		.noBlock()
 		.flowingTexture(ModID + 'fluid/glass_flowing')
 		.stillTexture(ModID + 'fluid/glass_still')

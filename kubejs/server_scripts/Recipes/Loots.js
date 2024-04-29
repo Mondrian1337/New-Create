@@ -67,6 +67,10 @@ LootJS.modifiers(loots => {
 		.addAlternativesLoot(LootEntry.of('minecraft:charcoal')
 			.when(c => c.randomChance(0.75)))
 
+	// 土豆
+	loots.addBlockLootModifier('minecraft:potato')
+		.removeLoot('minecraft:poisonous_potato')
+
 	// 工具
 	let HandLoots = [
 		// 圆石=>砂砾

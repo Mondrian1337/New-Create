@@ -138,14 +138,14 @@ ServerEvents.recipes(e => {
 		B: '#minecraft:logs',
 		C: '#minecraft:coals',
 		D: '#forge:rods/wooden',
-		E: '#forge:hammer',
-		S: '#forge:saw'
-	}).damageIngredient('#forge:hammer').damageIngredient('#forge:saw')
+		E: '#new_create:hammer',
+		S: '#new_create:saw'
+	}).damageIngredient('#new_create:hammer').damageIngredient('#new_create:saw')
 
 	// 木棍
 	shapeless('4x minecraft:stick', [
-		'#minecraft:planks', '#forge:saw'
-	]).damageIngredient('#forge:saw')
+		'#minecraft:planks', '#new_create:saw'
+	]).damageIngredient('#new_create:saw')
 
 	// 红砖
 	campfire_cooking('minecraft:brick', [
@@ -174,8 +174,8 @@ ServerEvents.recipes(e => {
 		'LBL',
 		'SSS'
 	], {
-		H: '#forge:hammer',
-		A: '#forge:saw',
+		H: '#new_create:hammer',
+		A: '#new_create:saw',
 		L: '#minecraft:logs',
 		B: '#minecraft:wooden_buttons',
 		S: 'minecraft:smooth_stone',
@@ -222,6 +222,11 @@ ServerEvents.recipes(e => {
 		'caupona:clay_cistern'
 	]).cookingTime(200)
 
+	// 红砖
+	smoking('minecraft:brick', [
+		'#forge:clay'
+	])
+
 	// 二阶高级工作台
 	shaped('extendedcrafting:advanced_table', [
 		'APA',
@@ -229,8 +234,8 @@ ServerEvents.recipes(e => {
 		'EFE'
 	], {
 		A: '#forge:ingots/bronze',
-		B: "#forge:hammer",
-		D: "#forge:saw",
+		B: "#new_create:hammer",
+		D: "#new_create:saw",
 		C: "minecraft:crafting_table",
 		E: "new_create:charred_cobblestone",
 		F: "minecraft:smooth_stone",
@@ -240,8 +245,8 @@ ServerEvents.recipes(e => {
 	// 青铜板
 	shapeless('thermal:bronze_plate', [
 		'#forge:ingots/bronze',
-		'#forge:hammer'
-	]).damageIngredient('#forge:hammer')
+		'#new_create:hammer'
+	]).damageIngredient('#new_create:hammer')
 
 	// 流体漏斗
 	shaped('flopper:flopper', [

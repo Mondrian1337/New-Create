@@ -74,6 +74,8 @@ StartupEvents.registry('item', e => {
 		// 硅晶
 		['silicon_crystal', 64, 'common', false]
 	]
+	
+	// 设置方法
 	Item.forEach(([Name, Maxstacksize, Rarity, Glow]) => {
 		e.create(ModID + Name)
 			.maxStackSize(Maxstacksize)

@@ -67,8 +67,8 @@ ServerEvents.recipes(e => {
 		A: "new_create:charred_cobblestone",
 		B: "#forge:string",
 		C: "#forge:rods/wooden",
-		E: '#forge:hammer',
-		F: '#forge:saw'
+		E: '#new_create:hammer',
+		F: '#new_create:saw'
 	}).damageIngredient('#new_create:tools')
 
 	// 防腐木板

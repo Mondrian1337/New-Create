@@ -2219,32 +2219,6 @@
 			x: 43.5d
 			y: 25.0d
 		}
-		{
-			dependencies: ["12B7F124F25AF827"]
-			id: "058759595C6B8454"
-			tasks: [{
-				id: "253F1B892711EDE6"
-				item: {
-					Count: 1b
-					id: "new_create:flint_sword"
-					tag: {
-						Damage: 0
-						Enchantments: [{
-							id: "minecraft:fire_aspect"
-							lvl: 1s
-						}]
-						RepairCost: 1
-						display: {
-							Name: "{\"text\":\"§c神威无敌大将军\"}"
-						}
-					}
-				}
-				type: "item"
-			}]
-			title: "&cPro &bMax &a究极升级版!"
-			x: 41.0d
-			y: 17.5d
-		}
 	]
 	title: "&6火与石之歌"
 }
