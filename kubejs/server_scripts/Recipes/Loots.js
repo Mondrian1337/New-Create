@@ -84,8 +84,8 @@ LootJS.modifiers(loots => {
 	]
 	HandLoots.forEach(([Block, Tools, Loots]) => {
 		loots.addBlockLootModifier(Block)
-			.removeLoot(ALL)
 			.matchMainHand(Tools)
-			.addLoot(Loots)
+			.addAlternativesLoot(LootEntry.of(Loots)
+				.when(c => c.randomChance(0.5)))
 	})
 })
