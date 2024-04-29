@@ -2,7 +2,7 @@
 	"credit": "Made with Blockbench",
 	"parent": "melter:block/melter",
 	"textures": {
-		"iron": "block/iron_block",
+		"iron": "block/bricks",
 		"melter": "melter:block/melter_torch",
 		"particle": "block/cauldron_side"
 	}

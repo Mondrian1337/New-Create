@@ -1,8 +1,3 @@
 {
-	chapter_groups: [
-		{ id: "7D51E071024525B7", title: "&6No.2 原始社会发展" }
-		{ id: "7D6869CA2DA09498", title: "&6No.3 工业革命" }
-		{ id: "0AD4DC2E906068B1", title: "&6No.4 飞向太空!" }
-		{ id: "2A249420D048661C", title: "&6 No.5 完结撒花~" }
-	]
+	chapter_groups: [ ]
 }

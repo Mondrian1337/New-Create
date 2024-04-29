@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "no62"
-	group: "0AD4DC2E906068B1"
+	group: ""
 	icon: {
 		Count: 1b
 		id: "sgjourney:milky_way_stargate"
@@ -25,7 +25,7 @@
 		x: 1.5d
 		y: 1.0d
 	}]
-	order_index: 1
+	order_index: 7
 	quest_links: [ ]
 	quests: [{
 		id: "12B10BDF22A853A6"

@@ -35,7 +35,6 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["21E35649CA8399DE"]
 			description: [
 				"&b欢迎游玩&r"
 				"&4New Create&r"
@@ -89,7 +88,7 @@
 				}
 			]
 			shape: "gear"
-			size: 3.0d
+			size: 2.0d
 			tasks: [{
 				dimension: "minecraft:overworld"
 				icon: "minecraft:grass_block"
@@ -667,7 +666,7 @@
 						value: "forge:ingots/copper"
 					}
 				}
-				title: "Any #forge:ingots/copper"
+				title: "铜锭"
 				type: "item"
 			}]
 			title: "&3第一块金属"
@@ -1111,6 +1110,7 @@
 				"0B6372CB96B584E4"
 			]
 			id: "2D745F08BA3F92F7"
+			subtitle: "&b防腐液桶并非没有配方\\n你用桶装一下就知道了"
 			tasks: [
 				{
 					id: "693C5F2BC62566BC"
@@ -1435,7 +1435,7 @@
 						value: "forge:gems/diamond"
 					}
 				}
-				title: "Any #forge:gems/diamond"
+				title: "钻石"
 				type: "item"
 			}]
 			title: "&6亮闪闪！"
@@ -1454,7 +1454,7 @@
 						value: "forge:obsidian"
 					}
 				}
-				title: "Any #forge:obsidian"
+				title: "黑曜石"
 				type: "item"
 			}]
 			x: 47.0d
@@ -1565,7 +1565,7 @@
 				item: "minecraft:quartz"
 				type: "item"
 			}]
-			title: "&3带点土特产!"
+			title: "&3带点土特产"
 			x: 52.5d
 			y: 19.0d
 		}
@@ -1950,43 +1950,6 @@
 			y: 20.5d
 		}
 		{
-			description: [
-				"&c本整合包属于硬核专家包!现在退出去还来得及!&r"
-				"&4需要一定量的模组基础以及各个模组物品的自动化产线搭建&r"
-				"&4萌新玩这个整合包可能会很吃力!!!&r"
-				"&a不用怕,既然选择了你也可以玩下去,慢慢来&r"
-				"&b查资料,查攻略,不懂的就问!!!&r"
-				"&e整合包内的合成表可能好多物品没有合成&r"
-				"&a例如各种板子和各种锭,没有就是把合成删了&r"
-				"&4有许许多多的板子和锭,如果一种合成不了那就换另一种方法&r"
-				""
-				"&4注意事项:&r"
-				"&b如果遇到了部分物品是英文的,请尝试F3+T重载材质包试试"
-				"&a如果机械动力的机械手无法放置物品,请检查你是否使用FTB Chunk圈了区块&r"
-				"&e使用了FTB Chunk&r"
-				"&9圈了区块后机械动力的许多机械无法正常运行，请删除你所圈的区块&r"
-				""
-				"&c最后,感谢您的大力支持"
-			]
-			id: "21E35649CA8399DE"
-			rewards: [{
-				id: "36255D63DCD6800B"
-				type: "xp_levels"
-				xp_levels: 5
-			}]
-			shape: "hexagon"
-			size: 3.0d
-			subtitle: "&b本整合包可能非常坐牢!"
-			tasks: [{
-				id: "2C7E53E5E7378E56"
-				title: "&4我同意以下内容"
-				type: "checkmark"
-			}]
-			title: "&c声明"
-			x: 27.0d
-			y: 17.5d
-		}
-		{
 			dependencies: [
 				"6792817D07E7A2CC"
 				"2A43BD5F277E422A"
@@ -2157,7 +2120,7 @@
 				}
 			]
 			title: "铸铁套"
-			x: 46.0d
+			x: 48.0d
 			y: 24.0d
 		}
 		{
@@ -2196,7 +2159,14 @@
 			tasks: [
 				{
 					id: "4728DC60575395EF"
-					item: "caupona:stew_pot"
+					item: {
+						Count: 1b
+						id: "itemfilters:tag"
+						tag: {
+							value: "caupona:stew_pot"
+						}
+					}
+					title: "汤锅"
 					type: "item"
 				}
 				{
@@ -2238,7 +2208,7 @@
 			y: 23.5d
 		}
 		{
-			dependencies: ["797CC6360C318986"]
+			dependencies: ["3ED4088F5DEB249F"]
 			id: "14D8A85A958660A7"
 			subtitle: "&b这玩意比黏土的好使多了"
 			tasks: [{

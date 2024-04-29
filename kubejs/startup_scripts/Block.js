@@ -28,9 +28,10 @@ StartupEvents.registry('block', e => {
 		// 充电铁块
 		['charge_iron_block', 'metal', 5, 5, 'pickaxe', 'stone'],
 		// 铸铁机壳
-		['cast_iron_casing', 'wood', 5, 5, 'pickaxe', 'wooden']
+		['cast_iron_casing', 'wood', 5, 5, 'pickaxe', 'wooden'],
+		// 尘土
+		['dust', 'sand', 2, 2, 'sword', 'wooden']
 	]
-
 	Block.forEach(([Name, SoundType, Hardness, ResisTance, Tool, Grade]) => {
 		e.create(ModID + Name)
 			.soundType(SoundType)
@@ -39,6 +40,7 @@ StartupEvents.registry('block', e => {
 			.tagBlock(Tool_Type[Tool])
 			.tagBlock(Minin_Glevel[Grade])
 			.tagItem(ModID + 'items')
+			.tagItem(ModID + 'blocks')
 			.requiresTool(true)
 	})
 })

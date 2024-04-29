@@ -127,4 +127,15 @@ ServerEvents.tags('item', e => {
 	e.add('forge:silicon', [
 		'new_create:silicon_crystal'
 	])
+
+	// 沙子
+	e.add('forge:sand', [
+		'#minecraft:sand'
+	])
+
+	// 汤锅
+	e.add('caupona:stew_pot', [
+		'caupona:stew_pot',
+		'caupona:lead_stew_pot'
+	])
 })

@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "no21"
-	group: "7D51E071024525B7"
+	group: ""
 	icon: "create:wrench"
 	id: "1B2DCAFA2439A323"
-	order_index: 0
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -23,7 +23,7 @@
 				type: "item"
 			}]
 			shape: "hexagon"
-			size: 2.0d
+			size: 1.5d
 			tasks: [{
 				count: 16L
 				id: "6A29EE59895D4EF1"

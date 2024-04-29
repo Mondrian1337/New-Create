@@ -55,6 +55,11 @@ ServerEvents.recipes(e => {
 		).damageIngredient('farmersdelight:flint_knife').id(Recipes.getId())
 	})
 
+	// 黏土
+	splashing(Item.of('minecraft:clay_ball').withChance(0.5), [
+		'new_create:dust'
+	])
+
 	// 木炭
 	campfire_cooking('minecraft:charcoal', [
 		'#minecraft:logs'
@@ -64,6 +69,12 @@ ServerEvents.recipes(e => {
 	shapeless('minecraft:gravel', [
 		'9x minecraft:dirt'
 	])
+
+	// 尘土
+	splashing([
+		Item.of('new_create:dust').withChance(0.75),
+		Item.of('minecraft:clay_ball').withChance(0.25)
+	], '#forge:sand').id('create:splashing/sand')
 
 	// 燧石
 	shapeless('new_create:flint_knapp', [
@@ -338,4 +349,12 @@ ServerEvents.recipes(e => {
 	shapeless('minecraft:copper_ingot', [
 		'9x #forge:nuggets/copper'
 	])
+
+	// 铁桶
+	shaped('minecraft:bucket', [
+		'C C',
+		' C '
+	], {
+		C: 'new_create:cast_iron_sheet'
+	}).id('minecraft:bucket')
 })

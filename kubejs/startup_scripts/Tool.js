@@ -14,15 +14,15 @@ StartupEvents.registry('item', e => {
 		// 石锤
 		['stone_hammer', 'pickaxe', 'common', false, 5, 400, 2, 1],
 		// 铁锤
-		['iron_hammer', 'pickaxe', 'common', false, 5, 800, 1.0, 2],
+		['iron_hammer', 'pickaxe', 'common', false, 5, 800, 4, 2],
 		// 钻石锤
-		['diamond_hammer', 'pickaxe', 'common', false, 5, 1600, 1.0, 3],
+		['diamond_hammer', 'pickaxe', 'common', false, 5, 1600, 6, 3],
 		// 燧石锯子
-		['flint_saw', 'axe', 'common', false, 5, 200, 1.0, 0],
+		['flint_saw', 'axe', 'common', false, 5, 200, 2, 0],
 		// 铁锯子
-		['iron_saw', 'axe', 'common', false, 5, 400, 1.0, 2],
+		['iron_saw', 'axe', 'common', false, 5, 400, 4, 2],
 		// 钻石锯子
-		['diamond_saw', 'axe', 'common', false, 5, 1200, 1.0, 3],
+		['diamond_saw', 'axe', 'common', false, 5, 1200, 6, 3],
 		// 青铜镐
 		['bronze_pickaxe', 'pickaxe', 'common', false, 1, 450, 5.5, 2],
 		// 光辉刃

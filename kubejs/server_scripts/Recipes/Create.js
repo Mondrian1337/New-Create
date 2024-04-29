@@ -842,4 +842,24 @@ ServerEvents.recipes(e => {
 		C: 'create:andesite_casing',
 		S: '#create:shaft_add'
 	}).id('vintageimprovements:craft/belt_grinder')
+
+	// 尘土
+	milling([
+		Item.of('minecraft:bone_meal',).withChance(0.2),
+		Item.of('minecraft:redstone',).withChance(0.15),
+		Item.of('thermal:lapis_dust',).withChance(0.15),
+		Item.of('minecraft:glowstone_dust').withChance(0.3)
+	], 'new_create:dust')
+
+	crushing([
+		Item.of('minecraft:bone_meal').withChance(0.4),
+		Item.of('minecraft:redstone').withChance(0.3),
+		Item.of('thermal:lapis_dust').withChance(0.6),
+		Item.of('minecraft:glowstone_dust').withChance(0.5),
+		Item.of('minecraft:blaze_powder').withChance(0.2),
+		Item.of('ae2:sky_dust').withChance(0.1),
+		Item.of('ae2:fluix_dust').withChance(0.12),
+		Item.of('ae2:certus_quartz_dust').withChance(0.125),
+		Item.of('ae2:ender_dust').withChance(0.125)
+	], 'new_create:dust')
 })
