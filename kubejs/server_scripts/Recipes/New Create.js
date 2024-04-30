@@ -292,7 +292,6 @@ ServerEvents.recipes(e => {
 
 	// 没啥卵用的钟
 	sequenced_assembly('minecraft:clock', '#forge:ingots/gold', [
-		pressing('minecraft:gold_ingot', 'minecraft:gold_ingot'),
 		deploying('minecraft:gold_ingot', ['create:precision_mechanism', 'create:precision_mechanism']),
 		deploying('minecraft:gold_ingot', ['minecraft:gold_ingot', 'minecraft:gold_ingot']),
 		deploying('minecraft:gold_ingot', ['create:electron_tube', 'create:electron_tube']),
