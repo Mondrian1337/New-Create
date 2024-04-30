@@ -361,4 +361,28 @@ ServerEvents.recipes(e => {
 	], {
 		C: 'new_create:cast_iron_sheet'
 	}).id('minecraft:bucket')
+
+	// Fix nuggets <=> ingots crafting
+	e.forEachRecipe({
+		type: "crafting_shapeless",
+		output: "#forge:nuggets"
+	}, recipe => {
+		var Result = recipe.getOriginalRecipeResult().getId()
+		var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
+		e.shapeless(Input, [
+			`9x ${Result}`
+		])
+	})
+
+	// Fix ingots <=> block crafting
+	e.forEachRecipe({
+		type: "crafting_shapeless",
+		output: '#forge:ingots'
+	}, recipe => {
+		var Result = recipe.getOriginalRecipeResult().getId()
+		var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
+		e.shapeless(`9x ${Result}`, [
+			`${Input}`
+		])
+	})
 })
