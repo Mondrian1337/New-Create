@@ -10,7 +10,7 @@ StartupEvents.registry('fluid', e => {
 		// 锌溶液
 		['zinc_fluid', 0xB9E9C1],
 		// 铸铁溶液
-		['cast_fluid', 0x3E3E3E],
+		['cast_iron_fluid', 0x3E3E3E],
 		// 煤油
 		['kerosene', 0xFFD700],
 		// 工业燃油
