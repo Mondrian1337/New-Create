@@ -50,7 +50,7 @@
 					type: "item"
 				}
 				{
-					command: "/give @p minecraft:player_head{SkullOwner:{Name:'xiaolizi_'}}"
+					command: "/give @p minecraft:player_head{SkullOwner:{Name:'X_CnJiu'}}"
 					icon: {
 						Count: 1b
 						id: "minecraft:player_head"
@@ -1109,6 +1109,7 @@
 				"1D45C9BA70CFB5DA"
 				"0B6372CB96B584E4"
 			]
+			description: [""]
 			id: "2D745F08BA3F92F7"
 			subtitle: "&b防腐液桶并非没有配方\\n你用桶装一下就知道了"
 			tasks: [

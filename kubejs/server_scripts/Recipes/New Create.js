@@ -377,7 +377,8 @@ ServerEvents.recipes(e => {
 	// Fix ingots <=> block crafting
 	e.forEachRecipe({
 		type: "crafting_shapeless",
-		output: '#forge:ingots'
+		output: '#forge:ingots',	
+		input: '#forge:storage_blocks'
 	}, recipe => {
 		var Result = recipe.getOriginalRecipeResult().getId()
 		var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]

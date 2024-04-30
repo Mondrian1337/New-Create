@@ -157,7 +157,8 @@ ServerEvents.recipes(e => {
 		'immersiveengineering:blastfurnace/steel_block',
 		'createdieselgenerators:crafting/engine_piston',
 		'create:crafting/kinetics/cogwheel',
-		'kubejs:kjs/create_large_cogwheel'
+		'kubejs:kjs/create_large_cogwheel',
+		'immersiveengineering:crafting/electrum_mix'
 	]
 	Remove_ID.forEach(ID => {
 		e.remove({ id: ID })
