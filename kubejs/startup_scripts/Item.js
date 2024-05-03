@@ -86,22 +86,22 @@ StartupEvents.registry('item', e => {
 	// 半成品注册
 	let In_Item = [
 		// 幽静构件(未完成)
-		['in_abstruse_mechanism'],
+		['abstruse_mechanism'],
 		// 计算构件(未完成)
-		['in_calculation_mechanism'],
+		['calculation_mechanism'],
 		// 电磁构件(未完成)
-		['in_inductive_mechanism'],
+		['inductive_mechanism'],
 		// 下届构件(未完成)
-		['in_infernal_mechanism'],
+		['infernal_mechanism'],
 		// 动力构件(未完成)
-		['in_kinetic_mechanism'],
+		['kinetic_mechanism'],
 		// 密封构件(未完成)
-		['in_sealed_mechanism'],
+		['sealed_mechanism'],
 		//坚固构件(未完成)
-		['in_sturdy_mechanism']
+		['sturdy_mechanism']
 	]
 	In_Item.forEach(([Name]) => {
-		e.create(ModID + Name, 'create:sequenced_assembly')
+		e.create('in_' + ModID + Name, 'create:sequenced_assembly')
 			.tag(ModID + 'items')
 	})
 })
