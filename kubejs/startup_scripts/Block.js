@@ -33,8 +33,6 @@ StartupEvents.registry('block', e => {
 		// 尘土
 		['dust', 'sand', 2, 2, 'shovel', 'wooden']
 	]
-	
-	// 设置方法
 	Block.forEach(([Name, SoundType, Hardness, ResisTance, Tool, Grade]) => {
 		e.create(ModID + Name)
 			.soundType(SoundType)

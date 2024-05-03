@@ -72,7 +72,7 @@ Ponder.registry(e => {
 			scene.world.removeEntity(sand)
 
 			scene.idleSeconds(1)
-			scene.world.setBlocks([2, 1, 2], 'minecraft:torch')
+			scene.world.setBlocks([2, 1, 2], 'minecraft:lava')
 			scene.world.showSection([2, 1, 2], Direction.UP)
 			scene.text(20, '§b添加热量', [2, 2, 2])
 

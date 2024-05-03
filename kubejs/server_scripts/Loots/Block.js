@@ -1,8 +1,8 @@
 LootJS.modifiers(loots => {
-	const ALL = Ingredient.all
+	const All = Ingredient.all
 	// 砂砾掉小燧石
 	loots.addBlockLootModifier('minecraft:gravel')
-		.removeLoot(ALL)
+		.removeLoot(All)
 		.addAlternativesLoot(LootEntry.of('new_create:flint_knapp')
 			.when(c => c.randomChance(0.3)),
 			LootEntry.of('minecraft:gravel')
@@ -20,32 +20,8 @@ LootJS.modifiers(loots => {
 
 	// 铁矿掉粉碎铁矿石
 	loots.addBlockLootModifier('#forge:ores/iron')
-		.removeLoot(ALL)
+		.removeLoot(All)
 		.addLoot('2x create:crushed_raw_iron')
-
-	// 删除战利品箱子里面对应的物品
-	loots.addLootTypeModifier(LootType.CHEST)
-		.removeLoot('minecraft:iron_ingot')
-		.removeLoot('minecraft:gold_ingot')
-		.removeLoot('minecraft:diamond')
-		.removeLoot('minecraft:iron_nugget')
-		.removeLoot('minecraft:gold_nugget')
-		.removeLoot('minecraft:netherite_scrap')
-		.removeLoot('minecraft:netherite_ingot')
-		.removeLoot('minecraft:flint_and_steel')
-		.removeLoot('minecraft:fire_charge')
-		.removeLoot('minecraft:obsidian')
-		.removeLoot('#minecraft:logs')
-
-	// 删除铁傀儡掉落铁锭
-	loots.addEntityLootModifier('minecraft:iron_golem')
-		.removeLoot(ALL)
-		.addLoot('2x minecraft:apple')
-
-	// 删除实体掉落铁锭和铜锭
-	loots.addLootTypeModifier(LootType.ENTITY)
-		.removeLoot('minecraft:iron_ingot')
-		.removeLoot('minecraft:copper_ingot')
 
 	// 所有矿石掉落矿渣
 	loots.addBlockLootModifier('#forge:ores')
@@ -61,7 +37,7 @@ LootJS.modifiers(loots => {
 
 	// 篝火掉本体
 	loots.addBlockLootModifier('minecraft:campfire')
-		.removeLoot(ALL)
+		.removeLoot(All)
 		.addAlternativesLoot(LootEntry.of('minecraft:campfire')
 			.when(c => c.randomChance(0.25)))
 		.addAlternativesLoot(LootEntry.of('minecraft:charcoal')
@@ -70,22 +46,4 @@ LootJS.modifiers(loots => {
 	// 土豆
 	loots.addBlockLootModifier('minecraft:potato')
 		.removeLoot('minecraft:poisonous_potato')
-
-	// 工具
-	let HandLoots = [
-		// 圆石=>砂砾
-		['#forge:cobblestone', '#new_create:hammer', 'minecraft:gravel'],
-		// 砂砾=>沙子
-		['#forge:gravel', '#new_create:hammer', 'minecraft:sand'],
-		// 砂石=>沙子
-		['#forge:sandstone', '#new_create:hammer', 'minecraft:sand'],
-		// 沙子=>尘土
-		['#forge:sand', '#new_create:hammer', 'new_create:dust']
-	]
-	HandLoots.forEach(([Block, Tools, Loots]) => {
-		loots.addBlockLootModifier(Block)
-			.matchMainHand(Tools)
-			.addAlternativesLoot(LootEntry.of(Loots)
-				.when(c => c.randomChance(0.5)))
-	})
 })

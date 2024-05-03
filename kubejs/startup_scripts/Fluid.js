@@ -26,8 +26,6 @@ StartupEvents.registry('fluid', e => {
 		// 玫瑰金溶液
 		['rose_gold_fluid', 0xFF69B4]
 	]
-
-	// 设置方法
 	Fluid.forEach(([Name, Color]) => {
 		e.create(ModID + Name)
 			.tag(ModID + 'fluid')

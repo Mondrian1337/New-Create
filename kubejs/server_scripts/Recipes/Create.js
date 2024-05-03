@@ -599,20 +599,20 @@ ServerEvents.recipes(e => {
 	})
 
 	// 铸铁量产
-	compacting(Fluid.of('new_create:cast_fluid', 400), [
+	compacting(Fluid.of('new_create:cast_iron_fluid', 400), [
 		'2x minecraft:iron_ingot',
 		'mekanism:dust_coal'
 	]).heated()
 
 	filling('new_create:cast_iron_ingot', [
 		'#forge:plates/iron',
-		Fluid.of('new_create:cast_fluid', 100)
+		Fluid.of('new_create:cast_iron_fluid', 100)
 	])
 
 	// 铸铁电子管
 	filling('new_create:cast_electron_tube', [
 		'new_create:zinc_electron_tube',
-		Fluid.of('new_create:cast_fluid', 100)
+		Fluid.of('new_create:cast_iron_fluid', 100)
 	])
 
 	// 钢粉
@@ -787,7 +787,7 @@ ServerEvents.recipes(e => {
 
 	// 铸铁机壳
 	filling('new_create:cast_iron_casing', [
-		Fluid.of('new_create:cast_fluid', 100),
+		Fluid.of('new_create:cast_iron_fluid', 100),
 		'#forge:treated_wood'
 	])
 

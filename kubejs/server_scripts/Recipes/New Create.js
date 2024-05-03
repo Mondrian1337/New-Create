@@ -367,23 +367,19 @@ ServerEvents.recipes(e => {
 		type: "crafting_shapeless",
 		output: "#forge:nuggets"
 	}, recipe => {
-		var Result = recipe.getOriginalRecipeResult().getId()
+		var Output = recipe.getOriginalRecipeResult().getId()
 		var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
-		e.shapeless(Input, [
-			`9x ${Result}`
-		])
+		e.shapeless(Input, [`9x ${Output}`])
 	})
 
 	// Fix ingots <=> block crafting
 	e.forEachRecipe({
 		type: "crafting_shapeless",
-		output: '#forge:ingots',	
+		output: '#forge:ingots',
 		input: '#forge:storage_blocks'
 	}, recipe => {
-		var Result = recipe.getOriginalRecipeResult().getId()
+		var Output = recipe.getOriginalRecipeResult().getId()
 		var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
-		e.shapeless(`9x ${Result}`, [
-			`${Input}`
-		])
+		e.shapeless(`9x ${Output}`, [`${Input}`])
 	})
 })

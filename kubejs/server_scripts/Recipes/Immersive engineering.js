@@ -58,6 +58,18 @@ ServerEvents.recipes(e => {
 		"time": 150
 	})
 
+	// 铸铁板
+	e.custom({
+		"type": "immersiveengineering:alloy",
+		"input0": { "tag": "forge:plates/iron" },
+		"input1": { "tag": "forge:plates/iron" },
+		"result": {
+			"base_ingredient": { "item": "new_create:cast_iron_sheet" },
+			"conut": 1
+		},
+		"time": 150
+	})
+
 	// 工程师锤
 	shaped("immersiveengineering:hammer", [
 		' AB',
@@ -200,18 +212,9 @@ ServerEvents.recipes(e => {
 	e.custom({
 		"type": "immersiveengineering:refinery",
 		"energy": 240,
-		"input0": {
-			"amount": 20,
-			"tag": "forge:industrial_fuel"
-		},
-		"input1": {
-			"amount": 20,
-			"tag": "forge:gasoline"
-		},
-		"result": {
-			"amount": 40,
-			"fluid": "new_create:mixed_gasoline"
-		}
+		"input0": { "amount": 20, "tag": "forge:industrial_fuel" },
+		"input1": { "amount": 20, "tag": "forge:gasoline" },
+		"result": { "amount": 40, "fluid": "new_create:mixed_gasoline" }
 	})
 
 	// 钢机壳
@@ -236,10 +239,7 @@ ServerEvents.recipes(e => {
 			{ "tag": "forge:wires/copper" },
 			{ "item": "new_create:plastic_sheet" }
 		],
-		"result": {
-			"count": 3,
-			"item": "immersiveengineering:electron_tube"
-		}
+		"result": { "item": "immersiveengineering:electron_tube", "count": 3 }
 	}).id('immersiveengineering:blueprint/electron_tube')
 
 	// 加强电子管
@@ -279,14 +279,20 @@ ServerEvents.recipes(e => {
 		"result": { "amount": 250, "fluid": 'new_create:mithril_fluid' }
 	})
 
+	// 琥珀金
+	mixing('2x thermal:electrum_ingot', [
+		'#forge:ingots/gold',
+		'#forge:ingots/silver'
+	]).heated()
+
 	// 粗硅
 	e.custom({
 		"type": "immersiveengineering:arc_furnace",
 		"additives": [{ "tag": "forge:dusts/coal_coke" }],
-		"energy": 204800,
 		"input": { "item": "new_create:pure_quartz" },
 		"results": [{ "item": "new_create:saw_silicon" }],
 		"slag": { "item": "thermal:sulfur_dust" },
-		"time": 800
+		"time": 800,
+		"energy": 204800
 	})
 })
