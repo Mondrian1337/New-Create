@@ -366,6 +366,7 @@ ServerEvents.recipes(e => {
 	shapeless('9x thermal:tin_ingot','thermal:tin_block')
 
 	// Fix nuggets <=> ingots crafting
+<<<<<<< HEAD
 	FixRecipes1('crafting_shapeless','#forge:nuggets')
 
 	// Fix ingots <=> block crafting
@@ -392,4 +393,25 @@ ServerEvents.recipes(e => {
 			e.shapeless(`9x ${Output}`,[`${Input}`])
 		})
 	}
+=======
+	e.forEachRecipe({
+		type: "crafting_shapeless",
+		output: "#forge:nuggets"
+	}, recipe => {
+		var Output = recipe.getOriginalRecipeResult().getId()
+		var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
+		e.shapeless(Input, [`9x ${Output}`])
+	})
+
+	// Fix ingots <=> block crafting
+	e.forEachRecipe({
+		type: "crafting_shapeless",
+		output: '#forge:ingots',
+		input: '#forge:storage_blocks'
+	}, recipe => {
+		var Output = recipe.getOriginalRecipeResult().getId()
+		var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
+		e.shapeless(`9x ${Output}`, [`${Input}`])
+	})
+>>>>>>> c14acdda42f4b4894951590d248da72f7336b255
 })
