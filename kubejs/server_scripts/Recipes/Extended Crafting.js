@@ -38,6 +38,10 @@ ServerEvents.recipes(e => {
 		shapeless_table
 	} = e.recipes.extendedcrafting
 
+	/*
+	*不要骂了QAQ,也是后来才发现有KubeJS支持的QAQ
+	*/
+
 	// 动力搅拌机
 	e.custom({
 		"type": "extendedcrafting:shaped_table",
@@ -47,16 +51,14 @@ ServerEvents.recipes(e => {
 			"DDEDD",
 			"BCECB",
 			"  F  "
-		],
-		"key": {
+		], "key": {
 			"A": { "tag": "forge:ingots/bronze" },
 			"B": { "tag": "forge:plates/bronze" },
 			"C": { "tag": "minecraft:logs" },
 			"D": { "item": "create:cogwheel" },
 			"E": { "tag": "create:shaft_add" },
 			"F": { "item": "create:whisk" }
-		},
-		"result": { "item": "create:mechanical_mixer" }
+		}, "result": { "item": "create:mechanical_mixer" }
 	})
 
 
@@ -69,8 +71,7 @@ ServerEvents.recipes(e => {
 			"FCDCF",
 			"BGEGB",
 			" GGG "
-		],
-		"key": {
+		], "key": {
 			"A": { "tag": 'create:shaft_add' },
 			"B": { "tag": "minecraft:logs" },
 			"C": { "item": "create:cogwheel" },
@@ -78,8 +79,7 @@ ServerEvents.recipes(e => {
 			"E": { "item": 'new_create:cast_iron_block' },
 			"F": { "tag": "minecraft:planks" },
 			"G": { "tag": 'forge:ingots/iron' }
-		},
-		"result": { "item": 'create:mechanical_press' }
+		}, "result": { "item": 'create:mechanical_press' }
 	})
 
 
@@ -92,27 +92,13 @@ ServerEvents.recipes(e => {
 			"BDEDB",
 			"BCDCB",
 			"ABBBA"
-		],
-		"key": {
-			"A": {
-				"item": "create:andesite_casing"
-			},
-			"B": {
-				"tag": "minecraft:planks"
-			},
-			"C": {
-				"item": "create:cogwheel"
-			},
-			"D": {
-				"tag": "create:shaft_add"
-			},
-			"E": {
-				"item": 'create:propeller'
-			}
-		},
-		"result": {
-			"item": 'create:encased_fan'
-		}
+		], "key": {
+			"A": { "item": "create:andesite_casing" },
+			"B": { "tag": "minecraft:planks" },
+			"C": { "item": "create:cogwheel" },
+			"D": { "tag": "create:shaft_add" },
+			"E": { "item": 'create:propeller' }
+		}, "result": { "item": 'create:encased_fan' }
 	})
 
 	//机械手
@@ -124,43 +110,14 @@ ServerEvents.recipes(e => {
 			'FEF',
 			'BFB',
 			' D '
-		],
-		"key": {
-			"A": {
-				"tag": 'create:shaft_add'
-			},
-			"B": {
-				"item": ' create:andesite_casing'
-			},
-			"C": {
-				"tag": 'forge:ingots/brass'
-			},
-			"D": {
-				"item": 'create:brass_hand'
-			},
-			"E": {
-				"tag": 'minecraft:planks'
-			},
-			"F": {
-				"tag": 'forge:ingots/andesite_alloy'
-			}
-		},
-		"result": {
-			"item": 'create:deployer'
-		}
-	})
-
-	//黄铜手
-	shaped_table('create:brass_hand', [
-		'  AAA',
-		' ABBA',
-		'ABBA ',
-		'CBBA ',
-		'CCAA '
-	], {
-		A: '#forge:plates/brass',
-		B: '#forge:ingots/brass',
-		C: 'create:andesite_alloy'
+		], "key": {
+			"A": { "tag": 'create:shaft_add' },
+			"B": { "item": ' create:andesite_casing' },
+			"C": { "tag": 'forge:ingots/brass' },
+			"D": { "item": 'create:brass_hand' },
+			"E": { "tag": 'minecraft:planks' },
+			"F": { "tag": 'forge:ingots/andesite_alloy' }
+		}, "result": { "item": 'create:deployer' }
 	})
 
 	// 轧机

@@ -93,7 +93,7 @@
 						value: "forge:ingots/brass"
 					}
 				}
-				title: "Any #forge:ingots/brass"
+				title: "黄铜"
 				type: "item"
 			}]
 			x: -9.0d
@@ -173,7 +173,7 @@
 						value: "forge:slimeballs"
 					}
 				}
-				title: "Any #forge:slimeballs"
+				title: "粘液球"
 				type: "item"
 			}]
 			x: -9.5d
@@ -363,7 +363,7 @@
 		}
 		{
 			dependencies: ["65F1A3A80971DFEC"]
-			description: ["{image:new_create:textures/images/1.png width:100 height:100 align:1}"]
+			description: ["{image:new_create:textures/images/1.png width:75 height:75 align:1}"]
 			id: "5F846849DADC8AE5"
 			subtitle: "&a就是不让你用蒸汽引擎&r"
 			tasks: [{

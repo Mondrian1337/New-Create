@@ -88,6 +88,7 @@
   "custommachinery:machine_server_data_provider": null,
   "custommachinery:machine_component_provider": null,
   "melter:melter_data": null,
+  "lootr:info": null,
   "melter:melter_data": null,
   "extendedcrafting:crafting_core": null,
   "extendedcrafting:basic_table": null,

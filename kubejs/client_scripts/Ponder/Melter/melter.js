@@ -53,7 +53,7 @@ Ponder.registry(e => {
 
 			scene.world.setBlocks([4, 1, 0, 0, 6, 4], 'minecraft:air', true)
 			scene.world.createItemEntity([2, 2, 2], Direction.DOWN, '2x melter:melter')
-			scene.idle(20)
+			scene.idleSeconds(1)
 		})
 
 		// 使用
@@ -72,7 +72,7 @@ Ponder.registry(e => {
 			scene.world.removeEntity(sand)
 
 			scene.idleSeconds(1)
-			scene.world.setBlocks([2, 1, 2], 'minecraft:torch')
+			scene.world.setBlocks([2, 1, 2], 'minecraft:lava')
 			scene.world.showSection([2, 1, 2], Direction.UP)
 			scene.text(20, '§b添加热量', [2, 2, 2])
 

@@ -2,106 +2,106 @@ StartupEvents.registry('item', e => {
 	const ModID = 'new_create:'
 	let Item = [
 		// 燧石碎片
-		['flint_knapp', 64, 'common', false],
+		['flint_knapp', 'common', false],
 		// 彩虹锭
-		['rainbow_ingot', 64, 'epic', false],
+		['rainbow_ingot', 'epic', false],
 		// 塑料板
-		['plastic_sheet', 64, 'common', false],
+		['plastic_sheet', 'common', false],
 		// 冲压模具-块
-		['mold_block', 1, 'common', false],
+		['mold_block', 'common', false],
 		// 电镀锌
-		['plating_zinc_ingot', 64, 'common', false],
+		['plating_zinc_ingot', 'common', false],
 		// 铸铁电子管
-		['cast_electron_tube', 64, 'common', false],
+		['cast_electron_tube', 'common', false],
 		// 锌电子管
-		['zinc_electron_tube', 64, 'common', false],
+		['zinc_electron_tube', 'common', false],
 		// 坚固构件
-		['sturdy_mechanism', 64, 'common', false],
+		['sturdy_mechanism', 'common', false],
 		// 密封构件
-		['sealed_mechanism', 64, 'common', false],
+		['sealed_mechanism', 'common', false],
 		// 动力构件
-		['kinetic_mechanism', 64, 'common', false],
+		['kinetic_mechanism', 'common', false],
 		// 彩虹月币
-		['rainbow_mooncoin', 16, 'epic', false],
+		['rainbow_mooncoin', 'epic', false],
 		// 月币
-		['mooncoin', 16, 'rare', false],
+		['mooncoin', 'rare', false],
 		// 安山混合物
-		['andesite_compound', 64, 'common', false],
+		['andesite_compound', 'common', false],
 		// 草绳
-		['grass_string', 64, 'common', false],
+		['grass_string', 'common', false],
 		// 杂草
-		['grass_fiber', 64, 'common', false],
-		['0', 64, 'uncommon', false],
-		['1', 64, 'uncommon', false],
-		['2', 64, 'uncommon', false],
-		['3', 64, 'uncommon', false],
-		['4', 64, 'uncommon', false],
-		['5', 64, 'uncommon', false],
-		['6', 64, 'uncommon', false],
-		['7', 64, 'uncommon', false],
-		['8', 64, 'uncommon', false],
-		['9', 64, 'uncommon', false],
+		['grass_fiber', 'common', false],
+		//
+		['0', 'uncommon', false],
+		['1', 'uncommon', false],
+		['2', 'uncommon', false],
+		['3', 'uncommon', false],
+		['4', 'uncommon', false],
+		['5', 'uncommon', false],
+		['6', 'uncommon', false],
+		['7', 'uncommon', false],
+		['8', 'uncommon', false],
+		['9', 'uncommon', false],
 		// 齿轮(未完成)
-		['in_cogwheel', 64, 'common', false],
+		['in_cogwheel', 'common', false],
 		// 大齿轮(未完成)
-		['in_large_cogwheel', 64, 'common', false],
+		['in_large_cogwheel', 'common', false],
 		// 铸铁锭
-		['cast_iron_ingot', 64, 'common', false],
+		['cast_iron_ingot', 'common', false],
 		// 合成轴承
-		['primary_bearing', 64, 'common', false],
+		['primary_bearing', 'common', false],
 		// 铸铁板
-		['cast_iron_sheet', 64, 'common', false],
+		['cast_iron_sheet', 'common', false],
 		// 碳板
-		['carbon_plate', 64, 'common', false],
+		['carbon_plate', 'common', false],
 		// 碳棒
-		['carbon_rod', 64, 'common', false],
+		['carbon_rod', 'common', false],
 		// 焦煤棒
-		['coking_coal_rod', 64, 'common', false],
+		['coking_coal_rod', 'common', false],
 		// 纯净石英
-		['pure_quartz', 64, 'uncommon', false],
+		['pure_quartz', 'uncommon', false],
 		// 幽静构件
-		['abstruse_mechanism', 64, 'common', false],
+		['abstruse_mechanism', 'common', false],
 		// 计算构件
-		['calculation_mechanism', 64, 'common', false],
+		['calculation_mechanism', 'common', false],
 		// 电脑构件
-		['computer_mechanism', 64, 'common', false],
+		['computer_mechanism', 'common', false],
 		// 电磁构件
-		['inductive_mechanism', 64, 'common', false],
+		['inductive_mechanism', 'common', false],
 		// 下界构件
-		['infernal_mechanism', 64, 'common', false],
+		['infernal_mechanism', 'common', false],
 		// 粗硅
-		['saw_silicon', 64, 'common', false],
+		['saw_silicon', 'common', false],
 		// 硅晶
-		['silicon_crystal', 64, 'common', false]
+		['silicon_crystal', 'common', false]
 	]
-	
-	// 设置方法
-	Item.forEach(([Name, Maxstacksize, Rarity, Glow]) => {
+	Item.forEach(([Name, Rarity, Glow]) => {
 		e.create(ModID + Name)
-			.maxStackSize(Maxstacksize)
 			.rarity(Rarity)
 			.glow(Glow)
 			.tag(ModID + 'items')
 	})
+
 	// 半成品注册
 	let In_Item = [
 		// 幽静构件(未完成)
-		['in_abstruse_mechanism'],
+		['abstruse_mechanism'],
 		// 计算构件(未完成)
-		['in_calculation_mechanism'],
+		['calculation_mechanism'],
 		// 电磁构件(未完成)
-		['in_inductive_mechanism'],
+		['inductive_mechanism'],
 		// 下届构件(未完成)
-		['in_infernal_mechanism'],
+		['infernal_mechanism'],
 		// 动力构件(未完成)
-		['in_kinetic_mechanism'],
+		['kinetic_mechanism'],
 		// 密封构件(未完成)
-		['in_sealed_mechanism'],
+		['sealed_mechanism'],
 		//坚固构件(未完成)
-		['in_sturdy_mechanism']
+		['sturdy_mechanism']
 	]
 	In_Item.forEach(([Name]) => {
-		e.create(ModID + Name, 'create:sequenced_assembly')
+		e.create(ModID + 'in_' + Name, 'create:sequenced_assembly')
 			.tag(ModID + 'items')
+			.tag(ModID + 'incomplete_items')
 	})
 })
