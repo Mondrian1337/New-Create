@@ -395,6 +395,6 @@ ServerEvents.recipes(e => {
 	// Fix trracotta crafting
 	campfire_cooking(
 		'minecraft:terracotta',
-		'minecraft:clay')
-		.cookingTime(180)
+		'minecraft:clay'
+	).cookingTime(180)
 })
