@@ -93,7 +93,7 @@
 						value: "forge:ingots/brass"
 					}
 				}
-				title: "Any #forge:ingots/brass"
+				title: "黄铜"
 				type: "item"
 			}]
 			x: -9.0d
@@ -173,7 +173,7 @@
 						value: "forge:slimeballs"
 					}
 				}
-				title: "Any #forge:slimeballs"
+				title: "粘液球"
 				type: "item"
 			}]
 			x: -9.5d

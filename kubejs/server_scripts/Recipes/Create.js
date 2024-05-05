@@ -224,11 +224,21 @@ ServerEvents.recipes(e => {
 		R: '#forge:cured_rubber'
 	})
 
+	// 余烬面粉
+	milling('create:cinder_flour', [
+		'#forge:netherrack'
+	])
+
 	//安山合金
 	filling('create:andesite_alloy', [
 		'minecraft:andesite',
 		Fluid.of('new_create:andesite_compound_fluid', 50)
 	])
+
+	mixing('create:andesite_alloy', [
+		'minecraft:andesite',
+		Fluid.of('new_create:andesite_compound_fluid', 100)
+	]).heated()
 
 	//安山机壳
 	item_application('create:andesite_casing', [
@@ -599,7 +609,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 铸铁量产
-	compacting(Fluid.of('new_create:cast_iron_fluid', 400), [
+	compacting(Fluid.of('new_create:cast_iron_fluid', 500), [
 		'2x minecraft:iron_ingot',
 		'mekanism:dust_coal'
 	]).heated()
@@ -612,14 +622,14 @@ ServerEvents.recipes(e => {
 	// 铸铁电子管
 	filling('new_create:cast_electron_tube', [
 		'new_create:zinc_electron_tube',
-		Fluid.of('new_create:cast_iron_fluid', 100)
+		Fluid.of('new_create:cast_iron_fluid', 125)
 	])
 
 	// 钢粉
 	mixing('2x immersiveengineering:dust_steel', [
 		'2x immersiveengineering:dust_iron',
 		'2x mekanism:dust_coal',
-		Fluid.of('new_create:working_fluid', 100)
+		Fluid.of('new_create:working_fluid', 125)
 	]).heated()
 
 	// 铁粉

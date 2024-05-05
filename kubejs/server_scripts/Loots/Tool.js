@@ -2,6 +2,8 @@ LootJS.modifiers(loots => {
 	let HandLoots = [
 		// 圆石=>砂砾
 		['#forge:cobblestone', '#new_create:hammer', 'minecraft:gravel'],
+		// 石头=>砂砾
+		['minecraft:stone', '#new_create:hammer', 'minecraft:gravel'],
 		// 砂砾=>沙子
 		['#forge:gravel', '#new_create:hammer', 'minecraft:sand'],
 		// 砂石=>沙子

@@ -120,19 +120,6 @@ ServerEvents.recipes(e => {
 		}, "result": { "item": 'create:deployer' }
 	})
 
-	//黄铜手
-	shaped_table('create:brass_hand', [
-		'  AAA',
-		' ABBA',
-		'ABBA ',
-		'CBBA ',
-		'CCAA '
-	], {
-		A: '#forge:plates/brass',
-		B: '#forge:ingots/brass',
-		C: 'create:andesite_alloy'
-	})
-
 	// 轧机
 	shaped_table('createaddition:rolling_mill', [
 		'AABAA',

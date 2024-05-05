@@ -53,7 +53,7 @@ Ponder.registry(e => {
 
 			scene.world.setBlocks([4, 1, 0, 0, 6, 4], 'minecraft:air', true)
 			scene.world.createItemEntity([2, 2, 2], Direction.DOWN, '2x melter:melter')
-			scene.idle(20)
+			scene.idleSeconds(1)
 		})
 
 		// 使用

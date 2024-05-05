@@ -1,6 +1,14 @@
+/*
+ * 我知道你们来到这里的想干什么,或许你只是个很普通的Modpack开发者,想来看看ban了什么东西
+ * 也或许是一个在网上搜到解Ban教程的一个玩家
+ * 你们可以随便解,我们也不强求,只希望你们不要在我们这些开发者面前跳脸
+ * 我了解你们的心情,但是也希望大家可以理解一下我们这些开发者的心情
+ * 我们已经很累了,你们爱咋玩咋玩,只要不要影响到别的玩家,随便你们解开好吧
+ *                                  ------2024.05.05 21点11分42秒 柒月留
+*/
 ServerEvents.recipes(e => {
 	// 删除Item
-	let Remove_Item = [
+	let Output = [
 		'#forge:tools/wooden',
 		'minecraft:stone_sword',
 		'minecraft:stone_pickaxe',
@@ -65,7 +73,6 @@ ServerEvents.recipes(e => {
 		'create:mechanical_saw',
 		'create:brass_ingot',
 		'create:windmill_bearing',
-		'create:brass_hand',
 		'create:deployer',
 		'create:mechanical_crafter',
 		'extendedcrafting:elite_table',
@@ -76,7 +83,6 @@ ServerEvents.recipes(e => {
 		'create:steam_engine',
 		'create:crushing_wheel',
 		'create_new_age:generator_coil',
-		'minecraft:blaze_powder',
 		'immersiveengineering:dust_coke',
 		'immersiveengineering:coil_lv',
 		'createaddition:spool',
@@ -121,10 +127,17 @@ ServerEvents.recipes(e => {
 		'minecraft:weeping_vines',
 		'minecraft:twisting_vines'
 	]
-	Remove_Item.forEach(Item => {
+	Output.forEach(Item => {
 		e.remove({ output: Item })
 	})
 
+	// Input
+	let Input = [
+
+	]
+	Input.forEach(Item => {
+		e.remove({ input: Item })
+	})
 
 	// Thermal Mechines
 	let Mechines = [
@@ -137,7 +150,6 @@ ServerEvents.recipes(e => {
 	Mechines.forEach(remove => {
 		e.remove({ output: remove })
 	})
-
 
 	// 删除id
 	let Remove_ID = [
@@ -155,6 +167,7 @@ ServerEvents.recipes(e => {
 		'immersiveengineering:crafting/fluid_pipe',
 		'thermal:energy_cell_frame',
 		'immersiveengineering:blastfurnace/steel_block',
+		'ratatouille:salt',
 		'createdieselgenerators:crafting/engine_piston',
 		'create:crafting/kinetics/cogwheel',
 		'kubejs:kjs/create_large_cogwheel',
@@ -178,10 +191,10 @@ ServerEvents.recipes(e => {
 	e.remove({ output: '#forge:gears', type: "minecraft:crafting_shaped" })
 
 	//删除Mod合成表
-	let Remove_Mod_recipes = [
+	let Remove_Mods_recipes = [
 
 	]
-	Remove_Mod_recipes.forEach(Type => {
+	Remove_Mods_recipes.forEach(Type => {
 		e.remove({ mod: Type })
 	})
 })

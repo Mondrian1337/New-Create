@@ -140,7 +140,7 @@ ServerEvents.recipes(e => {
 		D: '#forge:rods/wooden',
 		E: '#new_create:hammer',
 		S: '#new_create:saw'
-	}).damageIngredient('#new_create:hammer').damageIngredient('#new_create:saw')
+	}).damageIngredient('#new_create:tools')
 
 	// 木棍
 	shapeless('4x minecraft:stick', [
@@ -168,6 +168,16 @@ ServerEvents.recipes(e => {
 		C: '#forge:storage_blocks/clay'
 	}).id('ceramicbucket:unfired_clay_bucket')
 
+	// 动力矿车
+	shaped('minecraft:furnace_minecart', [
+		'CCC',
+		'CMC',
+		'CCC'
+	], {
+		C: '#forge:cobblestone',
+		M: 'minecraft:minecart'
+	}).id('minecraft:furnace_minecart')
+
 	// 切石机
 	shaped('minecraft:stonecutter', [
 		'HCA',
@@ -182,18 +192,18 @@ ServerEvents.recipes(e => {
 		C: '#forge:plates/copper'
 	}).id('minecraft:stonecutter').damageIngredient('#new_create:tools')
 
-	// 铁锭
-	shapeless('minecraft:iron_ingot', [
-		'9x #forge:nuggets/iron'
-	])
-
 	// 轴承
 	shaped('2x new_create:primary_bearing', [
-		'C',
+		'C',	
 		'C'
 	], {
 		C: 'new_create:charred_cobblestone'
 	})
+
+	// 下界砖
+	smelting('minecraft:nether_brick', [
+		'#forge:netherrack'
+	])
 
 	// 防腐液 
 	e.custom({
@@ -341,18 +351,8 @@ ServerEvents.recipes(e => {
 			{ "item": 'minecraft:gold_nugget', "chance": 0.3 },
 			{ "item": 'createaddition:electrum_nugget', "chance": 0.3 },
 			{ "item": 'new_create:saw_silicon', "chance": 0.03 }
-		],
-		"processingTime": 250
+		], "processingTime": 250
 	})
-
-	// 锡锭 and 铜锭 Fix
-	shapeless('thermal:tin_ingot', [
-		'9x #forge:nuggets/tin'
-	])
-
-	shapeless('minecraft:copper_ingot', [
-		'9x #forge:nuggets/copper'
-	])
 
 	// 铁桶
 	shaped('minecraft:bucket', [

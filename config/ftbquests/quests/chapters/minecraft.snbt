@@ -1184,6 +1184,12 @@
 		{
 			dependencies: ["25E790CA72DE9B02"]
 			id: "5FEA45A825190C61"
+			rewards: [{
+				count: 32
+				id: "034B0ACB43B26A86"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
 			tasks: [
 				{
 					count: 64L
@@ -1805,9 +1811,9 @@
 		}
 		{
 			dependencies: ["6792817D07E7A2CC"]
-			description: ["                 &4非常抱歉,蒸汽引擎被禁用啦!!!&r"]
 			icon: "create:steam_engine"
 			id: "685D9D553A6C2A4D"
+			subtitle: "&4非常抱歉,蒸汽引擎被禁用啦!!!&r"
 			tasks: [{
 				id: "10DAD177326E59F9"
 				title: "&4被骗啦!"

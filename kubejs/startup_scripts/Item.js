@@ -102,5 +102,6 @@ StartupEvents.registry('item', e => {
 	In_Item.forEach(([Name]) => {
 		e.create(ModID + 'in_' + Name, 'create:sequenced_assembly')
 			.tag(ModID + 'items')
+			.tag(ModID + 'incomplete_items')
 	})
 })

@@ -6,7 +6,7 @@ BlockEvents.modification(e => {
 })
 BlockEvents.modification(e => {
 	// 修改
-	let BlockNames = [
+	let Woods = [
 		'minecraft:dark_oak_log', 'minecraft:dark_oak_wood', 'minecraft:stripped_dark_oak_log', 'minecraft:stripped_dark_oak_wood',
 		'minecraft:oak_log', 'minecraft:oak_wood', 'minecraft:stripped_oak_log', 'minecraft:stripped_oak_wood',
 		'minecraft:acacia_log', 'minecraft:acacia_wood', 'minecraft:stripped_acacia_log', 'minecraft:stripped_acacia_wood',
@@ -31,7 +31,7 @@ BlockEvents.modification(e => {
 		'caupona:walnut_wood', 'caupona:walnut_log', 'caupona:stripped_walnut_wood', 'caupona:stripped_walnut_log',
 		'caupona:fig_log', 'caupona:wolfberry_log'
 	]
-	BlockNames.forEach(name => {
+	Woods.forEach(name => {
 		e.modify(name, block => {
 			block.requiresTool = true
 		})
