@@ -392,9 +392,12 @@ ServerEvents.recipes(e => {
 			e.shapeless(`9x ${Output}`,[`${Input}`])
 		})
 	}
+
 	// Fix trracotta crafting
-	campfire_cooking(
-		'minecraft:terracotta',
-		'minecraft:clay'
-	).cookingTime(180)
+	let campfirecooking = [
+		['minecraft:terracotta','minecraft:clay']
+	]
+	campfirecooking.forEach(([Output, Input]) => {
+		campfire_cooking(Output,Input).cookingTime(180)
+	})
 })
