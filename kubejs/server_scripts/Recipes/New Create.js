@@ -371,11 +371,10 @@ ServerEvents.recipes(e => {
 	shapeless('9x thermal:tin_ingot', [
 		'thermal:tin_block'
 	])
+	shapeless('9x thermal:tin_ingot', 'thermal:tin_block')
 
 	// Fix nuggets <=> ingots crafting
-	FixRecipes1('crafting_shapeless', [
-		'#forge:nuggets'
-	])
+	FixRecipes1('crafting_shapeless', '#forge:nuggets')
 
 	// Fix ingots <=> block crafting
 	FixRecipes2('crafting_shapeless', '#forge:ingots', '#forge:storage_blocks')
