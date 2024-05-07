@@ -45,3 +45,6 @@ net.minecraft.client.gui.screens.worldselection.EditWorldScreen {
 net.minecraft.client.gui.screens.TitleScreen {
 }
 
+net.minecraft.client.gui.screens.ShareToLanScreen {
+}
+
