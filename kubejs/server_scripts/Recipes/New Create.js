@@ -194,7 +194,7 @@ ServerEvents.recipes(e => {
 
 	// 轴承
 	shaped('2x new_create:primary_bearing', [
-		'C',	
+		'C',
 		'C'
 	], {
 		C: 'new_create:charred_cobblestone'
@@ -363,13 +363,13 @@ ServerEvents.recipes(e => {
 	}).id('minecraft:bucket')
 
 	// Fix Thermal tin_block <=> tin_ingot crafting
-	shapeless('9x thermal:tin_ingot','thermal:tin_block')
+	shapeless('9x thermal:tin_ingot', 'thermal:tin_block')
 
 	// Fix nuggets <=> ingots crafting
-	FixRecipes1('crafting_shapeless','#forge:nuggets')
+	FixRecipes1('crafting_shapeless', '#forge:nuggets')
 
 	// Fix ingots <=> block crafting
-	FixRecipes2('crafting_shapeless','#forge:ingots','#forge:storage_blocks')
+	FixRecipes2('crafting_shapeless', '#forge:ingots', '#forge:storage_blocks')
 
 	function FixRecipes1(type, output) {
 		e.forEachRecipe({
@@ -378,7 +378,7 @@ ServerEvents.recipes(e => {
 		}, recipe => {
 			var Output = recipe.getOriginalRecipeResult().getId()
 			var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
-			e.shapeless(Input,[`9x ${Output}`])
+			e.shapeless(Input, [`9x ${Output}`])
 		})
 	}
 	function FixRecipes2(type, output, input) {
@@ -389,15 +389,12 @@ ServerEvents.recipes(e => {
 		}, recipe => {
 			var Output = recipe.getOriginalRecipeResult().getId()
 			var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
-			e.shapeless(`9x ${Output}`,[`${Input}`])
+			e.shapeless(`9x ${Output}`, [`${Input}`])
 		})
 	}
 
 	// Fix trracotta crafting
-	let campfirecooking = [
-		['minecraft:terracotta','minecraft:clay']
-	]
-	campfirecooking.forEach(([Output, Input]) => {
-		campfire_cooking(Output,Input).cookingTime(180)
-	})
+	campfire_cooking('minecraft:terracotta', [
+		'minecraft:clay'
+	]).cookingTime(180)
 })
