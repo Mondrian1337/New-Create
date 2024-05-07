@@ -301,7 +301,7 @@
 				item: "new_create:infernal_mechanism"
 				type: "item"
 			}]
-			title: "多多少少有点邪门?"
+			title: "&c多多少少有点邪门?"
 			x: 1.0d
 			y: 2.0d
 		}

@@ -2233,34 +2233,6 @@
 			x: 43.5d
 			y: 25.0d
 		}
-		{
-			dependencies: ["75C1C1D7BC5E550D"]
-			hide: true
-			icon: "minecraft:music_disc_5"
-			id: "786713928A540192"
-			rewards: [
-				{
-					id: "2D2B4D42C2867292"
-					item: "minecraft:music_disc_5"
-					type: "item"
-				}
-				{
-					id: "31FBEB9094187E18"
-					item: "minecraft:jukebox"
-					type: "item"
-				}
-			]
-			shape: "gear"
-			size: 4.0d
-			subtitle: "&c五星红旗迎风飘扬"
-			tasks: [{
-				id: "0F3AD4D5D9CEA197"
-				title: "&c&l红色!"
-				type: "checkmark"
-			}]
-			x: 32.0d
-			y: 12.0d
-		}
 	]
 	title: "&6火与石之歌"
 }

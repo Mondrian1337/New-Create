@@ -103,6 +103,11 @@ ServerEvents.recipes(e => {
 		F: 'new_create:flint_knapp'
 	})
 
+	// 陶瓦
+	campfire_cooking('minecraft:terracotta', [
+		'minecraft:clay'
+	]).cookingTime(180)
+
 	// 草绳
 	shapeless('new_create:grass_string', [
 		'3x new_create:grass_fiber'
@@ -194,7 +199,7 @@ ServerEvents.recipes(e => {
 
 	// 轴承
 	shaped('2x new_create:primary_bearing', [
-		'C',	
+		'C',
 		'C'
 	], {
 		C: 'new_create:charred_cobblestone'
@@ -269,8 +274,8 @@ ServerEvents.recipes(e => {
 
 	// #原木=>石磨
 	milling([
-		Item.of('minecraft:stick').withChance(0.7),
-		Item.of('thermal:rubber').withChance(0.4)
+		Item.of('minecraft:stick', 2).withChance(0.7),
+		Item.of('thermal:rubber', 2).withChance(0.4)
 	], '#minecraft:logs')
 
 	// 平滑石头
@@ -343,7 +348,7 @@ ServerEvents.recipes(e => {
 	// 纯净石英
 	e.custom({
 		"type": "vintageimprovements:centrifugation",
-		"ingredients": [{ "tag": "forge:sand" },],
+		"ingredients": [{ "tag": "forge:sand" }],
 		"results": [
 			{ "item": "new_create:pure_quartz", "chance": 0.175 },
 			{ "item": "minecraft:stick", "chance": 0.4 },
@@ -359,42 +364,41 @@ ServerEvents.recipes(e => {
 		'C C',
 		' C '
 	], {
-		C: 'new_create:cast_iron_sheet'
+		C: '#forge:plates/iron'
 	}).id('minecraft:bucket')
 
 	// Fix Thermal tin_block <=> tin_ingot crafting
-	shapeless('9x thermal:tin_ingot','thermal:tin_block')
+	shapeless('9x thermal:tin_ingot', [
+		'thermal:tin_block'
+	])
 
 	// Fix nuggets <=> ingots crafting
-	FixRecipes1('crafting_shapeless','#forge:nuggets')
+	FixRecipes1('crafting_shapeless', [
+		'#forge:nuggets'
+	])
 
 	// Fix ingots <=> block crafting
-	FixRecipes2('crafting_shapeless','#forge:ingots','#forge:storage_blocks')
+	FixRecipes2('crafting_shapeless', '#forge:ingots', '#forge:storage_blocks')
 
-	function FixRecipes1(type, output) {
+	function FixRecipes1(Type, Output) {
 		e.forEachRecipe({
-			type: type,
-			output: output
+			type: Type,
+			output: Output
 		}, recipe => {
 			var Output = recipe.getOriginalRecipeResult().getId()
 			var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
-			e.shapeless(Input,[`9x ${Output}`])
+			e.shapeless(Input, [`9x ${Output}`])
 		})
 	}
-	function FixRecipes2(type, output, input) {
+	function FixRecipes2(Type, Output, Input) {
 		e.forEachRecipe({
-			type: type,
-			output: output,
-			input: input
+			type: Type,
+			output: Output,
+			input: Input
 		}, recipe => {
 			var Output = recipe.getOriginalRecipeResult().getId()
 			var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
-			e.shapeless(`9x ${Output}`,[`${Input}`])
+			e.shapeless(`9x ${Output}`, [`${Input}`])
 		})
 	}
-	// Fix trracotta crafting
-	campfire_cooking(
-		'minecraft:terracotta',
-		'minecraft:clay'
-	).cookingTime(180)
 })

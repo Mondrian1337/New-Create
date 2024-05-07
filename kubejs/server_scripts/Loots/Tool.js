@@ -11,10 +11,10 @@ LootJS.modifiers(loots => {
 		// 沙子=>尘土
 		['#forge:sand', '#new_create:hammer', 'new_create:dust']
 	]
-	HandLoots.forEach(([Block, Tools, Loots]) => {
-		loots.addBlockLootModifier(Block)
+	HandLoots.forEach(([Blocks, Tools, Loots]) => {
+		loots.addBlockLootModifier(Blocks)
 			.matchMainHand(Tools)
 			.addAlternativesLoot(LootEntry.of(Loots)
-				.when(c => c.randomChance(0.5)))
+				.when(loots => loots.randomChance(0.5)))
 	})
 })
