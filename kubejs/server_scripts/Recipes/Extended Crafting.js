@@ -34,7 +34,6 @@ ServerEvents.recipes(e => {
 		G: '#forge:ingots/iron'
 	})
 
-
 	//动力风扇
 	shaped_table('create:encased_fan', [
 		'ABBBA',

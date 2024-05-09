@@ -41,12 +41,11 @@ ServerEvents.recipes(e => {
 		type: 'crafting_shapeless',
 		input: '#minecraft:logs',
 		output: '#minecraft:planks'
-	}, (Recipes) => {
+	}, Recipes => {
 		let {
 			originalRecipeIngredients,
 			originalRecipeResult
-		} = Recipes;
-
+		} = Recipes
 		e.shapeless(
 			originalRecipeResult.withCount(2),
 			originalRecipeIngredients.toArray().concat([
@@ -149,7 +148,8 @@ ServerEvents.recipes(e => {
 
 	// 木棍
 	shapeless('4x minecraft:stick', [
-		'#minecraft:planks', '#new_create:saw'
+		'#minecraft:planks',
+		'#new_create:saw'
 	]).damageIngredient('#new_create:saw')
 
 	// 红砖
@@ -350,12 +350,12 @@ ServerEvents.recipes(e => {
 		"type": "vintageimprovements:centrifugation",
 		"ingredients": [{ "tag": "forge:sand" }],
 		"results": [
-			{ "item": "new_create:pure_quartz", "chance": 0.175 },
+			{ "item": "new_create:pure_quartz", "chance": 0.18 },
 			{ "item": "minecraft:stick", "chance": 0.4 },
 			{ "item": "minecraft:dead_bush", "chance": 0.3 },
 			{ "item": 'minecraft:gold_nugget', "chance": 0.3 },
 			{ "item": 'createaddition:electrum_nugget', "chance": 0.3 },
-			{ "item": 'new_create:saw_silicon', "chance": 0.03 }
+			{ "item": 'new_create:saw_silicon', "chance": 0.025 }
 		], "processingTime": 250
 	})
 
@@ -371,13 +371,14 @@ ServerEvents.recipes(e => {
 	shapeless('9x thermal:tin_ingot', [
 		'thermal:tin_block'
 	])
-	
+
 	// Fix nuggets <=> ingots crafting
 	FixRecipes1('crafting_shapeless', '#forge:nuggets')
 
 	// Fix ingots <=> block crafting
 	FixRecipes2('crafting_shapeless', '#forge:ingots', '#forge:storage_blocks')
 
+	// Fixxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Recipes
 	function FixRecipes1(Type, Output) {
 		e.forEachRecipe({
 			type: Type,

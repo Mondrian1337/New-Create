@@ -19,9 +19,3 @@ BlockEvents.rightClicked(e => {
 		player.runCommandSilent('item replace entity @s weapon.offhand with air')
 	}
 })
-
-ItemEvents.rightClicked('minecraft:player_head', e => {
-	let { player } = e.player
-	player.setAttributeBaseValue('generic.armor', 5)
-	e.item.count--
-})

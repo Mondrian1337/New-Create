@@ -11,7 +11,7 @@ LootJS.modifiers(loots => {
 	// 草丛掉杂草
 	loots.addBlockLootModifier('minecraft:grass')
 		.addAlternativesLoot(LootEntry.of('new_create:grass_fiber')
-			.when(loots => loots.randomChance(0.55)))
+			.when(loots => loots.randomChance(0.6)))
 
 	// 纯净石英
 	loots.addBlockLootModifier('#forge:sand')

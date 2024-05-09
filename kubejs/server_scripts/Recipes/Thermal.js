@@ -217,7 +217,7 @@ ServerEvents.recipes(e => {
 	bottler('create_dd:mithril_ingot', [
 		Fluid.of('new_create:mithril_fluid', 500),
 		'#forge:ingots/silver'
-	]).energy(1000)
+	]).energy(2000)
 
 	// 造石机
 	shaped('thermal:device_rock_gen', [
