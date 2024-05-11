@@ -17,7 +17,7 @@ ServerEvents.recipes(e => {
 		F: 'create:whisk'
 	})
 
-	//动力锟压机
+	// 动力锟压机
 	shaped_table('create:mechanical_press', [
 		'  A  ',
 		'BBABB',
@@ -34,8 +34,8 @@ ServerEvents.recipes(e => {
 		G: '#forge:ingots/iron'
 	})
 
-	//动力风扇
-	shaped_table('create:encased_fan', [
+	// 鼓风机
+	shaped_table('2x create:encased_fan', [
 		'ABBBA',
 		'BCDCB',
 		'BDEDB',

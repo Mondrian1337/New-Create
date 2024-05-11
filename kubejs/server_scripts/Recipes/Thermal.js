@@ -167,7 +167,7 @@ ServerEvents.recipes(e => {
 		A: '#forge:plates/industrial_iron',
 		B: '#forge:gears/constantan',
 		C: 'thermal:machine_frame',
-		D: 'new_create:cast_iron_sheet',
+		D: '#forge:plates/cast_iron',
 		E: 'immersiveengineering:circuit_board',
 		F: 'thermal:rf_coil'
 	})
@@ -297,7 +297,7 @@ ServerEvents.recipes(e => {
 		'FGF',
 		'IBI'
 	], {
-		P: 'new_create:cast_iron_sheet',
+		P: '#forge:plates/cast_iron',
 		C: 'new_create:cast_iron_casing',
 		F: 'create:fluid_pipe',
 		I: '#forge:ingots/cast_iron',

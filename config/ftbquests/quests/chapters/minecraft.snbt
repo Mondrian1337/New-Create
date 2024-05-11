@@ -1110,32 +1110,20 @@
 			]
 			id: "2D745F08BA3F92F7"
 			subtitle: "&b防腐液有配方,请看JEI"
-			tasks: [
-				{
-					id: "693C5F2BC62566BC"
-					item: "ceramicbucket:ceramic_bucket"
-					type: "item"
-				}
-				{
-					id: "4FBD9FF5174F89CE"
-					item: {
-						Count: 1b
-						id: "ceramicbucket:ceramic_bucket"
-						tag: {
-							Fluid: {
-								Amount: 1000
-								FluidName: "new_create:embalming_fluid"
-							}
+			tasks: [{
+				id: "4FBD9FF5174F89CE"
+				item: {
+					Count: 1b
+					id: "ceramicbucket:ceramic_bucket"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "new_create:embalming_fluid"
 						}
 					}
-					type: "item"
 				}
-				{
-					id: "5ADCBFC6349878A8"
-					item: "ceramicbucket:unfired_clay_bucket"
-					type: "item"
-				}
-			]
+				type: "item"
+			}]
 			x: 33.5d
 			y: 25.0d
 		}
@@ -1374,45 +1362,6 @@
 			y: 22.0d
 		}
 		{
-			dependencies: ["6823C3573F9FA2B6"]
-			description: [
-				"&a你在尝试新工具的时候不小心挖掘了它&r"
-				"&b这使你发现了新矿物的用途&r"
-			]
-			id: "5E8C0902F73A2D4A"
-			rewards: [{
-				count: 4
-				id: "4385E2DAEE1B0160"
-				item: "create:crushed_raw_zinc"
-				type: "item"
-			}]
-			tasks: [{
-				id: "52525ED3DFA7F122"
-				item: "create:crushed_raw_zinc"
-				type: "item"
-			}]
-			title: "&6新的矿物!"
-			x: 45.0d
-			y: 20.0d
-		}
-		{
-			dependencies: ["3ED4088F5DEB249F"]
-			id: "6823C3573F9FA2B6"
-			tasks: [{
-				id: "63AA1715013C790A"
-				item: {
-					Count: 1b
-					id: "minecraft:iron_pickaxe"
-					tag: {
-						Damage: 0
-					}
-				}
-				type: "item"
-			}]
-			x: 46.0d
-			y: 20.0d
-		}
-		{
 			dependencies: ["751A430A5BF08E1C"]
 			hide_dependency_lines: true
 			icon: "minecraft:netherrack"
@@ -1429,7 +1378,7 @@
 			y: 18.0d
 		}
 		{
-			dependencies: ["6823C3573F9FA2B6"]
+			dependencies: ["3ED4088F5DEB249F"]
 			id: "0331E2E5A91C4EA0"
 			tasks: [{
 				id: "212AE53270DF77D9"
@@ -1445,7 +1394,7 @@
 			}]
 			title: "&6亮闪闪！"
 			x: 46.0d
-			y: 19.0d
+			y: 20.0d
 		}
 		{
 			dependencies: ["0331E2E5A91C4EA0"]
@@ -1462,7 +1411,7 @@
 				title: "黑曜石"
 				type: "item"
 			}]
-			x: 47.0d
+			x: 46.0d
 			y: 19.0d
 		}
 		{
@@ -1942,7 +1891,7 @@
 			]
 			title: "&6生火"
 			x: 47.0d
-			y: 20.0d
+			y: 19.0d
 		}
 		{
 			dependencies: ["66A3B9A7108CF0D5"]
@@ -2203,26 +2152,38 @@
 		{
 			dependencies: ["46AB72C31B2C5522"]
 			id: "0B6372CB96B584E4"
-			tasks: [{
-				id: "05EEBCCA6F2EF88E"
-				item: {
-					Count: 1b
-					id: "ceramicbucket:ceramic_bucket"
-					tag: {
-						Fluid: {
-							Amount: 1000
-							FluidName: "thermal:latex"
+			tasks: [
+				{
+					id: "05EEBCCA6F2EF88E"
+					item: {
+						Count: 1b
+						id: "ceramicbucket:ceramic_bucket"
+						tag: {
+							Fluid: {
+								Amount: 1000
+								FluidName: "thermal:latex"
+							}
 						}
 					}
+					type: "item"
 				}
-				type: "item"
-			}]
+				{
+					id: "1EB17A7C188EF17E"
+					item: "ceramicbucket:ceramic_bucket"
+					type: "item"
+				}
+				{
+					id: "0384CAA33C39BFAA"
+					item: "ceramicbucket:unfired_clay_bucket"
+					type: "item"
+				}
+			]
 			title: "好黏.."
 			x: 32.0d
 			y: 23.5d
 		}
 		{
-			dependencies: ["3ED4088F5DEB249F"]
+			dependencies: ["797CC6360C318986"]
 			id: "14D8A85A958660A7"
 			subtitle: "&b这玩意比黏土的好使多了"
 			tasks: [{
@@ -2232,6 +2193,34 @@
 			}]
 			x: 43.5d
 			y: 25.0d
+		}
+		{
+			dependencies: ["75C1C1D7BC5E550D"]
+			hide: true
+			icon: "ncdc:gechangzuguo"
+			id: "05FFB9C4A2FC377C"
+			rewards: [
+				{
+					id: "3B60594249BF267B"
+					item: "ncdc:gechangzuguo"
+					type: "item"
+				}
+				{
+					id: "4E2A200ABCBEBB35"
+					item: "minecraft:jukebox"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 3.0d
+			subtitle: "&c五星红旗迎风飘扬"
+			tasks: [{
+				id: "5E77AD93348DFDC3"
+				type: "checkmark"
+			}]
+			title: "&c红色!"
+			x: 30.0d
+			y: 14.0d
 		}
 	]
 	title: "&6火与石之歌"

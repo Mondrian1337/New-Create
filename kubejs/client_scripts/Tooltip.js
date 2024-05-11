@@ -11,7 +11,13 @@ ItemEvents.tooltip(tooltip => {
 		// 木棍
 		['minecraft:stick', 'tooltip.mc.stick'],
 		// 熔化锅
-		['melter:melter', 'tooltip.mt.melter']
+		['melter:melter', 'tooltip.mt.melter'],
+		// 高炉
+		['minecraft:blast_furnace', 'tooltip.mc.blast_furnace'],
+		// 高炉核心
+		['new_create:furnace_core', 'tooltip.nc.furnace_core'],
+		// 熔炉
+		['minecraft:furnace', 'tooltip.mc.furnace']
 	]
 	Tooltip.forEach(([Name, Key]) => {
 		tooltip.add(Name, [Text.translate(Key)])

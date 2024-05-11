@@ -210,6 +210,16 @@ ServerEvents.recipes(e => {
 		'#forge:netherrack'
 	])
 
+	// 熔炉
+	shaped('minecraft:furnace', [
+		'SSS',
+		'SCS',
+		'SSS'
+	], {
+		S: '#forge:cobblestone',
+		C: '#minecraft:coals'
+	}).id('minecraft:furnace')
+
 	// 防腐液 
 	e.custom({
 		"type": "caupona:boiling",

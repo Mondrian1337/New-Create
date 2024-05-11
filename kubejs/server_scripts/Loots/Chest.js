@@ -12,7 +12,10 @@ LootJS.modifiers(loots => {
 		'minecraft:fire_charge',
 		'minecraft:obsidian',
 		'#minecraft:logs',
-		'#forge:tools'
+		'#forge:tools',
+		'minecraft:blast_furnace',
+		'minecraft:furnace',
+		'minecraft:smoker'
 	]
 	ChestLoots.forEach(([Name]) => {
 		loots.addLootTypeModifier(LootType.CHEST)

@@ -60,10 +60,7 @@
 		}
 		{
 			dependencies: ["50E2E4BDD019F814"]
-			description: [
-				"&c这是一个纯科技包,没有添加任何让怪物增强的Mod"
-				"&b并且添加的少许地牢Mod也只是为了让你们可以去薅资源"
-			]
+			description: ["&c这是一个纯科技包,没有添加任何可以让怪物增强的Mod"]
 			icon: "create:cogwheel"
 			id: "690E279CC78435B1"
 			rewards: [{
@@ -105,7 +102,7 @@
 		{
 			dependencies: ["50E2E4BDD019F814"]
 			description: [
-				"&e使用了 FTB Chunk"
+				"&e大概率是使用了 FTB Chunk"
 				"&a如果机械动力的机械手无法放置物品,请检查你是否使用 FTB Chunk 圈了区块"
 				"&9圈了区块后机械动力的许多机械无法正常运行，请删除你所圈的区块"
 			]
@@ -173,7 +170,7 @@
 		{
 			dependencies: ["50E2E4BDD019F814"]
 			description: [
-				"&b本包添加了部分多方块合成的结构以及多方块机器,这些在&cJEI&b中不会正常显示,摁住&c[W]&r进入&c[思索]&r&b界面可以查看搭建方式"
+				"&b本包添加了部分多方块合成的结构以及多方块机器,这些在&cJEI&b中不会正常显示,摁住&c[W]&r&b进入&c[思索]&r&b界面可以查看搭建方式"
 				"&b[思索]界面是可以翻页的,多留意一下"
 			]
 			icon: "create:empty_schematic"
@@ -194,20 +191,8 @@
 		}
 		{
 			dependencies: ["50E2E4BDD019F814"]
-			description: [
-				"&b你可以使用本包中的 FTBteam 与您的联机伙伴组队"
-				"&b并且同时可以同步团队内的任务进度与已认领的区块"
-				"&b首先要创建一个队伍,使用"
-				"&b/ftbteam party create [队伍名称或留空]"
-				"&b来创建一个队伍"
-				"&b接着,使用"
-				"&b/ftbteam party invite [玩家 ID]"
-				"&b来邀请你的伙伴进入您的队伍。"
-				"&b被邀请的玩家只要点击聊天栏内的高亮文本或使用"
-				"&b[这段我忘了指令你自己填]"
-				"&b同意加入队伍即可"
-			]
-			icon: "create:brass_hand"
+			description: ["&b整合包为了防止跳阶段,因此将村民交易Ban掉了"]
+			icon: "minecraft:emerald"
 			id: "753458F0B03FEEAD"
 			rewards: [{
 				id: "45F60FB4FA63F492"
@@ -217,9 +202,10 @@
 			shape: "rsquare"
 			tasks: [{
 				id: "1979CE495CB92D79"
-				title: "关于组队"
+				title: "交易"
 				type: "checkmark"
 			}]
+			title: "&c为什么我没法和村民交易?"
 			x: -1.5d
 			y: 1.5d
 		}

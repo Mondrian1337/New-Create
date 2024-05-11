@@ -1,5 +1,5 @@
 Ponder.registry(e => {
-	e.create('minecraft:flint')
+	e.create(['minecraft:flint', 'minecraft:stick'])
 		.scene('minecraft:stick', '生火', 'new_create:fire', (scene, until) => {
 			scene.showBasePlate()
 			scene.idle(20)
