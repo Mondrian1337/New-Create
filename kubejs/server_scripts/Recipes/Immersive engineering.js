@@ -42,8 +42,7 @@ ServerEvents.recipes(e => {
 		"result": {
 			"base_ingredient": { "tag": "forge:ingots/copper" },
 			"conut": 1
-		},
-		"time": 300
+		}, "time": 300
 	})
 
 	// 铸铁
@@ -54,8 +53,7 @@ ServerEvents.recipes(e => {
 		"result": {
 			"base_ingredient": { "item": "new_create:cast_iron_ingot" },
 			"conut": 1
-		},
-		"time": 150
+		}, "time": 150
 	})
 
 	// 铸铁板
@@ -66,8 +64,7 @@ ServerEvents.recipes(e => {
 		"result": {
 			"base_ingredient": { "item": "new_create:cast_iron_sheet" },
 			"conut": 1
-		},
-		"time": 150
+		}, "time": 150
 	})
 
 	// 工程师锤
@@ -132,8 +129,7 @@ ServerEvents.recipes(e => {
 		"result": {
 			"count": 4,
 			"item": 'thermal:bronze_ingot'
-		},
-		"time": 300
+		}, "time": 300
 	})
 
 	// 高炉砖
@@ -199,10 +195,7 @@ ServerEvents.recipes(e => {
 		"type": "immersiveengineering:blueprint",
 		"category": "molds",
 		"inputs": [
-			{
-				"base_ingredient":
-					{ "tag": "forge:plates/steel" }, "count": 3
-			},
+			{ "base_ingredient": { "tag": "forge:plates/steel" }, "count": 3 },
 			{ "item": "immersiveengineering:wirecutter" }
 		],
 		"result": { "item": 'new_create:mold_block' }
@@ -221,10 +214,7 @@ ServerEvents.recipes(e => {
 	e.custom({
 		"type": "immersiveengineering:metal_press",
 		"energy": 2400,
-		"input": {
-			"base_ingredient": { "tag": 'forge:ingots/steel' },
-			"count": 4
-		},
+		"input": { "base_ingredient": { "tag": 'forge:ingots/steel' }, "count": 4 },
 		"mold": 'new_create:mold_block',
 		"result": { "item": 'create_dd:steel_casing' }
 	})
@@ -265,9 +255,9 @@ ServerEvents.recipes(e => {
 	e.custom({
 		"type": "immersiveengineering:mixer",
 		"energy": 2000,
-		"fluid": { "amount": 500, "tag": 'thermal:refined_fuel' },
+		"fluid": { "tag": 'thermal:refined_fuel', "amount": 500 },
 		"inputs": [{ "tag": 'forge:tar' }],
-		"result": { "amount": 500, "fluid": 'new_create:high_grade_refined_oil' }
+		"result": { "fluid": 'new_create:high_grade_refined_oil', "amount": 500 }
 	})
 
 	// 秘银溶液

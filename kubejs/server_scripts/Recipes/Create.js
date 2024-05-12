@@ -34,6 +34,8 @@ ServerEvents.recipes(e => {
 		smoking,
 		stonecutting
 	} = e.recipes.minecraft
+	// 熔化
+	const { melting } = e.recipes.melter
 
 	//手摇曲柄
 	shaped('create:hand_crank', [
@@ -211,6 +213,10 @@ ServerEvents.recipes(e => {
 		'new_create:andesite_compound',
 		Fluid.of('minecraft:water', 1000)
 	]).heated()
+
+	melting(Fluid.of('new_create:andesite_compound_fluid', 100), [
+		'#create:stone_types/andesite'
+	]).minimumHeat(10)
 
 	//注液器
 	shaped('create:spout', [
@@ -418,7 +424,7 @@ ServerEvents.recipes(e => {
 		'DBC',
 		' A '
 	], {
-		A: 'new_create:cast_iron_sheet',
+		A: '#forge:plates/cast_iron',
 		B: '#forge:nuggets/iron',
 		C: '#new_create:hammer',
 		D: '#new_create:saw'
@@ -489,7 +495,7 @@ ServerEvents.recipes(e => {
 		'EBCBE'
 	], {
 		A: 'new_create:carbon_plate',
-		B: 'new_create:cast_iron_sheet',
+		B: '#forge:plates/cast_iron',
 		C: 'immersiveengineering:coil_lv',
 		D: 'create:shaft',
 		E: '#forge:plates/brass',
@@ -502,7 +508,7 @@ ServerEvents.recipes(e => {
 		'BCB',
 		'AAA'
 	], {
-		A: 'new_create:cast_iron_sheet',
+		A: '#forge:plates/cast_iron',
 		B: 'new_create:carbon_plate',
 		C: 'new_create:carbon_rod'
 	})
@@ -657,7 +663,7 @@ ServerEvents.recipes(e => {
 		'CDC',
 		'ABA'
 	], {
-		A: 'new_create:cast_iron_sheet',
+		A: '#forge:plates/cast_iron',
 		B: 'new_create:carbon_plate',
 		C: '#forge:ingots/zinc',
 		D: 'minecraft:lead'
@@ -668,7 +674,7 @@ ServerEvents.recipes(e => {
 		'AAA',
 		'BBB'
 	], {
-		A: 'new_create:cast_iron_sheet',
+		A: '#forge:plates/cast_iron',
 		B: 'create:andesite_alloy'
 	}).id('create:crafting/kinetics/metal_girder')
 

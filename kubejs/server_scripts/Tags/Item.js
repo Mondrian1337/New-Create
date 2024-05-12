@@ -113,6 +113,11 @@ ServerEvents.tags('item', e => {
 		'new_create:cast_iron_block'
 	])
 
+	// 铸铁板
+	e.add('forge:plates/cast_iron', [
+		'new_create:cast_iron_sheet'
+	])
+
 	// 机壳
 	e.add('create:casing', [
 		'new_create:cast_iron_casing'

@@ -23,7 +23,6 @@ ServerEvents.recipes(e => {
 		'minecraft:stick',
 		'immersiveengineering:hammer',
 		'#forge:ingots/copper',
-		'minecraft:furnace',
 		'notreepunching:flint_axe',
 		'notreepunching:flint_pickaxe',
 		'notreepunching:flint_hoe',
