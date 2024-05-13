@@ -66,6 +66,7 @@ ServerEvents.recipes(e => {
 		smelter_recycle,
 		stirling_fuel
 	} = e.recipes.thermal
+	
 	// 熔化
 	const { melting } = e.recipes.melter
 
