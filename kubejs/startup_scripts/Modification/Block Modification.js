@@ -30,7 +30,7 @@ BlockEvents.modification(e => {
 		'caupona:walnut_wood', 'caupona:walnut_log', 'caupona:stripped_walnut_wood', 'caupona:stripped_walnut_log',
 		'caupona:fig_log', 'caupona:wolfberry_log'
 	]
-	Woods.forEach(([Name]) => {
+	Woods.forEach(Name => {
 		e.modify(Name, modify => {
 			modify.requiresTool = true
 		})

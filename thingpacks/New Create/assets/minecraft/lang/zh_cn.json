@@ -8,12 +8,10 @@
 	"item.minecraft.iron_chestplate": "铸铁胸甲",
 	"item.minecraft.iron_leggings": "铸铁裤腿",
 	"item.minecraft.iron_boots": "铸铁靴子",
-	"item.minecraft.disc_fragment_5.desc": "音乐唱片 - §c§l歌唱祖国",
-	"item.minecraft.music_disc_5.desc": "§c§l王莘 - 歌唱祖国",
 	"block.minecraft.crafting_table": "工作台",
 	"block.minecraft.furnace": "黑石熔炉",
 	"block.minecraft.soul_campfire": "灵魂篝火",
-	"block.minecraft:campfire": "篝火",
+	"block.minecraft.campfire": "篝火",
 	"advancements.story.obtain_armor.description": "用铸铁盔甲来保护你自己",
 	"subtitles.item.armor.equip_iron": "铸铁盔甲:铿锵",
 	"container.furnace": "黑石熔炉"

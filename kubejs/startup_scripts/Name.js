@@ -5,6 +5,6 @@ let DisplayName = [
 	['KubeJS', 'New Create'],
 	['create: things and misc', 'Create: Things And Misc']
 ]
-DisplayName.forEach(([Mod_id, DisplayName]) => {
-	Platform.getInfo(Mod_id).name = DisplayName
+DisplayName.forEach(([ModID, DisplayName]) => {
+	Platform.getInfo(ModID).name = DisplayName
 })

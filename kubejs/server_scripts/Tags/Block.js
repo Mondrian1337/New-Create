@@ -4,9 +4,7 @@ ServerEvents.tags('block', e => {
 		'new_create:cast_iron_casing',
 		'flopper:flopper',
 		'#caupona:stew_pot',
-		'#caupona:stoves'
+		'#caupona:stoves',
+		'melter:melter'
 	])
-
-	// 石镐
-	
 })
