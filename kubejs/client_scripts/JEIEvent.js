@@ -50,12 +50,3 @@ JEIEvents.hideItems(e => {
 		e.hide(Item)
 	})
 })
-// 添加Fluid到JEI
-JEIEvents.addFluids(e => {
-	let Fluid = [
-
-	]
-	Fluid.forEach(e => {
-		e.add(Fluid)
-	})
-})

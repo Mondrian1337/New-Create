@@ -216,7 +216,7 @@ ServerEvents.recipes(e => {
 
 	melting(Fluid.of('new_create:andesite_compound_fluid', 100), [
 		'#create:stone_types/andesite'
-	]).minimumHeat(10)
+	]).minimumHeat(8)
 
 	//注液器
 	shaped('create:spout', [
@@ -637,6 +637,22 @@ ServerEvents.recipes(e => {
 		'2x mekanism:dust_coal',
 		Fluid.of('new_create:working_fluid', 125)
 	]).heated()
+
+	// 烤箱
+	shaped('ratatouille:oven', [
+		' C ',
+		'CGC',
+		' C '
+	], {
+		C: '#forge:plates/cast_iron',
+		G: '#forge:glass'
+	}).id('ratatouille:oven')
+
+	// 烤箱鼓风机
+	shapeless('ratatouille:oven_fan', [
+		'create:encased_fan',
+		'create:cogwheel'
+	]).id('ratatouille:oven_fan')
 
 	// 铁粉
 	crushing([

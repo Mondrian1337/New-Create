@@ -12,6 +12,9 @@
 	"item.minecraft.music_disc_5.desc": "§c§l王莘 - 歌唱祖国",
 	"block.minecraft.crafting_table": "工作台",
 	"block.minecraft.furnace": "黑石熔炉",
+	"block.minecraft.soul_campfire": "灵魂篝火",
+	"block.minecraft:campfire": "篝火",
 	"advancements.story.obtain_armor.description": "用铸铁盔甲来保护你自己",
-	"subtitles.item.armor.equip_iron": "铸铁盔甲:铿锵"
+	"subtitles.item.armor.equip_iron": "铸铁盔甲:铿锵",
+	"container.furnace": "黑石熔炉"
 }

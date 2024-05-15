@@ -175,11 +175,11 @@ ServerEvents.recipes(e => {
 
 	// 动力矿车
 	shaped('minecraft:furnace_minecart', [
-		'CCC',
-		'CMC',
-		'CCC'
+		'BBB',
+		'BMB',
+		'BBB'
 	], {
-		C: '#forge:cobblestone',
+		B: 'minecraft:blackstone',
 		M: 'minecraft:minecart'
 	}).id('minecraft:furnace_minecart')
 
@@ -212,11 +212,11 @@ ServerEvents.recipes(e => {
 
 	// 熔炉
 	shaped('minecraft:furnace', [
-		'SSS',
-		'SCS',
-		'SSS'
+		'BBB',
+		'BCB',
+		'BBB'
 	], {
-		S: '#forge:cobblestone',
+		B: 'minecraft:blackstone',
 		C: '#minecraft:coals'
 	}).id('minecraft:furnace')
 

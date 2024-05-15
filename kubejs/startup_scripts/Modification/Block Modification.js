@@ -1,11 +1,10 @@
 BlockEvents.modification(e => {
-	// fix
+	// Fixxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 	e.modify('melter:melter', block => {
-		block.destroySpeed = 3
+		block.destroySpeed = 1
 	})
 })
 BlockEvents.modification(e => {
-	// 修改
 	let Woods = [
 		'minecraft:dark_oak_log', 'minecraft:dark_oak_wood', 'minecraft:stripped_dark_oak_log', 'minecraft:stripped_dark_oak_wood',
 		'minecraft:oak_log', 'minecraft:oak_wood', 'minecraft:stripped_oak_log', 'minecraft:stripped_oak_wood',
@@ -31,9 +30,9 @@ BlockEvents.modification(e => {
 		'caupona:walnut_wood', 'caupona:walnut_log', 'caupona:stripped_walnut_wood', 'caupona:stripped_walnut_log',
 		'caupona:fig_log', 'caupona:wolfberry_log'
 	]
-	Woods.forEach(([name]) => {
-		e.modify(name, block => {
-			block.requiresTool = true
+	Woods.forEach(([Name]) => {
+		e.modify(Name, modify => {
+			modify.requiresTool = true
 		})
 	})
 })
