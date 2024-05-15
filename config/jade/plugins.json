@@ -62,8 +62,8 @@
     "registry_name": "ADVANCED_TOOLTIPS",
     "mod_name": true
   },
-  "lootr": {
-    "info": true
+  "unlitcampfire": {
+    "campfireinfo": true
   },
   "custommachinery": {
     "machine_component_provider": true

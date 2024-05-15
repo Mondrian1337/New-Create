@@ -147,7 +147,7 @@ ServerEvents.recipes(e => {
 	}).damageIngredient('#new_create:tools')
 
 	// 木棍
-	shapeless('4x minecraft:stick', [
+	shapeless('6x minecraft:stick', [
 		'#minecraft:planks',
 		'#new_create:saw'
 	]).damageIngredient('#new_create:saw')
