@@ -27,7 +27,7 @@ BlockEvents.modification(e => {
 		"create_dd:stripped_rubber_log", "create_dd:rubber_wood", "create_dd:stripped_rubber_wood", "caupona:walnut_wood",
 		"caupona:walnut_log", "caupona:stripped_walnut_wood", "caupona:stripped_walnut_log", "caupona:fig_log",
 		"caupona:wolfberry_log"
-	]                      //  ↓ 神奇的柒月使用了([Name]),导致失效
+	]
 	Woods.forEach(Name => {
 		e.modify(Name, modify => {
 			modify.requiresTool = true
