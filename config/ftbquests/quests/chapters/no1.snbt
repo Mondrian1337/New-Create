@@ -460,19 +460,6 @@
 			x: 3.0d
 			y: 2.0d
 		}
-		{
-			dependencies: ["015E76603457CFF2"]
-			id: "49AC7CD17CF5AF37"
-			shape: "gear"
-			subtitle: "感谢你在测试的过程中发现的全部bug"
-			tasks: [{
-				id: "32E350A4A24869BA"
-				title: "&b这就是0.8-Alpha的全部内容了!"
-				type: "checkmark"
-			}]
-			x: 3.0d
-			y: 1.0d
-		}
 	]
 	title: "No.3-1 IE + Thermal"
 }

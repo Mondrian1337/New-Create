@@ -124,7 +124,8 @@ ServerEvents.recipes(e => {
 		'thermal_extra:soul_sand_dust',
 		'create:large_cogwheel',
 		'minecraft:weeping_vines',
-		'minecraft:twisting_vines'
+		'minecraft:twisting_vines',
+		'ae2:charger'
 	]
 	Output.forEach(Item => {
 		e.remove({ output: Item })
