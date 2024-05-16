@@ -1,5 +1,5 @@
 LootJS.modifiers(loots => {
-	// 删除战利品箱子里面对应的物品
+	// 删除箱子战利品
 	let ChestLoots = [
 		'minecraft:iron_ingot',
 		'minecraft:gold_ingot',
@@ -13,11 +13,12 @@ LootJS.modifiers(loots => {
 		'minecraft:obsidian',
 		'#minecraft:logs',
 		'#forge:tools',
+		'#forge:armor',
 		'minecraft:blast_furnace',
 		'minecraft:furnace',
 		'minecraft:smoker'
 	]
-	ChestLoots.forEach(([Name]) => {
+	ChestLoots.forEach(Name => {
 		loots.addLootTypeModifier(LootType.CHEST)
 			.removeLoot(Name)
 	})

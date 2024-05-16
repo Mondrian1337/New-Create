@@ -59,6 +59,12 @@ ServerEvents.recipes(e => {
 		'new_create:dust'
 	])
 
+	// 鸡蛋混合液
+	compacting([
+		Fluid.of('new_create:egg_mixture_fluid', 5),
+		'new_create:eggshell'
+	], '#forge:eggs')
+
 	// 木炭
 	campfire_cooking('minecraft:charcoal', [
 		'#minecraft:logs'
@@ -106,6 +112,31 @@ ServerEvents.recipes(e => {
 	campfire_cooking('minecraft:terracotta', [
 		'minecraft:clay'
 	]).cookingTime(180)
+
+	// 白面
+	milling('new_create:white_flour', [
+		'#minecraft:terracotta'
+	])
+	crushing([
+		Item.of('new_create:white_flour').withChance(1),
+		Item.of('new_create:white_flour').withChance(0.3)
+	], '#minecraft:terracotta')
+
+	// 未加工炒祺
+	mixing([
+		Item.of('6x new_create:in_chaochi').withChance(1),
+		Item.of('new_create:in_chaochi').withChance(0.3)
+	], [
+		Fluid.of('new_create:egg_mixture_fluid', 10),
+		Fluid.of('minecraft:water', 100),
+		'2x #forge:dusts/salt',
+		'minecraft:sugar'
+	])
+
+	// 炒祺
+	mixing('new_create:chaochi', [
+		'new_create:in_chaochi'
+	]).heated()
 
 	// 草绳
 	shapeless('new_create:grass_string', [

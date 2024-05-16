@@ -1,4 +1,4 @@
-ItemEvents.tooltip(tooltip => {
+ItemEvents.tooltip(tip => {
 	let Tooltip = [
 		// 草绳
 		['new_create:grass_string', 'tooltip.nc.grass_string'],
@@ -20,15 +20,6 @@ ItemEvents.tooltip(tooltip => {
 		['minecraft:furnace', 'tooltip.mc.furnace']
 	]
 	Tooltip.forEach(([Name, Key]) => {
-		tooltip.add(Name, [Text.translate(Key)])
-	})
-
-	// 燧石工具
-	const flintTools = ['sword', 'pickaxe', 'axe', 'handaxe', 'shovel']
-
-	flintTools.forEach(tools => {
-		tooltip.add(`new_create:flint_${tools}`, [
-			Text.translate('tooltip.nc.flint_tools')
-		])
+		tip.add(Name, [Text.translate(Key)])
 	})
 })

@@ -51,4 +51,11 @@ StartupEvents.registry('fluid', e => {
 		.noBlock()
 		.flowingTexture(ModID + 'fluid/glass_flowing')
 		.stillTexture(ModID + 'fluid/glass_still')
+
+	// 鸡蛋混合液
+	e.create(ModID + 'egg_mixture_fluid')
+		.tag(ModID + 'fluid')
+		.noBlock()
+		.flowingTexture(ModID + 'fluid/egg_mixture_fluid_flowing')
+		.stillTexture(ModID + 'fluid/egg_mixture_fluid_stilling')
 })

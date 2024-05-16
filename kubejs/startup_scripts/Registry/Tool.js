@@ -49,6 +49,7 @@ StartupEvents.registry('item', e => {
 			.rarity(Rarity)
 			.glow(Glow)
 			.unstackable()
+			.tag('forge:tools')
 			.tag(ModID + 'items')
 			.tag(ModID + 'tools')
 			.modifyTier(tool => {
