@@ -63,7 +63,7 @@ StartupEvents.registry('item', e => {
 		'infernal_mechanism', // 下届构件(未完成)
 		'kinetic_mechanism', // 动力构件(未完成)
 		'sealed_mechanism', // 密封构件(未完成)
-		'sturdy_mechanism', //坚固构件(未完成)
+		'sturdy_mechanism', // 坚固构件(未完成)
 	]
 	In_Item.forEach(Name => {
 		e.create(ModID + 'in_' + Name, 'create:sequenced_assembly')
