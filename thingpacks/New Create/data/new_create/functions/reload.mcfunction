@@ -1,1 +1,1 @@
-function daycountertitlemessage:initialize
+function new_create:initialize
