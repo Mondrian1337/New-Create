@@ -19,7 +19,6 @@ StartupEvents.registry('item', e => {
 		/*
 		['rainbow_mooncoin', 'epic', false], // 彩虹月币
 		['mooncoin', 'rare', false], // 月币
-		//
 		['0', 'uncommon', false],
 		['1', 'uncommon', false],
 		['2', 'uncommon', false],
