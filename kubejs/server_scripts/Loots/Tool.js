@@ -1,5 +1,5 @@
 LootJS.modifiers(loots => {
-	let HandLoots = [
+	let ToolLoots = [
 		// 圆石=>砂砾
 		['#forge:cobblestone', '#new_create:hammer', 'minecraft:gravel', 0.5],
 		// 石头=>砂砾
@@ -13,7 +13,7 @@ LootJS.modifiers(loots => {
 		// 草=>杂草
 		['minecraft:grass', '#forge:tools/knives', 'new_create:grass_fiber', 1.0]
 	]
-	HandLoots.forEach(([Blocks, Tools, Loots, Chance]) => {
+	ToolLoots.forEach(([Blocks, Tools, Loots, Chance]) => {
 		loots.addBlockLootModifier(Blocks)
 			.matchMainHand(Tools)
 			.addAlternativesLoot(LootEntry.of(Loots)
