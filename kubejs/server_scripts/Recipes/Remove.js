@@ -153,6 +153,7 @@ ServerEvents.recipes(e => {
 
 	// 删除id
 	let Remove_ID = [
+		'create:milling/charcoal',
 		'thermal:devices/tree_extractor/tree_extractor_dark_oak',
 		'thermal:devices/tree_extractor/tree_extractor_jungle',
 		'create:milling/gravel',
