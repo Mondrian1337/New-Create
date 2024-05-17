@@ -73,7 +73,11 @@ Ponder.registry(e => {
 
 			scene.idleSeconds(1)
 			scene.world.setBlocks([2, 1, 2], 'minecraft:lava')
-			scene.world.showSection([2, 1, 2], Direction.UP)
+			scene.world.setBlocks([2, 1, 3], 'create:framed_glass')
+			scene.world.setBlocks([3, 1, 2], 'create:framed_glass')
+			scene.world.setBlocks([2, 1, 1], 'create:framed_glass')
+			scene.world.setBlocks([1, 1, 2], 'create:framed_glass')
+			scene.world.showSection([3, 1, 1, 1, 1, 3], Direction.UP)
 			scene.text(20, '§b添加热量', [2, 2, 2])
 
 			scene.idleSeconds(1)

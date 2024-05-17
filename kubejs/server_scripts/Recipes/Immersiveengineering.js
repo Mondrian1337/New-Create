@@ -1,38 +1,5 @@
 ServerEvents.recipes(e => {
-	// Create
-	const {
-		compacting,
-		crushing,
-		cutting,
-		deploying,
-		emptying,
-		filling,
-		haunting,
-		mechanical_crafting,
-		milling,
-		mixing,
-		pressing,
-		sandpaper_polishing,
-		sequenced_assembly,
-		splashing,
-		item_application
-	} = e.recipes.create
-	// KubeJS
-	const {
-		shaped,
-		shapeless
-	} = e.recipes.kubejs
-	// Minecraft
-	const {
-		blasting,
-		campfire_cooking,
-		crafting_shaped,
-		crafting_shapeless,
-		smelting,
-		smithing_transform,
-		smoking,
-		stonecutting
-	} = e.recipes.minecraft
+	const { create, create_mechanical_extruder, immersiveengineering, kubejs, melter, minecraft, thermal } = e.recipes
 
 	// 铜锭
 	e.custom({
@@ -68,7 +35,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 工程师锤
-	shaped("immersiveengineering:hammer", [
+	kubejs.shaped("immersiveengineering:hammer", [
 		' AB',
 		'ECA',
 		'CF '
@@ -81,7 +48,7 @@ ServerEvents.recipes(e => {
 	}).damageIngredient('#new_create:tools')
 
 	// 防腐木板
-	shaped('8x immersiveengineering:treated_wood_horizontal', [
+	kubejs.shaped('8x immersiveengineering:treated_wood_horizontal', [
 		'PPP',
 		'PCP',
 		'PPP'
@@ -94,20 +61,20 @@ ServerEvents.recipes(e => {
 		'{Fluid:{Amount:1000,FluidName:"new_create:embalming_fluid"}}')
 		.weakNBT(), 'ceramicbucket:ceramic_bucket')
 
-	mixing('8x immersiveengineering:treated_wood_horizontal', [
+	create.mixing('8x immersiveengineering:treated_wood_horizontal', [
 		'8x #minecraft:planks',
 		{ fluidTag: 'forge:creosote', amount: 1000 }
 	]).id('immersiveengineering:crafting/treated_wood_horizontal')
 
-	mixing('immersiveengineering:treated_wood_horizontal', [
+	create.mixing('immersiveengineering:treated_wood_horizontal', [
 		'#minecraft:planks',
 		{ fluidTag: "forge:creosote", amount: 125 }
 	])
 
-	filling('immersiveengineering:treated_wood_horizontal', [
+	create.filling('immersiveengineering:treated_wood_horizontal', [
 		'#minecraft:planks',
 		{ fluidTag: "forge:creosote", amount: 125 }
-	]).id('createaddition:filling/treated_wood_planks')
+	]).id('createaddition:create.filling/treated_wood_planks')
 
 	// 锡锭
 	e.custom({
@@ -133,7 +100,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 高炉砖
-	shaped('3x immersiveengineering:blastbrick', [
+	kubejs.shaped('3x immersiveengineering:blastbrick', [
 		'ABA',
 		'BCB',
 		'ABA'
@@ -144,7 +111,7 @@ ServerEvents.recipes(e => {
 	}).id('immersiveengineering:crafting/blastbrick')
 
 	// 焦炉砖
-	shaped('3x immersiveengineering:cokebrick', [
+	kubejs.shaped('3x immersiveengineering:cokebrick', [
 		'ABA',
 		'BCB',
 		'ABA'
@@ -164,12 +131,12 @@ ServerEvents.recipes(e => {
 	})
 
 	// 铁板金属
-	compacting('2x immersiveengineering:sheetmetal_iron', [
+	create.compacting('2x immersiveengineering:sheetmetal_iron', [
 		'4x new_create:cast_iron_sheet'
 	]).id('immersiveengineering:crafting/sheetmetal_iron')
 
 	// 传送带
-	shaped('immersiveengineering:conveyor_basic', [
+	kubejs.shaped('immersiveengineering:conveyor_basic', [
 		'AAA',
 		'BCB'
 	], {
@@ -205,9 +172,9 @@ ServerEvents.recipes(e => {
 	e.custom({
 		"type": "immersiveengineering:refinery",
 		"energy": 240,
-		"input0": { "amount": 20, "tag": "forge:industrial_fuel" },
-		"input1": { "amount": 20, "tag": "forge:gasoline" },
-		"result": { "amount": 40, "fluid": "new_create:mixed_gasoline" }
+		"input0": { "tag": "forge:industrial_fuel", "amount": 20 },
+		"input1": { "tag": "forge:gasoline", "amount": 20 },
+		"result": { "fluid": "new_create:mixed_gasoline", "amount": 40 }
 	})
 
 	// 钢机壳
@@ -233,7 +200,7 @@ ServerEvents.recipes(e => {
 	}).id('immersiveengineering:blueprint/electron_tube')
 
 	// 加强电子管
-	shaped('immersiveengineering:toolupgrade_revolver_electro', [
+	kubejs.shaped('immersiveengineering:toolupgrade_revolver_electro', [
 		'AAA',
 		'DED',
 		'BCB'
@@ -246,7 +213,7 @@ ServerEvents.recipes(e => {
 	}).id('immersiveengineering:crafting/toolupgrade_revolver_electro')
 
 	// 流体管道
-	compacting('immersiveengineering:fluid_pipe', [
+	create.compacting('immersiveengineering:fluid_pipe', [
 		'4x new_create:cast_iron_sheet',
 		'2x minecraft:slime_ball'
 	])
@@ -270,7 +237,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 琥珀金
-	mixing('2x thermal:electrum_ingot', [
+	create.mixing('2x thermal:electrum_ingot', [
 		'#forge:ingots/gold',
 		'#forge:ingots/silver'
 	]).heated()

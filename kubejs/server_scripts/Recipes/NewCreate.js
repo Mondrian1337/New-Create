@@ -1,40 +1,5 @@
 ServerEvents.recipes(e => {
-	//  Create
-	const {
-		compacting,
-		crushing,
-		cutting,
-		deploying,
-		emptying,
-		filling,
-		haunting,
-		mechanical_crafting,
-		milling,
-		mixing,
-		pressing,
-		sandpaper_polishing,
-		sequenced_assembly,
-		splashing,
-		item_application
-	} = e.recipes.create
-	//  KubeJS
-	const {
-		shaped,
-		shapeless
-	} = e.recipes.kubejs
-	//  Minecraft
-	const {
-		blasting,
-		campfire_cooking,
-		crafting_shaped,
-		crafting_shapeless,
-		smelting,
-		smithing_transform,
-		smoking,
-		stonecutting
-	} = e.recipes.minecraft
-	// 熔化
-	const { melting } = e.recipes.melter
+	const { create, create_mechanical_extruder, immersiveengineering, kubejs, melter, minecraft, thermal } = e.recipes
 
 	// 木板
 	e.forEachRecipe({
@@ -55,43 +20,53 @@ ServerEvents.recipes(e => {
 	})
 
 	// 黏土
-	splashing(Item.of('minecraft:clay_ball').withChance(0.5), [
+	create.splashing(Item.of('minecraft:clay_ball').withChance(0.5), [
 		'new_create:dust'
 	])
 
-	// 鸡蛋混合液
-	compacting([
-		Fluid.of('new_create:egg_mixture_fluid', 5),
-		'new_create:eggshell'
-	], '#forge:eggs')
+	// 铅制汤锅
+	kubejs.shaped('caupona:lead_stew_pot', [
+		'CCC',
+		'CRC',
+		'CCC'
+	], {
+		C: '#forge:plates/cast_iron',
+		R: '#forge:rods/wooden'
+	}).id('caupona:crafting/lead_stew_pot')
+
+	// 铸铁煎锅
+	create.filling('caupona:lead_frying_pan', [
+		Fluid.of('new_create:cast_iron_fluid', 300),
+		'caupona:copper_frying_pan'
+	]).id('caupona:crafting/lead_frying_pan')
 
 	// 木炭
-	campfire_cooking('minecraft:charcoal', [
+	minecraft.campfire_cooking('minecraft:charcoal', [
 		'#minecraft:logs'
 	]).cookingTime(400)
 
 	// 砂砾
-	shapeless('minecraft:gravel', [
+	kubejs.shapeless('minecraft:gravel', [
 		'9x minecraft:dirt'
 	])
 
 	// 尘土
-	splashing([
+	create.splashing([
 		Item.of('new_create:dust').withChance(0.75),
 		Item.of('minecraft:clay_ball').withChance(0.25)
-	], '#forge:sand').id('create:splashing/sand')
+	], '#forge:sand').id('create:create.splashing/sand')
 
 	// 燧石
-	shapeless('new_create:flint_knapp', [
+	kubejs.shapeless('new_create:flint_knapp', [
 		'3x minecraft:gravel'
 	])
 
-	shapeless('minecraft:gravel', [
+	kubejs.shapeless('minecraft:gravel', [
 		'9x #forge:sand'
 	])
 
 	// 工作台
-	shaped('minecraft:crafting_table', [
+	kubejs.shaped('minecraft:crafting_table', [
 		'PP',
 		'KF'
 	], {
@@ -101,7 +76,7 @@ ServerEvents.recipes(e => {
 	}).id('minecraft:crafting_table').damageIngredient('farmersdelight:flint_knife')
 
 	// 燧石
-	shaped('minecraft:flint', [
+	kubejs.shaped('minecraft:flint', [
 		'FF',
 		'FF',
 	], {
@@ -109,62 +84,86 @@ ServerEvents.recipes(e => {
 	})
 
 	// 陶瓦
-	campfire_cooking('minecraft:terracotta', [
+	minecraft.campfire_cooking('minecraft:terracotta', [
 		'minecraft:clay'
 	]).cookingTime(180)
 
+	// 鸡蛋混合液
+	create.compacting([
+		Fluid.of('new_create:egg_mixture_fluid', 5),
+		'ratatouille:egg_shell'
+	], '#forge:eggs')
+
+	create.emptying([
+		Fluid.of('new_create:egg_mixture_fluid', 5),
+		'ratatouille:egg_shell'
+	], [
+		'#forge:eggs'
+	]).id('create:create.emptying/yolk')
+
 	// 白面
-	milling('new_create:white_flour', [
+	create.milling('new_create:white_flour', [
 		'#minecraft:terracotta'
 	])
-	crushing([
+	create.crushing([
 		Item.of('new_create:white_flour').withChance(1),
 		Item.of('new_create:white_flour').withChance(0.3)
 	], '#minecraft:terracotta')
 
 	// 未加工炒祺
-	mixing([
+	create.mixing([
 		Item.of('6x new_create:in_chaochi').withChance(1),
 		Item.of('new_create:in_chaochi').withChance(0.3)
 	], [
 		Fluid.of('new_create:egg_mixture_fluid', 10),
 		Fluid.of('minecraft:water', 100),
+		'new_create:white_flour',
 		'2x #forge:dusts/salt',
 		'minecraft:sugar'
 	])
 
 	// 炒祺
-	mixing('new_create:chaochi', [
+	create.mixing('new_create:chaochi', [
 		'new_create:in_chaochi'
 	]).heated()
 
 	// 草绳
-	shapeless('new_create:grass_string', [
+	kubejs.shapeless('new_create:grass_string', [
 		'3x new_create:grass_fiber'
 	])
 
+	// 滴水石锥
+	minecraft.stonecutting('2x minecraft:pointed_dripstone', [
+		'minecraft:dripstone_block'
+	])
+
+	// 蛋壳 => 骨粉
+	kubejs.shapeless('minecraft:bone_meal', [
+		'2x ratatouille:egg_shell'
+	]).id('ratatouille:eggshell')
+
 	// 石头→营火烧
-	campfire_cooking('minecraft:stone', [
+	minecraft.campfire_cooking('minecraft:stone', [
 		'#forge:cobblestone'
 	]).cookingTime(500)
 
 	// 石头→烧焦圆石→营火烧
-	campfire_cooking('new_create:charred_cobblestone', [
+	minecraft.campfire_cooking('new_create:charred_cobblestone', [
 		'minecraft:stone'
 	]).cookingTime(500)
 
 	// 陶瓷桶
-	campfire_cooking('ceramicbucket:ceramic_bucket', [
+	minecraft.campfire_cooking('ceramicbucket:ceramic_bucket', [
 		'ceramicbucket:unfired_clay_bucket'
 	]).cookingTime(250)
 
 	// 烧焦圆石→熔炉,烧焦圆石→高炉
-	blasting('new_create:charred_cobblestone', [
+	minecraft.blasting('new_create:charred_cobblestone', [
 		'#forge:cobblestone'
 	]).cookingTime(350).xp(20)
 
 	// 营火
-	shaped('minecraft:campfire', [
+	kubejs.shaped('minecraft:campfire', [
 		'SDE',
 		'BCB',
 		'AAA'
@@ -178,26 +177,26 @@ ServerEvents.recipes(e => {
 	}).damageIngredient('#new_create:tools')
 
 	// 木棍
-	shapeless('6x minecraft:stick', [
+	kubejs.shapeless('6x minecraft:stick', [
 		'#minecraft:planks',
 		'#new_create:saw'
 	]).damageIngredient('#new_create:saw')
 
 	// 红砖
-	campfire_cooking('minecraft:brick', [
+	minecraft.campfire_cooking('minecraft:brick', [
 		'minecraft:clay_ball'
 	]).cookingTime(400)
 
 	// 铸铁块<=>铸铁锭
-	shapeless('new_create:cast_iron_block', [
+	kubejs.shapeless('new_create:cast_iron_block', [
 		'9x new_create:cast_iron_ingot'
 	])
-	shapeless('9x new_create:cast_iron_ingot', [
+	kubejs.shapeless('9x new_create:cast_iron_ingot', [
 		'new_create:cast_iron_block'
 	])
 
 	// 粘土桶
-	shaped('ceramicbucket:unfired_clay_bucket', [
+	kubejs.shaped('ceramicbucket:unfired_clay_bucket', [
 		'C C',
 		' C '
 	], {
@@ -205,7 +204,7 @@ ServerEvents.recipes(e => {
 	}).id('ceramicbucket:unfired_clay_bucket')
 
 	// 动力矿车
-	shaped('minecraft:furnace_minecart', [
+	kubejs.shaped('minecraft:furnace_minecart', [
 		'BBB',
 		'BMB',
 		'BBB'
@@ -215,7 +214,7 @@ ServerEvents.recipes(e => {
 	}).id('minecraft:furnace_minecart')
 
 	// 切石机
-	shaped('minecraft:stonecutter', [
+	kubejs.shaped('minecraft:stonecutter', [
 		'HCA',
 		'LBL',
 		'SSS'
@@ -229,7 +228,7 @@ ServerEvents.recipes(e => {
 	}).id('minecraft:stonecutter').damageIngredient('#new_create:tools')
 
 	// 轴承
-	shaped('2x new_create:primary_bearing', [
+	kubejs.shaped('2x new_create:primary_bearing', [
 		'C',
 		'C'
 	], {
@@ -237,12 +236,12 @@ ServerEvents.recipes(e => {
 	})
 
 	// 下界砖
-	smelting('minecraft:nether_brick', [
+	minecraft.smelting('minecraft:nether_brick', [
 		'#forge:netherrack'
 	])
 
 	// 熔炉
-	shaped('minecraft:furnace', [
+	kubejs.shaped('minecraft:furnace', [
 		'BBB',
 		'BCB',
 		'BBB'
@@ -260,31 +259,31 @@ ServerEvents.recipes(e => {
 	})
 
 	// 熔融玻璃
-	melting(Fluid.of('new_create:glass', 50), [
+	melter.melting(Fluid.of('new_create:glass', 50), [
 		'#forge:sand'
 	]).minimumHeat(2)
 
-	mixing(Fluid.of('new_create:glass', 100), [
+	create.mixing(Fluid.of('new_create:glass', 100), [
 		'#forge:sand'
 	]).heated()
 
 	// 玻璃
-	mixing('minecraft:glass', [
+	create.mixing('minecraft:glass', [
 		Fluid.of('new_create:glass', 50)
 	])
 
 	// 粘土缸→烧制粘土缸
-	campfire_cooking('caupona:stew_pot', [
+	minecraft.campfire_cooking('caupona:stew_pot', [
 		'caupona:clay_cistern'
 	]).cookingTime(200)
 
 	// 红砖
-	smoking('minecraft:brick', [
+	minecraft.smoking('minecraft:brick', [
 		'#forge:clay'
 	])
 
 	// 二阶高级工作台
-	shaped('extendedcrafting:advanced_table', [
+	kubejs.shaped('extendedcrafting:advanced_table', [
 		'APA',
 		'BCD',
 		'EFE'
@@ -299,13 +298,13 @@ ServerEvents.recipes(e => {
 	})
 
 	// 青铜板
-	shapeless('thermal:bronze_plate', [
+	kubejs.shapeless('thermal:bronze_plate', [
 		'#forge:ingots/bronze',
 		'#new_create:hammer'
 	]).damageIngredient('#new_create:hammer')
 
 	// 流体漏斗
-	shaped('flopper:flopper', [
+	kubejs.shaped('flopper:flopper', [
 		'C C',
 		'C C',
 		' C '
@@ -314,30 +313,30 @@ ServerEvents.recipes(e => {
 	}).id('flopper:recipes/flopper')
 
 	// #原木=>石磨
-	milling([
+	create.milling([
 		Item.of('minecraft:stick', 2).withChance(0.7),
 		Item.of('thermal:rubber', 2).withChance(0.4)
 	], '#minecraft:logs')
 
 	// 平滑石头
-	shapeless('minecraft:smooth_stone', [
+	kubejs.shapeless('minecraft:smooth_stone', [
 		'new_create:charred_cobblestone',
 		'#forge:clay'
 	])
 
 	// 熔岩
-	compacting(Fluid.of('minecraft:lava', 100), [
+	create.compacting(Fluid.of('minecraft:lava', 100), [
 		'16x #forge:cobblestone'
 	])
 
 	// 烈焰粉
-	crushing([
+	create.crushing([
 		Item.of('minecraft:blaze_powder', 2).withChance(0.7),
 		Item.of('minecraft:blaze_powder', 3).withChance(0.3)
 	], 'minecraft:blaze_rod')
 
 	// 铜线圈
-	shaped('immersiveengineering:coil_lv', [
+	kubejs.shaped('immersiveengineering:coil_lv', [
 		'AAA',
 		'ABA',
 		'AAA'
@@ -347,42 +346,42 @@ ServerEvents.recipes(e => {
 	})
 
 	// 没啥卵用的钟
-	sequenced_assembly('minecraft:clock', '#forge:ingots/gold', [
-		deploying('minecraft:gold_ingot', ['create:precision_mechanism', 'create:precision_mechanism']),
-		deploying('minecraft:gold_ingot', ['minecraft:gold_ingot', 'minecraft:gold_ingot']),
-		deploying('minecraft:gold_ingot', ['create:electron_tube', 'create:electron_tube']),
-		deploying('minecraft:gold_ingot', ['minecraft:redstone', 'minecraft:redstone']),
-		pressing('minecraft:gold_ingot', 'minecraft:gold_ingot')
+	create.sequenced_assembly('minecraft:clock', '#forge:ingots/gold', [
+		create.deploying('minecraft:gold_ingot', ['create:precision_mechanism', 'create:precision_mechanism']),
+		create.deploying('minecraft:gold_ingot', ['minecraft:gold_ingot', 'minecraft:gold_ingot']),
+		create.deploying('minecraft:gold_ingot', ['create:electron_tube', 'create:electron_tube']),
+		create.deploying('minecraft:gold_ingot', ['minecraft:redstone', 'minecraft:redstone']),
+		create.pressing('minecraft:gold_ingot', 'minecraft:gold_ingot')
 	]).loops(64).transitionalItem('minecraft:gold_ingot')
 
 	// 充电铁块<=>充电铁锭
-	shapeless('new_create:charge_iron_block', [
+	kubejs.shapeless('new_create:charge_iron_block', [
 		'9x create_new_age:overcharged_iron'
 	])
-	shapeless('9x create_new_age:overcharged_iron', [
+	kubejs.shapeless('9x create_new_age:overcharged_iron', [
 		'new_create:charge_iron_block'
 	])
 
 	// 铜锭量产
-	mixing('2x minecraft:copper_ingot', [
+	create.mixing('2x minecraft:copper_ingot', [
 		'2x minecraft:raw_copper',
 		Fluid.of('new_create:working_fluid', 100)
 	]).heated()
 
 	// 铸铁板
-	pressing('new_create:cast_iron_sheet', [
+	create.pressing('new_create:cast_iron_sheet', [
 		'#forge:ingots/cast_iron'
 	])
 
 	// 液态灵魂
-	mixing(Fluid.of('new_create:soul', 50), [
+	create.mixing(Fluid.of('new_create:soul', 50), [
 		'4x minecraft:weeping_vines',
 		'4x minecraft:twisting_vines',
 		'2x #forge:dusts/soul_sand'
 	]).heated()
 
 	// 锌锭获取
-	shapeless('create:zinc_ingot', [
+	kubejs.shapeless('create:zinc_ingot', [
 		'9x create:zinc_nugget'
 	])
 
@@ -401,7 +400,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 铁桶
-	shaped('minecraft:bucket', [
+	kubejs.shaped('minecraft:bucket', [
 		'C C',
 		' C '
 	], {
@@ -409,7 +408,7 @@ ServerEvents.recipes(e => {
 	}).id('minecraft:bucket')
 
 	// Fix Thermal tin_block <=> tin_ingot crafting
-	shapeless('9x thermal:tin_ingot', [
+	kubejs.shapeless('9x thermal:tin_ingot', [
 		'thermal:tin_block'
 	])
 
