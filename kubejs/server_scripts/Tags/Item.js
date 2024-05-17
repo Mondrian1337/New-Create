@@ -49,6 +49,10 @@ ServerEvents.tags('item', e => {
 		'#forge:saw'
 	])
 
+	e.add('forge:tools', [
+		'#new_create:tools'
+	])
+
 	//合成轴承
 	e.add('create:shaft_add', [
 		'new_create:primary_bearing',

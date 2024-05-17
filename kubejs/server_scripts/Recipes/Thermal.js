@@ -1,92 +1,23 @@
 ServerEvents.recipes(e => {
-	// Create
-	const {
-		compacting,
-		crushing,
-		cutting,
-		deploying,
-		emptying,
-		filling,
-		haunting,
-		mechanical_crafting,
-		milling,
-		mixing,
-		pressing,
-		sandpaper_polishing,
-		sequenced_assembly,
-		splashing,
-		item_application
-	} = e.recipes.create
-	// KubeJS
-	const {
-		shaped,
-		shapeless
-	} = e.recipes.kubejs
-	// Minecraft
-	const {
-		blasting,
-		campfire_cooking,
-		crafting_shaped,
-		crafting_shapeless,
-		smelting,
-		smithing_transform,
-		smoking,
-		stonecutting
-	} = e.recipes.minecraft
-	// Thermal
-	const {
-		bottler,
-		brewer,
-		centrifuge,
-		chiller,
-		compression_fuel,
-		crucible,
-		crystallizer,
-		disenchantment_fuel,
-		fisher_boost,
-		furnace,
-		gourmand_fuel,
-		hive_extractor,
-		insolator,
-		insolator_catalyst,
-		lapidary_fuel,
-		magmatic_fuel,
-		numismatic_fuel,
-		potion_diffuser_boost,
-		press,
-		pulverizer,
-		pulverizer_catalyst,
-		pulverizer_recycle,
-		pyrolyzer,
-		refinery,
-		rock_gen,
-		sawmill,
-		smelter,
-		smelter_catalyst,
-		smelter_recycle,
-		stirling_fuel
-	} = e.recipes.thermal
-	
-	// 熔化
-	const { melting } = e.recipes.melter
+	const { create, create_mechanical_extruder, immersiveengineering, kubejs, melter, minecraft, thermal } = e.recipes
 
 	// 橡胶
-	compacting('2x thermal:rubber', [
+	create.compacting('2x thermal:rubber', [
 		Fluid.of('thermal:latex', 200)
 	])
 
 	// 硫化橡胶
-	campfire_cooking('thermal:cured_rubber', [
+	minecraft.campfire_cooking('thermal:cured_rubber', [
 		'thermal:rubber'
 	]).xp(10)
 
 	// 植物乳胶
-	melting(Fluid.of('thermal:latex', 100), [
+	melter.melting(Fluid.of('thermal:latex', 100), [
 		'thermal:rubber'
 	]).minimumHeat(2)
 
 	// 树汁提取器
-	shaped('thermal:device_tree_extractor', [
+	kubejs.shaped('thermal:device_tree_extractor', [
 		'PZP',
 		'CBC',
 		'PFP'
@@ -155,12 +86,12 @@ ServerEvents.recipes(e => {
 	})
 
 	// 塑料片
-	chiller('2x new_create:plastic_sheet', [
+	thermal.chiller('2x new_create:plastic_sheet', [
 		Fluid.of('new_create:mixed_gasoline', 150)
 	]).energy(250)
 
 	// 极速冷冻机
-	shaped('thermal:machine_chiller', [
+	kubejs.shaped('thermal:machine_chiller', [
 		'AFA',
 		'BCB',
 		'DED'
@@ -174,7 +105,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 流体精炼机
-	shaped('thermal:machine_refinery', [
+	kubejs.shaped('thermal:machine_refinery', [
 		'FAF',
 		'BCB',
 		'DED'
@@ -188,7 +119,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 热解炉
-	shaped('thermal:machine_pyrolyzer', [
+	kubejs.shaped('thermal:machine_pyrolyzer', [
 		'ABA',
 		'CDC',
 		'EEE'
@@ -201,7 +132,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 流体灌装机
-	shaped('thermal:machine_bottler', [
+	kubejs.shaped('thermal:machine_bottler', [
 		'AAA',
 		'BCD',
 		'EFE'
@@ -215,13 +146,13 @@ ServerEvents.recipes(e => {
 	})
 
 	// 秘银锭
-	bottler('create_dd:mithril_ingot', [
+	thermal.bottler('create_dd:mithril_ingot', [
 		Fluid.of('new_create:mithril_fluid', 500),
 		'#forge:ingots/silver'
 	]).energy(2000)
 
 	// 造石机
-	shaped('thermal:device_rock_gen', [
+	kubejs.shaped('thermal:device_rock_gen', [
 		'ABA',
 		'CDE',
 		'FGF'
@@ -236,31 +167,31 @@ ServerEvents.recipes(e => {
 	})
 
 	// 玫瑰金粉
-	crystallizer('2x thermal:rose_gold_dust', [
+	thermal.crystallizer('2x thermal:rose_gold_dust', [
 		Fluid.of('new_create:rose_gold_fluid', 200),
 		'#forge:dusts/iron',
 		'#forge:dusts/gold'
 	]).energy(800)
 
 	// 玫瑰金溶液
-	crucible(Fluid.of('new_create:rose_gold_fluid', 400), [
+	thermal.crucible(Fluid.of('new_create:rose_gold_fluid', 400), [
 		'create_things_and_misc:rose_quartz_sheet'
 	]).energy(1200)
 
 	//玫瑰金锭
-	smelter('thermal:rose_gold_ingot', [
+	thermal.smelter('thermal:rose_gold_ingot', [
 		'thermal:rose_gold_dust',
 		'thermal:tar'
 	])
 
 	// 流体单元框架
-	filling('thermal:fluid_cell_frame', [
+	create.filling('thermal:fluid_cell_frame', [
 		Fluid.of('new_create:high_grade_refined_oil'),
 		'thermal:energy_cell_frame'
 	])
 
 	// 感应炉
-	shaped('thermal:machine_smelter', [
+	kubejs.shaped('thermal:machine_smelter', [
 		'AAA',
 		'CBD',
 		'AEA'
@@ -285,7 +216,7 @@ ServerEvents.recipes(e => {
 	})
 
 	// 硬化玻璃
-	mixing('4x thermal:obsidian_glass', [
+	create.mixing('4x thermal:obsidian_glass', [
 		'minecraft:fire_charge',
 		'#minecraft:sand',
 		'#forge:gems/quartz',
@@ -293,7 +224,7 @@ ServerEvents.recipes(e => {
 	]).heated().id('thermal:fire_charge/obsidian_glass_2')
 
 	// 有机灌注机
-	shaped('thermal:machine_insolator', [
+	kubejs.shaped('thermal:machine_insolator', [
 		'PCP',
 		'FGF',
 		'IBI'
@@ -307,9 +238,9 @@ ServerEvents.recipes(e => {
 	})
 
 	// 硅
-	smelter([
+	thermal.smelter([
 		'ae2:silicon',
 		'thermal:sulfur_dust'
 	], 'new_create:saw_silicon')
-		.energy(4800).id('ae2:blasting/silicon_from_certus_quartz_dust')
+		.energy(4800).id('ae2:minecraft.blasting/silicon_from_certus_quartz_dust')
 })

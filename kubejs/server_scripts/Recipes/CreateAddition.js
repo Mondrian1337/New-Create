@@ -1,38 +1,6 @@
 ServerEvents.recipes(e => {
-	const {
-		compacting,
-		crushing,
-		cutting,
-		deploying,
-		emptying,
-		filling,
-		haunting,
-		mechanical_crafting,
-		milling,
-		mixing,
-		pressing,
-		sandpaper_polishing,
-		sequenced_assembly,
-		splashing,
-		item_application
-	} = e.recipes.create
-	// KubeJS
-	const {
-		shaped,
-		shapeless
-	} = e.recipes.kubejs
-	// Minecraft
-	const {
-		blasting,
-		campfire_cooking,
-		crafting_shaped,
-		crafting_shapeless,
-		smelting,
-		smithing_transform,
-		smoking,
-		stonecutting
-	} = e.recipes.minecraft
-
+	const { create, create_mechanical_extruder, immersiveengineering, kubejs, melter, minecraft, thermal } = e.recipes
+	
 	// 充电金锭
 	e.custom({
 		"type": "createaddition:charging",

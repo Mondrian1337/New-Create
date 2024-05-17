@@ -4,7 +4,7 @@ LootJS.modifiers(loots => {
 	loots.addBlockLootModifier('minecraft:potato')
 		.removeLoot('minecraft:poisonous_potato')
 
-	// 砂砾掉小燧石
+	// 砂砾
 	loots.addBlockLootModifier('minecraft:gravel')
 		.removeLoot(All)
 		.addAlternativesLoot(
@@ -17,8 +17,9 @@ LootJS.modifiers(loots => {
 
 	// 草丛掉杂草
 	loots.addBlockLootModifier('minecraft:grass')
-		.addAlternativesLoot(LootEntry.of('new_create:grass_fiber')
-			.when(loots => loots.randomChance(0.6)))
+		.addAlternativesLoot(
+			LootEntry.of('new_create:grass_fiber')
+				.when(loots => loots.randomChance(0.6)))
 
 	// 纯净石英
 	loots.addBlockLootModifier('#forge:sand')
@@ -36,9 +37,9 @@ LootJS.modifiers(loots => {
 	loots.addBlockLootModifier('#forge:ores')
 		.addAlternativesLoot(
 			LootEntry.of('immersiveengineering:slag')
-				.when(loots => loots.randomChance(0.45)),
+				.when(loots => loots.randomChance(0.35)),
 			LootEntry.of('2x immersiveengineering:slag')
-				.when(loots => loots.randomChance(0.3)))
+				.when(loots => loots.randomChance(0.15)))
 
 	// 锌矿掉落粉碎锌矿石
 	loots.addBlockLootModifier('#forge:ores/zinc')

@@ -2197,17 +2197,17 @@
 		{
 			dependencies: ["75C1C1D7BC5E550D"]
 			hide: true
-			icon: "ncdc:gechangzuguo"
+			icon: "new_create:gechangzuguo"
 			id: "05FFB9C4A2FC377C"
 			rewards: [
 				{
-					id: "3B60594249BF267B"
-					item: "ncdc:gechangzuguo"
+					id: "4E2A200ABCBEBB35"
+					item: "minecraft:jukebox"
 					type: "item"
 				}
 				{
-					id: "4E2A200ABCBEBB35"
-					item: "minecraft:jukebox"
+					id: "62557FCC1542010A"
+					item: "new_create:gechangzuguo"
 					type: "item"
 				}
 			]

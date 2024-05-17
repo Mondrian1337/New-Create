@@ -45,8 +45,7 @@ StartupEvents.registry('item', e => {
 		['infernal_mechanism', 'common', false], // 下界构件
 		['saw_silicon', 'common', false], // 粗硅
 		['silicon_crystal', 'common', false], // 硅晶
-		['eggshell', 'common', false], // 蛋壳
-		['white_flour', 'common', false] // 白面
+		['white_flour', 'common', false], // 白面
 	]
 	Item.forEach(([Name, Rarity, Glow]) => {
 		e.create(ModID + Name)
