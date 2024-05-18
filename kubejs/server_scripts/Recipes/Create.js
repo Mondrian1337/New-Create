@@ -1,5 +1,13 @@
 ServerEvents.recipes(e => {
-	const { create, create_mechanical_extruder, immersiveengineering, kubejs, melter, minecraft, thermal } = e.recipes
+	const {
+		create,
+		create_mechanical_extruder,
+		immersiveengineering,
+		kubejs,
+		melter,
+		minecraft,
+		thermal
+	} = e.recipes
 
 	//手摇曲柄
 	kubejs.shaped('create:hand_crank', [
@@ -275,9 +283,7 @@ ServerEvents.recipes(e => {
 	]).id('create:create.item_application/brass_casing_from_wood')
 
 	// 精密部件
-	create.sequenced_assembly([
-		'create:precision_mechanism'
-	], '#forge:plates/gold', [
+	create.sequenced_assembly('create:precision_mechanism', '#forge:plates/gold', [
 		create.deploying('#forge:plates/gold', ['create:electron_tube', 'create:electron_tube']),
 		create.deploying('#forge:plates/gold', ['#forge:nuggets/brass', '#forge:nuggets/brass']),
 		create.deploying('#forge:plates/gold', ['minecraft:redstone', 'minecraft:redstone']),

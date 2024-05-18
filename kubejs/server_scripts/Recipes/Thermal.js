@@ -1,5 +1,13 @@
 ServerEvents.recipes(e => {
-	const { create, create_mechanical_extruder, immersiveengineering, kubejs, melter, minecraft, thermal } = e.recipes
+	const {
+		create,
+		create_mechanical_extruder,
+		immersiveengineering,
+		kubejs,
+		melter,
+		minecraft,
+		thermal
+	} = e.recipes
 
 	// 橡胶
 	create.compacting('2x thermal:rubber', [
