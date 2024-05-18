@@ -1,8 +1,6 @@
 {
 	"item.new_create.flint_knapp": "燧石碎片",
 	"item.new_create.rainbow_ingot": "彩虹锭",
-	"item.new_create.rainbow_mooncoin": "彩虹月币",
-	"item.new_create.mooncoin": "月币",
 	"item.new_create.andesite_compound": "安山混合物",
 	"item.new_create.grass_string": "草绳",
 	"item.new_create.grass_fiber": "杂草",
@@ -22,6 +20,8 @@
 	"item.new_create.radiant_chestplate": "光辉胸甲",
 	"item.new_create.radiant_leggings": "光辉裤腿",
 	"item.new_create.radiant_boots": "光辉靴子",
+	"item.new_create.mooncoin": "月币",
+	"item.new_create.rainbow_mooncoin": "彩虹月币",
 	"item.new_create.0": "〇元硬币",
 	"item.new_create.1": "①元硬币",
 	"item.new_create.2": "②元硬币",
