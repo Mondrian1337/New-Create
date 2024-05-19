@@ -13,11 +13,7 @@ LootJS.modifiers(loots => {
 		// 草=>杂草
 		['minecraft:grass', '#forge:tools/knives', 'new_create:grass_fiber', 1.0]
 	]
-<<<<<<< HEAD
-	HandLoots.forEach(([Blocks, Tools, Loots, Chance]) => {
-=======
 	ToolLoots.forEach(([Blocks, Tools, Loots, Chance]) => {
->>>>>>> 6888c791416035f1b425dc85365630cff94a05df
 		loots.addBlockLootModifier(Blocks)
 			.matchMainHand(Tools)
 			.addAlternativesLoot(LootEntry.of(Loots)
