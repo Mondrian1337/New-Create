@@ -51,3 +51,6 @@ net.minecraft.client.gui.screens.ShareToLanScreen {
 net.minecraft.client.gui.screens.multiplayer.JoinMultiplayerScreen {
 }
 
+org.embeddedt.embeddium.gui.EmbeddiumVideoOptionsScreen {
+}
+

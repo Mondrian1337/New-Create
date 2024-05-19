@@ -178,6 +178,19 @@ ServerEvents.recipes(e => {
 		e.remove({ id: ID })
 	})
 
+	// Mek
+	let Mek_Item = [
+		'mekanismgenerators:heat_generator',
+		'mekanismgenerators:wind_generator',
+		'mekanismgenerators:wind_generator',
+		'mekanismgenerators:solar_generator',
+		'mekanismgenerators:gas_burning_generator',
+		'mekanismgenerators:bio_generator'
+	]
+	Mek_Item.forEach(Item => {
+		e.remove({ output: Item })
+	})
+
 	// 删除Type
 	let Remove_Type = [
 		'createaddition:charging',

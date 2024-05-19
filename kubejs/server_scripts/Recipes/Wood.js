@@ -1,8 +1,8 @@
 ServerEvents.recipes(event => {
-	const logIDs = Ingredient.of('#minecraft:logs').getItemIds()
-	const Recipes = logIDs.map(logID => {
-		const [namespace, item] = logID.split(':')
-		const strippedLogID = `${namespace}:stripped_${item}`
+	let logIDs = Ingredient.of('#minecraft:logs').getItemIds()
+	let Recipes = logIDs.map(logID => {
+		let [namespace, item] = logID.split(':')
+		let strippedLogID = `${namespace}:stripped_${item}`
 		return {
 			type: "farmersdelight:cutting",
 			ingredients: [{ item: logID }],

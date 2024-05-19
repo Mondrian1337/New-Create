@@ -37,3 +37,7 @@ servers.dat
 servers.dat_old
 config/oculus.properties
 BTLib.dll
+ESM
+data/fabricDefaultResourcePacks.dat
+fabricloader.log
+mods/.connector/

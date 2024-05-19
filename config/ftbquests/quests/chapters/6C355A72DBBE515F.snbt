@@ -80,10 +80,10 @@
 		{
 			dependencies: ["50E2E4BDD019F814"]
 			description: [
-				"&a不用怕,既然选择了你也可以玩下去,慢慢来"
-				"&b查资料,查攻略,不懂的就问"
+				"&a我们加入了一个可以单独关闭某个音效的Mod,就在背包界面"
+				"{image:new_create:textures/images/10.png width:230 height:135 align:1}"
 			]
-			icon: "thermal:rf_coil"
+			icon: "minecraft:jukebox"
 			id: "31E32B65ACBB7A96"
 			rewards: [{
 				id: "160C0A9E7AF79874"
@@ -93,9 +93,10 @@
 			shape: "rsquare"
 			tasks: [{
 				id: "1A79671028BB6BE9"
-				title: "不会玩怎么办"
+				title: "关于音频"
 				type: "checkmark"
 			}]
+			title: "关于音频"
 			x: 2.0d
 			y: 0.0d
 		}
