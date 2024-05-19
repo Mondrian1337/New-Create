@@ -14,10 +14,8 @@ ServerEvents.recipes(e => {
 		"type": "immersiveengineering:alloy",
 		"input0": { "tag": "forge:raw_materials/copper" },
 		"input1": { "tag": "minecraft:coals" },
-		"result": {
-			"base_ingredient": { "tag": "forge:ingots/copper" },
-			"conut": 1
-		}, "time": 300
+		"result": { "base_ingredient": { "tag": "forge:ingots/copper" }, "conut": 1 },
+		"time": 300
 	})
 
 	// 铸铁
@@ -25,10 +23,8 @@ ServerEvents.recipes(e => {
 		"type": "immersiveengineering:alloy",
 		"input0": { "tag": "forge:ingots/iron" },
 		"input1": { "tag": "forge:ingots/iron" },
-		"result": {
-			"base_ingredient": { "item": "new_create:cast_iron_ingot" },
-			"conut": 1
-		}, "time": 150
+		"result": { "base_ingredient": { "item": "new_create:cast_iron_ingot" }, "conut": 1 },
+		"time": 150
 	})
 
 	// 铸铁板
@@ -36,10 +32,8 @@ ServerEvents.recipes(e => {
 		"type": "immersiveengineering:alloy",
 		"input0": { "tag": "forge:plates/iron" },
 		"input1": { "tag": "forge:plates/iron" },
-		"result": {
-			"base_ingredient": { "item": "new_create:cast_iron_sheet" },
-			"conut": 1
-		}, "time": 150
+		"result": { "base_ingredient": { "item": "new_create:cast_iron_sheet" }, "conut": 1 },
+		"time": 150
 	})
 
 	// 工程师锤
@@ -96,15 +90,10 @@ ServerEvents.recipes(e => {
 	// 青铜锭
 	e.custom({
 		"type": "immersiveengineering:alloy",
-		"input0": {
-			"base_ingredient": { "tag": 'forge:ingots/copper' },
-			"count": 3
-		},
+		"input0": { "base_ingredient": { "tag": 'forge:ingots/copper' }, "count": 3 },
 		"input1": { "tag": 'forge:ingots/tin' },
-		"result": {
-			"count": 4,
-			"item": 'thermal:bronze_ingot'
-		}, "time": 300
+		"result": { "item": 'thermal:bronze_ingot', "count": 4 },
+		"time": 300
 	})
 
 	// 高炉砖
@@ -157,10 +146,7 @@ ServerEvents.recipes(e => {
 	e.custom({
 		"type": "immersiveengineering:metal_press",
 		"energy": 2400,
-		"input": {
-			"base_ingredient":
-				{ "tag": 'forge:plates/industrial_iron' }, "count": 4
-		},
+		"input": { "base_ingredient": { "tag": 'forge:plates/industrial_iron' }, "count": 4 },
 		"mold": 'new_create:mold_block',
 		"result": { "item": 'create_dd:industrial_casing' }
 	})
@@ -169,10 +155,8 @@ ServerEvents.recipes(e => {
 	e.custom({
 		"type": "immersiveengineering:blueprint",
 		"category": "molds",
-		"inputs": [
-			{ "base_ingredient": { "tag": "forge:plates/steel" }, "count": 3 },
-			{ "item": "immersiveengineering:wirecutter" }
-		],
+		"inputs": [{ "base_ingredient": { "tag": "forge:plates/steel" }, "count": 3 },
+		{ "item": "immersiveengineering:wirecutter" }],
 		"result": { "item": 'new_create:mold_block' }
 	})
 
