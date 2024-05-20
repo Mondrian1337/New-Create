@@ -1,13 +1,13 @@
 {
     "credit": "Made with Blockbench",
     "textures": {
-        "0": "new_create:block/machine_core/back",
-        "1": "new_create:block/machine_core/down",
-        "2": "new_create:block/machine_core/east",
-        "3": "new_create:block/machine_core/front",
-        "4": "new_create:block/machine_core/top",
-        "5": "new_create:block/machine_core/west",
-        "particle": "new_create:block/machine_core/down"
+        "0": "new_create:block/test_machine/back",
+        "1": "new_create:block/test_machine/down",
+        "2": "new_create:block/test_machine/east",
+        "3": "new_create:block/test_machine/front",
+        "4": "new_create:block/test_machine/top",
+        "5": "new_create:block/test_machine/west",
+        "particle": "new_create:block/test_machine/down"
     },
     "elements": [
         {

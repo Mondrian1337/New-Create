@@ -104,7 +104,7 @@ ServerEvents.recipes(e => {
 		Item.of('create:crushed_raw_tin').withChance(0.15)
 	], '#forge:raw_materials/tin')
 
-	//搅拌器
+	// 搅拌器
 	kubejs.shaped('create:whisk', [
 		' A ',
 		'BAB',
@@ -134,26 +134,26 @@ ServerEvents.recipes(e => {
 		G: '#forge:glass'
 	}).id('create:crafting/kinetics/fluid_tank')
 
-	//铁锭
+	// 铁锭
 	create.mixing('minecraft:iron_ingot', [
 		Item.of('create:crushed_raw_iron'),
 		Item.of('#forge:dusts/coal'),
 		Fluid.of('new_create:working_fluid', 250)
 	])
 
-	//煤粉
+	// 煤粉
 	create.milling([
 		Item.of('mekanism:dust_coal', 2).withChance(0.6),
 		Item.of('mekanism:dust_coal', 3).withChance(0.3),
 	], '#minecraft:coals')
 
-	//加工液
+	// 加工液
 	create.mixing(Fluid.of('new_create:working_fluid', 500), [
 		'2x #forge:slag',
 		Fluid.of('minecraft:water', 500)
 	])
 
-	//扇叶
+	// 扇叶
 	kubejs.shaped('create:propeller', [
 		' A ',
 		'ABA',
@@ -163,7 +163,7 @@ ServerEvents.recipes(e => {
 		B: '#create:shaft_add'
 	})
 
-	//烈焰人燃烧室
+	// 烈焰人燃烧室
 	kubejs.shaped('create:empty_blaze_burner', [
 		' A ',
 		'ABA',
@@ -180,7 +180,7 @@ ServerEvents.recipes(e => {
 		Fluid.of('minecraft:water', 1000)
 	])
 
-	//安山混合液
+	// 安山混合液
 	create.mixing(Fluid.of('new_create:andesite_compound_fluid', 500), [
 		'new_create:andesite_compound',
 		Fluid.of('minecraft:water', 1000)
@@ -190,7 +190,7 @@ ServerEvents.recipes(e => {
 		'#create:stone_types/andesite'
 	]).minimumHeat(8)
 
-	//注液器
+	// 注液器
 	kubejs.shaped('create:spout', [
 		'BAB',
 		'BCB',
@@ -207,7 +207,7 @@ ServerEvents.recipes(e => {
 		'#forge:netherrack'
 	])
 
-	//安山合金
+	// 安山合金
 	create.filling('create:andesite_alloy', [
 		'minecraft:andesite',
 		Fluid.of('new_create:andesite_compound_fluid', 50)
@@ -218,13 +218,13 @@ ServerEvents.recipes(e => {
 		Fluid.of('new_create:andesite_compound_fluid', 100)
 	]).heated()
 
-	//安山机壳
+	// 安山机壳
 	create.item_application('create:andesite_casing', [
 		'#minecraft:logs',
 		'create:andesite_alloy'
 	])
 
-	//动力锯
+	// 动力锯
 	kubejs.shaped('create:mechanical_saw', [
 		' D ',
 		'DED',
@@ -236,7 +236,7 @@ ServerEvents.recipes(e => {
 		S: '#create:shaft_add'
 	})
 
-	//黄铜锭
+	// 黄铜锭
 	create.mixing('2x create:brass_ingot', [
 		'2x thermal:bronze_ingot',
 		Fluid.of('new_create:andesite_compound_fluid', 50)

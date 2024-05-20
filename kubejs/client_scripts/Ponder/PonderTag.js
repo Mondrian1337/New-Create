@@ -1,7 +1,7 @@
 Ponder.tags(e => {
 	const ie = 'immersiveengineering:'
 	// IE
-	const StructuresArray = [
+	let StructuresArray = [
 		'advanced_blast_furnace',
 		'alloy_smelter',
 		'arc_furnace',
@@ -19,9 +19,7 @@ Ponder.tags(e => {
 		'coke_oven',
 		'diesel_generator'
 	]
-	e.createTag(`${ie}structure`, `${ie}hammer`, '结构', '多方块机器', StructuresArray.map(
-		Structures => `${ie}${Structures}`
-	))
+	e.createTag(`${ie}structure`, `${ie}hammer`, '结构', '多方块机器', StructuresArray.map(Structures => ie + Structures))
 
 	// New Create
 	e.createTag('new_create:ponder', 'new_create:cast_iron_ingot', '思索', '思索', [
