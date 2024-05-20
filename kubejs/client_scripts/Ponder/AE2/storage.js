@@ -29,13 +29,11 @@ Ponder.registry(e => {
 			scene.text(40, '§b然后我们还要给ME控制器通电')
 			scene.idle(40)
 			scene.world.setBlocks([3, 1, 1, 4, 1, 1], 'pipez:energy_pipe')
-			scene.world.modifyBlocks([3, 1, 1],
-				state => state.with('west', 'true'), false)
+			scene.world.modifyBlocks([3, 1, 1], state => state.with('west', 'true'), false)
 			scene.world.showSection([3, 1, 1], Direction.WEST)
 			scene.idle(20)
 			// 
-			scene.world.modifyBlocks([2, 1, 1],
-				state => state.with('state', 'online'), false)
+			scene.world.modifyBlocks([2, 1, 1], state => state.with('state', 'online'), false)
 			scene.idle(40)
 
 			//

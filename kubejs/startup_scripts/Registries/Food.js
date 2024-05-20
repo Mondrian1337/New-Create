@@ -14,6 +14,7 @@ StartupEvents.registry('item', e => {
 				food.saturation(Saturation)
 			})
 	})
+<<<<<<< HEAD
 })
 
 // Modify
@@ -24,4 +25,6 @@ ItemEvents.modification(e => {
 			food.fastToEat(true)
 		}
 	})
+=======
+>>>>>>> 4adf45137a41b91d583baac8dd1c76fd1655d338
 })
