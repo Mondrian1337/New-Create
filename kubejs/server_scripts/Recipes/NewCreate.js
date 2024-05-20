@@ -434,7 +434,7 @@ ServerEvents.recipes(e => {
 		}, recipe => {
 			var Output = recipe.getOriginalRecipeResult().getId()
 			var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
-			e.shapeless(Input, [`9x ${Output}`])
+			e.recipes.kubejs.shapeless(Input, [`9x ${Output}`])
 		})
 	}
 	function FixRecipes2(Type, Output, Input) {
@@ -445,7 +445,7 @@ ServerEvents.recipes(e => {
 		}, recipe => {
 			var Output = recipe.getOriginalRecipeResult().getId()
 			var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
-			e.shapeless(`9x ${Output}`, [`${Input}`])
+			e.recipes.kubejs.shapeless(`9x ${Output}`, [`${Input}`])
 		})
 	}
 })
