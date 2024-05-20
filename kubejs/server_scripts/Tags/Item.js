@@ -15,7 +15,7 @@ ServerEvents.tags('item', e => {
 	])
 
 	//烧焦圆石
-	e.add("forge:cobblestone", [
+	e.add('forge:cobblestone', [
 		'new_create:charred_cobblestone'
 	])
 
