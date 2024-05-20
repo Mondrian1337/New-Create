@@ -439,7 +439,7 @@ ServerEvents.recipes(e => {
 	}
 	function FixRecipes2(Type, Output, Input) {
 		e.forEachRecipe({
-			type: Type,
+			type: Type,	
 			output: Output,
 			input: Input
 		}, recipe => {
