@@ -140,14 +140,14 @@ ServerEvents.recipes(e => {
 	})
 
 	// Thermal Mechines
-	let Mechines = [
+	let Thermal_Mechines = [
 		'thermal:machine_brewer', 'thermal:machine_crystallizer', 'thermal:machine_crafter',
 		'thermal:machine_bottler', 'thermal:machine_pyrolyzer', 'thermal:machine_refinery',
 		'thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer',
 		'thermal:machine_chiller', 'thermal:machine_crucible', 'thermal:machine_press',
 		'thermal:machine_centrifuge', 'thermal:machine_insolator', 'thermal:machine_smelter',
 	]
-	Mechines.forEach(remove => {
+	Thermal_Mechines.forEach(remove => {
 		e.remove({ output: remove })
 	})
 

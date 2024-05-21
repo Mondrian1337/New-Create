@@ -9,6 +9,8 @@ ServerEvents.recipes(e => {
 		thermal
 	} = e.recipes
 
+	let ie = immersiveengineering
+
 	// 铜锭
 	e.custom({
 		"type": "immersiveengineering:alloy",
@@ -218,6 +220,15 @@ ServerEvents.recipes(e => {
 		"inputs": [{ "tag": 'forge:tar' }],
 		"result": { "fluid": 'new_create:high_grade_refined_oil', "amount": 500 }
 	})
+
+	/*
+	ie.mixer(Fluid.of('new_create:high_grade_refined_oil', 500), [
+		{ fluidTag: 'thermal:refined_fuel', amount: 500 }
+	], [
+		'#forge:tar'
+	]).energy(2000)
+	*/
+
 
 	// 秘银溶液
 	e.custom({
