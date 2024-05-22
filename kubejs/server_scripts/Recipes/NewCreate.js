@@ -421,25 +421,24 @@ ServerEvents.recipes(e => {
 	])
 
 	// Fix nuggets <=> ingots crafting
-	FixRecipes1('crafting_shapeless', '#forge:nuggets')
+	fixRecipes('crafting_shapeless', '#forge:nuggets')
 
 	// Fix ingots <=> block crafting
-	FixRecipes2('crafting_shapeless', '#forge:ingots', '#forge:storage_blocks')
+	fixRecipes('crafting_shapeless', '#forge:ingots', '#forge:storage_blocks')
 
-	// Fixxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Recipes
-	function FixRecipes1(Type, Output) {
-		e.forEachRecipe({
+
+	function fixRecipes(Type, Output, Input) {
+		if (Input == null) {
+			return e.forEachRecipe({
+				type: Type,
+				output: Output
+			}, recipe => {
+				var Output = recipe.getOriginalRecipeResult().getId()
+				var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
+				e.recipes.kubejs.shapeless(Input, [`9x ${Output}`])
+			})
+		} else return e.forEachRecipe({
 			type: Type,
-			output: Output
-		}, recipe => {
-			var Output = recipe.getOriginalRecipeResult().getId()
-			var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
-			e.recipes.kubejs.shapeless(Input, [`9x ${Output}`])
-		})
-	}
-	function FixRecipes2(Type, Output, Input) {
-		e.forEachRecipe({
-			type: Type,	
 			output: Output,
 			input: Input
 		}, recipe => {
