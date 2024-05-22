@@ -20,6 +20,21 @@
     "version": "1.20.1-1.5.1"
   },
   {
+    "modid": "fabric_rendering_fluids_v1",
+    "name": "Fabric Rendering Fluids (v1)",
+    "version": "3.0.28+4ac5e37a77"
+  },
+  {
+    "modid": "fabric_models_v0",
+    "name": "Fabric Models (v0)",
+    "version": "0.4.2+7c3892a477"
+  },
+  {
+    "modid": "fabric_convention_tags_v1",
+    "name": "Fabric Convention Tags",
+    "version": "1.5.5+fa3d1c0177"
+  },
+  {
     "modid": "ctm",
     "name": "ConnectedTexturesMod",
     "version": "1.20.1-1.1.8+6"
@@ -35,6 +50,21 @@
     "version": "1.3"
   },
   {
+    "modid": "fabric_command_api_v1",
+    "name": "Fabric Command API (v1)",
+    "version": "1.2.34+f71b366f77"
+  },
+  {
+    "modid": "fabric_block_view_api_v2",
+    "name": "Fabric BlockView API (v2)",
+    "version": "1.0.1+0767707077"
+  },
+  {
+    "modid": "fabric_command_api_v2",
+    "name": "Fabric Command API (v2)",
+    "version": "2.2.13+561530ec77"
+  },
+  {
     "modid": "createdieselgenerators",
     "name": "Create Diesel Generators",
     "version": "1.20.1-1.2h"
@@ -48,6 +78,11 @@
     "modid": "balm",
     "name": "Balm",
     "version": "7.2.2"
+  },
+  {
+    "modid": "fabric_screen_api_v1",
+    "name": "Fabric Screen API (v1)",
+    "version": "2.0.8+45a670a577"
   },
   {
     "modid": "dynview",
@@ -90,6 +125,11 @@
     "version": "1.1"
   },
   {
+    "modid": "fabric_game_rule_api_v1",
+    "name": "Fabric Game Rule API (v1)",
+    "version": "1.0.40+683d4da877"
+  },
+  {
     "modid": "supermartijn642corelib",
     "name": "SuperMartijn642\u0027s Core Lib",
     "version": "1.1.17"
@@ -120,9 +160,19 @@
     "version": "1.0.2"
   },
   {
+    "modid": "fabric_entity_events_v1",
+    "name": "Fabric Entity Events (v1)",
+    "version": "1.6.0+6274ab9d77"
+  },
+  {
     "modid": "constructionwand",
     "name": "Construction Wand",
     "version": "1.20.1-2.11"
+  },
+  {
+    "modid": "fabric_rendering_data_attachment_v1",
+    "name": "Fabric Rendering Data Attachment (v1)",
+    "version": "0.3.37+a6081afc77"
   },
   {
     "modid": "jadeaddons",
@@ -138,6 +188,16 @@
     "modid": "blockcrafting",
     "name": "Block Crafting",
     "version": "1.0.1"
+  },
+  {
+    "modid": "fabric_client_tags_api_v1",
+    "name": "Fabric Client Tags",
+    "version": "1.1.2+5d6761b877"
+  },
+  {
+    "modid": "fabric_dimensions_v1",
+    "name": "Fabric Dimensions API (v1)",
+    "version": "2.1.54+8005d10d77"
   },
   {
     "modid": "tslatentitystatus",
@@ -165,9 +225,19 @@
     "version": "14.19.1"
   },
   {
+    "modid": "fabric_model_loading_api_v1",
+    "name": "Fabric Model Loading API (v1)",
+    "version": "1.0.3+6274ab9d77"
+  },
+  {
     "modid": "attributefix",
     "name": "AttributeFix",
     "version": "21.0.4"
+  },
+  {
+    "modid": "fabric_screen_handler_api_v1",
+    "name": "Fabric Screen Handler API (v1)",
+    "version": "1.3.30+561530ec77"
   },
   {
     "modid": "libraryferret",
@@ -178,6 +248,16 @@
     "modid": "caelus",
     "name": "Caelus API",
     "version": "3.1.0+1.20"
+  },
+  {
+    "modid": "fabric_rendering_v1",
+    "name": "Fabric Rendering (v1)",
+    "version": "3.0.8+66e9a48f77"
+  },
+  {
+    "modid": "fabric_renderer_indigo",
+    "name": "Fabric Renderer - Indigo",
+    "version": "1.5.1+67f9824077"
   },
   {
     "modid": "naturescompass",
@@ -203,6 +283,11 @@
     "modid": "memoryleakfix",
     "name": "Memory Leak Fix",
     "version": "1.1.5"
+  },
+  {
+    "modid": "fabric_particles_v1",
+    "name": "Fabric Particles (v1)",
+    "version": "1.1.2+78e1ecb877"
   },
   {
     "modid": "forge",
@@ -265,6 +350,11 @@
     "version": "1.1.5"
   },
   {
+    "modid": "fabric_api_base",
+    "name": "Fabric API Base",
+    "version": "0.4.31+ef105b4977"
+  },
+  {
     "modid": "mousetweaks",
     "name": "Mouse Tweaks",
     "version": "2.25"
@@ -300,6 +390,11 @@
     "version": "1.20.1-4.1.0.0"
   },
   {
+    "modid": "fabric_block_api_v1",
+    "name": "Fabric Block API (v1)",
+    "version": "1.0.11+0e6cb7f777"
+  },
+  {
     "modid": "spectrelib",
     "name": "SpectreLib",
     "version": "0.13.14+1.20.1"
@@ -308,6 +403,11 @@
     "modid": "ding",
     "name": "Ding",
     "version": "1.4.1"
+  },
+  {
+    "modid": "fabric_resource_conditions_api_v1",
+    "name": "Fabric Resource Conditions API (v1)",
+    "version": "2.3.8+9ad825cd77"
   },
   {
     "modid": "betterfpsdist",
@@ -345,6 +445,11 @@
     "version": "23.9.7"
   },
   {
+    "modid": "fabric_item_group_api_v1",
+    "name": "Fabric Item Group API (v1)",
+    "version": "4.0.12+c9161c2d77"
+  },
+  {
     "modid": "polymorph",
     "name": "Polymorph",
     "version": "0.49.2+1.20.1"
@@ -375,6 +480,16 @@
     "version": "1.6.2"
   },
   {
+    "modid": "fabric_registry_sync_v0",
+    "name": "Fabric Registry Sync (v0)",
+    "version": "2.3.3+1c0ea72177"
+  },
+  {
+    "modid": "continuity",
+    "name": "Continuity",
+    "version": "3.0.0-beta.51.20.1"
+  },
+  {
     "modid": "fastfurnace",
     "name": "FastFurnace",
     "version": "8.0.1"
@@ -390,14 +505,34 @@
     "version": "2.5.1+mc1.20.1"
   },
   {
+    "modid": "fabric_recipe_api_v1",
+    "name": "Fabric Recipe API (v1)",
+    "version": "1.0.21+514a076577"
+  },
+  {
     "modid": "moremobvariants",
     "name": "More Mob Variants",
     "version": "1.2.2"
   },
   {
+    "modid": "fabric_object_builder_api_v1",
+    "name": "Fabric Object Builder API (v1)",
+    "version": "11.1.3+2174fc8477"
+  },
+  {
     "modid": "embeddium_extra",
     "name": "Embeddium Extra",
     "version": "0.5.4.1+mc1.20.1-build.117"
+  },
+  {
+    "modid": "fabric_sound_api_v1",
+    "name": "Fabric Sound API (v1)",
+    "version": "1.0.13+4f23bd8477"
+  },
+  {
+    "modid": "fabric_message_api_v1",
+    "name": "Fabric Message API (v1)",
+    "version": "5.1.9+52cc178c77"
   },
   {
     "modid": "extremesoundmuffler",
@@ -440,6 +575,11 @@
     "version": "1.0.0"
   },
   {
+    "modid": "fabric_renderer_api_v1",
+    "name": "Fabric Renderer API (v1)",
+    "version": "3.2.1+1d29b44577"
+  },
+  {
     "modid": "embeddiumplus",
     "name": "Embeddium++",
     "version": "1.2.12"
@@ -448,6 +588,11 @@
     "modid": "create_dd",
     "name": "Create: Dreams \u0026 Desires",
     "version": "0.2c.PREBETA"
+  },
+  {
+    "modid": "fabric_item_api_v1",
+    "name": "Fabric Item API (v1)",
+    "version": "2.1.28+4d0bbcfa77"
   },
   {
     "modid": "extendedcrafting",
@@ -510,6 +655,11 @@
     "version": "1.22.7"
   },
   {
+    "modid": "fabric_data_attachment_api_v1",
+    "name": "Fabric Data Attachment API (v1)",
+    "version": "1.0.0+30ef839e77"
+  },
+  {
     "modid": "mixinextras",
     "name": "MixinExtras",
     "version": "0.3.5"
@@ -555,6 +705,16 @@
     "version": "1.0.2"
   },
   {
+    "modid": "fabric_api",
+    "name": "Forgified Fabric API",
+    "version": "0.92.1+1.11.8+1.20.1"
+  },
+  {
+    "modid": "fabric_content_registries_v0",
+    "name": "Fabric Content Registries (v0)",
+    "version": "4.0.11+a670df1e77"
+  },
+  {
     "modid": "konkrete",
     "name": "Konkrete",
     "version": "1.6.1"
@@ -580,6 +740,16 @@
     "version": "1.20.1-1.3.0"
   },
   {
+    "modid": "fabric_api_lookup_api_v1",
+    "name": "Fabric API Lookup API (v1)",
+    "version": "1.6.36+67f9824077"
+  },
+  {
+    "modid": "lazurite",
+    "name": "Lazurite",
+    "version": "1.0.4+mc1.20.1"
+  },
+  {
     "modid": "sgjourney",
     "name": "Stargate Journey",
     "version": "0.6.20"
@@ -598,6 +768,11 @@
     "modid": "thermal_expansion",
     "name": "Thermal Expansion",
     "version": "11.0.0"
+  },
+  {
+    "modid": "connectormod",
+    "name": "Connector",
+    "version": "1.0.0-beta.43+1.20.1"
   },
   {
     "modid": "resourcefullib",
@@ -630,6 +805,11 @@
     "version": "2001.1.4"
   },
   {
+    "modid": "fabric_loot_api_v2",
+    "name": "Fabric Loot API (v2)",
+    "version": "1.2.1+eb28f93e77"
+  },
+  {
     "modid": "cupboard",
     "name": "Cupboard utilities",
     "version": "1.20.1-2.5"
@@ -643,6 +823,11 @@
     "modid": "trashcans",
     "name": "Trash Cans",
     "version": "1.0.18b"
+  },
+  {
+    "modid": "fabric_networking_api_v1",
+    "name": "Fabric Networking API (v1)",
+    "version": "1.3.11+503a202477"
   },
   {
     "modid": "new_create",
@@ -670,9 +855,24 @@
     "version": "2.2.1"
   },
   {
+    "modid": "fabric_lifecycle_events_v1",
+    "name": "Fabric Lifecycle Events (v1)",
+    "version": "2.2.22+afab492177"
+  },
+  {
     "modid": "caupona",
     "name": "Caupona",
     "version": "1.20.1-0.4.9"
+  },
+  {
+    "modid": "fabric_key_binding_api_v1",
+    "name": "Fabric Key Binding API (v1)",
+    "version": "1.0.37+561530ec77"
+  },
+  {
+    "modid": "fabric_transfer_api_v1",
+    "name": "Fabric Transfer API (v1)",
+    "version": "3.3.5+631c9cd677"
   },
   {
     "modid": "rhino",
@@ -725,6 +925,11 @@
     "version": "0.10.0"
   },
   {
+    "modid": "fabric_resource_loader_v0",
+    "name": "Fabric Resource Loader (v0)",
+    "version": "0.11.10+bcd08ed377"
+  },
+  {
     "modid": "obscure_api",
     "name": "Obscure API",
     "version": "15"
@@ -775,6 +980,11 @@
     "version": "12.0.0.3"
   },
   {
+    "modid": "fabric_mining_level_api_v1",
+    "name": "Fabric Mining Level API (v1)",
+    "version": "2.1.50+561530ec77"
+  },
+  {
     "modid": "artifacts",
     "name": "Artifacts",
     "version": "9.3.0"
@@ -815,6 +1025,11 @@
     "version": "2.1.0"
   },
   {
+    "modid": "fabric_transitive_access_wideners_v1",
+    "name": "Fabric Transitive Access Wideners (v1)",
+    "version": "4.3.1+1880499877"
+  },
+  {
     "modid": "libipn",
     "name": "libIPN",
     "version": "4.0.1"
@@ -828,6 +1043,11 @@
     "modid": "titanium",
     "name": "Titanium",
     "version": "3.8.27"
+  },
+  {
+    "modid": "fabric_blockrenderlayer_v1",
+    "name": "Fabric BlockRenderLayer Registration (v1)",
+    "version": "1.1.41+1d0da21e77"
   },
   {
     "modid": "jade",
@@ -895,6 +1115,11 @@
     "version": "4.5.9"
   },
   {
+    "modid": "fabric_biome_api_v1",
+    "name": "Fabric Biome API (v1)",
+    "version": "13.0.13+dc36698e77"
+  },
+  {
     "modid": "betterconduitplacement",
     "name": "Better Conduit Placement",
     "version": "3.2"
@@ -938,6 +1163,16 @@
     "modid": "healingcampfire",
     "name": "Healing Campfire",
     "version": "5.3"
+  },
+  {
+    "modid": "fabric_data_generation_api_v1",
+    "name": "Fabric Data Generation API (v1)",
+    "version": "12.3.4+369cb3a477"
+  },
+  {
+    "modid": "fabric_events_interaction_v0",
+    "name": "Fabric Events Interaction (v0)",
+    "version": "0.6.2+0d0bd5a777"
   },
   {
     "modid": "createaddition",

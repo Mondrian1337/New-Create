@@ -6,6 +6,8 @@
  * 我们已经很累了,你们爱咋玩咋玩,只要不要影响到别的玩家,随便你们解开好吧
  *                                  ------2024.05.05 21点11分42秒 柒月留
 */
+
+// *遍历是好文明😋
 ServerEvents.recipes(e => {
 	// 删除Item
 	let Output = [
@@ -192,12 +194,12 @@ ServerEvents.recipes(e => {
 	})
 
 	// 删除Type
-	let Remove_Type = [
+	let RemoveType = [
 		'createaddition:charging',
 		'minecraft:smelting',
 		'create_new_age:energising',
 	]
-	Remove_Type.forEach(Type => {
+	RemoveType.forEach(Type => {
 		e.remove({ type: Type })
 	})
 

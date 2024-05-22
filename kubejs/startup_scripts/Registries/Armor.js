@@ -16,6 +16,8 @@ StartupEvents.registry('item', e => {
 	const Item = (Name, Type, Rarity, Tire, Glow) => {
 		e.create(ModID + Name, Type)
 			.tag(ModID + 'items')
+			.tag('forge:armor')
+			.tag(ModID + 'armor')
 			.rarity(Rarity)
 			.tier(ModID + Tire)
 			.glow(Glow)

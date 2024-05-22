@@ -35,7 +35,7 @@ StartupEvents.registry('item', e => {
 		['radiant_shovel', 'shovel', 'epic', true, 7, 2048, 12, 4]
 	]
 	Tool.forEach(([
-		Name, // Item id
+		Name, // ItemId
 		Type, // 工具类型	
 		Rarity, // 稀有度
 		Glow, // 发光

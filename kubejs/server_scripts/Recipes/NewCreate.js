@@ -435,7 +435,7 @@ ServerEvents.recipes(e => {
 			}, recipe => {
 				var Output = recipe.getOriginalRecipeResult().getId()
 				var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
-				e.recipes.kubejs.shapeless(Input, [`9x ${Output}`])
+				kubejs.shapeless(Input, [`9x ${Output}`])
 			})
 		} else return e.forEachRecipe({
 			type: Type,
@@ -444,7 +444,7 @@ ServerEvents.recipes(e => {
 		}, recipe => {
 			var Output = recipe.getOriginalRecipeResult().getId()
 			var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
-			e.recipes.kubejs.shapeless(`9x ${Output}`, [`${Input}`])
+			kubejs.shapeless(`9x ${Output}`, [`${Input}`])
 		})
 	}
 })
