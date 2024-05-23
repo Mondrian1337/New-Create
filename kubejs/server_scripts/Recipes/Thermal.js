@@ -250,5 +250,5 @@ ServerEvents.recipes(e => {
 		'ae2:silicon',
 		'thermal:sulfur_dust'
 	], 'new_create:saw_silicon')
-		.energy(4800).id('ae2:minecraft.blasting/silicon_from_certus_quartz_dust')
+		.energy(5600).id('ae2:minecraft.blasting/silicon_from_certus_quartz_dust')
 })

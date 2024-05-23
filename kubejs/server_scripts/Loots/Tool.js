@@ -18,5 +18,5 @@ LootJS.modifiers(loots => {
 			.matchMainHand(Tools)
 			.addAlternativesLoot(LootEntry.of(Loots)
 				.when(loots => loots.randomChance(Chance)))
-	})
+	})	
 })

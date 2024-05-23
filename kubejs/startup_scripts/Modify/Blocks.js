@@ -1,7 +1,7 @@
 BlockEvents.modification(e => {
 	// Fix
-	e.modify('melter:melter', block => {
-		block.destroySpeed = 1
+	e.modify('melter:melter', modify => {
+		modify.destroySpeed = 1
 	})
 })
 BlockEvents.modification(e => {
