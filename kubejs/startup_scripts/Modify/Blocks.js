@@ -5,7 +5,7 @@ BlockEvents.modification(e => {
 	})
 })
 BlockEvents.modification(e => {
-	const WoodsNameSpace = [
+	let WoodsNameSpace = [
 		'dark_oak', 'oak', 'acacia', 'birch', 'jungle',
 		'spruce', 'mangrove', 'cherry', 'coconut', 'walnut',
 		'azalea', 'flowering_azalea', 'glacian', 'crimson', 'warped',
@@ -14,7 +14,7 @@ BlockEvents.modification(e => {
 	]
 
 	WoodsNameSpace.forEach(type => {
-		const logNames = [
+		let logNames = [
 			`${type}_log`,
 			`${type}_wood`,
 			`stripped_${type}_log`,
@@ -28,7 +28,7 @@ BlockEvents.modification(e => {
 		})
 	})
 
-	const Woods = [
+	let Woods = [
 		'crimson_stem', 'stripped_crimson_stem', 'crimson_hyphae', 'stripped_crimson_hyphae',
 		'warped_stem', 'stripped_warped_stem', 'warped_hyphae', 'stripped_warped_hyphae'
 	]
