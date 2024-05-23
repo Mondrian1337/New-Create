@@ -12,6 +12,7 @@ ItemEvents.armorTierRegistry(e => {
 })
 // 物品贴图照常放在item
 // 身上的贴图要放在assets/new_create/textures/models/armor
+// .tier()要在前面跟上ModID
 StartupEvents.registry('item', e => {
 	const Item = (Name, Type, Rarity, Tire, Glow) => {
 		e.create(ModID + Name, Type)

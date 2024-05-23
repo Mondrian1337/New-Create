@@ -212,6 +212,16 @@ ServerEvents.recipes(e => {
 		'2x minecraft:slime_ball'
 	])
 
+	// 铜线圈
+	kubejs.shaped('immersiveengineering:coil_lv', [
+		'AAA',
+		'ABA',
+		'AAA'
+	], {
+		A: 'createaddition:copper_spool',
+		B: '#forge:rods/iron'
+	})
+
 	// 高级精炼油
 	e.custom({
 		"type": "immersiveengineering:mixer",

@@ -343,16 +343,6 @@ ServerEvents.recipes(e => {
 		Item.of('minecraft:blaze_powder', 3).withChance(0.3)
 	], 'minecraft:blaze_rod')
 
-	// 铜线圈
-	kubejs.shaped('immersiveengineering:coil_lv', [
-		'AAA',
-		'ABA',
-		'AAA'
-	], {
-		A: 'createaddition:copper_spool',
-		B: '#forge:rods/iron'
-	})
-
 	// 没啥卵用的钟
 	create.sequenced_assembly('minecraft:clock', '#forge:ingots/gold', [
 		create.deploying('minecraft:gold_ingot', ['create:precision_mechanism', 'create:precision_mechanism']),
@@ -393,6 +383,8 @@ ServerEvents.recipes(e => {
 		'9x create:zinc_nugget'
 	])
 
+	
+
 	// 纯净石英
 	e.custom({
 		"type": "vintageimprovements:centrifugation",
@@ -426,7 +418,7 @@ ServerEvents.recipes(e => {
 	// Fix ingots <=> block crafting
 	fixRecipes('crafting_shapeless', '#forge:ingots', '#forge:storage_blocks')
 
-
+	// Fixxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Recipes
 	function fixRecipes(Type, Output, Input) {
 		if (Input == null) {
 			return e.forEachRecipe({
