@@ -46,6 +46,7 @@ StartupEvents.registry('item', e => {
 		['saw_silicon', 'common', false], // 粗硅
 		['silicon_crystal', 'common', false], // 硅晶
 		['white_flour', 'common', false], // 白面
+		['processor_press', 'common', false], // 空白压印模板
 	]
 	Item.forEach(([Name, Rarity, Glow]) => {
 		e.create(ModID + Name)

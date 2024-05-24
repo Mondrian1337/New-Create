@@ -44,7 +44,8 @@ JEIEvents.hideItems(e => {
 		'new_create:in_infernal_mechanism',
 		'new_create:in_kinetic_mechanism',
 		'new_create:in_sturdy_mechanism',
-		'new_create:in_sealed_mechanism'
+		'new_create:in_sealed_mechanism',
+		'ae2:facade'
 	]
 	Item.forEach(Item => {
 		e.hide(Item)

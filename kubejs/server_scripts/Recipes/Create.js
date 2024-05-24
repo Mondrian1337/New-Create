@@ -673,7 +673,7 @@ ServerEvents.recipes(e => {
 	], {
 		A: 'create:shaft',
 		B: '#forge:plates/iron',
-		C: 'create_dd:integrated_mechanism',
+		C: 'create_dd:calculation_mechanism',
 		D: 'create:andesite_alloy',
 		E: '#forge:plates/zinc',
 		F: 'create_dd:industrial_casing'
@@ -793,6 +793,18 @@ ServerEvents.recipes(e => {
 		'#forge:treated_wood'
 	])
 
+	// 集成电路板
+	e.custom({
+		"type": "ae2:inscriber",
+		"ingredients": {
+			"top": { "item": 'create_dd:lapis_sheet' },
+			"bottom": { "item": 'create_new_age:overcharged_golden_sheet' },
+			"middle": { "item": 'ae2:printed_silicon' },
+		},
+		"mode": "inscribe",
+		"result": { "item": 'create_dd:integrated_circuit' }
+	}).id('create_dd:sequenced_assembly/integrated_circuit')
+
 	// 造石机
 	kubejs.shaped('create_mechanical_extruder:mechanical_extruder', [
 		' E ',
@@ -813,9 +825,9 @@ ServerEvents.recipes(e => {
 		"results": [{ "item": "new_create:silicon_crystal" }],
 		"sequence": [{
 			"type": "vintageimprovements:polishing",
-			"speed_limits": 3,
 			"ingredients": [{ "item": "ae2:silicon" }],
 			"results": [{ "item": "new_create:silicon_crystal" }],
+			"speed_limits": 3,
 			"processingTime": 20
 		}],
 		"loops": 5,

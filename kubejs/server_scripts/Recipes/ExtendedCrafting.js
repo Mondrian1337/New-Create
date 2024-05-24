@@ -123,4 +123,19 @@ ServerEvents.recipes(e => {
 		C: 'new_create:cast_iron_casing',
 		S: '#create:shaft_add'
 	}).id('vintageimprovements:craft/centrifuge')
+
+	// 压印机
+	shaped_table('ae2:inscriber', [
+		'CCFCC',
+		'CGIGC',
+		'FIOIF',
+		'CGIGC',
+		'CCFCC'
+	], {
+		F: '#forge:gems/fluix',
+		C: 'create:brass_casing',
+		O: 'create_new_age:overcharged_diamond',
+		I: 'create_dd:integrated_circuit',
+		G: 'create_new_age:overcharged_golden_sheet'
+	}).id('ae2:network/blocks/inscribers')
 })
