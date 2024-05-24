@@ -25,6 +25,10 @@ StartupEvents.registry('item', e => {
 		['diamond_saw', 'axe', 'common', false, 5, 1200, 6, 3],
 		// 青铜镐
 		['bronze_pickaxe', 'pickaxe', 'common', false, 1, 200, 5.5, 2],
+		// 青铜斧
+		['bronze_axe', 'axe', 'common', false, 1, 200, 5, 5, 2],
+		// 青铜锹
+		['bronze_shovel', 'shovel', 'common', false, 1, 200, 5, 5, 2],
 		// 光辉刃
 		['radiant_sword', 'sword', 'epic', true, 10, 2048, 12, 4],
 		// 光辉镐

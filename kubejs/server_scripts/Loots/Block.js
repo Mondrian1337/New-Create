@@ -46,12 +46,6 @@ LootJS.modifiers(loots => {
 		.removeLoot('create:raw_zinc')
 		.addLoot('2x create:crushed_raw_zinc')
 
-	// 树叶修改木棍概率
-	loots.addBlockLootModifier('#minecraft:leaves')
-		.removeLoot('minecraft:stick')
-		.addAlternativesLoot(LootEntry.of('minecraft:stick')
-			.when(loots => loots.randomChance(0.5)))
-
 	// 篝火
 	loots.addBlockLootModifier('minecraft:campfire')
 		.removeLoot(All)
