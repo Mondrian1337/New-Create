@@ -400,7 +400,7 @@
 						Damage: 0
 						RepairCost: 0
 						display: {
-							Name: "{\"text\":\"纯粹骨钉\"}"
+							Name: "{\"text\":\"纯粹骨钉(迫真)\"}"
 						}
 					}
 				}
@@ -459,6 +459,21 @@
 			title: "硅!"
 			x: 3.0d
 			y: 2.0d
+		}
+		{
+			dependencies: [
+				"015E76603457CFF2"
+				"0CE928327BB29A80"
+			]
+			id: "17D831D19003A069"
+			tasks: [{
+				id: "369941605B2C2FF7"
+				item: "ae2:fluix_crystal"
+				type: "item"
+			}]
+			title: "&b它电我!"
+			x: 3.0d
+			y: 1.0d
 		}
 	]
 	title: "No.3-1 IE + Thermal"

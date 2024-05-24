@@ -35,6 +35,7 @@ StartupEvents.registry('fluid', e => {
 			.stillTexture(ModID + 'fluid/still')
 	})
 
+	
 	// 特殊注册
 
 	// 液态灵魂

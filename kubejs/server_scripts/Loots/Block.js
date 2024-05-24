@@ -50,7 +50,7 @@ LootJS.modifiers(loots => {
 	loots.addBlockLootModifier('#minecraft:leaves')
 		.removeLoot('minecraft:stick')
 		.addAlternativesLoot(LootEntry.of('minecraft:stick')
-			.when(loots => loots.randomChance(0.75)))
+			.when(loots => loots.randomChance(0.5)))
 
 	// 篝火
 	loots.addBlockLootModifier('minecraft:campfire')

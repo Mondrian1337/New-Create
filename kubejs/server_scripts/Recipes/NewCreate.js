@@ -383,7 +383,7 @@ ServerEvents.recipes(e => {
 		'9x create:zinc_nugget'
 	])
 
-	
+
 
 	// 纯净石英
 	e.custom({

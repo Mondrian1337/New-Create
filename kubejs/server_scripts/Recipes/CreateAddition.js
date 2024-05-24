@@ -1,19 +1,9 @@
 ServerEvents.recipes(e => {
-	const {
-		create,
-		create_mechanical_extruder,
-		immersiveengineering,
-		kubejs,
-		melter,
-		minecraft,
-		thermal
-	} = e.recipes
-	
 	// 充电金锭
 	e.custom({
 		"type": "createaddition:charging",
-		"input": { "item": "minecraft:gold_ingot", "count": 1 },
-		"result": { "item": 'create_new_age:overcharged_gold', "count": 1 },
+		"input": { "item": "minecraft:gold_ingot" },
+		"result": { "item": 'create_new_age:overcharged_gold' },
 		"energy": 2000,
 		"maxChargeRate": 200
 	})
@@ -21,8 +11,8 @@ ServerEvents.recipes(e => {
 	// 充电铁锭
 	e.custom({
 		"type": "createaddition:charging",
-		"input": { "item": "minecraft:iron_ingot", "count": 1 },
-		"result": { "item": 'create_new_age:overcharged_iron', "count": 1 },
+		"input": { "item": "minecraft:iron_ingot" },
+		"result": { "item": 'create_new_age:overcharged_iron' },
 		"energy": 2500,
 		"maxChargeRate": 200
 	})
@@ -30,8 +20,8 @@ ServerEvents.recipes(e => {
 	// 充电钻石
 	e.custom({
 		"type": "createaddition:charging",
-		"input": { "item": "minecraft:diamond", "count": 1 },
-		"result": { "item": 'create_new_age:overcharged_diamond', "count": 1 },
+		"input": { "item": "minecraft:diamond" },
+		"result": { "item": 'create_new_age:overcharged_diamond' },
 		"energy": 3000,
 		"maxChargeRate": 200
 	})
@@ -39,8 +29,8 @@ ServerEvents.recipes(e => {
 	// 充电金板
 	e.custom({
 		"type": "createaddition:charging",
-		"input": { "tag": 'forge:plates/gold', "count": 1 },
-		"result": { "item": 'create_new_age:overcharged_golden_sheet', "count": 1 },
+		"input": { "tag": 'forge:plates/gold' },
+		"result": { "item": 'create_new_age:overcharged_golden_sheet' },
 		"energy": 1500,
 		"maxChargeRate": 200
 	})
@@ -48,8 +38,17 @@ ServerEvents.recipes(e => {
 	// 充电铁板
 	e.custom({
 		"type": "createaddition:charging",
-		"input": { "tag": 'forge:plates/iron', "count": 1 },
-		"result": { "item": 'create_new_age:overcharged_iron_sheet', "count": 1 },
+		"input": { "tag": 'forge:plates/iron' },
+		"result": { "item": 'create_new_age:overcharged_iron_sheet' },
+		"energy": 1500,
+		"maxChargeRate": 200
+	})
+
+	// 充能赛特斯石英水晶
+	e.custom({
+		"type": "createaddition:charging",
+		"input": { "item": 'ae2:certus_quartz_crystal' },
+		"result": { "item": 'ae2:charged_certus_quartz_crystal' },
 		"energy": 1500,
 		"maxChargeRate": 200
 	})
@@ -57,7 +56,7 @@ ServerEvents.recipes(e => {
 	// 红石工程块
 	e.custom({
 		"type": "createaddition:charging",
-		"input": { "item": 'immersiveengineering:heavy_engineering', "count": 1 },
+		"input": { "item": 'immersiveengineering:heavy_engineering' },
 		"result": { "item": 'immersiveengineering:rs_engineering', "count": 2 },
 		"energy": 800,
 		"maxChargeRate": 200

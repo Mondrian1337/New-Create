@@ -140,14 +140,14 @@ ServerEvents.recipes(e => {
 	})
 
 	// Thermal Mechines
-	let Thermal_Mechines = [
+	let ThermalMechines = [
 		'thermal:machine_brewer', 'thermal:machine_crystallizer', 'thermal:machine_crafter',
 		'thermal:machine_bottler', 'thermal:machine_pyrolyzer', 'thermal:machine_refinery',
 		'thermal:machine_furnace', 'thermal:machine_sawmill', 'thermal:machine_pulverizer',
 		'thermal:machine_chiller', 'thermal:machine_crucible', 'thermal:machine_press',
 		'thermal:machine_centrifuge', 'thermal:machine_insolator', 'thermal:machine_smelter',
 	]
-	Thermal_Mechines.forEach(remove => {
+	ThermalMechines.forEach(remove => {
 		e.remove({ output: remove })
 	})
 
@@ -179,15 +179,10 @@ ServerEvents.recipes(e => {
 	})
 
 	// Mek
-	let Mek_Item = [
-		'mekanismgenerators:heat_generator',
-		'mekanismgenerators:wind_generator',
-		'mekanismgenerators:wind_generator',
-		'mekanismgenerators:solar_generator',
-		'mekanismgenerators:gas_burning_generator',
-		'mekanismgenerators:bio_generator'
-	]
-	Mek_Item.forEach(Item => {
+	let MekItem = [
+		
+	]	
+	MekItem.forEach(Item => {
 		e.remove({ output: Item })
 	})
 
