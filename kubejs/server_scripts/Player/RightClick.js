@@ -16,6 +16,6 @@ BlockEvents.rightClicked(e => {
 		block.id == 'minecraft:campfire') {
 		block.set('minecraft:campfire', { lit: true })
 		item.count--
-		player.runCommandSilent('item replace entity @s weapon.offhand with air')
+		player.offhandItem.item--
 	}
 })
