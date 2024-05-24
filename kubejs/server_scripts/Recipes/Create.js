@@ -40,7 +40,7 @@ ServerEvents.recipes(e => {
 	])
 
 	// 小齿轮(半成品)
-	create.cutting('new_create:in_cogwheel', [
+	minecraft.stonecutting('new_create:in_cogwheel', [
 		'#forge:treated_wood_slab'
 	])
 	create.cutting([
@@ -49,7 +49,7 @@ ServerEvents.recipes(e => {
 	], '#forge:treated_wood_slab')
 
 	// 大齿轮(半成品)
-	create.cutting('new_create:in_large_cogwheel', [
+	minecraft.stonecutting('new_create:in_large_cogwheel', [
 		'#forge:treated_wood'
 	])
 	create.cutting([
