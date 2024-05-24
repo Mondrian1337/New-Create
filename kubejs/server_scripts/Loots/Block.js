@@ -59,7 +59,7 @@ LootJS.modifiers(loots => {
 			LootEntry.of('minecraft:campfire')
 				.when(loots => loots.randomChance(0.25)),
 			LootEntry.of('minecraft:charcoal')
-				.when(loots => loots.randomChance(0.75)))
+				.when(loots => loots.randomChance(1)))
 
 	// 灵魂篝火
 	loots.addBlockLootModifier('minecraft:soul_campfire')
