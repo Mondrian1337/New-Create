@@ -3,7 +3,7 @@
 	default_quest_shape: ""
 	filename: "minecraft"
 	group: ""
-	icon: "minecraft:grass_block"
+	icon: "new_create:flint_axe"
 	id: "702CD7931A4A3E44"
 	images: [
 		{

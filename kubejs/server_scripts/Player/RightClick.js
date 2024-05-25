@@ -7,7 +7,7 @@ BlockEvents.rightClicked(e => {
 		block.id == 'minecraft:coal_block') {
 		block.set('minecraft:fire')
 		item.count--
-		player.runCommandSilent('item replace entity @s weapon.offhand with air')
+		player.offhandItem.item--
 	}
 
 	// 篝火

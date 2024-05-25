@@ -1,7 +1,7 @@
 // 开发调试(这个脚本的东西发布时要记得删除)
 ItemEvents.rightClicked(e => {
 	const { item, player, server } = e
-	
+
 	// 潜行 + 右键获取信息
 	const ItemID = item.id
 	if (player.mainHandItem == ItemID && player.shiftKeyDown && player.mainHandItem != "minecraft:air") {

@@ -12,7 +12,6 @@ BlockEvents.modification(e => {
 		'rubberwood', 'rose', 'smoked', 'spirit', 'rubber',
 		'walnut', 'fig', 'wolfberry'
 	]
-
 	WoodsNameSpace.forEach(type => {
 		let logNames = [
 			`${type}_log`,
@@ -32,7 +31,6 @@ BlockEvents.modification(e => {
 		'crimson_stem', 'stripped_crimson_stem', 'crimson_hyphae', 'stripped_crimson_hyphae',
 		'warped_stem', 'stripped_warped_stem', 'warped_hyphae', 'stripped_warped_hyphae'
 	]
-
 	Woods.forEach(name => {
 		e.modify(`minecraft:${name}`, modify => {
 			modify.requiresTool = true
