@@ -73,9 +73,9 @@ ServerEvents.recipes(e => {
 
 	// 青铜斧
 	shaped('new_create:bronze_axe', [
-		'BB ',
-		'BR ',
-		' R '
+		'BB',
+		'BR',
+		' R'
 	], {
 		B: '#forge:ingots/bronze',
 		R: '#forge:rods/wooden'

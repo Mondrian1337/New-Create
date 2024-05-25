@@ -436,6 +436,7 @@ ServerEvents.recipes(e => {
 	}
 
 	// logs => 6x planks for StoneCutting
+	// ☝亖人栗子有中文不用放洋屁☝🤣
 	e.forEachRecipe({
 		type: 'crafting_shapeless',
 		output: '#minecraft:planks',
