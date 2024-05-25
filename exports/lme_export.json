@@ -775,6 +775,11 @@
     "version": "11.0.0"
   },
   {
+    "modid": "ftbultimine",
+    "name": "FTB Ultimine",
+    "version": "2001.1.5"
+  },
+  {
     "modid": "connectormod",
     "name": "Connector",
     "version": "1.0.0-beta.43+1.20.1"
