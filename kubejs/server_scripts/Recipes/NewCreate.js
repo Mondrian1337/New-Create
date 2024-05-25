@@ -431,11 +431,11 @@ ServerEvents.recipes(e => {
 			var Output = recipe.getOriginalRecipeResult().getId()
 			var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
 			kubejs.shapeless(`9x ${Output}`, [`${Input}`])
-			minecraft.stonecutting(`9x ${Output}`,[`${Input}`])
+			minecraft.stonecutting(`9x ${Output}`, [`${Input}`])
 		})
 	}
 
-	// logs => 6x planks
+	// logs => 6x planks for StoneCutting
 	e.forEachRecipe({
 		type: 'crafting_shapeless',
 		output: '#minecraft:planks',
@@ -443,6 +443,6 @@ ServerEvents.recipes(e => {
 	}, recipe => {
 		var Output = recipe.getOriginalRecipeResult().getId()
 		var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
-		minecraft.stonecutting(`6x ${Output}`,[`${Input}`])
+		minecraft.stonecutting(`6x ${Output}`, [`${Input}`])
 	})
 })

@@ -40,5 +40,5 @@ BTLib.dll
 ESM
 data/fabricDefaultResourcePacks.dat
 fabricloader.log
-mods/.connector/
 config/fabric/indigo-renderer.properties
+mods
