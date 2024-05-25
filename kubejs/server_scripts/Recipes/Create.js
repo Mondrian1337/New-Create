@@ -288,7 +288,7 @@ ServerEvents.recipes(e => {
 		create.deploying('#forge:plates/gold', ['#forge:nuggets/brass', '#forge:nuggets/brass']),
 		create.deploying('#forge:plates/gold', ['minecraft:redstone', 'minecraft:redstone']),
 		create.pressing('#forge:plates/gold', '#forge:plates/gold')
-	]).loops(1).transitionalItem('incomplete_precision_mechanism')
+	]).loops(1).transitionalItem('create:golden_sheet')
 
 	// 动力合成器
 	create.sequenced_assembly('7x create:mechanical_crafter', 'create:brass_casing', [
