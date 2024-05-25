@@ -71,6 +71,26 @@ ServerEvents.recipes(e => {
 		R: '#forge:rods/wooden'
 	})
 
+	// 青铜斧
+	shaped('new_create:bronze_axe', [
+		'BB ',
+		'BR ',
+		' R '
+	], {
+		B: '#forge:ingots/bronze',
+		R: '#forge:rods/wooden'
+	})
+
+	// 青铜锹
+	shaped('new_create:bronze_shovel', [
+		'B',
+		'R',
+		'R'
+	], {
+		B: '#forge:ingots/bronze',
+		R: '#forge:rods/wooden'
+	})
+
 	// 燧石小刀
 	shaped('farmersdelight:flint_knife', [
 		' F',

@@ -6,9 +6,9 @@ StartupEvents.registry('item', e => {
 		// 燧石镐
 		['flint_pickaxe', 'pickaxe', 'common', false, -2, 100, 2, 0],
 		// 燧石斧
-		['flint_axe', 'axe', 'common', false, 1.5, 100, 2, 0],
+		['flint_axe', 'axe', 'common', false, 3, 100, 2, 0],
 		// 燧石短柄斧
-		['flint_handaxe', 'axe', 'common', false, -1, 40, 1, 0],
+		['flint_handaxe', 'axe', 'common', false, 2, 40, 1, 0],
 		// 燧石锹
 		['flint_shovel', 'shovel', 'common', false, -2, 80, 2, 0],
 		// 石锤
@@ -26,9 +26,9 @@ StartupEvents.registry('item', e => {
 		// 青铜镐
 		['bronze_pickaxe', 'pickaxe', 'common', false, 1, 200, 5.5, 2],
 		// 青铜斧
-		['bronze_axe', 'axe', 'common', false, 1, 200, 5, 5, 2],
+		['bronze_axe', 'axe', 'common', false, 5, 200, 5.5, 2],
 		// 青铜锹
-		['bronze_shovel', 'shovel', 'common', false, 1, 200, 5, 5, 2],
+		['bronze_shovel', 'shovel', 'common', false, 1, 200, 5.5, 2],
 		// 光辉刃
 		['radiant_sword', 'sword', 'epic', true, 10, 2048, 12, 4],
 		// 光辉镐
