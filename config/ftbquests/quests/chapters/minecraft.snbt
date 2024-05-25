@@ -2222,6 +2222,43 @@
 			x: 30.0d
 			y: 14.0d
 		}
+		{
+			dependencies: ["7EC0F60AA1929893"]
+			id: "460C89002A0E5E1C"
+			rewards: [{
+				count: 8
+				id: "2A69BB3D6C850584"
+				item: "thermal:bronze_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4A070AE36C1AE62E"
+					item: {
+						Count: 1b
+						id: "new_create:bronze_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "00722D883BBADF51"
+					item: {
+						Count: 1b
+						id: "new_create:bronze_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "青铜Tool"
+			x: 40.5d
+			y: 22.0d
+		}
 	]
 	title: "&6火与石之歌"
 }

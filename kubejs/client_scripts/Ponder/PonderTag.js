@@ -26,6 +26,7 @@ Ponder.tags(e => {
 		'new_create:furnace_core',
 		'minecraft:blast_furnace',
 		'minecraft:stick',
-		'melter:melter'
+		'melter:melter',
+		'minecraft:campfire'
 	])
 })
