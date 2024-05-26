@@ -39,7 +39,7 @@ LootJS.modifiers(loots => {
 			LootEntry.of('immersiveengineering:slag')
 				.when(loots => loots.randomChance(0.35)),
 			LootEntry.of('2x immersiveengineering:slag')
-				.when(loots => loots.randomChance(0.15)))
+				.when(loots => loots.randomChance(0.1)))
 
 	// 锌矿掉落粉碎锌矿石
 	loots.addBlockLootModifier('#forge:ores/zinc')
@@ -62,7 +62,7 @@ LootJS.modifiers(loots => {
 			LootEntry.of('minecraft:soul_campfire')
 				.when(loots => loots.randomChance(0.25)),
 			LootEntry.of('minecraft:soul_soil')
-				.when(loots => loots.randomChance(0.375)),
+				.when(loots => loots.randomChance(1)),
 			LootEntry.of('minecraft:soul_sand')
-				.when(loots => loots.randomChance(0.375)))
+				.when(loots => loots.randomChance(1)))
 })

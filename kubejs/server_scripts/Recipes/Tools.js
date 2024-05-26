@@ -111,10 +111,10 @@ ServerEvents.recipes(e => {
 		B: '#forge:string',
 		C: '#forge:rods/wooden',
 		D: '#new_create:hammer',
-		E: 'farmersdelight:flint_knife'
+		E: '#forge:tools/knives'
 	})
 		.damageIngredient('#new_create:hammer')
-		.damageIngredient('farmersdelight:flint_knife')
+		.damageIngredient('#forge:tools/knives')
 
 	// 石剑
 	shaped('minecraft:stone_sword', [
@@ -123,13 +123,13 @@ ServerEvents.recipes(e => {
 		' E '
 	], {
 		A: 'new_create:charred_cobblestone',
-		B: 'farmersdelight:flint_knife',
+		B: '#forge:tools/knives',
 		C: '#forge:string',
 		D: '#new_create:hammer',
 		E: '#forge:rods/wooden'
 	})
 		.damageIngredient('#new_create:hammer')
-		.damageIngredient('farmersdelight:flint_knife')
+		.damageIngredient('#forge:tools/knives')
 
 	// 石斧
 	shaped('minecraft:stone_axe', [
@@ -140,11 +140,11 @@ ServerEvents.recipes(e => {
 		A: 'new_create:charred_cobblestone',
 		B: '#forge:string',
 		C: '#forge:rods/wooden',
-		D: 'farmersdelight:flint_knife',
+		D: '#forge:tools/knives',
 		E: '#new_create:hammer'
 	})
 		.damageIngredient('#new_create:hammer')
-		.damageIngredient('farmersdelight:flint_knife')
+		.damageIngredient('#forge:tools/knives')
 
 	// 石锹
 	shaped('minecraft:stone_shovel', [
@@ -154,12 +154,12 @@ ServerEvents.recipes(e => {
 	], {
 		A: '#forge:string',
 		B: 'new_create:charred_cobblestone',
-		C: 'farmersdelight:flint_knife',
+		C: '#forge:tools/knives',
 		D: '#forge:rods/wooden',
 		E: '#new_create:hammer'
 	})
 		.damageIngredient('#new_create:hammer')
-		.damageIngredient('farmersdelight:flint_knife')
+		.damageIngredient('#forge:tools/knives')
 
 	// 石锄
 	shaped('minecraft:stone_hoe', [
@@ -170,11 +170,11 @@ ServerEvents.recipes(e => {
 		A: 'new_create:charred_cobblestone',
 		B: '#forge:string',
 		C: '#forge:rods/wooden',
-		D: 'farmersdelight:flint_knife',
+		D: '#forge:tools/knives',
 		E: '#new_create:hammer'
 	})
 		.damageIngredient('#new_create:hammer')
-		.damageIngredient('farmersdelight:flint_knife')
+		.damageIngredient('#forge:tools/knives')
 
 	// 石锤
 	shaped('new_create:stone_hammer', [
@@ -185,8 +185,8 @@ ServerEvents.recipes(e => {
 		A: '#forge:cobblestone',
 		B: '#forge:string',
 		C: '#forge:rods/wooden',
-		D: 'farmersdelight:flint_knife'
-	}).damageIngredient('farmersdelight:flint_knife')
+		D: '#forge:tools/knives'
+	}).damageIngredient('#forge:tools/knives')
 
 	// 铁锤
 	shaped('new_create:iron_hammer', [

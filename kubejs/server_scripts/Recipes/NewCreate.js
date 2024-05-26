@@ -22,15 +22,41 @@ ServerEvents.recipes(e => {
 		e.shapeless(
 			originalRecipeResult.withCount(2),
 			originalRecipeIngredients.toArray().concat([
-				'farmersdelight:flint_knife'
+				'#forge:tools/knives'
 			])
-		).damageIngredient('farmersdelight:flint_knife').id(Recipes.getId())
+		).damageIngredient('#forge:tools/knives').id(Recipes.getId())
 	})
 
 	// 黏土
 	create.splashing(Item.of('minecraft:clay_ball').withChance(0.5), [
 		'new_create:dust'
 	])
+
+	// 原木堆
+	kubejs.shapeless('new_create:log_pile', [
+		'9x #minecraft:logs'
+	])
+
+	// 木漏斗
+	kubejs.shaped('woodenhopper:wooden_hopper', [
+		'L L',
+		'LCL',
+		' L '
+	], {
+		L: '#minecraft:logs',
+		C: '#forge:chests/wooden'
+	}).id('woodenhopper:wooden_hopper')
+
+	// 结构指南针
+	kubejs.shaped('explorerscompass:explorerscompass', [
+		'SBS',
+		'BCB',
+		'SBS'
+	], {
+		S: '#forge:string',
+		B: '#minecraft:stone_bricks',
+		C: 'minecraft:compass'
+	}).id('explorerscompass:explorers_compass')
 
 	// 铅制汤锅
 	kubejs.shaped('caupona:lead_stew_pot', [
@@ -79,9 +105,9 @@ ServerEvents.recipes(e => {
 		'KF'
 	], {
 		P: '#minecraft:planks',
-		K: 'farmersdelight:flint_knife',
+		K: '#forge:tools/knives',
 		F: 'minecraft:flint'
-	}).id('minecraft:crafting_table').damageIngredient('farmersdelight:flint_knife')
+	}).id('minecraft:crafting_table').damageIngredient('#forge:tools/knives')
 
 	// 燧石
 	kubejs.shaped('minecraft:flint', [
@@ -247,16 +273,6 @@ ServerEvents.recipes(e => {
 	minecraft.smelting('minecraft:nether_brick', [
 		'#forge:netherrack'
 	])
-
-	// 熔炉
-	kubejs.shaped('minecraft:furnace', [
-		'BBB',
-		'BCB',
-		'BBB'
-	], {
-		B: 'minecraft:blackstone',
-		C: '#minecraft:coals'
-	}).id('minecraft:furnace')
 
 	// 防腐液 
 	e.custom({

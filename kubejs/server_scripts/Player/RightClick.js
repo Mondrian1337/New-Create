@@ -4,7 +4,7 @@ BlockEvents.rightClicked(e => {
 	// 煤炭块生火
 	if (player.offHandItem == 'minecraft:stick' &&
 		player.mainHandItem == 'minecraft:flint' &&
-		block.id == 'minecraft:coal_block') {
+		block.id == 'new_create:log_pile') {
 		block.set('minecraft:fire')
 		item.count--
 		player.offhandItem.item--

@@ -79,10 +79,7 @@
 		}
 		{
 			dependencies: ["50E2E4BDD019F814"]
-			description: [
-				"&a我们加入了一个可以单独关闭某个音效的Mod,就在背包界面"
-				"{image:new_create:textures/images/10.png width:230 height:135 align:1}"
-			]
+			description: ["{image:new_create:textures/images/10.png width:230 height:135 align:1}"]
 			icon: "minecraft:jukebox"
 			id: "31E32B65ACBB7A96"
 			rewards: [{
@@ -91,6 +88,7 @@
 				xp_levels: 1
 			}]
 			shape: "rsquare"
+			subtitle: "&a我们加入了一个可以单独关闭某个音效的Mod"
 			tasks: [{
 				id: "1A79671028BB6BE9"
 				title: "关于音频"

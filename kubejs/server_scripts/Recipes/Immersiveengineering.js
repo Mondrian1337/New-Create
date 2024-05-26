@@ -63,6 +63,15 @@ ServerEvents.recipes(e => {
 		'{Fluid:{Amount:1000,FluidName:"new_create:embalming_fluid"}}')
 		.weakNBT(), 'ceramicbucket:ceramic_bucket')
 
+	kubejs.shaped('8x immersiveengineering:treated_wood_horizontal', [
+		'PPP',
+		'PBP',
+		'PPP'
+	], {
+		P: '#minecraft:planks',
+		B: '#forge:creosote_bucket'
+	}).replaceIngredient('#forge:creosote_bucket', 'minecraft:bucket')
+
 	create.mixing('8x immersiveengineering:treated_wood_horizontal', [
 		'8x #minecraft:planks',
 		{ fluidTag: 'forge:creosote', amount: 1000 }
