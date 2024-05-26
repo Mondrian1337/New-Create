@@ -446,4 +446,4 @@ ServerEvents.recipes(e => {
 		var Input = recipe.getOriginalRecipeIngredients()[0].getItemIds()[0]
 		minecraft.stonecutting(`6x ${Output}`, [`${Input}`])
 	})
-})
+})	
