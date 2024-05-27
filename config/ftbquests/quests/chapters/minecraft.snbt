@@ -58,7 +58,7 @@
 					type: "item"
 				}
 				{
-					command: "/give @p minecraft:player_head{SkullOwner:{Name:'X_CnJiu'}}"
+					command: "/give @p minecraft:player_head{SkullOwner:{Name:'TYX_CnJiu'}}"
 					icon: {
 						Count: 1b
 						id: "minecraft:player_head"
