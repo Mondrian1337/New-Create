@@ -1,8 +1,8 @@
 {
   "minecraft.ponder.blast_furnace.header": "原版高炉建造",
-  "minecraft.ponder.blast_furnace.text_1": "手持工程师锤右键玻璃",
+  "minecraft.ponder.blast_furnace.text_1": "§b手持工程师锤右键玻璃",
   "minecraft.ponder.stick.header": "生火",
-  "minecraft.ponder.stick.text_1": "§e左手手持木棍\n§e右手手持燧石",
+  "minecraft.ponder.stick.text_1": "§b手持火绒右键",
   "new_create.ponder.tag.ponder": "思索",
   "new_create.ponder.tag.ponder.description": "思索",
   "new_create.ponder.furnace_core.header": "熔炉核心合成",

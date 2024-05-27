@@ -1,5 +1,5 @@
 ServerEvents.recipes(e => {
-	const { shaped } = e.recipes.kubejs
+	const { shaped, shapeless } = e.recipes.kubejs
 	const { campfire_cooking } = e.recipes.minecraft
 
 	// 燧石剑
@@ -329,4 +329,11 @@ ServerEvents.recipes(e => {
 		C: '#forge:ingots/cast_iron',
 		R: '#forge:rods/wooden'
 	}).id('minecraft:iron_hoe')
+
+	// 火绒
+	shapeless('new_create:tinder', [
+		'new_create:grass_fiber',
+		'minecraft:flint',
+		'new_create:flint_knapp'
+	])
 })

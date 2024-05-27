@@ -270,6 +270,12 @@
 					}
 					type: "item"
 				}
+				{
+					count: 8L
+					id: "5EC56C890EA2692A"
+					item: "minecraft:stone"
+					type: "item"
+				}
 			]
 			title: "高炉,预备!"
 			x: 2.5d

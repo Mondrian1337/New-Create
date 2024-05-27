@@ -20,7 +20,7 @@ LootJS.modifiers(loots => {
 		.addAlternativesLoot(
 			LootEntry.of('new_create:grass_fiber')
 				.when(loots => loots.randomChance(0.6)))
-
+				
 	// 纯净石英
 	loots.addBlockLootModifier('#forge:sand')
 		.addAlternativesLoot(LootEntry.of('new_create:pure_quartz')

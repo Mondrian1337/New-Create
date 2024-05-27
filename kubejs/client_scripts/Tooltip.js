@@ -17,7 +17,9 @@ ItemEvents.tooltip(tip => {
 		// 高炉核心
 		['new_create:furnace_core', 'tooltip.nc.furnace_core'],
 		// 熔炉
-		['minecraft:furnace', 'tooltip.mc.furnace']
+		['minecraft:furnace', 'tooltip.mc.furnace'],
+		// 合成轴承
+		['new_create:primary_bearing', 'tooltip.nc.primary_bearing']
 	]
 	Tooltip.forEach(([Name, Key]) => {
 		tip.add(Name, [Text.translate(Key)])

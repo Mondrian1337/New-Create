@@ -24,7 +24,7 @@ Ponder.registry(e => {
 				scene.idle(2)
 			}
 			scene.addKeyframe()
-			scene.text(30, "手持工程师锤右键玻璃", [2, 2, 0])
+			scene.text(30, '§b手持工程师锤右键玻璃', [2, 2, 0])
 			scene.showControls(
 				30,
 				utils.grid.at(2, 2, 0),

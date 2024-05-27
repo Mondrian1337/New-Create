@@ -666,6 +666,7 @@
 				title: "Any #forge:dusts/obsidian"
 				type: "item"
 			}]
+			title: "黑曜石粉末"
 			x: -2.0d
 			y: 1.0d
 		}
@@ -684,6 +685,7 @@
 				title: "Any #forge:dusts/iron"
 				type: "item"
 			}]
+			title: "铁粉"
 			x: -1.0d
 			y: 1.0d
 		}

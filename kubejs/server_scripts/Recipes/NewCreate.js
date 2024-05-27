@@ -21,9 +21,7 @@ ServerEvents.recipes(e => {
 		} = Recipes
 		e.shapeless(
 			originalRecipeResult.withCount(2),
-			originalRecipeIngredients.toArray().concat([
-				'#forge:tools/knives'
-			])
+			originalRecipeIngredients.toArray().concat(['#forge:tools/knives'])
 		).damageIngredient('#forge:tools/knives').id(Recipes.getId())
 	})
 

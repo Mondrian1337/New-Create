@@ -62,4 +62,19 @@ StartupEvents.registry('item', e => {
 				tool.setLevel(Setlevel)
 			})
 	})
+
+	// 特殊注册
+
+	// 火绒
+	e.create(ModID + 'tinder', 'axe')
+		.attackDamageBaseline(-1)
+		.rarity('common')
+		.glow(false)
+		.unstackable()
+		.tag('forge:tools')
+		.tag(ModID + 'items')
+		.tag(ModID + 'tools')
+		.modifyTier(tool => { 
+			tool.uses = 8 
+		})
 })

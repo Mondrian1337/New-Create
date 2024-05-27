@@ -1,21 +1,17 @@
 BlockEvents.rightClicked(e => {
-	const { player, block, item } = e
+	const { player, block, item, entity, hand, server } = e
 
-	// 原木堆生火
-	if (player.offHandItem == 'minecraft:stick' &&
-		player.mainHandItem == 'minecraft:flint' &&
+	// 原木堆
+	if (player.mainHandItem == 'new_create:tinder' &&
 		block.id == 'new_create:log_pile') {
 		block.set('minecraft:fire')
-		item.count--
-		player.offhandItem.item--
+		item.damageValue += 1
 	}
 
 	// 篝火
-	if (player.offHandItem == 'minecraft:stick' &&
-		player.mainHandItem == 'minecraft:flint' &&
+	if (player.mainHandItem == 'new_create:tinder' &&
 		block.id == 'minecraft:campfire') {
 		block.set('minecraft:campfire', { lit: true })
-		item.count--
-		player.offhandItem.item--
+		item.damageValue += 1
 	}
 })
