@@ -1,7 +1,7 @@
 BlockEvents.rightClicked(e => {
 	const { player, block, item } = e
 
-	// 煤炭块生火
+	// 原木堆生火
 	if (player.offHandItem == 'minecraft:stick' &&
 		player.mainHandItem == 'minecraft:flint' &&
 		block.id == 'new_create:log_pile') {

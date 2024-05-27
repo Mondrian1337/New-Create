@@ -190,7 +190,10 @@
 		}
 		{
 			dependencies: ["50E2E4BDD019F814"]
-			description: ["&b整合包为了防止跳阶段,因此将村民交易Ban掉了"]
+			description: [
+				"&b为了防止跳阶段,因此将村民交易Ban掉了"
+				"&b(这个大概率是暂时的)&r"
+			]
 			icon: "minecraft:emerald"
 			id: "753458F0B03FEEAD"
 			rewards: [{

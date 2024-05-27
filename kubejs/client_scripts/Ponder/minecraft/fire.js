@@ -4,7 +4,7 @@ Ponder.registry(e => {
 			scene.showBasePlate()
 			scene.idle(20)
 			scene.world.setBlocks([2, 1, 2], 'new_create:log_pile')
-			scene.world.showSection([2, 1, 2], Direction.down)
+			scene.world.showSection([2, 1, 2], Direction.DOWN)
 			scene.addKeyframe()
 			scene.idle(10)
 			scene.text(30, '§e左手手持木棍\n§e右手手持燧石', [2, 2, 2])

@@ -5,8 +5,13 @@ LootJS.modifiers(loots => {
 		.removeLoot(All)
 		.addLoot('2x minecraft:apple')
 
-	// 删除实体掉落铁锭和铜锭
-	loots.addLootTypeModifier(LootType.ENTITY)
-		.removeLoot('minecraft:iron_ingot')
-		.removeLoot('minecraft:copper_ingot')
+	// 删除实体战利品
+	let EntityLoots = [
+		'minecraft:iron_ingot',
+		'minecraft:copper_ingot'
+	]
+	EntityLoots.forEach(Lools => {
+		loots.addLootTypeModifier(LootType.ENTITY)
+			.removeLoot(Lools)
+	})
 })

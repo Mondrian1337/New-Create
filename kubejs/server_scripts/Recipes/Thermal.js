@@ -14,14 +14,19 @@ ServerEvents.recipes(e => {
 		Fluid.of('thermal:latex', 200)
 	])
 
-	minecraft.smoking('thermal:cured_rubber', [
-		'thermal:rubber'
-	])
+	create.milling([
+		Item.of('thermal:rubber', 2).withChance(0.4),
+		Item.of('minecraft:stick', 2).withChance(0.6)
+	], '#minecraft:logs')
 
 	// 硫化橡胶
 	minecraft.campfire_cooking('thermal:cured_rubber', [
 		'thermal:rubber'
 	]).xp(10)
+	
+	minecraft.smoking('thermal:cured_rubber', [
+		'thermal:rubber'
+	])
 
 	// 植物乳胶
 	melter.melting(Fluid.of('thermal:latex', 100), [
