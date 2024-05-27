@@ -25,9 +25,11 @@ Ponder.registry(e => {
 			}
 			scene.addKeyframe()
 			scene.text(30, "手持工程师锤右键玻璃", [2, 2, 0])
-			scene.showControls(30, utils.grid.at(2, 2, 0), 'up')
-				.rightClick()
-				.withItem('immersiveengineering:hammer')
+			scene.showControls(
+				30,
+				utils.grid.at(2, 2, 0),
+				'up'
+			).rightClick().withItem('immersiveengineering:hammer')
 			scene.idle(20)
 			scene.world.setBlocks([1, 1, 1, 3, 3, 3,], "minecraft:air")
 			scene.idle(5)

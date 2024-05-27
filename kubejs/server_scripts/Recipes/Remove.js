@@ -56,6 +56,7 @@ ServerEvents.recipes(e => {
 		'extendedcrafting:the_ultimate_component',
 		'extendedcrafting:compressor',
 		'#forge:ingots/bronze',
+		'#forge:stripped_logs',
 		'#forge:ingots/tin',
 		'#forge:tools/copper',
 		'extendedcrafting:advanced_table',

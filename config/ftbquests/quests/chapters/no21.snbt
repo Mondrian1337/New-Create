@@ -64,7 +64,7 @@
 					type: "item"
 				}
 			]
-			title: "&3 工具!"
+			title: "&b工具!"
 			x: -13.0d
 			y: 0.0d
 		}

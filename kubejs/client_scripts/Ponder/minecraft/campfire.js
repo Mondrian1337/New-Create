@@ -5,7 +5,7 @@ Ponder.registry(e => {
 			scene.idle(20)
 			scene.world.setBlocks([2, 1, 2], 'minecraft:campfire')
 			scene.world.modifyBlocks([2, 1, 2], state => state.with('lit', 'false'), false)
-			scene.world.showSection([2, 1, 2], Direction.down)
+			scene.world.showSection([2, 1, 2], Direction.DOWN)
 			scene.addKeyframe()
 			scene.idle(10)
 			scene.text(30, '§e左手手持木棍\n§e右手手持燧石', [2, 2, 2])
