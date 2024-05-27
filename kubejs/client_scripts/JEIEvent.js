@@ -45,7 +45,9 @@ JEIEvents.hideItems(e => {
 		'new_create:in_kinetic_mechanism',
 		'new_create:in_sturdy_mechanism',
 		'new_create:in_sealed_mechanism',
-		'ae2:facade'
+		'ae2:facade',
+		'create_dd:bronze_saw',
+		'create_dd:bronze_drill'
 	]
 	Item.forEach(Item => {
 		e.hide(Item)

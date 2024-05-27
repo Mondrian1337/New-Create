@@ -31,7 +31,9 @@ StartupEvents.registry('block', e => {
 		// 铸铁机壳
 		['cast_iron_casing', 'wood', 5, 5, 'pickaxe', 'wooden'],
 		// 尘土
-		['dust', 'sand', 1, 1, 'shovel', 'wooden']
+		['dust', 'sand', 1, 1, 'shovel', 'wooden'],
+		// 原木堆
+		['log_pile', 'wood', 1.5, 1.5, 'axe', 'wooden']
 	]
 	Block.forEach(([Name, SoundType, Hardness, ResisTance, Tool, Grade]) => {
 		e.create(ModID + Name)

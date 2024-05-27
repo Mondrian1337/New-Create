@@ -40,18 +40,18 @@ ServerEvents.recipes(e => {
 	])
 
 	// 小齿轮(半成品)
-	minecraft.stonecutting('new_create:in_cogwheel', [
-		'#forge:treated_wood_slab'
-	])
+	minecraft.stonecutting('2x new_create:in_cogwheel', [
+		'#forge:treated_wood'
+	]).id('new_create:in_cogwheel_manual_only')
 	create.cutting([
-		Item.of('new_create:in_cogwheel').withChance(1.0),
-		Item.of('new_create:in_cogwheel').withChance(0.15)
-	], '#forge:treated_wood_slab')
+		Item.of('new_create:in_cogwheel', 2).withChance(1.0),
+		Item.of('new_create:in_cogwheel', 2).withChance(0.15)
+	], '#forge:treated_wood')
 
 	// 大齿轮(半成品)
 	minecraft.stonecutting('new_create:in_large_cogwheel', [
 		'#forge:treated_wood'
-	])
+	]).id('new_create:in_large_cogwheel_manual_only')
 	create.cutting([
 		Item.of('new_create:in_large_cogwheel').withChance(1.0),
 		Item.of('new_create:in_large_cogwheel').withChance(0.15)
@@ -173,6 +173,17 @@ ServerEvents.recipes(e => {
 		B: "minecraft:netherrack"
 	})
 
+	// 扳手
+	kubejs.shaped('create:wrench', [
+		'PP',
+		'PC',
+		' R'
+	], {
+		P: '#forge:plates/gold',
+		C: 'new_create:in_cogwheel',
+		R: '#forge:rods/wooden'
+	}).id('create:crafting/kinetics/wrench')
+
 	// 安山混合物
 	create.mixing('new_create:andesite_compound', [
 		'4x #forge:andesite/nuggets',
@@ -186,9 +197,14 @@ ServerEvents.recipes(e => {
 		Fluid.of('minecraft:water', 1000)
 	]).heated()
 
-	melter.melting(Fluid.of('new_create:andesite_compound_fluid', 100), [
-		'#create:stone_types/andesite'
-	]).minimumHeat(8)
+	// 吸管
+	kubejs.shaped('createaddition:straw', [
+		'R R',
+		'R R',
+		'R R'
+	], {
+		R: '#forge:rods/wooden'
+	})
 
 	// 注液器
 	kubejs.shaped('create:spout', [

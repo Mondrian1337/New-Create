@@ -14,6 +14,10 @@ ServerEvents.recipes(e => {
 		Fluid.of('thermal:latex', 200)
 	])
 
+	minecraft.smoking('thermal:cured_rubber', [
+		'thermal:rubber'
+	])
+
 	// 硫化橡胶
 	minecraft.campfire_cooking('thermal:cured_rubber', [
 		'thermal:rubber'

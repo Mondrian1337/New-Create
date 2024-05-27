@@ -186,7 +186,7 @@ ServerEvents.recipes(e => {
 		e.remove({ output: Item })
 	})
 
-	// 删除Type
+	// Type
 	let RemoveType = [
 		'createaddition:charging',
 		'minecraft:smelting',
@@ -196,10 +196,10 @@ ServerEvents.recipes(e => {
 		e.remove({ type: Type })
 	})
 
-	//移除所有工作台合成齿轮配方
+	// 移除所有工作台合成齿轮配方
 	e.remove({ output: '#forge:gears', type: "minecraft:crafting_shaped" })
 
-	//删除Mod合成表
+	// Mod合成表
 	let Remove_Mods_recipes = [
 
 	]

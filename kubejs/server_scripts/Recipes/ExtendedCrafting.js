@@ -124,6 +124,19 @@ ServerEvents.recipes(e => {
 		S: '#create:shaft_add'
 	}).id('vintageimprovements:craft/centrifuge')
 
+	// 熔炉
+	shaped_table('minecraft:furnace', [
+		'BBBBB',
+		'BSSSB',
+		'BSCSB',
+		'BSSSB',
+		'BBBBB'
+	], {
+		B: 'minecraft:blackstone',
+		S: '#minecraft:soul_fire_base_blocks',
+		C: '#forge:coal_coke'
+	}).id('minecraft:furnace')
+
 	// 压印机
 	shaped_table('ae2:inscriber', [
 		'CCFCC',

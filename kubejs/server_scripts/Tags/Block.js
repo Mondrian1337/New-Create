@@ -7,4 +7,12 @@ ServerEvents.tags('block', e => {
 		'#caupona:stoves',
 		'melter:melter'
 	])
+
+	// 木镐
+	e.add('minecraft:needs_wooden_tool', [
+		'flopper:flopper'
+	])
+	e.add('minecraft:mineable/pickaxe', [
+		'flopper:flopper'
+	])
 })

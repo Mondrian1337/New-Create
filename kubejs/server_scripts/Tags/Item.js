@@ -107,6 +107,12 @@ ServerEvents.tags('item', e => {
 		'new_create:mold_block'
 	])
 
+	// 杂酚油桶
+	e.add('forge:creosote_bucket', [
+		'thermal:creosote_bucket',
+		'immersiveengineering:creosote_bucket'
+	])
+
 	// 铸铁锭
 	e.add('forge:ingots/cast_iron', [
 		'new_create:cast_iron_ingot'

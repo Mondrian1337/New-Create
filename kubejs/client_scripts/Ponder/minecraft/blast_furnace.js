@@ -32,6 +32,6 @@ Ponder.registry(e => {
 			scene.world.setBlocks([1, 1, 1, 3, 3, 3,], "minecraft:air")
 			scene.idle(5)
 			scene.world.createItemEntity([2, 1, 2], Direction.down, "2x minecraft:blast_furnace")
-			scene.idle(5)
+			scene.idle(20)
 		})
 })
