@@ -53,3 +53,8 @@ JEIEvents.hideItems(e => {
 		e.hide(Item)
 	})
 })
+
+// 隐藏配方
+JEIEvents.removeRecipes(e => {
+	e.remove('minecraft:campfire_cooking', 'minecraft:kjs/new_create_flint_sword_2')
+})

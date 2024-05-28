@@ -30,6 +30,11 @@
 		"version": "0.4.2+7c3892a477"
 	},
 	{
+		"modid": "woodenhopper",
+		"name": "Wooden Hopper",
+		"version": "1.20.1-1.6.0.1"
+	},
+	{
 		"modid": "fabric_convention_tags_v1",
 		"name": "Fabric Convention Tags",
 		"version": "1.5.5+fa3d1c0177"
@@ -565,11 +570,6 @@
 		"version": "1.19.0"
 	},
 	{
-		"modid": "treechop",
-		"name": "HT\u0027s TreeChop",
-		"version": "0.18.8"
-	},
-	{
 		"modid": "solarpanels",
 		"name": "Mekanism-MoreSolarPanels",
 		"version": "1.5.9"
@@ -775,6 +775,11 @@
 		"version": "11.0.0"
 	},
 	{
+		"modid": "ftbultimine",
+		"name": "FTB Ultimine",
+		"version": "2001.1.5"
+	},
+	{
 		"modid": "connectormod",
 		"name": "Connector",
 		"version": "1.0.0-beta.43+1.20.1"
@@ -837,7 +842,7 @@
 	{
 		"modid": "new_create",
 		"name": "New Create",
-		"version": "1.0.0"
+		"version": "1.0.1"
 	},
 	{
 		"modid": "probejs",

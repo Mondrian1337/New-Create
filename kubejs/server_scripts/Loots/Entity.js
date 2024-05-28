@@ -10,8 +10,8 @@ LootJS.modifiers(loots => {
 		'minecraft:iron_ingot',
 		'minecraft:copper_ingot'
 	]
-	EntityLoots.forEach(Lools => {
+	EntityLoots.forEach(Loots => {
 		loots.addLootTypeModifier(LootType.ENTITY)
-			.removeLoot(Lools)
+			.removeLoot(Loots)
 	})
 })

@@ -13,8 +13,8 @@ ServerEvents.recipes(e => {
 		G: 'new_create:grass_string'
 	})
 
-	// 燧石剑(升级版)
-	campfire_cooking(Item.of('new_create:flint_sword', "{Damage:0,RepairCost:1,display:{Name:'{\"text\":\"§c神威无敌大将军\"}'}}").enchant('minecraft:fire_aspect', 1), [
+	// 燧石剑(Plus Pro Max Super Update😋)
+	campfire_cooking(Item.of('new_create:flint_sword', "{Damage:0,RepairCost:2,display:{Name:'{\"text\":\"§c燧石剑(Plus Pro Max Super Update)\"}'}}").enchant('minecraft:fire_aspect', 1), [
 		'new_create:flint_sword'
 	]).cookingTime(1200)
 

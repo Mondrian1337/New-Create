@@ -2,15 +2,15 @@ StartupEvents.registry('item', e => {
 	const ModID = 'new_create:'
 	let Tool = [
 		// 燧石剑
-		['flint_sword', 'sword', 'common', false, 2, 100, 2, 0],
+		['flint_sword', 'sword', 'common', false, 2, 120, 2, 0],
 		// 燧石镐
-		['flint_pickaxe', 'pickaxe', 'common', false, -2, 100, 2, 0],
+		['flint_pickaxe', 'pickaxe', 'common', false, -2, 120, 2, 0],
 		// 燧石斧
-		['flint_axe', 'axe', 'common', false, 3, 100, 2, 0],
+		['flint_axe', 'axe', 'common', false, 3, 120, 2, 0],
 		// 燧石短柄斧
-		['flint_handaxe', 'axe', 'common', false, 2, 40, 1, 0],
+		['flint_handaxe', 'axe', 'common', false, 2, 50, 1, 0],
 		// 燧石锹
-		['flint_shovel', 'shovel', 'common', false, -2, 80, 2, 0],
+		['flint_shovel', 'shovel', 'common', false, -2, 120, 2, 0],
 		// 石锤
 		['stone_hammer', 'pickaxe', 'common', false, 5, 400, 2, 1],
 		// 铁锤

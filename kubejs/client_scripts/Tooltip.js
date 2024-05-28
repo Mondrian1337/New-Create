@@ -19,7 +19,9 @@ ItemEvents.tooltip(tip => {
 		// 熔炉
 		['minecraft:furnace', 'tooltip.mc.furnace'],
 		// 合成轴承
-		['new_create:primary_bearing', 'tooltip.nc.primary_bearing']
+		['new_create:primary_bearing', 'tooltip.nc.primary_bearing'],
+		// 石磨
+		['create:millstone', 'tooltip.cr.millstone']
 	]
 	Tooltip.forEach(([Name, Key]) => {
 		tip.add(Name, [Text.translate(Key)])

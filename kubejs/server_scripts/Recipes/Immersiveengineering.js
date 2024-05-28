@@ -79,7 +79,7 @@ ServerEvents.recipes(e => {
 
 	create.mixing('immersiveengineering:treated_wood_horizontal', [
 		'#minecraft:planks',
-		{ fluidTag: "forge:creosote", amount: 125 }
+		{ fluidTag: 'forge:creosote', amount: 125 }
 	])
 
 	create.filling('immersiveengineering:treated_wood_horizontal', [

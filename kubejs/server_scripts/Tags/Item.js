@@ -110,7 +110,8 @@ ServerEvents.tags('item', e => {
 	// 杂酚油桶
 	e.add('forge:creosote_bucket', [
 		'thermal:creosote_bucket',
-		'immersiveengineering:creosote_bucket'
+		'immersiveengineering:creosote_bucket',
+		'new_create:embalming_fluid_bucket'
 	])
 
 	// 铸铁锭

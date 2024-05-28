@@ -176,13 +176,22 @@ ServerEvents.recipes(e => {
 
 	// 石头→营火烧
 	minecraft.campfire_cooking('minecraft:stone', [
-		'#forge:cobblestone'
+		'#forge:cobblestone/normal'
+	]).cookingTime(500)
+
+	// 深板岩
+	minecraft.campfire_cooking('minecraft:deepslate', [
+		'#forge:cobblestone/deepslate'
 	]).cookingTime(500)
 
 	// 石头→烧焦圆石→营火烧
 	minecraft.campfire_cooking('new_create:charred_cobblestone', [
 		'minecraft:stone'
 	]).cookingTime(500)
+
+	minecraft.blasting('minecraft:deepslate', [
+		'#forge:cobblestone/deepslate'
+	]).xp(20)
 
 	// 陶瓷桶
 	minecraft.campfire_cooking('ceramicbucket:ceramic_bucket', [
@@ -191,8 +200,8 @@ ServerEvents.recipes(e => {
 
 	// 烧焦圆石→熔炉,烧焦圆石→高炉
 	minecraft.blasting('new_create:charred_cobblestone', [
-		'#forge:cobblestone'
-	]).cookingTime(350).xp(20)
+		'#forge:cobblestone/normal'
+	]).xp(20)
 
 	// 营火
 	kubejs.shaped('minecraft:campfire', [

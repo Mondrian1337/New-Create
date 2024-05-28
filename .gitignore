@@ -42,3 +42,4 @@ data/fabricDefaultResourcePacks.dat
 fabricloader.log
 config/fabric/indigo-renderer.properties
 mods
+exports

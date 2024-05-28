@@ -366,12 +366,6 @@
 		{
 			dependencies: ["5E0A98F312F8A995"]
 			id: "59FF50A102176A58"
-			rewards: [{
-				count: 8
-				id: "356914FE777FA45E"
-				item: "minecraft:oak_log"
-				type: "item"
-			}]
 			tasks: [{
 				id: "6D8C6053558EDB12"
 				item: "extendedcrafting:handheld_table"
