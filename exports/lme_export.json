@@ -185,6 +185,11 @@
     "version": "5.2.2"
   },
   {
+    "modid": "krypton",
+    "name": "Krypton Reforged",
+    "version": "0.2.3"
+  },
+  {
     "modid": "blockcrafting",
     "name": "Block Crafting",
     "version": "1.0.1"
@@ -565,11 +570,6 @@
     "version": "1.19.0"
   },
   {
-    "modid": "treechop",
-    "name": "HT\u0027s TreeChop",
-    "version": "0.18.8"
-  },
-  {
     "modid": "solarpanels",
     "name": "Mekanism-MoreSolarPanels",
     "version": "1.5.9"
@@ -705,11 +705,6 @@
     "version": "1.20-2.5"
   },
   {
-    "modid": "carryon",
-    "name": "Carry On",
-    "version": "2.1.2.7"
-  },
-  {
     "modid": "melody",
     "name": "Melody",
     "version": "1.0.2"
@@ -780,6 +775,11 @@
     "version": "11.0.0"
   },
   {
+    "modid": "ftbultimine",
+    "name": "FTB Ultimine",
+    "version": "2001.1.5"
+  },
+  {
     "modid": "connectormod",
     "name": "Connector",
     "version": "1.0.0-beta.43+1.20.1"
@@ -842,7 +842,7 @@
   {
     "modid": "new_create",
     "name": "New Create",
-    "version": "1.0.2"
+    "version": "1.0.1"
   },
   {
     "modid": "probejs",
