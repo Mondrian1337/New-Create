@@ -1,11 +1,3 @@
-/*
- ! 我知道你们进来这里的想干什么,或许你只是个很普通的Modpack开发者,想来看看Ban了什么东西
- ! 也或许是一个在网上搜到解Ban教程的一个玩家
- ! 你们可以随便解,我们也不强求,只希望你们不要在我们这些开发者面前跳脸
- ! 我了解你们的心情,但是也希望大家可以理解一下我们这些开发者的心情
- ! 我们已经很累了,你们爱咋玩咋玩,只要不要影响到别的玩家,随便你们解开好吧
- !                                  ------2024.05.05 21点11分42秒 柒月留
-*/
 ServerEvents.recipes(e => {
 	// 删除Item
 	let Output = [
@@ -101,6 +93,7 @@ ServerEvents.recipes(e => {
 		'createaddition:tesla_coil',
 		'createaddition:alternator',
 		'create_new_age:carbon_brushes',
+		'#forge:ingots/strong_bronze',
 		'create_new_age:energiser_t1',
 		'createaddition:electric_motor',
 		'createaddition:capacitor',
@@ -173,7 +166,6 @@ ServerEvents.recipes(e => {
 		'ratatouille:salt',
 		'createdieselgenerators:crafting/engine_piston',
 		'create:crafting/kinetics/cogwheel',
-		'kubejs:kjs/create_large_cogwheel',
 		'immersiveengineering:crafting/electrum_mix'
 	]
 	Remove_ID.forEach(ID => {

@@ -11,12 +11,12 @@ LootJS.modifiers(loots => {
 		// 沙子=>尘土
 		['#forge:sand', '#new_create:hammer', 'new_create:dust', 0.5],
 		// 草=>杂草
-		['minecraft:grass', '#forge:tools/knives', 'new_create:grass_fiber', 1.0]
+		['minecraft:grass', '#forge:tools/knives', 'new_create:grass_fiber', 0.5]
 	]
 	ToolLoots.forEach(([Blocks, Tools, Loots, Chance]) => {
 		loots.addBlockLootModifier(Blocks)
 			.matchMainHand(Tools)
 			.addAlternativesLoot(LootEntry.of(Loots)
 				.when(loots => loots.randomChance(Chance)))
-	})	
+	})
 })
