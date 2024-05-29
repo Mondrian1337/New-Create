@@ -2319,6 +2319,25 @@
 			x: 39.5d
 			y: 11.5d
 		}
+		{
+			dependencies: ["3ED4088F5DEB249F"]
+			id: "4A932B57DA5B2F56"
+			subtitle: "让我用吧!"
+			tasks: [{
+				id: "0D22ED5B3D642CFF"
+				item: {
+					Count: 1b
+					id: "new_create:metal_detector"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "&c我不想努力了"
+			x: 46.0d
+			y: 24.5d
+		}
 	]
 	title: "&6火与石之歌"
 }
