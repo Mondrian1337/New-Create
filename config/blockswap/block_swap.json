@@ -1,9 +1,0 @@
-{
-	"retroGen": false,
-	"swapper": {
-		"create_dd:tin_ore": "thermal:tin_ore",
-		"create_dd:deepslate_tin_ore": "thermal:deepslate_tin_ore",
-		"mekanism:lead_ore": "immersiveengineering:ore_lead",
-		"immersiveengineering:ore_uranium": "mekanism:uranium_ore",
-	}
-}
