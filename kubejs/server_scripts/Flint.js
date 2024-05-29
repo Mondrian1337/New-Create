@@ -6,7 +6,7 @@ BlockEvents.leftClicked(e => {
             const createEntity = block.createEntity('item')
             item.count--
             
-            const random = Math.random();
+            const random = Math.random()
             let count = 1
 
             if (random < 0.10) {
