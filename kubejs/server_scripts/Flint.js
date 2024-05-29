@@ -23,5 +23,5 @@ BlockEvents.leftClicked(e => {
             createEntity.z += 0.5
             createEntity.spawn()
         }
-    });
-});
+    })
+})
