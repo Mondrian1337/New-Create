@@ -296,6 +296,8 @@ ServerEvents.recipes(e => {
 		' R ',
 		' R '
 	], {
+
+		
 		C: '#forge:ingots/cast_iron',
 		R: '#forge:rods/wooden'
 	}).id('minecraft:iron_pickaxe')
