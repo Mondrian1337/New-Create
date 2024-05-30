@@ -7,7 +7,7 @@ Ponder.registry(e => {
 		'caupona:opus_latericium_kitchen_stove',
 		'caupona:stew_pot',
 		'caupona:lead_stew_pot'
-	]).scene('caupona:stew_pot', '煮沸', scene => {
+	]).scene('caupona:stew_pot', '搭建', scene => {
 		scene.showBasePlate()
 		scene.idle(20)
 		scene.world.setBlocks([2, 1, 2], 'caupona:mud_kitchen_stove')

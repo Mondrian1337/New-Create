@@ -75,6 +75,6 @@ StartupEvents.registry('item', e => {
 		.tag(ModID + 'items')
 		.tag(ModID + 'tools')
 		.modifyTier(tool => { 
-			tool.uses = 8 
+			tool.uses = 8
 		})
 })
