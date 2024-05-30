@@ -1,5 +1,5 @@
 BlockEvents.leftClicked(e => {
-	const { player, block, item } = e
+	const { player, block, item, server } = e
 
 	Ingredient.of('#forge:stone').getItemIds().forEach(stoneId => {
 		if (player.mainHandItem.id === 'minecraft:flint' && block.id === stoneId) {
@@ -13,6 +13,7 @@ BlockEvents.leftClicked(e => {
 			createEntity.y += 1
 			createEntity.z += 0.5
 			createEntity.spawn()
+			server.tell(`你敲碎了燧石!\n获得了${Random}个燧石碎片`)
 		}
 	})
 })
