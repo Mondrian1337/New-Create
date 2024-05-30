@@ -17,4 +17,6 @@ ServerEvents.recipes(e => {
 	e.replaceInput({}, 'ae2:silicon', 'new_create:silicon_crystal')
 	// 传动杆 
 	e.replaceInput({}, 'create:shaft', '#create:shaft_add')
+	// 铜锭
+	e.replaceInput({}, 'minecraft:copper_ingot', '#forge:ingots/copper')
 })

@@ -624,25 +624,9 @@ ServerEvents.recipes(e => {
 		Fluid.of('new_create:working_fluid', 125)
 	]).heated()
 
-	// 烤箱
-	kubejs.shaped('ratatouille:oven', [
-		' C ',
-		'CGC',
-		' C '
-	], {
-		C: '#forge:plates/cast_iron',
-		G: '#forge:glass'
-	}).id('ratatouille:oven')
-
-	// 烤箱鼓风机
-	kubejs.shapeless('ratatouille:oven_fan', [
-		'create:encased_fan',
-		'create:cogwheel'
-	]).id('ratatouille:oven_fan')
-
 	// 铁粉
 	create.crushing([
-		Item.of('immersiveengineering:dust_iron', 5).withChance(0.1),
+		Item.of('immersiveengineering:dust_iron', 4).withChance(0.11),
 		Item.of('immersiveengineering:dust_iron', 3).withChance(0.4),
 		Item.of('immersiveengineering:dust_iron', 2).withChance(0.5)
 	], '#forge:ores/iron')
@@ -757,7 +741,7 @@ ServerEvents.recipes(e => {
 	create.mixing('minecraft:slime_ball', [
 		'create:dough',
 		'minecraft:lime_dye',
-		Fluid.water(200)
+		Fluid.of('minecraft:water', 200)
 	])
 
 	// 计算构件

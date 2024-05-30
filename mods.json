@@ -842,7 +842,7 @@
   {
     "modid": "new_create",
     "name": "New Create",
-    "version": "1.0.1"
+    "version": "1.0.2"
   },
   {
     "modid": "probejs",
@@ -868,6 +868,11 @@
     "modid": "fabric_lifecycle_events_v1",
     "name": "Fabric Lifecycle Events (v1)",
     "version": "2.2.22+afab492177"
+  },
+  {
+    "modid": "silence_s_defense_tower",
+    "name": "Silence\u0027s Turrets",
+    "version": "2.3.4"
   },
   {
     "modid": "caupona",

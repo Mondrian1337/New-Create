@@ -1,6 +1,7 @@
-// 高炉多方块合成
+// 高炉
 BlockCrafting.addMultiblockStructure(
-	MultiblockStructureBuilder.create('minecraft:blast_furnace')
+	MultiblockStructureBuilder
+		.create('minecraft:blast_furnace')
 		.pattern('aaa', 'aaa', 'eee')
 		.pattern('aaa', 'bcb', 'ege')
 		.pattern('aaa', 'ada', 'eee')
@@ -17,7 +18,8 @@ BlockCrafting.addMultiblockStructure(
 
 // 熔炉核心
 BlockCrafting.addMultiblockStructure(
-	MultiblockStructureBuilder.create('new_create:furnace_core')
+	MultiblockStructureBuilder
+		.create('new_create:furnace_core')
 		.pattern('aaa', 'aaa', 'aaa')
 		.pattern('aaa', 'aba', 'aaa')
 		.pattern('aaa', 'aAa', 'aaa')
@@ -31,7 +33,8 @@ BlockCrafting.addMultiblockStructure(
 
 // 熔化锅
 BlockCrafting.addMultiblockStructure(
-	MultiblockStructureFileBuilder.create('melter')
+	MultiblockStructureFileBuilder
+		.create('melter')
 		.file('kubejs/assets/new_create/blockcraft/melter.nbt')
 		.center('minecraft:clay')
 		.resultItem('2x melter:melter')

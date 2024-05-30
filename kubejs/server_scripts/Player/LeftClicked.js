@@ -1,9 +1,9 @@
-let Timeout = false
 BlockEvents.leftClicked(e => {
 	const { player, block, item, server } = e
+	let Timeout = false
 
 	if (Timeout) {
-		server.tell('正在敲碎燧石~')
+		server.tell(Text.translatable('info.nc.flint'))
 		return
 	}
 	Ingredient.of('#forge:stone').getItemIds().forEach(stoneId => {
@@ -20,9 +20,8 @@ BlockEvents.leftClicked(e => {
 				Entity.y += 1
 				Entity.z += 0.5
 				Entity.spawn()
-				server.tell(`你敲碎了燧石，获得了${Random}个燧石碎片`)
 				Timeout = false
-			}, 2000);
+			}, 2000)
 		}
 	})
 })

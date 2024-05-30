@@ -1,5 +1,6 @@
 {
 	"message.new_create.welcome": "§b欢迎 %s §b来到New Create!",
+	"info.nc.flint": "§b正在敲击燧石",
 	"tooltip.nc.grass_string": "§b一种勉强可以替代线的绳子,可以做点东西",
 	"tooltip.nc.grass_fiber": "§b在除草的时候可以获得,或许可以编成草绳",
 	"tooltip.nc.pure_quartz": "§b挖掘沙子有1%的概率掉落",

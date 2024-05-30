@@ -118,20 +118,18 @@ ServerEvents.recipes(e => {
 	// 陶瓦
 	minecraft.campfire_cooking('minecraft:terracotta', [
 		'minecraft:clay'
-	]).cookingTime(180)
+	]).cookingTime(120)
 
 	// 鸡蛋混合液
 	create.compacting([
 		Fluid.of('new_create:egg_mixture_fluid', 5),
-		'ratatouille:egg_shell'
+		'new_create:egg_shell'
 	], '#forge:eggs')
 
 	create.emptying([
 		Fluid.of('new_create:egg_mixture_fluid', 5),
-		'ratatouille:egg_shell'
-	], [
-		'#forge:eggs'
-	]).id('create:create.emptying/yolk')
+		'new_create:egg_shell'
+	], '#forge:eggs')
 
 	// 白面
 	create.milling('new_create:white_flour', [
@@ -171,8 +169,8 @@ ServerEvents.recipes(e => {
 
 	// 蛋壳 => 骨粉
 	kubejs.shapeless('minecraft:bone_meal', [
-		'2x ratatouille:egg_shell'
-	]).id('ratatouille:eggshell')
+		'2x new_create:egg_shell'
+	]).id('new_create:eggshell')
 
 	// 石头→营火烧
 	minecraft.campfire_cooking('minecraft:stone', [

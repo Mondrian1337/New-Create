@@ -56,12 +56,14 @@ ServerEvents.recipes(e => {
 		'PPP'
 	], {
 		P: '#minecraft:planks',
-		C: Item.of('ceramicbucket:ceramic_bucket',
-			'{Fluid:{Amount:1000,FluidName:"new_create:embalming_fluid"}}')
-			.weakNBT()
-	}).replaceIngredient(Item.of('ceramicbucket:ceramic_bucket',
-		'{Fluid:{Amount:1000,FluidName:"new_create:embalming_fluid"}}')
-		.weakNBT(), 'ceramicbucket:ceramic_bucket')
+		C: Item.of(
+			'ceramicbucket:ceramic_bucket',
+			'{Fluid:{Amount:1000,FluidName:"new_create:embalming_fluid"}}'
+		).weakNBT()
+	}).replaceIngredient(Item.of(
+		'ceramicbucket:ceramic_bucket',
+		'{Fluid:{Amount:1000,FluidName:"new_create:embalming_fluid"}}'
+	).weakNBT(), 'ceramicbucket:ceramic_bucket')
 
 	kubejs.shaped('8x immersiveengineering:treated_wood_horizontal', [
 		'PPP',
@@ -99,7 +101,7 @@ ServerEvents.recipes(e => {
 	// 青铜锭
 	e.custom({
 		"type": "immersiveengineering:alloy",
-		"input0": { "base_ingredient": { "tag": 'forge:ingots/copper' }, "count": 3 },
+		"input0": { "tag": 'forge:ingots/copper', "count": 3 },
 		"input1": { "tag": 'forge:ingots/tin' },
 		"result": { "item": 'thermal:bronze_ingot', "count": 4 },
 		"time": 300
@@ -122,9 +124,9 @@ ServerEvents.recipes(e => {
 		'BCB',
 		'ABA'
 	], {
-		A: "minecraft:clay_ball",
+		A: 'minecraft:clay_ball',
 		B: '#forge:ingots/copper',
-		C: "immersiveengineering:alloybrick"
+		C: 'immersiveengineering:alloybrick'
 	}).id('immersiveengineering:crafting/cokebrick')
 
 	// 矿渣
